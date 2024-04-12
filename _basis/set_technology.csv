@@ -173,22 +173,35 @@ bioConversion,pyrolysis,pyrWoodCoalProLow,,wood,coal; processHeat_low,,,mature,n
 bioConversion,pyrolysis,pyrMethaneH2,,methane; electricity,h2; coal,,,mature,none,,,,
 bioConversion,hydrothermalCarbonization,htcDigestate,,digestate,coal,,,mature,none,,,,
 bioConversion,,biomassToHvc,,wood; processHeat_high; electricity,hvc,,,mature,none,,,,
-bioConversion,boiler,boilerwood,,wood,spaceHeat,,,,,,,,
-bioConversion,boiler,boilerwood,,wood,spaceHeat,,,,,,,,
-bioConversion,boiler,boilerwood,,wood,spaceHeat,,,,,,,,
+bioConversion,boiler,boilerwood,,wood,spaceHeat,,,mature,none,,,,
+bioConversion,boiler,boilerwood,,wood,spaceHeat,,,mature,none,,,,
+bioConversion,boiler,boilerwood,,wood,spaceHeat,,,mature,none,,,,
 ,,,,,,,,,,,,,
 chemConversion,haberBosch,haberBoschH2AmmoniaDh,,h2,ammonia; disrictHeat,,,mature,none,,,,
 chemConversion,haberBosch,haberBoschH2AmmoniaProLow,,h2,ammonia; disrictHeat,,,mature,none,,,,
 chemConversion,,ammoniaCracking,,ammonia; processHeat_High,h2,,,mature,none,,,,
 chemConversion,,gasToHvc,,methane; electricity,hvc,,,mature,none,,,,
-chemConversion,,stemMethaneReforming,,methane; processHeat_high,h2,,,,,,,,
+chemConversion,,stemMethaneReforming,,methane; processHeat_high,h2,,,mature,none,,,,
 ,,,,,,,,,,,,,
-stock,power,nuclearDh,,uranium,electricity; districtHeat,,,,,,,,
-stock,power,nuclearProMed,,uranium,electricity; processHeat_medium,,,,,,,,
-stock,power,coalDh,,coal,electricity; districtHeat,,,,,,,,
-stock,power,coalProMed,,coal,electricity; processHeat_medium,,,,,,,,
+stock,power,nuclearDh,,uranium,electricity; districtHeat,,,mature,none,,,,
+stock,power,nuclearProMed,,uranium,electricity; processHeat_medium,,,mature,none,,,,
+stock,power,coalDh,,coal,electricity; districtHeat,,,mature,none,,,,
+stock,power,coalProMed,,coal,electricity; processHeat_medium,,,mature,none,,,,
+,,,,,,,,mature,none,,,,
+networkHeat,geo,geoSpace,,,spaceHeat,,,mature,none,,,,
+networkHeat,geo,geoDh,,,districtHeat,,,mature,none,,,,
+networkHeat,geo,geoProLow,,,processHeat_low,,,mature,none,,,,
+networkHeat,geo,geoProMed,,,processHeat_medium,,,mature,none,,,,
 ,,,,,,,,,,,,,
-networkHeat,geo,geoSpace,,,spaceHeat,,,,,,,,
-networkHeat,geo,geoDh,,,districtHeat,,,,,,,,
-networkHeat,geo,geoProLow,,,processHeat_low,,,,,,,,
-networkHeat,geo,geoProMed,,,processHeat_medium,,,,,,,,
+bioConversion,storage,sludgeStorage,,,,sludge,sludge,mature,none,,,,2
+bioConversion,storage,greenWasteStorage,,,,greenWaste,greenWaste,mature,none,,,,2
+bioConversion,storage,woodStorage,,,,wood,wood,mature,none,,,,2
+bioConversion,storage,wasteStorage,,,,waste,waste,mature,none,,,,2
+bioConversion,storage,manureStorage,,,,manure,manure,mature,none,,,,2
+bioConversion,storage,digestateStorage,,,,digestate,digestate,mature,none,,,,2
+bioConversion,storage,co2PureStorage,,,,co2Pure,co2Pure,mature,none,,,,2
+bioConversion,storage,syngasStorage,,,,syngas,syngas,mature,none,,,,2
+stock,storage,coalStorage,,,,coal,coal,mature,none,,,,2
+stock,storage,uranumStorage,,,,uranum,uranum,mature,none,,,,2
+chemConversion,storage,hvcStorage,,,,hvc,hvc,mature,none,,,,2
+chemConversion,storage,AmmoniaStorage,,,,Ammonia,Ammonia,mature,none,,,,2
