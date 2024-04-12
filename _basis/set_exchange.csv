@@ -1,0 +1,8 @@
+exchange_1,exchange_2,carrier_exchange,exchange_type,exchange_decomm,exchange_symmetry
+powerGrid,hvac,electricity,mature,none,undirected
+powerGrid,hvdc,electricity,mature,none,undirected
+h2Grid,,h2,mature,none,directed
+methaneGrid,,methane,mature,none,directed
+biomassExc,,sludge; greenWaste; wood; waste; maure; digestate,unrestricted,none,undirected
+liquidExc,,crudeOil; refinedOil; Ammonia,unrestricted,none,undirected
+solidExc,,coal; uranum; hvc,unrestricted,none,undirected
