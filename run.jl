@@ -12,25 +12,18 @@ end
 
 # h = string(par_df[id_int,:h]) # resolution of time-series for actual solve, can be 96, 1752, 4392, or 8760
 # h_heu = string(par_df[id_int,:h_heu]) # resolution of time-series for pre-screening, can be 96, 1752, 4392, or 8760
-# grid = string(par_df[id_int,:grid]) # scenario 
 h = "96"
-h_heu = "96"
-grid = "_gridExp"
 
-
-obj_str = h * "hours_" * h_heu * "hoursHeu" * grid * "_updated"
-inputMod_arr = ["_basis",grid,"timeSeries/" * h * "hours_2008"]
-
+# obj_str = h * "hours_" * h_heu * "hoursHeu" * grid * "_updated"
+inputMod_arr = ["_basis","timeSeries/" * h * "hours_2008"]
 resultDir_str = "results"
 
 #region # * create and solve main model
-
-
-anyM = anyModel(inputMod_arr,resultDir_str, objName = obj_str, supTsLvl = 2, shortExp = 5, redStep = 1.0, emissionLoss = false, holdFixed = true)
-
+anyM = anyModel(inputMod_arr,resultDir_str, supTsLvl = 2, shortExp = 5, redStep = 1.0, emissionLoss = false, holdFixed = true)
 createOptModel!(anyM)
 setObjective!(:cost,anyM)
 
+# solve model
 set_optimizer(anyM.optModel, Gurobi.Optimizer)  # select a solver
 set_optimizer_attribute(anyM.optModel, "Method", 2);
 set_optimizer_attribute(anyM.optModel, "Crossover", 0);
@@ -44,8 +37,8 @@ optimize!(anyM.optModel) # solve the model
 #region # * write results
 
 reportResults(:summary,anyM, addRep = (:capaConvOut,), addObjName = true)
-reportResults(:exchange,anyM, addObjName = true)
-reportResults(:cost,anyM, addObjName = true)
+# reportResults(:exchange,anyM, addObjName = true)
+# reportResults(:cost,anyM, addObjName = true)
 
 reportTimeSeries(:electricity,anyM)
 
