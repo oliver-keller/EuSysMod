@@ -42,7 +42,7 @@ gasTurbine,ccgtH2,ccgtH2ProMed,,h2,electricity; processHeat_medium,,,mature,none
 gasTurbine,ocgtGas,ocgtGas,,methane,electricity,,,mature,none,,,,
 gasTurbine,ocgtGas,ocgtGasChp,,methane,electricity; districtHeat,,,mature,none,,,,
 gasTurbine,ocgtH2,ocgtH2,,h2,electricity,,,mature,none,,,,
-gasTurbine,ocgtH2,ocgtH2Chp,,h2,electricity; districtHeat,,,mature,none,,,,
+gasTurbine,ocgtH2,git add,,h2,electricity; districtHeat,,,mature,none,,,,
 engine,engineDh,bioGasEngineDh,,rawBiogas,electricity; districtHeat,,,mature,none,,,,
 engine,engineDh,methaneEngineDh,,methane,electricity; districtHeat,,,mature,none,,,,
 engine,engineDh,syngasEngineDh,,syngas,electricity; districtHeat,,,mature,none,,,,
@@ -89,10 +89,6 @@ chemConversion,haberBosch,haberBoschH2AmmoniaProLow,,h2,ammonia; processHeat_low
 chemConversion,,ammoniaCracking,,ammonia; processHeat_High,h2,,,mature,none,,,,
 chemConversion,,gasToHvc,,methane; electricity,hvc,,,mature,none,,,,
 chemConversion,,stemMethaneReforming,,methane; processHeat_high,h2,,,mature,none,,,,
-fossil,methanePlant,methanePlant_a,,methane,electricity,,,mature,none,,,,
-fossil,methanePlant,methanePlant_b,,methane,electricity,,,mature,none,,,,
-fossil,methanePlant,methanePlant_chp_a,,methane,electricity; districtHeat,,,mature,none,,,,
-fossil,methanePlant,methanePlant_chp_b,,methane,electricity; districtHeat,,,mature,none,,,,
 fossil,oil,oilPlant,,refinedOil,electricity,,,mature,none,,,,
 fossil,oil,oilPlantDh,,crudeOil,electricity; districtHeat,,,mature,none,,,,
 fossil,oil,oilPlantProLow,,refinedOil,electricity; processHeat_low,,,mature,none,,,,
@@ -101,9 +97,9 @@ fossil,nuclearPlant,nuclearDh,,uranium,electricity; districtHeat,,,mature,none,,
 fossil,nuclearPlant,nuclearProMed,,uranium,electricity; processHeat_medium,,,mature,none,,,,
 fossil,coalPlant,coalDh,,coal,electricity; districtHeat,,,mature,none,,,,
 fossil,coalPlant,coalProMed,,coal,electricity; processHeat_medium,,,mature,none,,,,
-hydro,,pumpedStorage,,,,electricity,electricity,mature,none,,,,2
-hydro,,reservoir,,,,,electricity,mature,none,,ineq,,2
-hydro,,runOfRiver,,,electricity,,,mature,none,,,,
+hydro,,pumpedStorage,,,,electricity,electricity,stock,none,,,,2
+hydro,,reservoir,,,,,electricity,stock,none,,ineq,,2
+hydro,,runOfRiver,,,electricity,,,stock,none,,,,
 wind,offshore,offshore_a,,,electricity,,,mature,none,,,,
 wind,offshore,offshore_b,,,electricity,,,mature,none,,,,
 wind,onshore,onshore_a,,,electricity,,,mature,none,,,,
@@ -121,8 +117,8 @@ solar,rooftopResi_a,pvResi_a,,,electricity,,,mature,none,4,,yes,
 solar,rooftopResi_a,solarThermalResi_a,,,spaceHeat,,spaceHeat,mature,none,4,,yes,3
 solar,rooftopResi_b,pvResi_b,,,electricity,,,mature,none,4,,yes,
 solar,rooftopResi_b,solarThermalResi_b,,,spaceHeat,,spaceHeat,mature,none,4,,yes,3
-networkHeat,grid,gridDistrictHeatPro,,districtHeat,processHeat_low,,,mature,none,,,,
-networkHeat,grid,gridDistrictHeatSpace,,districtHeat,spaceHeat,,,mature,none,,,,
+networkHeat,grid,districtHeatPro,,districtHeat,processHeat_low,,,mature,none,,,,
+networkHeat,grid,districtHeatSpace,,districtHeat,spaceHeat,,,mature,none,,,,
 networkHeat,Boiler,eBoilerDh,,electricity,districtHeat,,,mature,none,,,,
 networkHeat,Boiler,methaneBoilerDh,,methane,districtHeat,,,mature,none,,,,
 networkHeat,Boiler,h2BoilerDh,,h2,districtHeat,,,mature,none,,,,
