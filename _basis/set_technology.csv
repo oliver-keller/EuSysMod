@@ -42,7 +42,7 @@ gasTurbine,ccgtH2,ccgtH2ProMed,,h2,electricity; processHeat_medium,,,mature,none
 gasTurbine,ocgtGas,ocgtGas,,methane,electricity,,,mature,none,,,,
 gasTurbine,ocgtGas,ocgtGasChp,,methane,electricity; districtHeat,,,mature,none,,,,
 gasTurbine,ocgtH2,ocgtH2,,h2,electricity,,,mature,none,,,,
-gasTurbine,ocgtH2,git add,,h2,electricity; districtHeat,,,mature,none,,,,
+gasTurbine,ocgtH2,ocgtH2Chp,,h2,electricity; districtHeat,,,mature,none,,,,
 engine,engineDh,bioGasEngineDh,,rawBiogas,electricity; districtHeat,,,mature,none,,,,
 engine,engineDh,methaneEngineDh,,methane,electricity; districtHeat,,,mature,none,,,,
 engine,engineDh,syngasEngineDh,,syngas,electricity; districtHeat,,,mature,none,,,,
@@ -119,27 +119,27 @@ solar,rooftopResi_b,pvResi_b,,,electricity,,,mature,none,4,,yes,
 solar,rooftopResi_b,solarThermalResi_b,,,spaceHeat,,spaceHeat,mature,none,4,,yes,3
 networkHeat,grid,districtHeatPro,,districtHeat,processHeat_low,,,mature,none,,,,
 networkHeat,grid,districtHeatSpace,,districtHeat,spaceHeat,,,mature,none,,,,
-networkHeat,Boiler,eBoilerDh,,electricity,districtHeat,,,mature,none,,,,
-networkHeat,Boiler,methaneBoilerDh,,methane,districtHeat,,,mature,none,,,,
-networkHeat,Boiler,h2BoilerDh,,h2,districtHeat,,,mature,none,,,,
-networkHeat,Boiler,oilBoilerDh,,refinedOil,districtHeat,,,mature,none,,,,
-networkHeat,Boiler,digestateBoilerDh,,digestate,districtHeat,,,mature,none,,,,
-networkHeat,Boiler,woodBoilerDh,,wood,districtHeat,,,mature,none,,,,2
-networkHeat,Boiler,greenWasteBoilerDh,,greenWaste,districtHeat,,,mature,none,,,,2
-networkHeat,Boiler,wasteBoilerDh,,waste,districtHeat,,,mature,none,,,,
-networkHeat,heatpump,heatpumpAirDh,,electricity,districtHeat,,,mature,none,,,,
-networkHeat,heatpump,heatpumpGroundDh,,electricity,districtHeat,,,mature,none,,,,
+networkHeat,boilerNetwork,eBoilerDh,,electricity,districtHeat,,,mature,none,,,,
+networkHeat,boilerNetwork,methaneBoilerDh,,methane,districtHeat,,,mature,none,,,,
+networkHeat,boilerNetwork,h2BoilerDh,,h2,districtHeat,,,mature,none,,,,
+networkHeat,boilerNetwork,oilBoilerDh,,refinedOil,districtHeat,,,mature,none,,,,
+networkHeat,boilerNetwork,digestateBoilerDh,,digestate,districtHeat,,,mature,none,,,,
+networkHeat,boilerNetwork,woodBoilerDh,,wood,districtHeat,,,mature,none,,,,2
+networkHeat,boilerNetwork,greenWasteBoilerDh,,greenWaste,districtHeat,,,mature,none,,,,2
+networkHeat,boilerNetwork,wasteBoilerDh,,waste,districtHeat,,,mature,none,,,,
+networkHeat,heatpumpNetwork,heatpumpAirDh,,electricity,districtHeat,,,mature,none,,,,
+networkHeat,heatpumpNetwork,heatpumpGroundDh,,electricity,districtHeat,,,mature,none,,,,
 networkHeat,heatStorage,pitThermalStorage,,,,districtHeat,districtHeat,mature,none,,,,
 networkHeat,heatStorage,largeWaterTank,,,,districtHeat,districtHeat,mature,none,,,,3
-spaceHeat,Boiler,woodBoilerSpace,,wood,spaceHeat,,,mature,none,,,,3
-spaceHeat,Boiler,methaneBoilerSpace,,methane,spaceHeat,,,mature,none,,,,
-spaceHeat,Boiler,oilBoilerSpace,,refinedOil,spaceHeat,,,mature,none,,,,3
+spaceHeat,boilerSpace,woodBoilerSpace,,wood,spaceHeat,,,mature,none,,,,3
+spaceHeat,boilerSpace,methaneBoilerSpace,,methane,spaceHeat,,,mature,none,,,,
+spaceHeat,boilerSpace,oilBoilerSpace,,refinedOil,spaceHeat,,,mature,none,,,,3
 spaceHeat,electricHeat,resistiveHeatSpace,,electricity,spaceHeat,,spaceHeat,mature,none,,,,
-spaceHeat,heatpump,heatpumpAirSpace,,electricity,spaceHeat,,spaceHeat,mature,none,,,,
-spaceHeat,heatpump,heatpumpGroundSpace,,electricity,spaceHeat,,spaceHeat,mature,none,,,,
-ProHeat,heatpump,heatpumpAirProLow,,electricity,processHeat_low,,processHeat_low,mature,none,,,,
-ProHeat,heatpump,heatpumpGroundProLow,,electricity,processHeat_low,,,mature,none,,,,
-ProHeat,heatpump,heatpumpGroundProMed,,electricity,processHeat_medium,,,mature,none,,,,
+spaceHeat,heatpumpSpace,heatpumpAirSpace,,electricity,spaceHeat,,spaceHeat,mature,none,,,,
+spaceHeat,heatpumpSpace,heatpumpGroundSpace,,electricity,spaceHeat,,spaceHeat,mature,none,,,,
+ProHeat,heatpumpPro,heatpumpAirProLow,,electricity,processHeat_low,,processHeat_low,mature,none,,,,
+ProHeat,heatpumpPro,heatpumpGroundProLow,,electricity,processHeat_low,,,mature,none,,,,
+ProHeat,heatpumpPro,heatpumpGroundProMed,,electricity,processHeat_medium,,,mature,none,,,,
 ProHeat,digestateBoilerPro,digestateBoilerProLow,,digestate,processHeat_low,,,mature,none,,,,
 ProHeat,digestateBoilerPro,digestateBoilerProMed,,digestate,processHeat_medium,,,mature,none,,,,
 ProHeat,digestateBoilerPro,digestateBoilerProHigh,,digestate,processHeat_high,,,mature,none,,,,
