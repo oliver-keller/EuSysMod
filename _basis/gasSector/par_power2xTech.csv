@@ -12,7 +12,7 @@ directAirCapture,,,costExpConv,2777.777778,
 directAirCapture,,,costOprConv,137.5,
 directAirCapture,,,effConv,0.555555556,
 directAirCapture,,,lifeConv,20,
-h2ToCrudeOil,capturedCO2,,enCont,0,
+h2ToCrudeOil,co2,co2Pure,enCont,0,
 h2ToCrudeOil,districtHeat,,ratioConvOutFix,0.192857143,
 h2ToCrudeOil,h2,,ratioConvInFix,0.83965954,
 h2ToCrudeOil,,,avaConv,0.942,
@@ -32,7 +32,7 @@ soElectrolysis,,,costExpConv,1341.895326,
 soElectrolysis,,,costOprConv,161.0274391,
 soElectrolysis,,,effConv,0.82,
 soElectrolysis,,,lifeConv,20,
-h2ToMethane,capturedCO2,,enCont,0,Assumption
+h2ToMethane,co2,co2Pure,enCont,0,Assumption
 h2ToMethane,districtHeat,,ratioConvOutFix,0.192857143,Assumption
 h2ToMethane,h2,,ratioConvInFix,0.83965954,Assumption
 h2ToMethane,,,avaConv,0.942,Assumption

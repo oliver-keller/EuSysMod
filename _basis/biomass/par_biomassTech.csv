@@ -129,17 +129,18 @@ pyrWoodCoalProLow,,,effConv,0.87,Assumption
 pyrMethaneH2,,,effConv,0.57,Assumption
 htcDigestate,,,effConv,,Assumption
 biomassToHvc,,,effConv,,Assumption
-MethanationWithH2,,,ratioConvInFix,0.535353535,Assumption
+MethanationWithH2,methane,,ratioConvInFix,0.535353535,Assumption
 biogasUpgrade,rawBiogas,,ratioConvInFix,0.535353535,Assumption
 pyrMethaneH2,methane,,ratioConvInFix,0.205714286,Assumption
-biomassToHvc,biomass,wood,ratioConvInFix,0.5,"Assumption, what to doo if three outputs?"
-biochemicalWoodOil,,,ratioConvOutFix,,Assumption
-digestionManure,rawBiogs,,ratioConvOutFix,0.5,Assumption
-digestionGreenWaste,rawBiogs,,ratioConvOutFix,0.5,Assumption
-digestionSludge,rawBiogs,,ratioConvOutFix,0.5,Assumption
+biomassToHvc,biomass,wood,ratioConvInFix,0.3,Assumption
+biomassToHvc,electricity,,ratioConvInFix,0.3,Assumption
+digestionManure,rawBiogas,,ratioConvOutFix,0.5,Assumption
+digestionGreenWaste,rawBiogas,,ratioConvOutFix,0.5,Assumption
+digestionSludge,rawBiogas,,ratioConvOutFix,0.5,Assumption
 pyrWoodCoalDh,coal,,ratioConvOutFix,0.4,Assumption
 pyrWoodCoalProLow,coal,,ratioConvOutFix,0.4,Assumption
-pyrMethaneH2,h2,,ratioConvOutFix,0.739348371,"Assumption, what to doo if three outputs?"
+pyrMethaneH2,h2,,ratioConvOutFix,0.6,Assumption
+pyrMethaneH2,coal,,ratioConvOutFix,0.2,Assumption
 htgDigestate,,,emissionFac,-130.4640474,Assumption
 htgGreenWaste,,,emissionFac,-130.4640474,Assumption
 htgSludge,,,emissionFac,-130.4640474,Assumption

@@ -11,9 +11,8 @@ crudeOil,,,refinery,emissionFac,13.14368023,
 refinedOil,,,,emissionFac,262.8736046,
 methane,,,,emissionFac,201.296363,
 ,,,refinery,effConv,0.95,
-,,,,,,
 coal,,,,emissionFac,500,Asumption
-synGas,,,,emissionFac,200,Asumption
+syngas,,,,emissionFac,200,Asumption
 rawBiogas,,,,emissionFac,0,Asumption
 uranum,,,,emissionFac,10,Asumption
 uranum,all,2040,,trdBuyPrc,1000,Asumption
