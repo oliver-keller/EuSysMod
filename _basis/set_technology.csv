@@ -79,7 +79,7 @@ powerToX,electrolysis,pemElectrolysis,,electricity,h2; districtHeat,,,mature,non
 powerToX,electrolysis,soElectrolysis,,electricity; processHeat_high,h2,,,emerging,none,,,,
 powerToX,,directAirCapture,,electricity; processHeat_low,co2Pure,,,mature,none,,,,
 powerToX,,h2ToCrudeOil,,h2; co2Pure,crudeOil; districtHeat,,,mature,none,,,,
-powerToX,sabatier,h2ToMethane,,h2; co2Pure,methane,,,mature,none,,,,
+powerToX,sabatier,h2ToMethane,,h2; co2Pure,methane; districtHeat,,,mature,none,,,,
 powerToX,,pefc,,h2,electricity; districtHeat,,,mature,none,,,,
 powerToX,,refinery,,crudeOil,refinedOil,,,mature,none,,,,
 powerToX,,sofc,,methane,electricity; processHeat_high,,,mature,none,,,,
