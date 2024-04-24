@@ -135,7 +135,7 @@ chpSyngasDh,,,electricity,ratioConvOutFix,0.5,Assumption
 chpSyngasDh,,,,effConv,0.85,Assumption
 chpSyngasProLow,,,electricity,ratioConvOutFix,0.5,Assumption
 chpSyngasProLow,,,,effConv,0.85,Assumption
-oilPlant,,,,effConv,40,Assumption
+oilPlant,,,,effConv,0.4,Assumption
 oilPlantDh,,,electricity,ratioConvOutFix,0.5,Assumption
 oilPlantDh,,,,effConv,0.85,Assumption
 oilPlantProLow,,,electricity,ratioConvOutFix,0.5,Assumption
