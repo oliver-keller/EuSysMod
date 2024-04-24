@@ -91,7 +91,7 @@ greenWasteBoilerProHigh,,costExpConv,500,Assumption
 wasteBoilerProLow,,costExpConv,500,Assumption
 wasteBoilerProMed,,costExpConv,500,Assumption
 wasteBoilerProHigh,,costExpConv,500,Assumption
-districtHeatPro,2040,costExpConv,58.98512637,
+districtHeatPro,,costExpConv,58.98512637,
 heatpumpAirProLow,2040,costOprConv,2.24,
 heatpumpGroundProLow,2040,costOprConv,2,Assumption
 heatpumpGroundProMed,2040,costOprConv,2,Assumption

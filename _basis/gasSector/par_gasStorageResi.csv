@@ -1,5 +1,4 @@
 region_4,technology_3,parameter_1,value_1,parameter_2,value_2,parameter_3,value_3,source
-,methaneStorage,costOprStSize,0.001635,,,,,"assumed 5% of expansion costs based on Danish Energy Agency (2021), Technology Data for Energy Storage"
 03ES,methaneStorage,capaStSizeResi,1439.864,stOutToStInFix,1.747,sizeToStOutFix,37.912,see gas/extract.jl
 04ES,methaneStorage,capaStSizeResi,50158.092,stOutToStInFix,1.49,sizeToStOutFix,138.155,
 05ES,methaneStorage,capaStSizeResi,9079.638,stOutToStInFix,1.79,sizeToStOutFix,123.009,
