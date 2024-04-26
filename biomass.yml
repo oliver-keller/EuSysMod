@@ -1,0 +1,88 @@
+vertices:
+  - label: "wood to oil"
+    name: "pyrWood"
+    color:
+      - 0.85
+      - 0.85
+      - 0.85
+    position:
+      - 0
+      - 0
+    type: "technology"
+    aggregating:
+      - "biochemicalWoodOil"
+
+  - label: "refinery"
+    name: "refinery"
+    color:
+      - 0.85
+      - 0.85
+      - 0.85
+    position:
+      - 0
+      - 0
+    type: "technology"
+
+  - label: "Aviation and Navigation"
+    name: "avaAndNaviTech"
+    color:
+      - 0.85
+      - 0.85
+      - 0.85
+    position:
+      - 0
+      - 0
+    type: "technology"
+
+  - label: "biomass"
+    name: "biomass"
+    color:
+      - 0.235
+      - 0.506
+      - 0.325
+    position:
+      - 0
+      - 0
+    type: "carrier"
+
+  - label: "wood"
+    name: "wood"
+    color:
+      - 0.235
+      - 0.506
+      - 0.325
+    position:
+      - 0
+      - 0
+    type: "carrier"
+
+  - label: "crudeOil"
+    name: "crudeOil"
+    color:
+      - 0.235
+      - 0.506
+      - 0.325
+    position:
+      - 0
+      - 0
+    type: "carrier"
+
+  - label: "refinedOil"
+    name: "refinedOil"
+    color:
+      - 0.235
+      - 0.506
+      - 0.325
+    position:
+      - 0
+      - 0
+    type: "carrier"
+
+edges:
+ # - biomass: "wood"
+ # - wood: "pyrWood"
+ # - pyrWood: "crudeOil"
+  - wood: "crudeOil"
+  - crudeOil: "refinery"
+  - refinery: "refinedOil"
+  - refinedOil: "avaAndNaviTech"
