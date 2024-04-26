@@ -19,7 +19,7 @@ inputMod_arr = ["_basis","timeSeries/" * h * "hours_2008"]
 resultDir_str = "results/biomass_included"
 
 #region # * create and solve main model
-anyM = anyModel(inputMod_arr,resultDir_str, supTsLvl = 2, shortExp = 5, redStep = 1.0, emissionLoss = false, holdFixed = true, objName = "biomass_included")
+anyM = anyModel(inputMod_arr,resultDir_str, supTsLvl = 2, shortExp = 5, redStep = 1.0, emissionLoss = false, holdFixed = true, objName = "only_bev")
 createOptModel!(anyM)
 setObjective!(:cost,anyM)
 
@@ -42,9 +42,9 @@ reportResults(:cost,anyM, addObjName = true)
 # reportTimeSeries(:electricity,anyM)
 
 # create plots
-# plotSankeyDiagram(anyM, dropDown = (:timestep,)) # sankey for the whole europe
+plotSankeyDiagram(anyM, dropDown = (:timestep,)) # sankey for the whole europe
 plotSankeyDiagram(anyM) # sankey with dropdown for the regions and contires
-plotSankeyDiagram(anyM; ymlFilter = "biomass.yml", dropDown = (:timestep,)) 
+plotSankeyDiagram(anyM; ymlFilter = "biomass.yml", dropDown = (:timestep, )) 
 # plotTree(:region, anyM)
 # plotTree(:carrier, anyM)
 # plotTree(:technology, anyM)
@@ -52,3 +52,5 @@ plotSankeyDiagram(anyM; ymlFilter = "biomass.yml", dropDown = (:timestep,))
 # plotNetworkGraph(anyM) # flow diagramm
 
 #endregion
+
+anyM.parts.tech[:bevPsngRoadPrvt].var
