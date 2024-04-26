@@ -19,7 +19,7 @@ inputMod_arr = ["_basis","timeSeries/" * h * "hours_2008"]
 resultDir_str = "results/biomass_included"
 
 #region # * create and solve main model
-anyM = anyModel(inputMod_arr,resultDir_str, supTsLvl = 2, shortExp = 5, redStep = 1.0, emissionLoss = false, holdFixed = true, objName = "only_bev")
+anyM = anyModel(inputMod_arr,resultDir_str, supTsLvl = 2, shortExp = 5, redStep = 1.0, emissionLoss = false, holdFixed = true, objName = "biomass_included")
 createOptModel!(anyM)
 setObjective!(:cost,anyM)
 
