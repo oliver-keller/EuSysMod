@@ -3,7 +3,7 @@ bevPsngRoadPrvt,costExpConv,5270.466667,
 bevPsngRoadPub,costExpConv,2200,
 bevFrtRoadLight,costExpConv,3333.633333,
 bevFrtRoadHeavy,costExpConv,1028.593333,
-bevPsngRoadPrvt,effConv,6.7,
+bevPsngRoadPrvt,effConv,10,1.5 person average and 15 kWh/100km
 bevPsngRoadPub,effConv,7.676,
 bevFrtRoadLight,effConv,0.793333333,
 bevFrtRoadHeavy,effConv,13.8764,
