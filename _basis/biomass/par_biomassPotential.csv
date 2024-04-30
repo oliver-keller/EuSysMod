@@ -1,169 +1,169 @@
 timestep_2,region_2,carrier_1,carrier_2,parameter,value,comments
-all,AL,biomass,wood,trdBuyUp,3759.234132,
-all,AT,biomass,wood,trdBuyUp,25017.96039,
-all,BA,biomass,wood,trdBuyUp,6393.235576,
-all,BE,biomass,wood,trdBuyUp,0,
-all,BG,biomass,wood,trdBuyUp,15725.81137,
-all,CH,biomass,wood,trdBuyUp,27497.43553,
-all,CZ,biomass,wood,trdBuyUp,28571.47801,
-all,DE,biomass,wood,trdBuyUp,75973.30719,
-all,DK,biomass,wood,trdBuyUp,17080.30185,
-all,EE,biomass,wood,trdBuyUp,10991.49214,
-all,ES,biomass,wood,trdBuyUp,69009.23432,
-all,FI,biomass,wood,trdBuyUp,50966.83473,
-all,FR,biomass,wood,trdBuyUp,62106.9807,
-all,GR,biomass,wood,trdBuyUp,0,
-all,HR,biomass,wood,trdBuyUp,4602.729686,
-all,HU,biomass,wood,trdBuyUp,28002.91485,
-all,IE,biomass,wood,trdBuyUp,7310.828643,
-all,IT,biomass,wood,trdBuyUp,16881.06037,
-all,LT,biomass,wood,trdBuyUp,0,
-all,LU,biomass,wood,trdBuyUp,909.4887294,
-all,LV,biomass,wood,trdBuyUp,22059.8766,
-all,ME,biomass,wood,trdBuyUp,7169.838191,
-all,MK,biomass,wood,trdBuyUp,4167.011276,
-all,NL,biomass,wood,trdBuyUp,0,
-all,NO,biomass,wood,trdBuyUp,26643.14826,
-all,PL,biomass,wood,trdBuyUp,61857.83553,
-all,PT,biomass,wood,trdBuyUp,2522.867535,
-all,RO,biomass,wood,trdBuyUp,61037.39196,
-all,RS,biomass,wood,trdBuyUp,24838.09697,
-all,SE,biomass,wood,trdBuyUp,97957.10656,
-all,SI,biomass,wood,trdBuyUp,10744.61675,
-all,SK,biomass,wood,trdBuyUp,14792.81617,
-all,UK,biomass,wood,trdBuyUp,0,
-all,AL,biomass,greenWaste,trdBuyUp,503.0877471,
-all,AT,biomass,greenWaste,trdBuyUp,1321.914161,
-all,BA,biomass,greenWaste,trdBuyUp,448.3572247,
-all,BE,biomass,greenWaste,trdBuyUp,10742.80638,
-all,BG,biomass,greenWaste,trdBuyUp,2738.102666,
-all,CH,biomass,greenWaste,trdBuyUp,5167.665136,
-all,CZ,biomass,greenWaste,trdBuyUp,11707.97141,
-all,DE,biomass,greenWaste,trdBuyUp,29337.96798,
-all,DK,biomass,greenWaste,trdBuyUp,12021.31842,
-all,EE,biomass,greenWaste,trdBuyUp,2311.868132,
-all,ES,biomass,greenWaste,trdBuyUp,30466.68754,
-all,FI,biomass,greenWaste,trdBuyUp,2233.984917,
-all,FR,biomass,greenWaste,trdBuyUp,71777.25098,
-all,GR,biomass,greenWaste,trdBuyUp,2126.402344,
-all,HR,biomass,greenWaste,trdBuyUp,903.3123517,
-all,HU,biomass,greenWaste,trdBuyUp,17686.3654,
-all,IE,biomass,greenWaste,trdBuyUp,5097.422399,
-all,IT,biomass,greenWaste,trdBuyUp,32106.36474,
-all,LT,biomass,greenWaste,trdBuyUp,4691.813627,
-all,LU,biomass,greenWaste,trdBuyUp,436.8550531,
-all,LV,biomass,greenWaste,trdBuyUp,2354.523375,
-all,ME,biomass,greenWaste,trdBuyUp,69.23311296,
-all,MK,biomass,greenWaste,trdBuyUp,218.4554855,
-all,NL,biomass,greenWaste,trdBuyUp,13561.58366,
-all,NO,biomass,greenWaste,trdBuyUp,9291.363665,
-all,PL,biomass,greenWaste,trdBuyUp,26212.28808,
-all,PT,biomass,greenWaste,trdBuyUp,7656.305405,
-all,RO,biomass,greenWaste,trdBuyUp,5969.327594,
-all,RS,biomass,greenWaste,trdBuyUp,2904.586435,
-all,SE,biomass,greenWaste,trdBuyUp,7875.223089,
-all,SI,biomass,greenWaste,trdBuyUp,413.0155143,
-all,SK,biomass,greenWaste,trdBuyUp,3445.82794,
-all,UK,biomass,greenWaste,trdBuyUp,44947.14242,
-all,AL,biomass,sludge,trdBuyUp,50.30877471,Assumption 1/10 of greenwaste
-all,AT,biomass,sludge,trdBuyUp,132.1914161,Assumption 1/10 of greenwaste
-all,BA,biomass,sludge,trdBuyUp,44.83572247,Assumption 1/10 of greenwaste
-all,BE,biomass,sludge,trdBuyUp,1074.280638,Assumption 1/10 of greenwaste
-all,BG,biomass,sludge,trdBuyUp,273.8102666,Assumption 1/10 of greenwaste
-all,CH,biomass,sludge,trdBuyUp,516.7665136,Assumption 1/10 of greenwaste
-all,CZ,biomass,sludge,trdBuyUp,1170.797141,Assumption 1/10 of greenwaste
-all,DE,biomass,sludge,trdBuyUp,2933.796798,Assumption 1/10 of greenwaste
-all,DK,biomass,sludge,trdBuyUp,1202.131842,Assumption 1/10 of greenwaste
-all,EE,biomass,sludge,trdBuyUp,231.1868132,Assumption 1/10 of greenwaste
-all,ES,biomass,sludge,trdBuyUp,3046.668754,Assumption 1/10 of greenwaste
-all,FI,biomass,sludge,trdBuyUp,223.3984917,Assumption 1/10 of greenwaste
-all,FR,biomass,sludge,trdBuyUp,7177.725098,Assumption 1/10 of greenwaste
-all,GR,biomass,sludge,trdBuyUp,212.6402344,Assumption 1/10 of greenwaste
-all,HR,biomass,sludge,trdBuyUp,90.33123517,Assumption 1/10 of greenwaste
-all,HU,biomass,sludge,trdBuyUp,1768.63654,Assumption 1/10 of greenwaste
-all,IE,biomass,sludge,trdBuyUp,509.7422399,Assumption 1/10 of greenwaste
-all,IT,biomass,sludge,trdBuyUp,3210.636474,Assumption 1/10 of greenwaste
-all,LT,biomass,sludge,trdBuyUp,469.1813627,Assumption 1/10 of greenwaste
-all,LU,biomass,sludge,trdBuyUp,43.68550531,Assumption 1/10 of greenwaste
-all,LV,biomass,sludge,trdBuyUp,235.4523375,Assumption 1/10 of greenwaste
-all,ME,biomass,sludge,trdBuyUp,6.923311296,Assumption 1/10 of greenwaste
-all,MK,biomass,sludge,trdBuyUp,21.84554855,Assumption 1/10 of greenwaste
-all,NL,biomass,sludge,trdBuyUp,1356.158366,Assumption 1/10 of greenwaste
-all,NO,biomass,sludge,trdBuyUp,929.1363665,Assumption 1/10 of greenwaste
-all,PL,biomass,sludge,trdBuyUp,2621.228808,Assumption 1/10 of greenwaste
-all,PT,biomass,sludge,trdBuyUp,765.6305405,Assumption 1/10 of greenwaste
-all,RO,biomass,sludge,trdBuyUp,596.9327594,Assumption 1/10 of greenwaste
-all,RS,biomass,sludge,trdBuyUp,290.4586435,Assumption 1/10 of greenwaste
-all,SE,biomass,sludge,trdBuyUp,787.5223089,Assumption 1/10 of greenwaste
-all,SI,biomass,sludge,trdBuyUp,41.30155143,Assumption 1/10 of greenwaste
-all,SK,biomass,sludge,trdBuyUp,344.582794,Assumption 1/10 of greenwaste
-all,UK,biomass,sludge,trdBuyUp,4494.714242,Assumption 1/10 of greenwaste
-all,AL,biomass,waste,trdBuyUp,503.0877471,Assumption same as greenwaste
-all,AT,biomass,waste,trdBuyUp,1321.914161,Assumption same as greenwaste
-all,BA,biomass,waste,trdBuyUp,448.3572247,Assumption same as greenwaste
-all,BE,biomass,waste,trdBuyUp,10742.80638,Assumption same as greenwaste
-all,BG,biomass,waste,trdBuyUp,2738.102666,Assumption same as greenwaste
-all,CH,biomass,waste,trdBuyUp,5167.665136,Assumption same as greenwaste
-all,CZ,biomass,waste,trdBuyUp,11707.97141,Assumption same as greenwaste
-all,DE,biomass,waste,trdBuyUp,29337.96798,Assumption same as greenwaste
-all,DK,biomass,waste,trdBuyUp,12021.31842,Assumption same as greenwaste
-all,EE,biomass,waste,trdBuyUp,2311.868132,Assumption same as greenwaste
-all,ES,biomass,waste,trdBuyUp,30466.68754,Assumption same as greenwaste
-all,FI,biomass,waste,trdBuyUp,2233.984917,Assumption same as greenwaste
-all,FR,biomass,waste,trdBuyUp,71777.25098,Assumption same as greenwaste
-all,GR,biomass,waste,trdBuyUp,2126.402344,Assumption same as greenwaste
-all,HR,biomass,waste,trdBuyUp,903.3123517,Assumption same as greenwaste
-all,HU,biomass,waste,trdBuyUp,17686.3654,Assumption same as greenwaste
-all,IE,biomass,waste,trdBuyUp,5097.422399,Assumption same as greenwaste
-all,IT,biomass,waste,trdBuyUp,32106.36474,Assumption same as greenwaste
-all,LT,biomass,waste,trdBuyUp,4691.813627,Assumption same as greenwaste
-all,LU,biomass,waste,trdBuyUp,436.8550531,Assumption same as greenwaste
-all,LV,biomass,waste,trdBuyUp,2354.523375,Assumption same as greenwaste
-all,ME,biomass,waste,trdBuyUp,69.23311296,Assumption same as greenwaste
-all,MK,biomass,waste,trdBuyUp,218.4554855,Assumption same as greenwaste
-all,NL,biomass,waste,trdBuyUp,13561.58366,Assumption same as greenwaste
-all,NO,biomass,waste,trdBuyUp,9291.363665,Assumption same as greenwaste
-all,PL,biomass,waste,trdBuyUp,26212.28808,Assumption same as greenwaste
-all,PT,biomass,waste,trdBuyUp,7656.305405,Assumption same as greenwaste
-all,RO,biomass,waste,trdBuyUp,5969.327594,Assumption same as greenwaste
-all,RS,biomass,waste,trdBuyUp,2904.586435,Assumption same as greenwaste
-all,SE,biomass,waste,trdBuyUp,7875.223089,Assumption same as greenwaste
-all,SI,biomass,waste,trdBuyUp,413.0155143,Assumption same as greenwaste
-all,SK,biomass,waste,trdBuyUp,3445.82794,Assumption same as greenwaste
-all,UK,biomass,waste,trdBuyUp,44947.14242,Assumption same as greenwaste
-all,AL,biomass,manure,trdBuyUp,50.30877471,Assumption 1/10 of greenwaste
-all,AT,biomass,manure,trdBuyUp,132.1914161,Assumption 1/10 of greenwaste
-all,BA,biomass,manure,trdBuyUp,44.83572247,Assumption 1/10 of greenwaste
-all,BE,biomass,manure,trdBuyUp,1074.280638,Assumption 1/10 of greenwaste
-all,BG,biomass,manure,trdBuyUp,273.8102666,Assumption 1/10 of greenwaste
-all,CH,biomass,manure,trdBuyUp,516.7665136,Assumption 1/10 of greenwaste
-all,CZ,biomass,manure,trdBuyUp,1170.797141,Assumption 1/10 of greenwaste
-all,DE,biomass,manure,trdBuyUp,2933.796798,Assumption 1/10 of greenwaste
-all,DK,biomass,manure,trdBuyUp,1202.131842,Assumption 1/10 of greenwaste
-all,EE,biomass,manure,trdBuyUp,231.1868132,Assumption 1/10 of greenwaste
-all,ES,biomass,manure,trdBuyUp,3046.668754,Assumption 1/10 of greenwaste
-all,FI,biomass,manure,trdBuyUp,223.3984917,Assumption 1/10 of greenwaste
-all,FR,biomass,manure,trdBuyUp,7177.725098,Assumption 1/10 of greenwaste
-all,GR,biomass,manure,trdBuyUp,212.6402344,Assumption 1/10 of greenwaste
-all,HR,biomass,manure,trdBuyUp,90.33123517,Assumption 1/10 of greenwaste
-all,HU,biomass,manure,trdBuyUp,1768.63654,Assumption 1/10 of greenwaste
-all,IE,biomass,manure,trdBuyUp,509.7422399,Assumption 1/10 of greenwaste
-all,IT,biomass,manure,trdBuyUp,3210.636474,Assumption 1/10 of greenwaste
-all,LT,biomass,manure,trdBuyUp,469.1813627,Assumption 1/10 of greenwaste
-all,LU,biomass,manure,trdBuyUp,43.68550531,Assumption 1/10 of greenwaste
-all,LV,biomass,manure,trdBuyUp,235.4523375,Assumption 1/10 of greenwaste
-all,ME,biomass,manure,trdBuyUp,6.923311296,Assumption 1/10 of greenwaste
-all,MK,biomass,manure,trdBuyUp,21.84554855,Assumption 1/10 of greenwaste
-all,NL,biomass,manure,trdBuyUp,1356.158366,Assumption 1/10 of greenwaste
-all,NO,biomass,manure,trdBuyUp,929.1363665,Assumption 1/10 of greenwaste
-all,PL,biomass,manure,trdBuyUp,2621.228808,Assumption 1/10 of greenwaste
-all,PT,biomass,manure,trdBuyUp,765.6305405,Assumption 1/10 of greenwaste
-all,RO,biomass,manure,trdBuyUp,596.9327594,Assumption 1/10 of greenwaste
-all,RS,biomass,manure,trdBuyUp,290.4586435,Assumption 1/10 of greenwaste
-all,SE,biomass,manure,trdBuyUp,787.5223089,Assumption 1/10 of greenwaste
-all,SI,biomass,manure,trdBuyUp,41.30155143,Assumption 1/10 of greenwaste
-all,SK,biomass,manure,trdBuyUp,344.582794,Assumption 1/10 of greenwaste
-all,UK,biomass,manure,trdBuyUp,4494.714242,Assumption 1/10 of greenwaste
+all,AL,biomass,wood,trdBuyUp,3759.234132,Old EuSysMod Value
+all,AT,biomass,wood,trdBuyUp,17069.11989,Enspresso Aggregated (Diego) ENS_LOW_FORESTBau / NUTS2 [GWh]
+all,BA,biomass,wood,trdBuyUp,6393.235576,Old EuSysMod Value
+all,BE,biomass,wood,trdBuyUp,4986.598226,Enspresso Aggregated (Diego)
+all,BG,biomass,wood,trdBuyUp,12344.03764,Enspresso Aggregated (Diego)
+all,CH,biomass,wood,trdBuyUp,17139.64232,EnergyScope
+all,CZ,biomass,wood,trdBuyUp,6277.130772,Enspresso Aggregated (Diego)
+all,DE,biomass,wood,trdBuyUp,67285.37717,Enspresso Aggregated (Diego)
+all,DK,biomass,wood,trdBuyUp,2734.060761,Enspresso Aggregated (Diego)
+all,EE,biomass,wood,trdBuyUp,3112.933237,Enspresso Aggregated (Diego)
+all,ES,biomass,wood,trdBuyUp,16125.20678,Enspresso Aggregated (Diego)
+all,FI,biomass,wood,trdBuyUp,14293.48935,Enspresso Aggregated (Diego)
+all,FR,biomass,wood,trdBuyUp,88056.93778,Enspresso Aggregated (Diego)
+all,GR,biomass,wood,trdBuyUp,4230.531066,Enspresso Aggregated (Diego)
+all,HR,biomass,wood,trdBuyUp,3437.027218,Enspresso Aggregated (Diego)
+all,HU,biomass,wood,trdBuyUp,9666.116217,Enspresso Aggregated (Diego)
+all,IE,biomass,wood,trdBuyUp,1638.18255,Enspresso Aggregated (Diego)
+all,IT,biomass,wood,trdBuyUp,22283.56993,Enspresso Aggregated (Diego)
+all,LT,biomass,wood,trdBuyUp,5505.141263,Enspresso Aggregated (Diego)
+all,LU,biomass,wood,trdBuyUp,359.0017609,Enspresso Aggregated (Diego)
+all,LV,biomass,wood,trdBuyUp,10421.70837,Enspresso Aggregated (Diego)
+all,ME,biomass,wood,trdBuyUp,7169.838191,Old EuSysMod Value
+all,MK,biomass,wood,trdBuyUp,4167.011276,Old EuSysMod Value
+all,NL,biomass,wood,trdBuyUp,1429.208656,Enspresso Aggregated (Diego)
+all,NO,biomass,wood,trdBuyUp,26643.14826,Old EuSysMod Value
+all,PL,biomass,wood,trdBuyUp,17737.45857,Enspresso Aggregated (Diego)
+all,PT,biomass,wood,trdBuyUp,7455.270753,Enspresso Aggregated (Diego)
+all,RO,biomass,wood,trdBuyUp,23614.6028,Enspresso Aggregated (Diego)
+all,RS,biomass,wood,trdBuyUp,24838.09697,Old EuSysMod Value
+all,SE,biomass,wood,trdBuyUp,31979.49472,Enspresso Aggregated (Diego)
+all,SI,biomass,wood,trdBuyUp,3578.350849,Enspresso Aggregated (Diego)
+all,SK,biomass,wood,trdBuyUp,2490.622703,Enspresso Aggregated (Diego)
+all,UK,biomass,wood,trdBuyUp,9955.149085,Enspresso Aggregated (Diego)
+all,AL,biomass,greenWaste,trdBuyUp,503.0877471,Old EuSysMod Value
+all,AT,biomass,greenWaste,trdBuyUp,4084.699344,Enspresso Aggregated (Diego)
+all,BA,biomass,greenWaste,trdBuyUp,448.3572247,Old EuSysMod Value
+all,BE,biomass,greenWaste,trdBuyUp,990.2857,Enspresso Aggregated (Diego)
+all,BG,biomass,greenWaste,trdBuyUp,3480.208397,Enspresso Aggregated (Diego)
+all,CH,biomass,greenWaste,trdBuyUp,3248.579247,EnergyScope
+all,CZ,biomass,greenWaste,trdBuyUp,6296.069813,Enspresso Aggregated (Diego)
+all,DE,biomass,greenWaste,trdBuyUp,34225.37658,Enspresso Aggregated (Diego)
+all,DK,biomass,greenWaste,trdBuyUp,2666.732445,Enspresso Aggregated (Diego)
+all,EE,biomass,greenWaste,trdBuyUp,1144.434155,Enspresso Aggregated (Diego)
+all,ES,biomass,greenWaste,trdBuyUp,9474.461906,Enspresso Aggregated (Diego)
+all,FI,biomass,greenWaste,trdBuyUp,3278.887342,Enspresso Aggregated (Diego)
+all,FR,biomass,greenWaste,trdBuyUp,28608.40942,Enspresso Aggregated (Diego)
+all,GR,biomass,greenWaste,trdBuyUp,1448.994925,Enspresso Aggregated (Diego)
+all,HR,biomass,greenWaste,trdBuyUp,986.95234,Enspresso Aggregated (Diego)
+all,HU,biomass,greenWaste,trdBuyUp,6248.983325,Enspresso Aggregated (Diego)
+all,IE,biomass,greenWaste,trdBuyUp,24.139082,Enspresso Aggregated (Diego)
+all,IT,biomass,greenWaste,trdBuyUp,6394.312265,Enspresso Aggregated (Diego)
+all,LT,biomass,greenWaste,trdBuyUp,3226.864704,Enspresso Aggregated (Diego)
+all,LU,biomass,greenWaste,trdBuyUp,30.60052258,Enspresso Aggregated (Diego)
+all,LV,biomass,greenWaste,trdBuyUp,1231.570964,Enspresso Aggregated (Diego)
+all,ME,biomass,greenWaste,trdBuyUp,69.23311296,Old EuSysMod Value
+all,MK,biomass,greenWaste,trdBuyUp,218.4554855,Old EuSysMod Value
+all,NL,biomass,greenWaste,trdBuyUp,869.284732,Enspresso Aggregated (Diego)
+all,NO,biomass,greenWaste,trdBuyUp,9291.363665,Old EuSysMod Value
+all,PL,biomass,greenWaste,trdBuyUp,11254.61504,Enspresso Aggregated (Diego)
+all,PT,biomass,greenWaste,trdBuyUp,675.047067,Enspresso Aggregated (Diego)
+all,RO,biomass,greenWaste,trdBuyUp,8336.611137,Enspresso Aggregated (Diego)
+all,RS,biomass,greenWaste,trdBuyUp,2904.586435,Old EuSysMod Value
+all,SE,biomass,greenWaste,trdBuyUp,2944.056886,Enspresso Aggregated (Diego)
+all,SI,biomass,greenWaste,trdBuyUp,103.4063828,Enspresso Aggregated (Diego)
+all,SK,biomass,greenWaste,trdBuyUp,1981.890855,Enspresso Aggregated (Diego)
+all,UK,biomass,greenWaste,trdBuyUp,9872.665092,Enspresso Aggregated (Diego)
+all,AL,biomass,sludge,trdBuyUp,0,Assumption
+all,AT,biomass,sludge,trdBuyUp,847.50678,Enspresso Aggregated (Diego)
+all,BA,biomass,sludge,trdBuyUp,0,Assumption
+all,BE,biomass,sludge,trdBuyUp,2995.57952,Enspresso Aggregated (Diego)
+all,BG,biomass,sludge,trdBuyUp,0,Enspresso Aggregated (Diego)
+all,CH,biomass,sludge,trdBuyUp,1689.536328,EnergyScope
+all,CZ,biomass,sludge,trdBuyUp,96.66744,Enspresso Aggregated (Diego)
+all,DE,biomass,sludge,trdBuyUp,1728.34716,Enspresso Aggregated (Diego)
+all,DK,biomass,sludge,trdBuyUp,56.66712,Enspresso Aggregated (Diego)
+all,EE,biomass,sludge,trdBuyUp,0,Enspresso Aggregated (Diego)
+all,ES,biomass,sludge,trdBuyUp,294.4468,Enspresso Aggregated (Diego)
+all,FI,biomass,sludge,trdBuyUp,698.6167,Enspresso Aggregated (Diego)
+all,FR,biomass,sludge,trdBuyUp,1.66668,Enspresso Aggregated (Diego)
+all,GR,biomass,sludge,trdBuyUp,110.27866,Enspresso Aggregated (Diego)
+all,HR,biomass,sludge,trdBuyUp,7.50006,Enspresso Aggregated (Diego)
+all,HU,biomass,sludge,trdBuyUp,58.3338,Enspresso Aggregated (Diego)
+all,IE,biomass,sludge,trdBuyUp,0.55556,Enspresso Aggregated (Diego)
+all,IT,biomass,sludge,trdBuyUp,53.05598,Enspresso Aggregated (Diego)
+all,LT,biomass,sludge,trdBuyUp,0,Enspresso Aggregated (Diego)
+all,LU,biomass,sludge,trdBuyUp,0,Enspresso Aggregated (Diego)
+all,LV,biomass,sludge,trdBuyUp,0.27778,Enspresso Aggregated (Diego)
+all,ME,biomass,sludge,trdBuyUp,0,Assumption
+all,MK,biomass,sludge,trdBuyUp,0,Assumption
+all,NL,biomass,sludge,trdBuyUp,77.7784,Enspresso Aggregated (Diego)
+all,NO,biomass,sludge,trdBuyUp,0,Assumption
+all,PL,biomass,sludge,trdBuyUp,195.27934,Enspresso Aggregated (Diego)
+all,PT,biomass,sludge,trdBuyUp,123.6121,Enspresso Aggregated (Diego)
+all,RO,biomass,sludge,trdBuyUp,4.44448,Enspresso Aggregated (Diego)
+all,RS,biomass,sludge,trdBuyUp,0,Assumption
+all,SE,biomass,sludge,trdBuyUp,372.78076,Enspresso Aggregated (Diego)
+all,SI,biomass,sludge,trdBuyUp,13.61122,Enspresso Aggregated (Diego)
+all,SK,biomass,sludge,trdBuyUp,0.27778,Enspresso Aggregated (Diego)
+all,UK,biomass,sludge,trdBuyUp,31.38914,Enspresso Aggregated (Diego)
+all,AL,biomass,waste,trdBuyUp,0,Assumption
+all,AT,biomass,waste,trdBuyUp,1642.632308,Enspresso Aggregated (Diego)
+all,BA,biomass,waste,trdBuyUp,0,Assumption
+all,BE,biomass,waste,trdBuyUp,8105.375954,Enspresso Aggregated (Diego)
+all,BG,biomass,waste,trdBuyUp,728.077769,Enspresso Aggregated (Diego)
+all,CH,biomass,waste,trdBuyUp,20804.09654,EnergyScope
+all,CZ,biomass,waste,trdBuyUp,806.8467325,Enspresso Aggregated (Diego)
+all,DE,biomass,waste,trdBuyUp,21210.61135,Enspresso Aggregated (Diego)
+all,DK,biomass,waste,trdBuyUp,5455.399198,Enspresso Aggregated (Diego)
+all,EE,biomass,waste,trdBuyUp,711.4470804,Enspresso Aggregated (Diego)
+all,ES,biomass,waste,trdBuyUp,6265.475123,Enspresso Aggregated (Diego)
+all,FI,biomass,waste,trdBuyUp,2768.69076,Enspresso Aggregated (Diego)
+all,FR,biomass,waste,trdBuyUp,18386.30264,Enspresso Aggregated (Diego)
+all,GR,biomass,waste,trdBuyUp,648.676856,Enspresso Aggregated (Diego)
+all,HR,biomass,waste,trdBuyUp,17.96347704,Enspresso Aggregated (Diego)
+all,HU,biomass,waste,trdBuyUp,1955.518144,Enspresso Aggregated (Diego)
+all,IE,biomass,waste,trdBuyUp,478.1993811,Enspresso Aggregated (Diego)
+all,IT,biomass,waste,trdBuyUp,7080.189974,Enspresso Aggregated (Diego)
+all,LT,biomass,waste,trdBuyUp,310.0663694,Enspresso Aggregated (Diego)
+all,LU,biomass,waste,trdBuyUp,33.1322095,Enspresso Aggregated (Diego)
+all,LV,biomass,waste,trdBuyUp,173.2761084,Enspresso Aggregated (Diego)
+all,ME,biomass,waste,trdBuyUp,0,Assumption
+all,MK,biomass,waste,trdBuyUp,0,Assumption
+all,NL,biomass,waste,trdBuyUp,10357.75231,Enspresso Aggregated (Diego)
+all,NO,biomass,waste,trdBuyUp,0,Assumption
+all,PL,biomass,waste,trdBuyUp,5649.614641,Enspresso Aggregated (Diego)
+all,PT,biomass,waste,trdBuyUp,2689.692351,Enspresso Aggregated (Diego)
+all,RO,biomass,waste,trdBuyUp,1871.568861,Enspresso Aggregated (Diego)
+all,RS,biomass,waste,trdBuyUp,0,Assumption
+all,SE,biomass,waste,trdBuyUp,6412.762413,Enspresso Aggregated (Diego)
+all,SI,biomass,waste,trdBuyUp,212.1830863,Enspresso Aggregated (Diego)
+all,SK,biomass,waste,trdBuyUp,832.8202736,Enspresso Aggregated (Diego)
+all,UK,biomass,waste,trdBuyUp,4669.895692,Enspresso Aggregated (Diego)
+all,AL,biomass,manure,trdBuyUp,0,Assumption
+all,AT,biomass,manure,trdBuyUp,83.334,Enspresso Aggregated (Diego)
+all,BA,biomass,manure,trdBuyUp,0,Assumption
+all,BE,biomass,manure,trdBuyUp,3027.802,Enspresso Aggregated (Diego)
+all,BG,biomass,manure,trdBuyUp,861.118,Enspresso Aggregated (Diego)
+all,CH,biomass,manure,trdBuyUp,7318.020411,EnergyScope
+all,CZ,biomass,manure,trdBuyUp,9638.966,Enspresso Aggregated (Diego)
+all,DE,biomass,manure,trdBuyUp,12722.324,Enspresso Aggregated (Diego)
+all,DK,biomass,manure,trdBuyUp,8722.292,Enspresso Aggregated (Diego)
+all,EE,biomass,manure,trdBuyUp,1833.348,Enspresso Aggregated (Diego)
+all,ES,biomass,manure,trdBuyUp,20777.944,Enspresso Aggregated (Diego)
+all,FI,biomass,manure,trdBuyUp,305.558,Enspresso Aggregated (Diego)
+all,FR,biomass,manure,trdBuyUp,15555.68,Enspresso Aggregated (Diego)
+all,GR,biomass,manure,trdBuyUp,944.452,Enspresso Aggregated (Diego)
+all,HR,biomass,manure,trdBuyUp,660.1180587,Enspresso Aggregated (Diego)
+all,HU,biomass,manure,trdBuyUp,15277.9,Enspresso Aggregated (Diego)
+all,IE,biomass,manure,trdBuyUp,1111.12,Enspresso Aggregated (Diego)
+all,IT,biomass,manure,trdBuyUp,15277.9,Enspresso Aggregated (Diego)
+all,LT,biomass,manure,trdBuyUp,4250.034,Enspresso Aggregated (Diego)
+all,LU,biomass,manure,trdBuyUp,0,Enspresso Aggregated (Diego)
+all,LV,biomass,manure,trdBuyUp,1805.57,Enspresso Aggregated (Diego)
+all,ME,biomass,manure,trdBuyUp,0,Assumption
+all,MK,biomass,manure,trdBuyUp,0,Assumption
+all,NL,biomass,manure,trdBuyUp,7166.724,Enspresso Aggregated (Diego)
+all,NO,biomass,manure,trdBuyUp,0,Assumption
+all,PL,biomass,manure,trdBuyUp,20111.272,Enspresso Aggregated (Diego)
+all,PT,biomass,manure,trdBuyUp,3500.028,Enspresso Aggregated (Diego)
+all,RO,biomass,manure,trdBuyUp,4305.59,Enspresso Aggregated (Diego)
+all,RS,biomass,manure,trdBuyUp,0,Assumption
+all,SE,biomass,manure,trdBuyUp,1555.568,Enspresso Aggregated (Diego)
+all,SI,biomass,manure,trdBuyUp,250.002,Enspresso Aggregated (Diego)
+all,SK,biomass,manure,trdBuyUp,2583.354,Enspresso Aggregated (Diego)
+all,UK,biomass,manure,trdBuyUp,19694.602,Enspresso Aggregated (Diego)
 ,,biomass,wood,trdBuyPrc,0,
 ,,biomass,greenWaste,trdBuyPrc,0,
 ,,biomass,sludge,trdBuyPrc,0,
