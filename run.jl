@@ -16,7 +16,7 @@ h = "96"
 
 # obj_str = h * "hours_" * h_heu * "hoursHeu" * grid * "_updated"
 inputMod_arr = ["_basis","timeSeries/" * h * "hours_2008"]
-resultDir_str = "results/biomass_included"
+resultDir_str = "results"
 
 #region # * create and solve main model
 anyM = anyModel(inputMod_arr,resultDir_str, supTsLvl = 2, shortExp = 5, redStep = 1.0, emissionLoss = false, holdFixed = true, objName = "biomass_included")
@@ -42,9 +42,10 @@ reportResults(:cost,anyM, addObjName = true)
 # reportTimeSeries(:electricity,anyM)
 
 # create plots
-plotSankeyDiagram(anyM, dropDown = (:timestep,)) # sankey for the whole europe
-plotSankeyDiagram(anyM) # sankey with dropdown for the regions and contires
+# plotSankeyDiagram(anyM, dropDown = (:timestep,)) # sankey for the whole europe
+# plotSankeyDiagram(anyM) # sankey with dropdown for the regions and contires
 plotSankeyDiagram(anyM; ymlFilter = "biomass.yml", dropDown = (:timestep, )) 
+plotSankeyDiagram(anyM; ymlFilter = "biomass.yml") 
 # plotTree(:region, anyM)
 # plotTree(:carrier, anyM)
 # plotTree(:technology, anyM)

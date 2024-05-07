@@ -1,88 +1,601 @@
-vertices:
-  - label: "wood to oil"
-    name: "pyrWood"
-    color:
-      - 0.85
-      - 0.85
-      - 0.85
-    position:
-      - 0
-      - 0
-    type: "technology"
+vertices:   ###################   Technologies   #########################################
+
+  - label: electric space heating
+    name: heatpumpGroundSpace
+    type: technology
     aggregating:
-      - "biochemicalWoodOil"
+      - heatpumpAirSpace
+      - resistiveHeatSpace
+    color: [0]
+    position: [0]
 
-  - label: "refinery"
-    name: "refinery"
-    color:
-      - 0.85
-      - 0.85
-      - 0.85
-    position:
-      - 0
-      - 0
-    type: "technology"
+  - label: methaneBoilerSpace
+    name: methaneBoilerSpace
+    type: technology
+    color: [0]
+    position: [0]
 
-  - label: "Aviation and Navigation"
-    name: "avaAndNaviTech"
-    color:
-      - 0.85
-      - 0.85
-      - 0.85
-    position:
-      - 0
-      - 0
-    type: "technology"
+  - label: woodBoilerSpace
+    name: woodBoilerSpace
+    type: technology
+    color: [0]
+    position: [0]
 
-  - label: "biomass"
-    name: "biomass"
-    color:
-      - 0.235
-      - 0.506
-      - 0.325
-    position:
-      - 0
-      - 0
-    type: "carrier"
+  - label: oilBoilerSpace
+    name: oilBoilerSpace
+    type: technology
+    color: [0]
+    position: [0]
 
-  - label: "wood"
-    name: "wood"
-    color:
-      - 0.235
-      - 0.506
-      - 0.325
-    position:
-      - 0
-      - 0
-    type: "carrier"
+  - label: heatpumpPro
+    name: heatpumpAirProLow
+    aggregating: [heatpumpGroundProLow, heatpumpGroundProMed]
+    type: technology
+    color: [0]
+    position: [0]
 
-  - label: "crudeOil"
-    name: "crudeOil"
-    color:
-      - 0.235
-      - 0.506
-      - 0.325
-    position:
-      - 0
-      - 0
-    type: "carrier"
+  - label: heatpumpNetwork
+    name: heatpumpAirDh
+    aggregating: [heatpumpGroundDh]
+    type: technology
+    color: [0]
+    position: [0]
 
-  - label: "refinedOil"
-    name: "refinedOil"
-    color:
-      - 0.235
-      - 0.506
-      - 0.325
-    position:
-      - 0
-      - 0
-    type: "carrier"
+  - label: methaneBoiler
+    name: methaneBoilerProHigh
+    aggregating: [methaneBoilerProLow, methaneBoilerProMed]
+    type: technology
+    color: [0]
+    position: [0]
 
-edges:
- # - biomass: "wood"
- # - wood: "pyrWood"
- # - pyrWood: "crudeOil"
-  - wood: "crudeOil"
-  - crudeOil: "refinery"
-  - refinery: "refinedOil"
-  - refinedOil: "avaAndNaviTech"
+  - label: wasteBoiler
+    name: wasteBoilerProLow
+    aggregating: [wasteBoilerProMed, wasteBoilerProHigh]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: woodBoiler
+    name: woodBoilerProLow
+    aggregating: [woodBoilerProMed, woodBoilerProHigh]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: digestateBoiler
+    name: digestateBoilerProLow
+    aggregating: [digestateBoilerProMed, digestateBoilerProHigh]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: greenWasteBoiler
+    name: greenWasteBoilerProLow
+    aggregating: [greenWasteBoilerProMed, greenWasteBoilerProHigh]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: bioBoiler
+    name: bioBoilerProLow
+    aggregating: [bioBoilerProMed, bioBoilerProHigh]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: electric process heating
+    name: eBoilerProLow
+    aggregating: [eBoilerProMed, eBoilerProHigh]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: h2Boiler
+    name: h2BoilerProLow
+    aggregating: [h2BoilerProMed, h2BoilerProHigh]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: oilBoiler
+    name: oilBoilerProLow
+    aggregating: [oilBoilerProMed, oilBoilerProHigh]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: electrolysis
+    name: soElectrolysis
+    aggregating: [pemElectrolysis, alkElectrolysis]
+    type: technology
+    color: [0]
+    position: [0]
+  
+  - label: thermal storage
+    name: pitThermalStorage
+    aggregating: [largeWaterTank]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: cspOpenspace
+    name: cspOpenspace_c
+    aggregating: [cspOpenspace_a, cspOpenspace_b]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: battery
+    name: lithiumBattery
+    aggregating: [redoxBattery]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: engine
+    name: bioGasEngineDh
+    type: technology
+    aggregating: [methaneEngineDh, syngasEngineDh, bioGasEngineProLow, methaneEngineProLow, syngasEngineProLow, bioGasEngineProMed, methaneEngineProMed, syngasEngineProMed, dieselEnginePeak, methaneEnginePeak]
+    color: [0]
+    position: [0]
+
+  - label: rail transport
+    name: fcFrtRail
+    aggregating: [fcPsngRail, dieselFrtRail, dieselPsngRail, eFrtRail, ePsngRail]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: road transport
+    name: bevFrtRoadHeavy
+    aggregating: [bevFrtRoadLight, bevPsngRoadPrvt, bevPsngRoadPub, cngPsngRoadPrvt, dieselFrtRoadHeavy, dieselFrtRoadLight, dieselPsngRoadPub, fcevPsngRoadPrvt, fcFrtRoadHeavy, fcFrtRoadLight, fcPsngRoadPub, oberFrtRoadHeavy, ottoPsngRoadPrvt]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: pumped storage
+    name: pumpedStorage
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: DH boiler
+    name: eBoilerDh
+    aggregating: [methaneBoilerDh, h2BoilerDh, oilBoilerDh, digestateBoilerDh, woodBoilerDh, greenWasteBoilerDh, wasteBoilerDh]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: gas turbine
+    name: ccgtGasDh
+    aggregating: [ccgtH2Dh, ccgtGasProMed, ccgtH2ProMed, ocgtGas, ocgtGasChp, ocgtH2, ocgtH2Chp]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: solarThermal
+    name: solarThermalResi_a
+    aggregating: [solarThermalResi_b]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: wind
+    name: onshore_a
+    type: technology
+    aggregating:
+      - onshore_b
+      - onshore_c
+      - offshore_a
+      - offshore_b
+    color: [0]
+    position: [0]
+
+  - label: nuclear
+    name: nuclearDh
+    aggregating: [nuclearProMed]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: gasStorage
+    name: co2PureStorage
+    aggregating: [methaneStorage, h2StorageCavern, h2StorageTank, syngasStorage]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: direct air capture
+    name: directAirCapture
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: reservoir
+    name: reservoir
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: fuel cell
+    name: pefc
+    aggregating: [sofc]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: heatGrid
+    name: districtHeatPro
+    aggregating: [districtHeatSpace]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: run-of-river
+    name: runOfRiver
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: H2 to crude oil
+    name: h2ToCrudeOil
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: refinery
+    name: refinery
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: PV
+    name: pvOpenspace_a
+    type: technology
+    aggregating:
+      - pvOpenspace_b
+      - pvOpenspace_c
+      - pvInd_a
+      - pvInd_b
+      - pvResi_a
+      - pvResi_b
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: oilPlant
+    name: oilPlant
+    aggregating: [oilPlantDh, oilPlantProLow, oilPlantProMed]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: coalPlant
+    name: coalDh
+    aggregating: [coalProMed]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: h2ToCrudeOil
+    name: h2ToCrudeOil
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: h2ToMethanem(Sabatier)
+    name: h2ToMethane
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: aviation and navigation
+    name: avaAndNaviTech
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: haberBoschH2Ammonia
+    name: haberBoschH2AmmoniaDh
+    aggregating: [haberBoschH2AmmoniaProLow]
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: ammoniaCracking
+    name: ammoniaCracking
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: gasToHvc
+    name: gasToHvc
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: stemMethaneReforming
+    name: stemMethaneReforming
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: CHP
+    name: chpDigestateDh
+    aggregating: 
+    - chpDigestateDh
+    - chpDigestateProLow
+    - chpWoodDh
+    - chpWoodProLow
+    - chpGreenWasteDh
+    - chpGreenWasteProLow
+    - chpWasteDh
+    - chpWasteProLow
+    - chpSyngasDh
+    - chpSyngasProLow
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: hydrothermalLiquefaction
+    name: htlManure
+    aggregating: 
+    - htlGreenWaste
+    - htlSludge
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: hydrothermalGasification
+    name: htgDigestate
+    aggregating: 
+    - htgGreenWaste
+    - htgSludge
+    - htgManure
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: pyrolysis
+    name: pyrWood
+    aggregating: 
+    - pyrWoodCoalDh
+    - pyrWoodCoalProLow
+    - pyrMethaneH2
+    - pyrGreenWaste
+    - pyrWaste
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: biochemicalWoodOil
+    name: biochemicalWoodOil
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: biomassToHvc
+    name: biomassToHvc
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: hydrothermalCarbonization
+    name: htcDigestate
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: digestion
+    name: digestionSludge
+    aggregating: 
+    - digestionManure
+    - digestionGreenWaste
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: biogasUpgrade
+    name: biogasUpgrade
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: syngasUpgrade
+    name: waterGasShift
+    aggregating: 
+    - Methanation
+    - MethanationWithH2
+    - fischerTropsch
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: gasification
+    name: gasificationGreenWasteSyngas
+    aggregating: 
+    - gasificationWoodSyngas
+    type: technology
+    color: [0]
+    position: [0]
+
+
+
+###################   Carriers   #########################################
+
+
+  - label: biomass
+    name: biomass
+    type: carrier
+    color: [0.682, 0.898, 0.443]
+    position: [0]
+
+  - label: sludge
+    name: sludge
+    type: carrier
+    color: [0.682, 0.898, 0.443]
+    position: [0]
+
+  - label: greenWaste
+    name: greenWaste
+    type: carrier
+    color: [0.682, 0.898, 0.443]
+    position: [0]
+
+  - label: wood
+    name: wood
+    type: carrier
+    color: [0.682, 0.898, 0.443]
+    position: [0]
+
+  - label: waste
+    name: waste
+    type: carrier
+    color: [0.682, 0.898, 0.443]
+    position: [0]
+
+  - label: manure
+    name: manure
+    type: carrier
+    color: [0.682, 0.898, 0.443]
+    position: [0]
+
+  - label: digestate
+    name: digestate
+    type: carrier
+    color: [0.682, 0.898, 0.443]
+    position: [0]
+
+  - label: raw biogas
+    name: rawBiogas
+    type: carrier
+    color: [0.682, 0.898, 0.443]
+    position: [0]
+
+#  - label: electricity
+#    name: electricity
+#    type: carrier
+#    color: [1.0, 0.9215, 0.2313]
+#    position: [0]
+
+#  - label: space heat
+#    name: spaceHeat
+#    type: carrier
+#    color: [1.0, 0.4549019607843137, 0.5215686274509804]
+#    position: [0]
+
+  - label: syngas
+    name: syngas
+    type: carrier
+    color: [0.235, 0.506, 0.325]
+    position: [0]
+
+  - label: methane
+    name: methane
+    type: carrier
+    color: [0.235, 0.506, 0.325]
+    position: [0]
+
+#  - label: refined oil
+#    name: refinedOil
+#    type: carrier
+#    color: [0.33725490196078434, 0.3411764705882353, 0.3254901960784314]
+#    position: [0]
+
+  - label: H2
+    name: h2
+    type: carrier
+    color: [0.329, 0.447, 0.827]
+    position: [0]
+
+#  - label: district heat
+#    name: districtHeat
+#    type: carrier
+#    color: [0.6, 0.0, 0.169]
+#    position: [0]
+
+
+#  - label: process heat
+#    name: processHeat_medium
+#    aggregating: [processHeat_low, processHeat_high]
+#    type: carrier
+#    color: [0.6823529411764706, 0.07058823529411765, 0.22745098039215686]
+#    position: [0]
+
+#  - label: transport
+#    name: psngRoadPrvt
+#    aggregating: [frtRoadLight, frtRoadHeavy, frtRail, psngRail, psngRoadPub]
+#    type: carrier
+#    color: [0.43529411764705883, 0.7843137254901961, 0.7137254901960784]
+#    position: [0]
+
+  - label: co2Pure
+    name: co2Pure
+    type: carrier
+    color: [0.0, 0.0, 0.0]
+    position: [0]
+
+  - label: synthetic oil
+    name: crudeOil
+    type: carrier
+    color: [0.33725490196078434, 0.3411764705882353, 0.3254901960784314]
+    position: [0]
+
+#  - label: jet fuel & methanol
+#    name: avaAndNavi
+#    type: carrier
+#    color: [0.235, 0.506, 0.325]
+#    position: [0]
+
+#  - label: coal
+#    name: coal
+#    type: carrier
+#    color: [0, 0, 0]
+#    position: [0]
+
+  - label: uranum
+    name: uranum
+    type: carrier
+    color: [0, 0, 0]
+    position: [0]
+
+  - label: hvc
+    name: hvc
+    type: carrier
+    color: [0.6, 0.4, 0]
+    position: [0]
+
+  - label: ammonia
+    name: ammonia
+    type: carrier
+    color: [0.5, 0.5, 0]
+    position: [0]
+
+
+
+removeSankey:  ###################   Edges  #########################################
+  - trade buy: wood
+  - trade buy: greenWaste
+  - trade buy: sludge
+  - trade buy: waste
+  - trade buy: manure
+  - biomass: wood
+  - biomass: greenWaste
+  - biomass: sludge
+  - biomass: waste
+  - biomass: manure
+  - final demand: process heat - low
+  - final demand: process heat - medium
+  - final demand: process heat - high
+  - final demand: ammonia
+  - final demand: hvc
+  - final demand: avaAndNavi
+  - exchange losses: electricity
+  - exchange losses: H2
+  - exchange losses: refinedOil
+  - exchange losses: methane
+  - exchange losses: ammonia
+  - exchange losses: hvc
+  - net import: wood
+  - co2Pure: co2
+  - syntheticOil: refinery
