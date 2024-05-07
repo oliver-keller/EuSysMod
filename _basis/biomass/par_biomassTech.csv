@@ -9,7 +9,6 @@ htlManure,,,avaConv,0.923076923,Assumption
 biochemicalWoodOil,,,avaConv,0.9,Assumption
 pyrWood,,,avaConv,0.906978022,Assumption
 pyrGreenWaste,,,avaConv,0.906978022,Assumption
-pyrWaste,,,avaConv,0.906978022,Assumption
 gasificationGreenWasteSyngas,,,avaConv,0.912307692,Assumption
 gasificationWoodSyngas,,,avaConv,0.912307692,Assumption
 Methanation,,,avaConv,0.961538462,Assumption
@@ -35,7 +34,6 @@ htlManure,,,costExpConv,957.1880109,Assumption
 biochemicalWoodOil,,,costExpConv,1000,Assumption
 pyrWood,,,costExpConv,687.7192982,Assumption
 pyrGreenWaste,,,costExpConv,687.7192982,Assumption
-pyrWaste,,,costExpConv,687.7192982,Assumption
 gasificationGreenWasteSyngas,,,costExpConv,1550,Assumption
 gasificationWoodSyngas,,,costExpConv,1550,Assumption
 Methanation,,,costExpConv,258.5,Assumption
@@ -61,7 +59,6 @@ htlManure,,,costOprConv,51.47901907,Assumption
 biochemicalWoodOil,,,costOprConv,30,Assumption
 pyrWood,,,costOprConv,44,Assumption
 pyrGreenWaste,,,costOprConv,44,Assumption
-pyrWaste,,,costOprConv,44,Assumption
 gasificationGreenWasteSyngas,,,costOprConv,25.15,Assumption
 gasificationWoodSyngas,,,costOprConv,25.15,Assumption
 Methanation,,,costOprConv,9.05,Assumption
@@ -87,7 +84,6 @@ htlManure,,,lifeConv,20,Assumption
 biochemicalWoodOil,,,lifeConv,20,Assumption
 pyrWood,,,lifeConv,20,Assumption
 pyrGreenWaste,,,lifeConv,20,Assumption
-pyrWaste,,,lifeConv,20,Assumption
 gasificationGreenWasteSyngas,,,lifeConv,20,Assumption
 gasificationWoodSyngas,,,lifeConv,20,Assumption
 Methanation,,,lifeConv,15,Assumption
@@ -113,7 +109,6 @@ htlManure,,,effConv,0.82,Assumption
 biochemicalWoodOil,,,effConv,0.5,Assumption
 pyrWood,,,effConv,0.87,Assumption
 pyrGreenWaste,,,effConv,0.87,Assumption
-pyrWaste,,,effConv,0.87,Assumption
 gasificationGreenWasteSyngas,,,effConv,0.857142857,Assumption
 gasificationWoodSyngas,,,effConv,0.857142857,Assumption
 Methanation,,,effConv,0.99,Assumption
@@ -128,15 +123,15 @@ pyrWoodCoalDh,,,effConv,0.87,Assumption
 pyrWoodCoalProLow,,,effConv,0.87,Assumption
 pyrMethaneH2,,,effConv,0.57,Assumption
 htcDigestate,,,effConv,0.8,Assumption
-biomassToHvc,,,effConv,0.8,Assumption
+biomassToHvc,,,effConv,0.31377471,EnergyScope
 MethanationWithH2,syngas,,ratioConvInFix,0.535353535,Assumption
 biogasUpgrade,rawBiogas,,ratioConvInFix,0.535353535,Assumption
 pyrMethaneH2,methane,,ratioConvInFix,0.205714286,Assumption
-biomassToHvc,biomass,wood,ratioConvInFix,0.3,Assumption
-biomassToHvc,electricity,,ratioConvInFix,0.3,Assumption
-digestionManure,rawBiogas,,ratioConvOutFix,0.5,Assumption
-digestionGreenWaste,rawBiogas,,ratioConvOutFix,0.5,Assumption
-digestionSludge,rawBiogas,,ratioConvOutFix,0.5,Assumption
+biomassToHvc,biomass,wood,ratioConvInFix,0.747097584,EnergyScope
+biomassToHvc,electricity,,ratioConvInFix,0.089739567,EnergyScope
+digestionManure,rawBiogas,,ratioConvOutFix,0.4,EnergyScope
+digestionGreenWaste,rawBiogas,,ratioConvOutFix,0.4,EnergyScope
+digestionSludge,rawBiogas,,ratioConvOutFix,0.4,EnergyScope
 pyrWoodCoalDh,coal,,ratioConvOutFix,0.4,Assumption
 pyrWoodCoalProLow,coal,,ratioConvOutFix,0.4,Assumption
 pyrMethaneH2,h2,,ratioConvOutFix,0.6,Assumption
@@ -151,7 +146,6 @@ htlManure,,,emissionFac,-226.9014271,Assumption
 biochemicalWoodOil,,,emissionFac,-130,Assumption
 pyrWood,,,emissionFac,-129.7298308,Assumption
 pyrGreenWaste,,,emissionFac,-129.7298308,Assumption
-pyrWaste,,,emissionFac,-129.7298308,Assumption
 gasificationGreenWasteSyngas,,,emissionFac,-130.4640474,Assumption
 gasificationWoodSyngas,,,emissionFac,-130.4640474,Assumption
 Methanation,,,emissionFac,-200.8650137,Assumption
