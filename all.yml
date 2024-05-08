@@ -363,7 +363,6 @@ vertices:   ###################   Technologies   ###############################
     - pyrWoodCoalProLow
     - pyrMethaneH2
     - pyrGreenWaste
-    - pyrWaste
     type: technology
     color: [0]
     position: [0]
@@ -508,11 +507,11 @@ vertices:   ###################   Technologies   ###############################
     color: [0.6823529411764706, 0.07058823529411765, 0.22745098039215686]
     position: [0]
 
-  - label: refined oil
-    name: refinedOil
-    type: carrier
-    color: [0.33725490196078434, 0.3411764705882353, 0.3254901960784314]
-    position: [0]
+#  - label: refined oil
+#    name: refinedOil
+#    type: carrier
+#    color: [0.33725490196078434, 0.3411764705882353, 0.3254901960784314]
+#    position: [0]
 
   - label: process heat - low
     name: processHeat_low
@@ -557,11 +556,11 @@ vertices:   ###################   Technologies   ###############################
     color: [0.33725490196078434, 0.3411764705882353, 0.3254901960784314]
     position: [0]
 
-  - label: jet fuel & methanol
-    name: avaAndNavi
-    type: carrier
-    color: [0.235, 0.506, 0.325]
-    position: [0]
+#  - label: jet fuel & methanol
+#    name: avaAndNavi
+#    type: carrier
+#    color: [0.235, 0.506, 0.325]
+#    position: [0]
 
   - label: coal
     name: coal
@@ -612,5 +611,9 @@ removeSankey:  ###################   Edges  ####################################
   - exchange losses: methane
   - exchange losses: ammonia
   - exchange losses: hvc
+  - exchange losses: waste
+  - co2Pure: co2
+  - crudeOil: refinery
   - net import: wood
-#  - co2Pure: co2
+  - net import: hvc
+  - net import: refined oil

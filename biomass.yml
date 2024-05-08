@@ -363,7 +363,6 @@ vertices:   ###################   Technologies   ###############################
     - pyrWoodCoalProLow
     - pyrMethaneH2
     - pyrGreenWaste
-    - pyrWaste
     type: technology
     color: [0]
     position: [0]
@@ -596,6 +595,9 @@ removeSankey:  ###################   Edges  ####################################
   - exchange losses: methane
   - exchange losses: ammonia
   - exchange losses: hvc
-  - net import: wood
+  - exchange losses: waste
   - co2Pure: co2
-  - syntheticOil: refinery
+  - crudeOil: refinery
+  - net import: wood
+  - net import: hvc
+  - net import: refined oil

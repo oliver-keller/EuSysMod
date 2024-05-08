@@ -99,9 +99,9 @@ pyrWoodCoalProLow,,,lifeConv,20,Assumption
 pyrMethaneH2,,,lifeConv,22.5,Assumption
 htcDigestate,,,lifeConv,20,Assumption
 biomassToHvc,,,lifeConv,20,Assumption
-htgDigestate,,,effConv,0.85,Assumption
-htgGreenWaste,,,effConv,0.85,Assumption
-htgSludge,,,effConv,0.85,Assumption
+htgDigestate,,,effConv,0.75,ieabioenergy
+htgGreenWaste,,,effConv,0.75,ieabioenergy
+htgSludge,,,effConv,0.75,ieabioenergy
 htgManure,,,effConv,0.85,Assumption
 htlSludge,,,effConv,0.82,Assumption
 htlGreenWaste,,,effConv,0.82,Assumption
@@ -109,10 +109,10 @@ htlManure,,,effConv,0.82,Assumption
 biochemicalWoodOil,,,effConv,0.5,Assumption
 pyrWood,,,effConv,0.87,Assumption
 pyrGreenWaste,,,effConv,0.87,Assumption
-gasificationGreenWasteSyngas,,,effConv,0.857142857,Assumption
-gasificationWoodSyngas,,,effConv,0.857142857,Assumption
-Methanation,,,effConv,0.99,Assumption
-MethanationWithH2,,,effConv,0.99,Assumption
+gasificationGreenWasteSyngas,,,effConv,0.75,ieabioenergy
+gasificationWoodSyngas,,,effConv,0.75,ieabioenergy
+Methanation,,,effConv,0.6,Assumption
+MethanationWithH2,,,effConv,0.8,Assumption
 fischerTropsch,,,effConv,0.8,Assumption
 waterGasShift,,,effConv,0.8,Assumption
 digestionManure,,,effConv,1,Assumption

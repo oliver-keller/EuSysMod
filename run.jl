@@ -44,8 +44,10 @@ reportResults(:cost,anyM, addObjName = true)
 # create plots
 # plotSankeyDiagram(anyM, dropDown = (:timestep,)) # sankey for the whole europe
 # plotSankeyDiagram(anyM) # sankey with dropdown for the regions and contires
-plotSankeyDiagram(anyM; ymlFilter = "biomass.yml", dropDown = (:timestep, )) 
-plotSankeyDiagram(anyM; ymlFilter = "biomass.yml") 
+plotSankeyDiagram(anyM; ymlFilter = "biomass.yml", dropDown = (:timestep, ), digVal=0, fontSize=16, name="biomass_europe") 
+plotSankeyDiagram(anyM; ymlFilter = "biomass.yml", digVal=0, fontSize=20, name="biomass") 
+plotSankeyDiagram(anyM; ymlFilter = "all.yml", dropDown = (:timestep, ), digVal=0, fontSize=16, name="all_europe") 
+plotSankeyDiagram(anyM; ymlFilter = "all.yml", digVal=0, fontSize=20, name="all") 
 # plotTree(:region, anyM)
 # plotTree(:carrier, anyM)
 # plotTree(:technology, anyM)
@@ -54,4 +56,4 @@ plotSankeyDiagram(anyM; ymlFilter = "biomass.yml")
 
 #endregion
 
-anyM.parts.tech[:bevPsngRoadPrvt].var
+#anyM.parts.tech[:bevPsngRoadPrvt].var
