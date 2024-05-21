@@ -1,21 +1,19 @@
 using AnyMOD, Gurobi, CSV, Statistics
+include("support_functions.jl")
 
 # par_df = CSV.read("settings.csv",DataFrame)
 
-if isempty(ARGS)
-    id_int = 1
-    t_int = 4
-else
-    id_int = parse(Int,ARGS[1])
-    t_int = parse(Int,ARGS[2]) # number of threads
-end
+# if isempty(ARGS)
+#     id_int = 1
+#     t_int = 4
+# else
+#     id_int = parse(Int,ARGS[1])
+#     t_int = parse(Int,ARGS[2]) # number of threads
+# end
 
-# h = string(par_df[id_int,:h]) # resolution of time-series for actual solve, can be 96, 1752, 4392, or 8760
-# h_heu = string(par_df[id_int,:h_heu]) # resolution of time-series for pre-screening, can be 96, 1752, 4392, or 8760
-h = "96"
+t_int = 8 # 4
 
-# obj_str = h * "hours_" * h_heu * "hoursHeu" * grid * "_updated"
-inputMod_arr = ["_basis","timeSeries/" * h * "hours_2008"]
+inputMod_arr = ["_basis","timeSeries/96hours_2008"]
 resultDir_str = "results"
 
 #region # * create and solve main model
@@ -28,7 +26,7 @@ set_optimizer(anyM.optModel, Gurobi.Optimizer)  # select a solver
 set_optimizer_attribute(anyM.optModel, "Method", 2);
 set_optimizer_attribute(anyM.optModel, "Crossover", 0);
 set_optimizer_attribute(anyM.optModel, "Threads",t_int);
-set_optimizer_attribute(anyM.optModel, "BarConvTol", 1e-5);
+set_optimizer_attribute(anyM.optModel, "BarConvTol", 1e-3);  # 1e-5
 
 optimize!(anyM.optModel) # solve the model
 
