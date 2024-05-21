@@ -1,7 +1,8 @@
 using AnyMOD, Gurobi, CSV, Statistics
 include("support_functions.jl")
 
-# par_df = CSV.read("settings.csv",DataFrame)
+# b = "C:/Git/EuSysMod/"
+# par_df = CSV.read(b * "settings.csv", DataFrame)
 
 # if isempty(ARGS)
 #     id_int = 1
@@ -17,9 +18,11 @@ inputMod_arr = ["_basis","timeSeries/96hours_2008"]
 resultDir_str = "results"
 
 #region # * create and solve main model
-anyM = anyModel(inputMod_arr,resultDir_str, supTsLvl = 2, shortExp = 5, redStep = 1.0, emissionLoss = false, holdFixed = true, objName = "biomass_included")
+objName = "biomass_included"
+anyM = anyModel(inputMod_arr, resultDir_str, objName = obj_str, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true);
+
 createOptModel!(anyM)
-setObjective!(:cost,anyM)
+setObjective!(:cost, anyM)
 
 # solve model
 set_optimizer(anyM.optModel, Gurobi.Optimizer)  # select a solver
