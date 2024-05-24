@@ -216,7 +216,6 @@ function scaleBiomassPotential(model; factor=nothing, newValue=nothing, carrier=
         if (row.R_dis in [region; children(model, "region", region)] || region == 0) && (row.C in [carrier; children(model, "carrier", carrier)] || carrier == 0)
             factor != nothing ? row.val *= factor : row.val = row.val
             newValue != nothing ? row.val = newValue : row.val = row.val
-            println(row.val, findCarrier(model, carrier), factor)
         end
     end
 end
@@ -254,7 +253,6 @@ function scaleInvestmentCost(model; factor=nothing, newValue=nothing, technology
         if row.Te in [technology; children(model, "technology", technology)]|| technology == 0
             factor != nothing ? row.val *= factor : row.val = row.val
             newValue != nothing ? row.val = newValue : row.val = row.val
-            println(row.val, findTechnology(model, technology))
         end
     end
 end
@@ -295,7 +293,6 @@ function scaleRenewablePotential(model; factor=nothing, newValue=nothing, techno
     for tec in technology
         for row in eachrow(model.parts.lim.par[:capaConvUp].data)
             if (row.R_exp in [region; children(model, "region", region)] || region == 0) && (row.Te in [tec; children(model, "technology", tec)])
-                # println(row.val, findTechnology(model, tec), factor)
                 factor != nothing ? row.val *= factor : row.val = row.val
                 newValue != nothing ? row.val = newValue : row.val = row.val
                

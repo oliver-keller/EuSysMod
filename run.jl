@@ -27,7 +27,7 @@ uncertain_parameters = CSV.read("_basis/uncertain_parameters.csv", DataFrame, ty
 lhs = CSV.read("lhs.csv", DataFrame, header=false)
 
 # set iteration counter
-iterations = 1
+iterations = 3
 
 for iteration in range(1, iterations)
     # initialize model
@@ -48,8 +48,7 @@ for iteration in range(1, iterations)
     end
 
     createOptModel!(anyM)
-    setObjective!
-    (:cost, anyM)
+    setObjective!(:cost, anyM)
 
     # solve model
     set_optimizer(anyM.optModel, Gurobi.Optimizer)  # select a solver
@@ -61,23 +60,6 @@ for iteration in range(1, iterations)
     optimize!(anyM.optModel) # solve the model
     plotSankeyDiagram(anyM, dropDown = (:timestep,), name="iteration_" * string(iteration))
 end
-
-anyM = anyModel(inputMod_arr, resultDir_str, objName = obj_str, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true);
-
-createOptModel!(anyM)
-setObjective!
-(:cost, anyM)
-
-# solve model
-set_optimizer(anyM.optModel, Gurobi.Optimizer)  # select a solver
-set_optimizer_attribute(anyM.optModel, "Method", 2);
-set_optimizer_attribute(anyM.optModel, "Crossover", 0);
-set_optimizer_attribute(anyM.optModel, "Threads",t_int);
-set_optimizer_attribute(anyM.optModel, "BarConvTol", 1e-3);  # 1e-5
-
-optimize!(anyM.optModel) # solve the model
-plotSankeyDiagram(anyM, dropDown = (:timestep,), name="iteration_" * string(iteration))
-
 
 #endregion
 
@@ -104,3 +86,45 @@ plotSankeyDiagram(anyM; ymlFilter = "all.yml", fontSize=20, name="all")
 #endregion
 
 #anyM.parts.tech[:bevPsngRoadPrvt].var
+
+
+
+
+
+
+
+############### Test Version ####################
+
+anyM = anyModel(inputMod_arr, resultDir_str, objName = obj_str, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true);
+
+# modify uncertain parameters
+for (index, row) in enumerate(eachrow(uncertain_parameters))
+    ismissing(row[:minRel]) || ismissing(row[:maxRel]) ? factor = nothing : factor = row[:minRel]  + (row[:maxRel] - row[:minRel]) * lhs[iteration, index] 
+    ismissing(row[:minAbs]) || ismissing(row[:maxAbs]) ? newValue = nothing : newValue = row[:minAbs] + (row[:maxAbs] - row[:minAbs]) * lhs[iteration, index]
+
+    if row[:parameter] == "trdBuyUp"
+        scaleBiomassPotential(anyM, factor=factor, newValue=newValue, carrier=row[:carrier], region=row[:region])
+    elseif row[:parameter] == "capaConvUp"
+        scaleRenewablePotential(anyM, factor=factor, newValue=newValue, technology=row[:technology], region=row[:region])
+    elseif row[:parameter] == "costExpConv"
+        scaleInvestmentCost(anyM, factor=factor, newValue=newValue, technology=row[:technology])
+    end
+end
+
+createOptModel!(anyM)
+setObjective!(:cost, anyM)
+
+# solve model
+set_optimizer(anyM.optModel, Gurobi.Optimizer)  # select a solver
+set_optimizer_attribute(anyM.optModel, "Method", 2);
+set_optimizer_attribute(anyM.optModel, "Crossover", 0);
+set_optimizer_attribute(anyM.optModel, "Threads",t_int);
+set_optimizer_attribute(anyM.optModel, "BarConvTol", 1e-3);  # 1e-5
+
+optimize!(anyM.optModel) # solve the model
+
+plotSankeyDiagram(anyM, dropDown = (:timestep,), name="test")
+
+
+
+anyM.parts.tech[:biomassToHvc].cns
