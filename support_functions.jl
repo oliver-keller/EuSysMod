@@ -300,3 +300,70 @@ function scaleRenewablePotential(model; factor=nothing, newValue=nothing, techno
         end
     end
 end
+
+
+function calculateOutputs(model;  iteration=1, outputsOfInterest=nothing, includeWaste=false, resultDir)
+    """
+    This function calculates the outputs of interest based on the given model and updates the `outputsOfInterest` DataFrame.
+
+    ## Arguments
+    - `model::AnyModel`: The model used for calculations.
+    - `iteration::Int`: The iteration number. Default is 1.
+    - `outputsOfInterest::DataFrame`: The DataFrame to store the calculated outputs. If not provided, a new DataFrame will be created.
+    - `includeWaste::Bool`: Whether to include waste carriers in the calculations. Default is false.
+
+    ## Returns
+    - `outputsOfInterest::DataFrame`: The updated DataFrame with calculated outputs.
+    """
+    df = reportResults(:summary, model, rtnOpt = (:csvDf,))
+    use_variables = filter(row -> row.variable == :use, df)
+
+
+    # List of all carriers and technologies
+    includeWaste ? carriers = ["wood", "greenWaste", "manure", "sludge", "waste", "digestate"] : carriers = ["wood", "greenWaste", "manure", "sludge", "digestate"]
+    technologies = ["pyrolysisOil", "biomassToHvc", "chp", "boilerDh", "boilerSpace", "boilerProLow", "boilerProMed", "boilerProHigh", "biochemicalWoodOil", "liquefaction", "digestion", "gasification", "carbonization", "pyrolysisCoal"]
+
+    # Initialize the DataFrame with all zeros
+    technology_input = DataFrame([:carrier => carriers; Symbol.(technologies) .=> 0.0])
+
+    # Iterate over use_variables and update technology_input
+    for row in eachrow(use_variables)
+        for tech in technologies
+            if occursin(tech[2:end], row.technology)
+                # carrier_index = findfirst(==(row.carrier), technology_input.carrier)
+                carrier_index = findfirst(x -> occursin(x[2:end], row.carrier), technology_input.carrier)
+                if !isnothing(carrier_index)
+                    technology_input[carrier_index, tech] += row.value
+                end
+            end
+        end
+    end
+
+    #println(technology_input)
+    # Save technology_input to CSV
+    csv_file = "biomassUsage_iteration_$iteration.csv"
+    CSV.write(joinpath(resultDir, csv_file), technology_input)
+
+
+    if outputsOfInterest === nothing #!@isdefined(outputsOfInterest)
+        outputsOfInterest = DataFrame(
+            iteration = [iteration],
+            crudeOil = [sum(technology_input.pyrolysisOil)+sum(technology_input.biochemicalWoodOil)+sum(technology_input.liquefaction)],
+            HVC = [sum(technology_input.biomassToHvc)],
+            CHP = [sum(technology_input.chp)],
+            LTH = [sum(technology_input.boilerProLow)],
+            MTH = [sum(technology_input.boilerProMed)],
+            HTH = [sum(technology_input.boilerProHigh)],
+            DH = [sum(technology_input.boilerDh)],
+            SpaceHeating = [sum(technology_input.boilerSpace)],
+            rawBiogas = [sum(technology_input.digestion)-sum(technology_input[technology_input.carrier .== "digestate", :][1, 2:end])],
+            syngas = [sum(technology_input.gasification)],
+            coal = [sum(technology_input.carbonization)+ sum(technology_input.pyrolysisCoal)]
+        )
+    else
+        push!(outputsOfInterest, [iteration, sum(technology_input.pyrolysisOil)+sum(technology_input.biochemicalWoodOil)+sum(technology_input.liquefaction), sum(technology_input.biomassToHvc), sum(technology_input.chp), sum(technology_input.boilerProLow), sum(technology_input.boilerProMed), sum(technology_input.boilerProHigh), sum(technology_input.boilerDh), sum(technology_input.boilerSpace), sum(technology_input.digestion)-sum(technology_input[technology_input.carrier .== "digestate", :][1, 2:end]), sum(technology_input.gasification), sum(technology_input.carbonization)+ sum(technology_input.pyrolysisCoal)])
+    end
+    return outputsOfInterest
+end
+
+
