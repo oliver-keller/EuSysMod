@@ -1,7 +1,8 @@
-using Random
-using DelimitedFiles
+### File containing all the support functions called from the main script called "run.jl" ###
 
-function create_lhs(d::Int, N::Int, seed::Int)
+using Random, DelimitedFiles
+
+function create_lhs(d::Int, N::Int, seed::Int=0)
     """
     Create a Latin Hypercube Sampling (LHS) of parameter trajectories.
 
@@ -27,22 +28,14 @@ function create_lhs(d::Int, N::Int, seed::Int)
         end
     end
 
-    # Save LHS to file (optional)
+    # Save LHS to file
     writedlm("lhs.csv", lhs, ',')
 
     return lhs
 end
 
-"""
-# Example usage:
-d = 3
-N = 10
-seed = 1
-parameter_trajectories = create_lhs(d, N, seed)
-"""
 
-
-function findRegion(model, region)
+function findRegion(model::anyModel, region)
     """
     Find the index of a region or returns the name of a region given its index.
     
@@ -68,7 +61,7 @@ function findRegion(model, region)
 end
 
 
-function findCarrier(model, carrier)
+function findCarrier(model::anyModel, carrier)
     """
     Find the index of a carrier or returns the name of a carrier given its index.
     
@@ -94,7 +87,7 @@ function findCarrier(model, carrier)
 end
 
 
-function findTechnology(model, technology)
+function findTechnology(model::anyModel, technology)
     """
     Find the index of a technology or returns the name of a technology given its index.
     
@@ -120,7 +113,7 @@ function findTechnology(model, technology)
 end
 
 
-function findTimestep(model, timestep)
+function findTimestep(model::anyModel, timestep)
     """
     Find the index of a timestep or returns the value of a timestep given its index.
     
@@ -146,7 +139,7 @@ function findTimestep(model, timestep)
 end
 
 
-function children(model, type="technology", node=1)
+function children(model::anyModel, type="technology", node=1)
     """
     Returns the children of a given node in the model tree.
     
@@ -181,7 +174,7 @@ end
 
 
 
-function scaleBiomassPotential(model; factor=nothing, newValue=nothing, carrier="all", region = "all")
+function scaleBiomassPotential(model::anyModel; factor::Float64=nothing, newValue::Float64=nothing, carrier="all", region = "all")
     """
     Scale the biomass potential values in the given model by a factor or sets a new value.
     
@@ -195,8 +188,6 @@ function scaleBiomassPotential(model; factor=nothing, newValue=nothing, carrier=
     If `region` is set to "all", the biomass potential values for all regions will be scaled.
     Otherwise, only the biomass potential values for the specified region will be scaled.
     """
-
-
     if typeof(region) == String # returns the index of the region if entered as sting
         if region == "all"
             region = 0
@@ -221,32 +212,21 @@ function scaleBiomassPotential(model; factor=nothing, newValue=nothing, carrier=
 end
 
 
-function scaleInvestmentCost(model; factor=nothing, newValue=nothing, technology="all")
+function scaleInvestmentCost(model::anyModel; factor::Float64=nothing, newValue::Float64=nothing, technology="all")
     """
     Scale the investment cost of a given technology in the model.
 
-    Arguments:
+    Parameters:
     - `model`: The model object.
     - `factor`: The scaling factor to multiply the investment cost by. Default is `nothing`.
     - `newValue`: The new value to set the investment cost to. Default is `nothing`.
     - `technology`: The technology to scale the investment cost for. Default is `"all"`.
-
-    Returns:
-    - Nothing.
-
-    Examples:
-    ```julia
-    scaleInvestmentCost(model, factor=2.0, technology="heatpumpProLow")
-    scaleInvestmentCost(model, newValue=1000.0, technology="chpGreenWasteProLow")
-    ```
-    """
-    if typeof(technology) == String && technology != "all" technology = findTechnology(model, technology) end
-    
+    """ 
     if typeof(technology) == String # returns the index of the technology if entered as sting
         if technology == "all"
             technology = 0
         else
-            technology = findTechnology(model, technology, factor) 
+            technology = findTechnology(model, technology)
         end
     end    
     for row in eachrow(model.parts.cost.par[:costExpConv].data)
@@ -259,7 +239,7 @@ end
 
 
 
-function scaleRenewablePotential(model; factor=nothing, newValue=nothing, technology="all", region = "all")
+function scaleRenewablePotential(model::anyModel; factor::Float64=nothing, newValue::Float64=nothing, technology="all", region = "all")
     """
     Scale the renewable potential values in the given model by a factor or sets a new value.
     
@@ -273,8 +253,6 @@ function scaleRenewablePotential(model; factor=nothing, newValue=nothing, techno
     If `region` is set to "all", the renewable potential values for all regions will be scaled.
     Otherwise, only the biomass potential values for the specified region will be scaled.
     Analogue for 'technology'.
-
-    Caution: This function assumes that the parameter 'trdBuyUp' is only used for biomass potential.
     """
     if typeof(region) == String # returns the index of the region if entered as sting
         if region == "all"
@@ -302,7 +280,7 @@ function scaleRenewablePotential(model; factor=nothing, newValue=nothing, techno
 end
 
 
-function calculateOutputs(model;  iteration=1, outputsOfInterest=nothing, includeWaste=false, resultDir)
+function calculateOutputs(model::anyModel;  iteration::Int64=1, outputsOfInterest=nothing, includeWaste::Bool=false, resultDir=nothing)
     """
     This function calculates the outputs of interest based on the given model and updates the `outputsOfInterest` DataFrame.
 
@@ -315,6 +293,13 @@ function calculateOutputs(model;  iteration=1, outputsOfInterest=nothing, includ
     ## Returns
     - `outputsOfInterest::DataFrame`: The updated DataFrame with calculated outputs.
     """
+    if resultDir === nothing
+        resultDir = "./results/"
+        if !isdir(resultDir)
+            mkdir(resultDir)
+        end
+    end
+
     df = reportResults(:summary, model, rtnOpt = (:csvDf,))
     use_variables = filter(row -> row.variable == :use, df)
 
@@ -339,13 +324,12 @@ function calculateOutputs(model;  iteration=1, outputsOfInterest=nothing, includ
         end
     end
 
-    #println(technology_input)
     # Save technology_input to CSV
     csv_file = "biomassUsage_iteration_$iteration.csv"
     CSV.write(joinpath(resultDir, csv_file), technology_input)
 
 
-    if outputsOfInterest === nothing #!@isdefined(outputsOfInterest)
+    if outputsOfInterest === nothing
         outputsOfInterest = DataFrame(
             iteration = [iteration],
             crudeOil = [sum(technology_input.pyrolysisOil)+sum(technology_input.biochemicalWoodOil)+sum(technology_input.liquefaction)],
@@ -367,3 +351,26 @@ function calculateOutputs(model;  iteration=1, outputsOfInterest=nothing, includ
 end
 
 
+
+
+function modify_parameters(model::anyModel, uncertain_parameters::DataFrame)
+    """
+    Modify the parameters of a model based on uncertain parameters.
+
+    # Arguments
+    - `model::anyModel`: The model to modify.
+    - `uncertain_parameters::DataFrame`: A table of uncertain parameters.
+    """
+    for (index, row) in enumerate(eachrow(uncertain_parameters))
+        ismissing(row[:minRel]) || ismissing(row[:maxRel]) ? factor = nothing : factor = row[:minRel]  + (row[:maxRel] - row[:minRel]) * lhs[iteration, index] 
+        ismissing(row[:minAbs]) || ismissing(row[:maxAbs]) ? newValue = nothing : newValue = row[:minAbs] + (row[:maxAbs] - row[:minAbs]) * lhs[iteration, index]
+
+        if row[:parameter] == "trdBuyUp"
+            scaleBiomassPotential(model, factor=factor, newValue=newValue, carrier=row[:carrier], region=row[:region])
+        elseif row[:parameter] == "capaConvUp"
+            scaleRenewablePotential(model, factor=factor, newValue=newValue, technology=row[:technology], region=row[:region])
+        elseif row[:parameter] == "costExpConv"
+            scaleInvestmentCost(model, factor=factor, newValue=newValue, technology=row[:technology])
+        end
+    end
+end
