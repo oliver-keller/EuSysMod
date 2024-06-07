@@ -42,7 +42,7 @@ if !isdir(resultDir_str)
 end
 
 # name of the modelrun
-obj_str = "Sampling_1000"
+obj_str = "Sampling_300"
 
 
 # read uncertain parameters
@@ -54,11 +54,30 @@ lhs = CSV.read("lhs.csv", DataFrame, header=false) # uses an already created lhc
 
 # set iteration boundaries
 start_iteration = 1
-end_iteration = 100
+end_iteration = 3
 
 # initialize model (deepcopy of initialized model might lead to a a terminal crash. In this case initialize the model separately for every iteration.)
 anyM0 = anyModel(inputMod_arr, resultDir_str, objName = obj_str, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true)
-outputsOfInterest = nothing
+
+outputsOfInterest = nothing # initialize parameter to store the outputs of interest
+objective = DataFrame(iteration = Int[], objectiveValue = Float64[]) # initialize dataframe to store the objective values of the optimization runs
+
+# set additional constraint for regret calculations -> Set the minimum use of biomass for the following categories (biomass usage in GWh/a)
+new_constraint = Dict(
+    "bioConversionOil" => 0,
+    "bioConversionSyngas" => 0,
+    "bioConversionBiogas" => 0,
+    "bioConversionChp" => 0,
+    "bioConversionHvc" => 0,
+    "bioConversionCoal" => 0,
+    "networkHeat" => 0,
+    "spaceHeat" => 0,
+    "proHeat" => 0
+)
+
+for row in eachrow(anyM0.parts.lim.par[:useLow].data)
+    row.val = get(new_constraint, findTechnology(anyM, row.Te), row.val)
+end
 
 
 for iteration in range(start_iteration, end_iteration)
@@ -79,12 +98,16 @@ for iteration in range(start_iteration, end_iteration)
     set_optimizer_attribute(anyM.optModel, "Method", 2);
     set_optimizer_attribute(anyM.optModel, "Crossover", 0);
     set_optimizer_attribute(anyM.optModel, "Threads",t_int);
-    set_optimizer_attribute(anyM.optModel, "BarConvTol", 1e-3);  # 1e-5
+    set_optimizer_attribute(anyM.optModel, "BarConvTol", 1e-5);  # 1e-5
     optimize!(anyM.optModel) # solve the model
 
+    # update the outputs of interest and the objective value dataframes
     global outputsOfInterest
+    global objective
     outputsOfInterest = calculateOutputs(anyM, iteration=iteration, outputsOfInterest=outputsOfInterest, includeWaste=false, resultDir = resultDir_str)
+    push!(objective, [iteration, objective_value(anyM.optModel)])
     
-    # Save outputsOfInterest as a CSV file
+    # Save outputsOfInterest and total_cost as a CSV file
     CSV.write(resultDir_str * "/outputsOfInterest.csv", DataFrame(outputsOfInterest))
+    CSV.write(resultDir_str * "/total_cost.csv", DataFrame(objective))
 end

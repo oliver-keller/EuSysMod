@@ -2,7 +2,7 @@
 
 using Random, DelimitedFiles
 
-function create_lhs(d::Int, N::Int, seed::Int=0)
+function create_lhs(d::Int, N::Int, seed::Int=0) ::Matrix{Float64}
     """
     Create a Latin Hypercube Sampling (LHS) of parameter trajectories.
 
@@ -35,7 +35,7 @@ function create_lhs(d::Int, N::Int, seed::Int=0)
 end
 
 
-function findRegion(model::anyModel, region)
+function findRegion(model::anyModel, region::Union{String, Int}) ::Union{Int, String}
     """
     Find the index of a region or returns the name of a region given its index.
     
@@ -61,7 +61,7 @@ function findRegion(model::anyModel, region)
 end
 
 
-function findCarrier(model::anyModel, carrier)
+function findCarrier(model::anyModel, carrier::Union{String, Int}) ::Union{Int, String}
     """
     Find the index of a carrier or returns the name of a carrier given its index.
     
@@ -87,7 +87,7 @@ function findCarrier(model::anyModel, carrier)
 end
 
 
-function findTechnology(model::anyModel, technology)
+function findTechnology(model::anyModel, technology::Union{Int, String}) ::Union{Int, String}
     """
     Find the index of a technology or returns the name of a technology given its index.
     
@@ -113,7 +113,7 @@ function findTechnology(model::anyModel, technology)
 end
 
 
-function findTimestep(model::anyModel, timestep)
+function findTimestep(model::anyModel, timestep::Union{Int, String}) ::Union{Int, String}
     """
     Find the index of a timestep or returns the value of a timestep given its index.
     
@@ -139,7 +139,7 @@ function findTimestep(model::anyModel, timestep)
 end
 
 
-function children(model::anyModel, type="technology", node=1)
+function children(model::anyModel, type::String="technology", node::Union{String, Int}=1) ::Array{Int, 1}
     """
     Returns the children of a given node in the model tree.
     
@@ -174,7 +174,7 @@ end
 
 
 
-function scaleBiomassPotential(model::anyModel; factor::Float64=nothing, newValue::Float64=nothing, carrier="all", region = "all")
+function scaleBiomassPotential(model::anyModel; factor::Union{Float64, Nothing}=nothing, newValue::Union{Float64, Nothing}=nothing, carrier::Union{String, Int}="all", region::Union{String, Int}="all") ::Nothing 
     """
     Scale the biomass potential values in the given model by a factor or sets a new value.
     
@@ -212,7 +212,7 @@ function scaleBiomassPotential(model::anyModel; factor::Float64=nothing, newValu
 end
 
 
-function scaleInvestmentCost(model::anyModel; factor::Float64=nothing, newValue::Float64=nothing, technology="all")
+function scaleInvestmentCost(model::anyModel; factor::Union{Float64, Nothing}=nothing, newValue::Union{Float64, Nothing}=nothing, technology::Union{String, Int}="all") ::Nothing
     """
     Scale the investment cost of a given technology in the model.
 
@@ -239,7 +239,7 @@ end
 
 
 
-function scaleRenewablePotential(model::anyModel; factor::Float64=nothing, newValue::Float64=nothing, technology="all", region = "all")
+function scaleRenewablePotential(model::anyModel; factor::Union{Float64, Nothing}=nothing, newValue::Union{Float64, Nothing}=nothing, technology::Union{String, Int}="all", region::Union{String, Int}="all") ::Nothing
     """
     Scale the renewable potential values in the given model by a factor or sets a new value.
     
@@ -280,15 +280,17 @@ function scaleRenewablePotential(model::anyModel; factor::Float64=nothing, newVa
 end
 
 
-function calculateOutputs(model::anyModel;  iteration::Int64=1, outputsOfInterest=nothing, includeWaste::Bool=false, resultDir=nothing)
+function calculateOutputs(model::anyModel;  iteration::Int64=1, outputsOfInterest::Union{DataFrame, Nothing}=nothing, includeWaste::Bool=false, resultDir::Union{String, Nothing}=nothing) ::DataFrame
     """
     This function calculates the outputs of interest based on the given model and updates the `outputsOfInterest` DataFrame.
+    Furthermore, it saves the calculated outputs to a CSV file. 
 
     ## Arguments
     - `model::AnyModel`: The model used for calculations.
     - `iteration::Int`: The iteration number. Default is 1.
     - `outputsOfInterest::DataFrame`: The DataFrame to store the calculated outputs. If not provided, a new DataFrame will be created.
     - `includeWaste::Bool`: Whether to include waste carriers in the calculations. Default is false.
+    - `resultDir::Union{String, Nothing}`: The directory to save the results. If not provided, the results will be saved in "./results/".
 
     ## Returns
     - `outputsOfInterest::DataFrame`: The updated DataFrame with calculated outputs.
@@ -305,8 +307,8 @@ function calculateOutputs(model::anyModel;  iteration::Int64=1, outputsOfInteres
 
 
     # List of all carriers and technologies
-    includeWaste ? carriers = ["wood", "greenWaste", "manure", "sludge", "waste", "digestate"] : carriers = ["wood", "greenWaste", "manure", "sludge", "digestate"]
-    technologies = ["pyrolysisOil", "biomassToHvc", "chp", "boilerDh", "boilerSpace", "boilerProLow", "boilerProMed", "boilerProHigh", "biochemicalWoodOil", "liquefaction", "digestion", "gasification", "carbonization", "pyrolysisCoal"]
+    includeWaste ? carriers = ["wood", "greenWaste", "manure", "sludge", "waste", "digestate", "refinedOil", "syngas", "methane", "h2"] : carriers = ["wood", "greenWaste", "manure", "sludge", "digestate", "refinedOil", "syngas", "methane", "h2"]
+    technologies = ["pyrolysisOil", "biomassToHvc", "chp", "boilerDh", "boilerSpace", "boilerProLow", "boilerProMed", "boilerProHigh", "biochemicalWoodOil", "liquefaction", "digestion", "gasification", "carbonization", "pyrolysisCoal", ""]
 
     # Initialize the DataFrame with all zeros
     technology_input = DataFrame([:carrier => carriers; Symbol.(technologies) .=> 0.0])
@@ -347,13 +349,46 @@ function calculateOutputs(model::anyModel;  iteration::Int64=1, outputsOfInteres
     else
         push!(outputsOfInterest, [iteration, sum(technology_input.pyrolysisOil)+sum(technology_input.biochemicalWoodOil)+sum(technology_input.liquefaction), sum(technology_input.biomassToHvc), sum(technology_input.chp), sum(technology_input.boilerProLow), sum(technology_input.boilerProMed), sum(technology_input.boilerProHigh), sum(technology_input.boilerDh), sum(technology_input.boilerSpace), sum(technology_input.digestion)-sum(technology_input[technology_input.carrier .== "digestate", :][1, 2:end]), sum(technology_input.gasification), sum(technology_input.carbonization)+ sum(technology_input.pyrolysisCoal)])
     end
+
+
+    ### same to find the usage of the created oil/syngas ###
+    # List of all carriers and technologies
+    carriers = ["crudeOil", "refinedOil", "syngas", "methane", "h2"]
+    technologies = ["refinery", "oilPlantDh", "dieselEnginePeak", "dieselFrtRail", "dieselFrtRoadHeavy", "dieselFrtRoadLight", "dieselPsngRail", "dieselPsngRoadPub", "ottoPsngRoadPrvt", "avaAndNaviTech", "oilPlant",
+        "oilPlantProLow", "oilPlantProMed", "oilBoilerDh", "oilBoilerSpace", "oilBoilerProHigh", "oilBoilerProLow", "oilBoilerProMed",
+        "Methanation", "MethanationWithH2", "fischerTropsch", "waterGasShift", "chpSyngasDh", "chpSyngasProLow", "syngasEngineDh", "syngasEngineProLow", "syngasEngineProMed",
+        "pyrMethaneH2", "ccgtGasDh", "ccgtGasProMed", "ocgtGas", "ocgtGasChp", "methaneEngineDh", "methaneEngineProLow", "methaneEngineProMed", "methaneEnginePeak", "cngPsngRoadPrvt", "sofc", "gasToHvc", "stemMethaneReforming", "methaneBoilerDh", "methaneBoilerSpace", "methaneBoilerProHigh", "methaneBoilerProLow", "methaneBoilerProMed",
+        "MethanationWithH2", "biogasUpgrade", "ccgtH2Dh", "ccgtH2ProMed", "ocgtH2", "fcevPsngRoadPrvt", "fcFrtRail", "fcFrtRoadHeavy", "fcFrtRoadLight", "fcPsngRail", "fcPsngRoadPub", "h2ToCrudeOil", "h2ToMethane", "pefc", "haberBoschH2AmmoniaDh", "haberBoschH2AmmoniaProLow", "h2BoilerDh", "h2BoilerProHigh", "h2BoilerProLow", "h2BoilerProMed"]
+        
+
+
+    # Initialize the DataFrame with all zeros
+    technology_input = DataFrame([:carrier => carriers; Symbol.(technologies) .=> 0.0])
+
+    # Iterate over use_variables and update technology_input
+    for row in eachrow(use_variables)
+        for tech in technologies
+            if occursin(tech[2:end], row.technology)
+                # carrier_index = findfirst(==(row.carrier), technology_input.carrier)
+                carrier_index = findfirst(x -> occursin(x[2:end], row.carrier), technology_input.carrier)
+                if !isnothing(carrier_index)
+                    technology_input[carrier_index, tech] += row.value
+                end
+            end
+        end
+    end
+
+    # Save technology_input to CSV
+    csv_file = "oilSyngas_usage_iteration_$iteration.csv"
+    CSV.write(joinpath(resultDir, csv_file), technology_input)
+
     return outputsOfInterest
 end
 
 
 
 
-function modify_parameters(model::anyModel, uncertain_parameters::DataFrame)
+function modify_parameters(model::anyModel, uncertain_parameters::DataFrame) ::Nothing
     """
     Modify the parameters of a model based on uncertain parameters.
 
