@@ -63,25 +63,38 @@ outputsOfInterest = nothing # initialize parameter to store the outputs of inter
 objective = DataFrame(iteration = Int[], objectiveValue = Float64[]) # initialize dataframe to store the objective values of the optimization runs
 
 # set additional constraint for regret calculations -> Set the minimum use of biomass for the following categories (biomass usage in GWh/a)
-new_constraint = Dict(
-    "bioConversionOil" => 0,
-    "bioConversionSyngas" => 0,
-    "bioConversionBiogas" => 0,
-    "bioConversionChp" => 0,
-    "bioConversionHvc" => 0,
-    "bioConversionCoal" => 0,
-    "networkHeat" => 0,
-    "spaceHeat" => 0,
-    "proHeat" => 0
-)
+set_constraint = true # set to true if additional constraints should be set # make sure that the file "df_input_with_final_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
 
-for row in eachrow(anyM0.parts.lim.par[:useLow].data)
-    row.val = get(new_constraint, findTechnology(anyM0, row.Te), row.val)
+if set_constraint
+    cluster_index = 1
+    new_constraint = Dict(
+        "bioConversionOil" => 0, # 253.5 TWh/a
+        "bioConversionSyngas" => 90000, # 90 TWh/a
+        "bioConversionBiogas" => 0,
+        "bioConversionChp" => 0,
+        "bioConversionHvc" => 0,
+        "bioConversionCoal" => 0,
+        "networkHeat" => 0,
+        "spaceHeat" => 0,
+        "proHeat" => 0
+    )
+
+    for row in eachrow(anyM0.parts.lim.par[:useLow].data)
+        row.val = get(new_constraint, findTechnology(anyM0, row.Te), row.val)
+    end
+
+    #determine if a scenario is already within the respective cluster and should be skipped in the optimization
+    cluster_of_scenarios = CSV.read("df_input_with_final_cluster.csv", DataFrame)[!, "cluster_final"] # make sure that the file "df_input_with_final_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
 end
+
+
 
 
 for iteration in range(start_iteration, end_iteration)
     println("[info] iteration $iteration/$end_iteration")
+    if set_constraint && cluster_of_scenarios[iteration] == cluster_index
+        continue
+    end
 
     anyM = deepcopy(anyM0) # deepcopy of initialized model might lead to a a terminal crash => initialize the model for every iteration
     # anyM = anyModel(inputMod_arr, resultDir_str, objName = obj_str, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true) 

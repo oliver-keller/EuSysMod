@@ -354,8 +354,8 @@ function calculateOutputs(model::anyModel;  iteration::Int64=1, outputsOfInteres
     ### same to find the usage of the created oil/syngas ###
     # List of all carriers and technologies
     carriers = ["crudeOil", "refinedOil", "syngas", "methane", "h2"]
-    technologies = ["refinery", "oilPlantDh", "dieselEnginePeak", "dieselFrtRail", "dieselFrtRoadHeavy", "dieselFrtRoadLight", "dieselPsngRail", "dieselPsngRoadPub", "ottoPsngRoadPrvt", "avaAndNaviTech", "oilPlant",
-        "oilPlantProLow", "oilPlantProMed", "oilBoilerDh", "oilBoilerSpace", "oilBoilerProHigh", "oilBoilerProLow", "oilBoilerProMed",
+    technologies = ["refinery", "oilPlant", "dieselEnginePeak", "dieselFrtRail", "dieselFrtRoadHeavy", "dieselFrtRoadLight", "dieselPsngRail", "dieselPsngRoadPub", "ottoPsngRoadPrvt", "avaAndNaviTech",
+        "oilBoilerDh", "oilBoilerSpace", "oilBoilerProHigh", "oilBoilerProLow", "oilBoilerProMed",
         "Methanation", "fischerTropsch", "waterGasShift", "chpSyngasDh", "chpSyngasProLow", "syngasEngineDh", "syngasEngineProLow", "syngasEngineProMed",
         "pyrMethaneH2", "ccgtGasDh", "ccgtGasProMed", "ocgtGas", "ocgtGasChp", "methaneEngineDh", "methaneEngineProLow", "methaneEngineProMed", "methaneEnginePeak", "cngPsngRoadPrvt", "sofc", "gasToHvc", "stemMethaneReforming", "methaneBoilerDh", "methaneBoilerSpace", "methaneBoilerProHigh", "methaneBoilerProLow", "methaneBoilerProMed",
         "biogasUpgrade", "ccgtH2Dh", "ccgtH2ProMed", "ocgtH2", "fcevPsngRoadPrvt", "fcFrtRail", "fcFrtRoadHeavy", "fcFrtRoadLight", "fcPsngRail", "fcPsngRoadPub", "h2ToCrudeOil", "h2ToMethane", "pefc", "haberBoschH2AmmoniaDh", "haberBoschH2AmmoniaProLow", "h2BoilerDh", "h2BoilerProHigh", "h2BoilerProLow", "h2BoilerProMed"]
