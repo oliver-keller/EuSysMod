@@ -36,7 +36,7 @@ t_int = 8 # Number of threads (4)
 
 # define input and output directories
 inputMod_arr = ["_basis","timeSeries/96hours_2008"]
-resultDir_str = "./results/" * Dates.format(now(), "yyyy-mm-dd_HH-MM-SS")
+resultDir_str = "./results/" * Dates.format(now(), "yyyy-mm-dd_HH-MM")
 if !isdir(resultDir_str)
     mkdir(resultDir_str)
 end
@@ -76,7 +76,7 @@ new_constraint = Dict(
 )
 
 for row in eachrow(anyM0.parts.lim.par[:useLow].data)
-    row.val = get(new_constraint, findTechnology(anyM, row.Te), row.val)
+    row.val = get(new_constraint, findTechnology(anyM0, row.Te), row.val)
 end
 
 
@@ -87,7 +87,7 @@ for iteration in range(start_iteration, end_iteration)
     # anyM = anyModel(inputMod_arr, resultDir_str, objName = obj_str, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true) 
 
     # modify uncertain parameters
-    modify_parameters(anyM, uncertain_parameters)
+    modify_parameters(anyM, uncertain_parameters, lhs, iteration)
 
     # create optimization model
     createOptModel!(anyM)
@@ -98,7 +98,7 @@ for iteration in range(start_iteration, end_iteration)
     set_optimizer_attribute(anyM.optModel, "Method", 2);
     set_optimizer_attribute(anyM.optModel, "Crossover", 0);
     set_optimizer_attribute(anyM.optModel, "Threads",t_int);
-    set_optimizer_attribute(anyM.optModel, "BarConvTol", 1e-5);  # 1e-5
+    set_optimizer_attribute(anyM.optModel, "BarConvTol", 1e-3);  # 1e-5
     optimize!(anyM.optModel) # solve the model
 
     # update the outputs of interest and the objective value dataframes

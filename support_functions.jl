@@ -307,8 +307,8 @@ function calculateOutputs(model::anyModel;  iteration::Int64=1, outputsOfInteres
 
 
     # List of all carriers and technologies
-    includeWaste ? carriers = ["wood", "greenWaste", "manure", "sludge", "waste", "digestate", "refinedOil", "syngas", "methane", "h2"] : carriers = ["wood", "greenWaste", "manure", "sludge", "digestate", "refinedOil", "syngas", "methane", "h2"]
-    technologies = ["pyrolysisOil", "biomassToHvc", "chp", "boilerDh", "boilerSpace", "boilerProLow", "boilerProMed", "boilerProHigh", "biochemicalWoodOil", "liquefaction", "digestion", "gasification", "carbonization", "pyrolysisCoal", ""]
+    includeWaste ? carriers = ["wood", "greenWaste", "manure", "sludge", "waste", "digestate"] : carriers = ["wood", "greenWaste", "manure", "sludge", "digestate"]
+    technologies = ["pyrolysisOil", "biomassToHvc", "chp", "boilerDh", "boilerSpace", "boilerProLow", "boilerProMed", "boilerProHigh", "biochemicalWoodOil", "liquefaction", "digestion", "gasification", "carbonization", "pyrolysisCoal"]
 
     # Initialize the DataFrame with all zeros
     technology_input = DataFrame([:carrier => carriers; Symbol.(technologies) .=> 0.0])
@@ -356,9 +356,9 @@ function calculateOutputs(model::anyModel;  iteration::Int64=1, outputsOfInteres
     carriers = ["crudeOil", "refinedOil", "syngas", "methane", "h2"]
     technologies = ["refinery", "oilPlantDh", "dieselEnginePeak", "dieselFrtRail", "dieselFrtRoadHeavy", "dieselFrtRoadLight", "dieselPsngRail", "dieselPsngRoadPub", "ottoPsngRoadPrvt", "avaAndNaviTech", "oilPlant",
         "oilPlantProLow", "oilPlantProMed", "oilBoilerDh", "oilBoilerSpace", "oilBoilerProHigh", "oilBoilerProLow", "oilBoilerProMed",
-        "Methanation", "MethanationWithH2", "fischerTropsch", "waterGasShift", "chpSyngasDh", "chpSyngasProLow", "syngasEngineDh", "syngasEngineProLow", "syngasEngineProMed",
+        "Methanation", "fischerTropsch", "waterGasShift", "chpSyngasDh", "chpSyngasProLow", "syngasEngineDh", "syngasEngineProLow", "syngasEngineProMed",
         "pyrMethaneH2", "ccgtGasDh", "ccgtGasProMed", "ocgtGas", "ocgtGasChp", "methaneEngineDh", "methaneEngineProLow", "methaneEngineProMed", "methaneEnginePeak", "cngPsngRoadPrvt", "sofc", "gasToHvc", "stemMethaneReforming", "methaneBoilerDh", "methaneBoilerSpace", "methaneBoilerProHigh", "methaneBoilerProLow", "methaneBoilerProMed",
-        "MethanationWithH2", "biogasUpgrade", "ccgtH2Dh", "ccgtH2ProMed", "ocgtH2", "fcevPsngRoadPrvt", "fcFrtRail", "fcFrtRoadHeavy", "fcFrtRoadLight", "fcPsngRail", "fcPsngRoadPub", "h2ToCrudeOil", "h2ToMethane", "pefc", "haberBoschH2AmmoniaDh", "haberBoschH2AmmoniaProLow", "h2BoilerDh", "h2BoilerProHigh", "h2BoilerProLow", "h2BoilerProMed"]
+        "biogasUpgrade", "ccgtH2Dh", "ccgtH2ProMed", "ocgtH2", "fcevPsngRoadPrvt", "fcFrtRail", "fcFrtRoadHeavy", "fcFrtRoadLight", "fcPsngRail", "fcPsngRoadPub", "h2ToCrudeOil", "h2ToMethane", "pefc", "haberBoschH2AmmoniaDh", "haberBoschH2AmmoniaProLow", "h2BoilerDh", "h2BoilerProHigh", "h2BoilerProLow", "h2BoilerProMed"]
         
 
 
@@ -369,7 +369,6 @@ function calculateOutputs(model::anyModel;  iteration::Int64=1, outputsOfInteres
     for row in eachrow(use_variables)
         for tech in technologies
             if occursin(tech[2:end], row.technology)
-                # carrier_index = findfirst(==(row.carrier), technology_input.carrier)
                 carrier_index = findfirst(x -> occursin(x[2:end], row.carrier), technology_input.carrier)
                 if !isnothing(carrier_index)
                     technology_input[carrier_index, tech] += row.value
@@ -388,7 +387,7 @@ end
 
 
 
-function modify_parameters(model::anyModel, uncertain_parameters::DataFrame) ::Nothing
+function modify_parameters(model::anyModel, uncertain_parameters::DataFrame, lhs::DataFrame, iteration::Int) ::Nothing
     """
     Modify the parameters of a model based on uncertain parameters.
 

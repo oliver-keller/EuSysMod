@@ -11,7 +11,7 @@ if !isdir(resultDir_str)
     mkdir(resultDir_str)
 end
 
-obj_str = "median_for_sankey"
+obj_str = "test"
 # obj_str = "Test_" * Dates.format(now(), "yyyy-mm-dd_HH-MM")
 
 # read uncertain parameters
@@ -26,7 +26,7 @@ anyM = anyModel(inputMod_arr, resultDir_str, objName = obj_str, supTsLvl = 2, re
 iteration = 206
 
 # modify uncertain parameters
-modify_parameters(anyM, uncertain_parameters)
+modify_parameters(anyM, uncertain_parameters, lhs, iteration)
 
 # set additional constraint for regret calculations -> Set the minimum use of biomass for the following categories
 new_constraint = Dict(
@@ -72,7 +72,7 @@ outputsOfInterest = calculateOutputs(anyM, iteration=iteration, outputsOfInteres
 
 
 
-# reportResults(:summary,anyM, addRep = (:capaConvOut,), addObjName = true)
+reportResults(:summary,anyM, addRep = (:capaConvOut,), addObjName = true)
 # reportResults(:exchange,anyM, addObjName = true)
 # reportResults(:cost,anyM, addObjName = true)
 # reportTimeSeries(:electricity,anyM)
@@ -90,10 +90,3 @@ plotSankeyDiagram(anyM; ymlFilter = "all.yml", dropDown = (:timestep, ), fontSiz
 # plotTree(:timestep, anyM)
 # plotNetworkGraph(anyM) # flow diagramm
 
-
-
-objective = DataFrame(iteration = Int[], objectiveValue = Float64[])
-push!(objective, [iteration, objective_value(anyM.optModel)])
-
-
-CSV.write(resultDir_str * "/total_cost.csv", DataFrame(objective))
