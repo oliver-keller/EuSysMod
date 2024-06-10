@@ -14,7 +14,15 @@
 ### The file "outputsOfInterest.csv" is used as input for the decision tree creation with the DECIDE tool written in python (the adapted version can be found under https://github.com/oliver-keller/Decide)
 ### using the output of DECIDE the regret for the different strategies can be calculated
 
-
+## Define the input parameter ##
+START_ITERATION = 1             # set iteration boundaries
+END_ITERATION = 300             # set iteration boundaries
+OBJ_STR = "regret_cluster_0"    # name of the modelrun
+MIN_BIOMASS_FOR_OIL = 0         # constraint for using certain amount of biomass for oil produiction (TWh/a)
+MIN_BIOMASS_FOR_HVC = 0         # constraint for using certain amount of biomass for HVC produiction (TWh/a)
+MIN_BIOMASS_FOR_SYNGAS = 0      # constraint for using certain amount of biomass for syngas produiction (TWh/a)
+CLUSTER_INDEX = 0               # cluster index for the additional constraint (if no constraint parameter is not used) 
+BARRIER_CONV_TOL = 1e-5         # barrier convergence tolerance
 
 
 using AnyMOD, Gurobi, CSV, Statistics, Dates
@@ -31,7 +39,6 @@ include("support_functions.jl")
 #     t_int = parse(Int,ARGS[2]) # number of threads
 # end
 
-
 t_int = 8 # Number of threads (4)
 
 # define input and output directories
@@ -41,38 +48,29 @@ if !isdir(resultDir_str)
     mkdir(resultDir_str)
 end
 
-# name of the modelrun
-obj_str = "Sampling_300"
-
-
 # read uncertain parameters
 uncertain_parameters = CSV.read("_basis/uncertain_parameters.csv", DataFrame, types=[String, String, String, String, String, Float64, Float64, Float64, Float64, String])
-# foreach(x -> uncertain_parameters[!,x] = string.(uncertain_parameters[!,x]), [:parameter, :carrier, :region, :technology, :timestep])
 
 # lhs = create_lhs(size(uncertain_parameters)[1], 1000, 0) # creates a new Latin Hypercube Sample and saves as csv
 lhs = CSV.read("lhs.csv", DataFrame, header=false) # uses an already created lhc sample
 
-# set iteration boundaries
-start_iteration = 1
-end_iteration = 3
-
 # initialize model (deepcopy of initialized model might lead to a a terminal crash. In this case initialize the model separately for every iteration.)
-anyM0 = anyModel(inputMod_arr, resultDir_str, objName = obj_str, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true)
+anyM0 = anyModel(inputMod_arr, resultDir_str, objName = OBJ_STR, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true)
 
 outputsOfInterest = nothing # initialize parameter to store the outputs of interest
 objective = DataFrame(iteration = Int[], objectiveValue = Float64[]) # initialize dataframe to store the objective values of the optimization runs
 
 # set additional constraint for regret calculations -> Set the minimum use of biomass for the following categories (biomass usage in GWh/a)
-set_constraint = true # set to true if additional constraints should be set # make sure that the file "df_input_with_final_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
+# make sure that the file "df_input_with_final_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
+set_constraint = (MIN_BIOMASS_FOR_HVC > 0) || (MIN_BIOMASS_FOR_OIL > 0) || (MIN_BIOMASS_FOR_SYNGAS > 0) # set to true if additional constraints exists
 
 if set_constraint
-    cluster_index = 1
     new_constraint = Dict(
-        "bioConversionOil" => 0, # 253.5 TWh/a
-        "bioConversionSyngas" => 90000, # 90 TWh/a
-        "bioConversionBiogas" => 0,
+        "bioConversionOil" => MIN_BIOMASS_FOR_OIL*1000,
+        "bioConversionSyngas" => MIN_BIOMASS_FOR_SYNGAS*1000, 
+        "bioConversionBiogas" => 0, 
         "bioConversionChp" => 0,
-        "bioConversionHvc" => 0,
+        "bioConversionHvc" => MIN_BIOMASS_FOR_HVC*1000,
         "bioConversionCoal" => 0,
         "networkHeat" => 0,
         "spaceHeat" => 0,
@@ -84,20 +82,18 @@ if set_constraint
     end
 
     #determine if a scenario is already within the respective cluster and should be skipped in the optimization
-    cluster_of_scenarios = CSV.read("df_input_with_final_cluster.csv", DataFrame)[!, "cluster_final"] # make sure that the file "df_input_with_final_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
+    cluster_of_scenarios = CSV.read("df_filtered_with_cluster.csv", DataFrame)[!, "cluster_final"] # make sure that the file "df_filtered_with_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
 end
 
+for iteration in range(START_ITERATION, END_ITERATION)
+    println("[info] iteration $iteration/$END_ITERATION")
 
-
-
-for iteration in range(start_iteration, end_iteration)
-    println("[info] iteration $iteration/$end_iteration")
-    if set_constraint && cluster_of_scenarios[iteration] == cluster_index
+    if set_constraint && cluster_of_scenarios[iteration] == CLUSTER_INDEX
         continue
     end
 
     anyM = deepcopy(anyM0) # deepcopy of initialized model might lead to a a terminal crash => initialize the model for every iteration
-    # anyM = anyModel(inputMod_arr, resultDir_str, objName = obj_str, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true) 
+    # anyM = anyModel(inputMod_arr, resultDir_str, objName = OBJ_STR, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true) 
 
     # modify uncertain parameters
     modify_parameters(anyM, uncertain_parameters, lhs, iteration)
@@ -111,7 +107,7 @@ for iteration in range(start_iteration, end_iteration)
     set_optimizer_attribute(anyM.optModel, "Method", 2);
     set_optimizer_attribute(anyM.optModel, "Crossover", 0);
     set_optimizer_attribute(anyM.optModel, "Threads",t_int);
-    set_optimizer_attribute(anyM.optModel, "BarConvTol", 1e-3);  # 1e-5
+    set_optimizer_attribute(anyM.optModel, "BarConvTol", BARRIER_CONV_TOL);  # 1e-5
     optimize!(anyM.optModel) # solve the model
 
     # update the outputs of interest and the objective value dataframes
@@ -122,5 +118,8 @@ for iteration in range(start_iteration, end_iteration)
     
     # Save outputsOfInterest and total_cost as a CSV file
     CSV.write(resultDir_str * "/outputsOfInterest.csv", DataFrame(outputsOfInterest))
-    CSV.write(resultDir_str * "/total_cost.csv", DataFrame(objective))
+    set_constraint ? CSV.write(resultDir_str * "/total_cost_cluster_$CLUSTER_INDEX.csv", DataFrame(objective)) : CSV.write(resultDir_str * "/total_cost.csv", DataFrame(objective))
 end
+
+
+
