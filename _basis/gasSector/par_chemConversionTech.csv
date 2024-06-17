@@ -21,8 +21,13 @@ gasToHvc,,,avaConv,0.95,Assumption
 gasToHvc,,,costOprConv,500,Assumption
 gasToHvc,,,effConv,0.374953131,EnergyScope
 gasToHvc,,,lifeConv,25,Assumption
-stemMethaneReforming,methane,,ratioConvInFix,0.8,Assumption
-stemMethaneReforming,,,avaConv,0.95,Assumption
-stemMethaneReforming,,,costOprConv,500,Assumption
-stemMethaneReforming,,,effConv,0.8,Assumption
-stemMethaneReforming,,,lifeConv,25,Assumption
+steamMethaneReforming,methane,,ratioConvInFix,0.8,Assumption
+steamMethaneReforming,,,avaConv,0.95,Assumption
+steamMethaneReforming,,,costOprConv,200,Assumption
+steamMethaneReforming,,,effConv,0.8,Assumption
+steamMethaneReforming,,,lifeConv,25,Assumption
+oilToHvc,,,avaConv,0.95,Assumption
+oilToHvc,,,costOprConv,500,Assumption
+oilToHvc,,,effConv,0.8,Assumption
+oilToHvc,,,lifeConv,25,Assumption
+oilToHvc,,,costExpConv,0,Assumption Missing in all technologies?

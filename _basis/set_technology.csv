@@ -87,11 +87,12 @@ chemConversion,haberBosch,haberBoschH2AmmoniaDh,,h2; electricity,ammonia; distri
 chemConversion,haberBosch,haberBoschH2AmmoniaProLow,,h2; electricity,ammonia; processHeat_low,,,mature,none,,,,
 chemConversion,,ammoniaCracking,,ammonia; processHeat_high,h2,,,mature,none,,,,
 chemConversion,,gasToHvc,,methane; electricity,hvc,,,mature,none,,,,
-chemConversion,,stemMethaneReforming,,methane; processHeat_high,h2,,,mature,none,,,,
+chemConversion,,steamMethaneReforming,,methane; processHeat_high,h2,,,mature,none,,,,
 fossil,oil,oilPlant,,refinedOil,electricity,,,mature,none,,,,
 fossil,oil,oilPlantDh,,crudeOil,electricity; districtHeat,,,mature,none,,,,
 fossil,oil,oilPlantProLow,,refinedOil,electricity; processHeat_low,,,mature,none,,,,
 fossil,oil,oilPlantProMed,,refinedOil,electricity; processHeat_medium,,,mature,none,,,,
+fossil,oil,oilToHvc,,refinedOil,hvc,,,mature,none,,,,
 fossil,nuclearPlant,nuclearDh,,uranum,electricity; districtHeat,,,mature,none,,,,
 fossil,nuclearPlant,nuclearProMed,,uranum,electricity; processHeat_medium,,,mature,none,,,,
 fossil,coalPlant,coalDh,,coal,electricity; districtHeat,,,mature,none,,,,
@@ -173,3 +174,4 @@ storage,gasStorage,h2StorageTank,,,,h2,h2,mature,none,,,,2
 storage,gasStorage,syngasStorage,,,,syngas,syngas,mature,none,,,,2
 storage,battery,lithiumBattery,,,,electricity,electricity,emerging,none,,,,3
 storage,battery,redoxBattery,,,,electricity,electricity,emerging,none,,,,3
+ccs,,ccsStorage,,co2Pure,co2Removed,,,mature,none,,,,

@@ -40,3 +40,8 @@ h2ToMethane,,,costExpConv,725,Assumption
 h2ToMethane,,,costOprConv,56.7,Assumption
 h2ToMethane,,,effConv,0.9,Assumption
 h2ToMethane,,,lifeConv,25,Assumption
+ccsStorage,,,avaConv,1,Assumption
+ccsStorage,,,costExpConv,2000,Assumption
+ccsStorage,,,costOprConv,100,Assumption
+ccsStorage,,,effConv,1,Assumption
+ccsStorage,,,lifeConv,25,Assumption
