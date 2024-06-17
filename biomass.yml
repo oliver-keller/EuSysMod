@@ -314,8 +314,8 @@ vertices:   ###################   Technologies   ###############################
     color: [0]
     position: [0]
 
-  - label: stemMethaneReforming
-    name: stemMethaneReforming
+  - label: steamMethaneReforming
+    name: steamMethaneReforming
     type: technology
     color: [0]
     position: [0]
