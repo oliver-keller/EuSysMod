@@ -1,8 +1,6 @@
 using AnyMOD, Gurobi, CSV, Statistics
 
-b = "C:/Git/EuSysMod/"
-
-par_df = CSV.read(b * "settings.csv", DataFrame)
+par_df = CSV.read("settings.csv", DataFrame)
 
 if isempty(ARGS)
     id_int = 1
@@ -16,8 +14,8 @@ time = string(par_df[id_int,:time]) # resolution of time-series for actual solve
 space = string(par_df[id_int,:space]) # scenario 
 
 obj_str = time * "_" * space * "_testing"
-inputMod_arr = [b * "_basis", b * "timeSeries/" * time * "_" * space]
-resultDir_str = b * "results"
+inputMod_arr = [ "_basis",  "timeSeries/" * time * "_" * space]
+resultDir_str =  "results"
 
 
 #region # * create and solve model
@@ -31,7 +29,8 @@ set_optimizer(anyM.optModel, Gurobi.Optimizer)
 set_optimizer_attribute(anyM.optModel, "Method", 2);
 set_optimizer_attribute(anyM.optModel, "Crossover", 0);
 set_optimizer_attribute(anyM.optModel, "Threads", t_int);
-set_optimizer_attribute(anyM.optModel, "BarConvTol", 1e-5);
+set_optimizer_attribute(anyM.optModel, "BarConvTol", 1e-8);
+set_optimizer_attribute(anyM.optModel, "NumericFocus", 0)
 
 optimize!(anyM.optModel)
 
