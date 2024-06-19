@@ -19,8 +19,7 @@ MODELRUN = 1
 using AnyMOD, Gurobi, CSV, Statistics, Dates
 include("support_functions.jl")
 
-cwd = pwd()* "\\"
-par_df = CSV.read(cwd * "settings.csv", DataFrame)
+par_df = CSV.read("settings.csv", DataFrame)
 
 if isempty(ARGS)
     id_int = MODELRUN # id of the modelrun
