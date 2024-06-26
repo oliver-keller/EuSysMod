@@ -1,230 +1,230 @@
 technology_3,timestep_2,mode,carrier_1,parameter,value,source
-ccgtGasDh,,,,avaConv,0.930302198,
-ccgtH2Dh,,,,avaConv,0.930302198,Assumption
-ccgtGasProMed,,,,avaConv,0.930302198,
-ccgtH2ProMed,,,,avaConv,0.930302198,
-ocgtGas,,,,avaConv,0.971876923,
-ocgtGasChp,,,,avaConv,0.929862637,
-ocgtH2,,,,avaConv,0.971876923,
-ocgtH2Chp,,,,avaConv,0.929862637,
-methaneEngineDh,,,,avaConv,0.954615385,
-methaneEngineProLow,,,,avaConv,0.954615385,
-methaneEngineProMed,,,,avaConv,0.954615385,
-bioGasEngineDh,,,,avaConv,0.950769231,
-bioGasEngineProLow,,,,avaConv,0.950769231,
-bioGasEngineProMed,,,,avaConv,0.950769231,
-syngasEngineDh,,,,avaConv,0.95,Assumption
-syngasEngineProLow,,,,avaConv,0.95,Assumption
-syngasEngineProMed,,,,avaConv,0.95,Assumption
-sofc,,,,avaConv,1,
-pefc,,,,avaConv,0.997076923,
-dieselEnginePeak,,,,avaConv,0.967923077,
-methaneEnginePeak,,,,avaConv,0.987153846,
-chpDigestateDh,,,,avaConv,0.95,Assumption
-chpDigestateProLow,,,,avaConv,0.95,Assumption
-chpWoodDh,,,,avaConv,0.95,Assumption
-chpWoodProLow,,,,avaConv,0.95,Assumption
-chpGreenWasteDh,,,,avaConv,0.95,Assumption
-chpGreenWasteProLow,,,,avaConv,0.95,Assumption
-chpWasteDh,,,,avaConv,0.95,Assumption
-chpWasteProLow,,,,avaConv,0.95,Assumption
-chpSyngasDh,,,,avaConv,0.95,Assumption
-chpSyngasProLow,,,,avaConv,0.95,Assumption
-oilPlant,,,,avaConv,0.95,Assumption
-oilPlantDh,,,,avaConv,0.95,Assumption
-oilPlantProLow,,,,avaConv,0.95,Assumption
-oilPlantProMed,,,,avaConv,0.95,Assumption
-nuclearDh,,,,avaConv,0.95,Assumption
-nuclearProMed,,,,avaConv,0.95,Assumption
-coalDh,,,,avaConv,0.95,Assumption
-coalProMed,,,,avaConv,0.95,Assumption
-ccgtGasDh,,,,lifeConv,25,
-ccgtH2Dh,,,,lifeConv,25,
-ccgtGasProMed,,,,lifeConv,25,
-ccgtH2ProMed,,,,lifeConv,25,
-ocgtGas,,,,lifeConv,25,
-ocgtGasChp,,,,lifeConv,25,
-ocgtH2,,,,lifeConv,25,
-ocgtH2Chp,,,,lifeConv,25,
-methaneEngineDh,,,,lifeConv,25,
-methaneEngineProLow,,,,lifeConv,25,
-methaneEngineProMed,,,,lifeConv,25,
-bioGasEngineDh,,,,lifeConv,25,
-bioGasEngineProLow,,,,lifeConv,25,
-bioGasEngineProMed,,,,lifeConv,25,
-syngasEngineDh,,,,lifeConv,25,Assumption
-syngasEngineProLow,,,,lifeConv,25,Assumption
-syngasEngineProMed,,,,lifeConv,25,Assumption
-sofc,,,,lifeConv,20,
-pefc,,,,lifeConv,10,
-dieselEnginePeak,,,,lifeConv,25,
-methaneEnginePeak,,,,lifeConv,25,
-chpDigestateDh,,,,lifeConv,25,Assumption
-chpDigestateProLow,,,,lifeConv,25,Assumption
-chpWoodDh,,,,lifeConv,25,Assumption
-chpWoodProLow,,,,lifeConv,25,Assumption
-chpGreenWasteDh,,,,lifeConv,25,Assumption
-chpGreenWasteProLow,,,,lifeConv,25,Assumption
-chpWasteDh,,,,lifeConv,25,Assumption
-chpWasteProLow,,,,lifeConv,25,Assumption
-chpSyngasDh,,,,lifeConv,25,Assumption
-chpSyngasProLow,,,,lifeConv,25,Assumption
-oilPlant,,,,lifeConv,40,Assumption
-oilPlantDh,,,,lifeConv,40,Assumption
-oilPlantProLow,,,,lifeConv,40,Assumption
-oilPlantProMed,,,,lifeConv,40,Assumption
-nuclearDh,,,,lifeConv,50,Assumption
-nuclearProMed,,,,lifeConv,50,Assumption
-coalDh,,,,lifeConv,50,Assumption
-coalProMed,,,,lifeConv,50,Assumption
-ccgtGasDh,,,electricity,ratioConvOutFix,0.588839941,
-ccgtGasDh,,,,effConv,0.853979337,
-ccgtH2Dh,,,electricity,ratioConvOutFix,0.588839941,
-ccgtH2Dh,,,,effConv,0.853979337,
-ccgtGasProMed,,,electricity,ratioConvOutFix,0.588839941,
-ccgtGasProMed,,,,effConv,0.853979337,
-ccgtH2ProMed,,,electricity,ratioConvOutFix,0.5,Assumption
-ccgtH2ProMed,,,,effConv,0.85,Assumption
-ocgtGas,,,,effConv,0.415,
-ocgtGasChp,,,electricity,ratioConvOutFix,0.49784792,
-ocgtGasChp,,,,effConv,0.833587896,
-ocgtH2,,,,effConv,0.415,
-ocgtH2Chp,,,electricity,ratioConvOutFix,0.49784792,
-ocgtH2Chp,,,,effConv,0.833587896,
-methaneEngineDh,,,electricity,ratioConvOutFix,0.499821365,
-methaneEngineDh,,,,effConv,0.938906872,
-methaneEngineProLow,,,electricity,ratioConvOutFix,0.499821365,
-methaneEngineProLow,,,,effConv,0.938906872,
-methaneEngineProMed,,,electricity,ratioConvOutFix,0.499821365,
-methaneEngineProMed,,,,effConv,0.938906872,
 bioGasEngineDh,,,electricity,ratioConvOutFix,0.483394834,
+bioGasEngineDh,,,,lifeConv,25,
 bioGasEngineDh,,,,effConv,0.895452563,
-bioGasEngineProLow,,,electricity,ratioConvOutFix,0.483394834,
-bioGasEngineProLow,,,,effConv,0.895452563,
-bioGasEngineProMed,,,electricity,ratioConvOutFix,0.483394834,
-bioGasEngineProMed,,,,effConv,0.895452563,
-syngasEngineDh,,,electricity,ratioConvOutFix,0.5,Assumption
-syngasEngineDh,,,,effConv,0.85,Assumption
-syngasEngineProLow,,,electricity,ratioConvOutFix,0.5,Assumption
-syngasEngineProLow,,,,effConv,0.85,Assumption
-syngasEngineProMed,,,electricity,ratioConvOutFix,0.5,Assumption
-syngasEngineProMed,,,,effConv,0.85,Assumption
-sofc,,,electricity,ratioConvOutFix,0.618964004,
-sofc,,,,effConv,0.96243769,
-pefc,,,electricity,ratioConvOutFix,0.555555556,
-pefc,,,,effConv,0.9,
-dieselEnginePeak,,,,effConv,0.35,
-methaneEnginePeak,,,,effConv,0.475714286,
-chpDigestateDh,,,electricity,ratioConvOutFix,0.5,Assumption
-chpDigestateDh,,,,effConv,0.85,Assumption
-chpDigestateProLow,,,electricity,ratioConvOutFix,0.5,Assumption
-chpDigestateProLow,,,,effConv,0.85,Assumption
-chpWoodDh,,,electricity,ratioConvOutFix,0.5,Assumption
-chpWoodDh,,,,effConv,0.85,Assumption
-chpWoodProLow,,,electricity,ratioConvOutFix,0.5,Assumption
-chpWoodProLow,,,,effConv,0.85,Assumption
-chpGreenWasteDh,,,electricity,ratioConvOutFix,0.5,Assumption
-chpGreenWasteDh,,,,effConv,0.85,Assumption
-chpGreenWasteProLow,,,electricity,ratioConvOutFix,0.5,Assumption
-chpGreenWasteProLow,,,,effConv,0.85,Assumption
-chpWasteDh,,,electricity,ratioConvOutFix,0.5,Assumption
-chpWasteDh,,,,effConv,0.85,Assumption
-chpWasteProLow,,,electricity,ratioConvOutFix,0.5,Assumption
-chpWasteProLow,,,,effConv,0.85,Assumption
-chpSyngasDh,,,electricity,ratioConvOutFix,0.5,Assumption
-chpSyngasDh,,,,effConv,0.85,Assumption
-chpSyngasProLow,,,electricity,ratioConvOutFix,0.5,Assumption
-chpSyngasProLow,,,,effConv,0.85,Assumption
-oilPlant,,,,effConv,0.4,Assumption
-oilPlantDh,,,electricity,ratioConvOutFix,0.5,Assumption
-oilPlantDh,,,,effConv,0.85,Assumption
-oilPlantProLow,,,electricity,ratioConvOutFix,0.5,Assumption
-oilPlantProLow,,,,effConv,0.85,Assumption
-oilPlantProMed,,,electricity,ratioConvOutFix,0.5,Assumption
-oilPlantProMed,,,,effConv,0.85,Assumption
-nuclearDh,,,electricity,ratioConvOutFix,0.5,Assumption
-nuclearDh,,,,effConv,0.85,Assumption
-nuclearProMed,,,electricity,ratioConvOutFix,0.5,Assumption
-nuclearProMed,,,,effConv,0.85,Assumption
-coalDh,,,electricity,ratioConvOutFix,0.5,Assumption
-coalDh,,,,effConv,0.85,Assumption
-coalProMed,,,electricity,ratioConvOutFix,0.5,Assumption
-coalProMed,,,,effConv,0.85,Assumption
-ccgtGasDh,2040,,,costExpConv,586,
-ccgtH2Dh,2040,,,costExpConv,673.9,
-ccgtGasProMed,2040,,,costExpConv,586,
-ccgtH2ProMed,2040,,,costExpConv,673.9,
-ocgtGas,2040,,,costExpConv,177.7698,
-ocgtGasChp,2040,,,costExpConv,226.6,
-ocgtH2,2040,,,costExpConv,204.43527,Assumption
-ocgtH2Chp,2040,,,costExpConv,260.59,Assumption
-methaneEngineDh,2040,,,costExpConv,415.5,
-methaneEngineProLow,2040,,,costExpConv,415.5,
-methaneEngineProMed,2040,,,costExpConv,415.5,
-bioGasEngineDh,2040,,,costExpConv,384.75,
-bioGasEngineProLow,2040,,,costExpConv,384.75,
-bioGasEngineProMed,2040,,,costExpConv,384.75,
-syngasEngineDh,2040,,,costExpConv,500,Assumption
-syngasEngineProLow,2040,,,costExpConv,500,Assumption
-syngasEngineProMed,2040,,,costExpConv,500,Assumption
-sofc,2040,,,costExpConv,840,
-pefc,2040,,,costExpConv,475,
-dieselEnginePeak,2040,,,costExpConv,118.825,
-methaneEnginePeak,2040,,,costExpConv,221.544,
-chpDigestateDh,2040,,,costExpConv,500,Assumption
-chpDigestateProLow,2040,,,costExpConv,500,Assumption
-chpWoodDh,2040,,,costExpConv,870.4610798,"Assumption, Solid Biomass"
-chpWoodProLow,2040,,,costExpConv,870.4610798,"Assumption, Solid Biomass"
-chpGreenWasteDh,2040,,,costExpConv,272.3849973,"Assumption, NonsolidBiomass"
-chpGreenWasteProLow,2040,,,costExpConv,272.3849973,"Assumption, NonsolidBiomass"
-chpWasteDh,2040,,,costExpConv,500,Assumption
-chpWasteProLow,2040,,,costExpConv,500,Assumption
-chpSyngasDh,2040,,,costExpConv,500,Assumption
-chpSyngasProLow,2040,,,costExpConv,500,Assumption
-oilPlant,2040,,,costExpConv,500,Assumption
-oilPlantDh,2040,,,costExpConv,500,Assumption
-oilPlantProLow,2040,,,costExpConv,500,Assumption
-oilPlantProMed,2040,,,costExpConv,500,Assumption
-nuclearDh,2040,,,costExpConv,500,Assumption
-nuclearProMed,2040,,,costExpConv,500,Assumption
-coalDh,2040,,,costExpConv,500,Assumption
-coalProMed,2040,,,costExpConv,500,Assumption
-ccgtGasDh,2040,,,costOprConv,13.71,
-ccgtH2Dh,2040,,,costOprConv,13.71,
-ccgtGasProMed,2040,,,costOprConv,13.71,
-ccgtH2ProMed,2040,,,costOprConv,13.71,
-ocgtGas,2040,,,costOprConv,15.862,
-ocgtGasChp,2040,,,costOprConv,7.683,
-ocgtH2,2040,,,costOprConv,3.1836328,
-ocgtH2Chp,2040,,,costOprConv,7.683,
-methaneEngineDh,2040,,,costOprConv,4.2255,
-methaneEngineProLow,2040,,,costOprConv,4.2255,
-methaneEngineProMed,2040,,,costOprConv,4.2255,
 bioGasEngineDh,2040,,,costOprConv,3.912,
+bioGasEngineDh,2040,,,costExpConv,384.75,
+bioGasEngineDh,,,,avaConv,0.950769231,
+bioGasEngineProLow,,,electricity,ratioConvOutFix,0.483394834,
+bioGasEngineProLow,,,,lifeConv,25,
+bioGasEngineProLow,,,,effConv,0.895452563,
 bioGasEngineProLow,2040,,,costOprConv,3.912,
+bioGasEngineProLow,2040,,,costExpConv,384.75,
+bioGasEngineProLow,,,,avaConv,0.950769231,
+bioGasEngineProMed,,,electricity,ratioConvOutFix,0.483394834,
+bioGasEngineProMed,,,,lifeConv,25,
+bioGasEngineProMed,,,,effConv,0.895452563,
 bioGasEngineProMed,2040,,,costOprConv,3.912,
-syngasEngineDh,2040,,,costOprConv,10,Assumption
-syngasEngineProLow,2040,,,costOprConv,10,Assumption
-syngasEngineProMed,2040,,,costOprConv,10,Assumption
-sofc,2040,,,costOprConv,42,
-pefc,2040,,,costOprConv,23.75,
+bioGasEngineProMed,2040,,,costExpConv,384.75,
+bioGasEngineProMed,,,,avaConv,0.950769231,
+ccgtGasDh,,,electricity,ratioConvOutFix,0.588839941,
+ccgtGasDh,,,,lifeConv,25,
+ccgtGasDh,,,,effConv,0.853979337,
+ccgtGasDh,2040,,,costOprConv,13.71,
+ccgtGasDh,2040,,,costExpConv,586,
+ccgtGasDh,,,,avaConv,0.930302198,
+ccgtGasProMed,,,electricity,ratioConvOutFix,0.588839941,
+ccgtGasProMed,,,,lifeConv,25,
+ccgtGasProMed,,,,effConv,0.853979337,
+ccgtGasProMed,2040,,,costOprConv,13.71,
+ccgtGasProMed,2040,,,costExpConv,586,
+ccgtGasProMed,,,,avaConv,0.930302198,
+ccgtH2Dh,,,electricity,ratioConvOutFix,0.588839941,
+ccgtH2Dh,,,,lifeConv,25,
+ccgtH2Dh,,,,effConv,0.853979337,
+ccgtH2Dh,2040,,,costOprConv,13.71,
+ccgtH2Dh,2040,,,costExpConv,673.9,
+ccgtH2Dh,,,,avaConv,0.930302198,
+ccgtH2ProMed,,,electricity,ratioConvOutFix,0.568,IND_CHP_H2 @ EnergyScope Gabriel
+ccgtH2ProMed,,,,lifeConv,25,IND_CHP_H2 @ EnergyScope Gabriel
+ccgtH2ProMed,,,,effConv,0.804,IND_CHP_H2 @ EnergyScope Gabriel
+ccgtH2ProMed,2040,,,costOprConv,25,IND_CHP_H2 @ EnergyScope Gabriel
+ccgtH2ProMed,2040,,,costExpConv,500,IND_CHP_H2 @ EnergyScope Gabriel
+ccgtH2ProMed,,,,avaConv,1,IND_CHP_H2 @ EnergyScope Gabriel
+chpDigestateDh,,,electricity,ratioConvOutFix,0.448,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpDigestateDh,,,,lifeConv,25,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpDigestateDh,,,,effConv,0.29,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpDigestateDh,2040,,,costOprConv,147.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpDigestateDh,2040,,,costExpConv,1374,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpDigestateDh,,,,avaConv,0.85,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpDigestateProLow,,,electricity,ratioConvOutFix,0.448,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpDigestateProLow,,,,lifeConv,25,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpDigestateProLow,,,,effConv,0.29,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpDigestateProLow,2040,,,costOprConv,147.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpDigestateProLow,2040,,,costExpConv,1374,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpDigestateProLow,,,,avaConv,0.85,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpGreenWasteDh,,,electricity,ratioConvOutFix,0.431,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpGreenWasteDh,,,,lifeConv,15,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpGreenWasteDh,,,,effConv,0.589,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpGreenWasteDh,2040,,,costOprConv,227,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpGreenWasteDh,2040,,,costExpConv,4537,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpGreenWasteDh,,,,avaConv,0.85,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpGreenWasteProLow,,,electricity,ratioConvOutFix,0.431,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpGreenWasteProLow,,,,lifeConv,15,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpGreenWasteProLow,,,,effConv,0.589,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpGreenWasteProLow,2040,,,costOprConv,227,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpGreenWasteProLow,2040,,,costExpConv,4537,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpGreenWasteProLow,,,,avaConv,0.85,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpSyngasDh,,,electricity,ratioConvOutFix,0.568,DHN_CHP_CH4 @ EnergyScope Gabriel
+chpSyngasDh,,,,lifeConv,25,DHN_CHP_CH4 @ EnergyScope Gabriel
+chpSyngasDh,,,,effConv,0.804,DHN_CHP_CH4 @ EnergyScope Gabriel
+chpSyngasDh,2040,,,costOprConv,25,DHN_CHP_CH4 @ EnergyScope Gabriel
+chpSyngasDh,2040,,,costExpConv,500,DHN_CHP_CH4 @ EnergyScope Gabriel
+chpSyngasDh,,,,avaConv,1,DHN_CHP_CH4 @ EnergyScope Gabriel
+chpSyngasProLow,,,electricity,ratioConvOutFix,0.568,IND_CHP_H2 @ EnergyScope Gabriel
+chpSyngasProLow,,,,lifeConv,25,IND_CHP_H2 @ EnergyScope Gabriel
+chpSyngasProLow,,,,effConv,0.804,IND_CHP_H2 @ EnergyScope Gabriel
+chpSyngasProLow,2040,,,costOprConv,25,IND_CHP_H2 @ EnergyScope Gabriel
+chpSyngasProLow,2040,,,costExpConv,500,IND_CHP_H2 @ EnergyScope Gabriel
+chpSyngasProLow,,,,avaConv,1,IND_CHP_H2 @ EnergyScope Gabriel
+chpWasteDh,,,electricity,ratioConvOutFix,0.308,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWasteDh,,,,lifeConv,25,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWasteDh,,,,effConv,0.65,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWasteDh,2040,,,costOprConv,111,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWasteDh,2040,,,costExpConv,2928,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWasteDh,,,,avaConv,0.85,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWasteProLow,,,electricity,ratioConvOutFix,0.308,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWasteProLow,,,,lifeConv,25,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWasteProLow,,,,effConv,0.65,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWasteProLow,2040,,,costOprConv,111,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWasteProLow,2040,,,costExpConv,2928,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWasteProLow,,,,avaConv,0.85,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWoodDh,,,electricity,ratioConvOutFix,0.254,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWoodDh,,,,lifeConv,25,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWoodDh,,,,effConv,0.71,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWoodDh,2040,,,costOprConv,40.5,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWoodDh,2040,,,costExpConv,1081,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWoodDh,,,,avaConv,0.85,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWoodProLow,,,electricity,ratioConvOutFix,0.254,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWoodProLow,,,,lifeConv,25,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWoodProLow,,,,effConv,0.71,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWoodProLow,2040,,,costOprConv,40.5,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWoodProLow,2040,,,costExpConv,1081,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+chpWoodProLow,,,,avaConv,0.85,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+coalDh,,,electricity,ratioConvOutFix,0.5,Assumption
+coalDh,,,,lifeConv,15,"EuSysMod  branch ""pathway"" retrofittedCoal"
+coalDh,,,,effConv,0.796,"2* EuSysMod  branch ""pathway"" retrofittedCoal"
+coalDh,2040,,,costOprConv,38,"EuSysMod  branch ""pathway"" retrofittedCoal"
+coalDh,2040,,,costExpConv,500,Assumption
+coalDh,,,,avaConv,0.95,"EuSysMod  branch ""pathway"" retrofittedCoal"
+coalProMed,,,electricity,ratioConvOutFix,0.5,Assumption
+coalProMed,,,,lifeConv,15,"EuSysMod  branch ""pathway"" retrofittedCoal"
+coalProMed,,,,effConv,0.796,"2* EuSysMod  branch ""pathway"" retrofittedCoal"
+coalProMed,2040,,,costOprConv,38,"EuSysMod  branch ""pathway"" retrofittedCoal"
+coalProMed,2040,,,costExpConv,500,Assumption
+coalProMed,,,,avaConv,0.95,"EuSysMod  branch ""pathway"" retrofittedCoal"
+dieselEnginePeak,,,,lifeConv,25,
+dieselEnginePeak,,,,effConv,0.35,
 dieselEnginePeak,2040,,,costOprConv,2.8952,
+dieselEnginePeak,2040,,,costExpConv,118.825,
+dieselEnginePeak,,,,avaConv,0.967923077,
+methaneEngineDh,,,electricity,ratioConvOutFix,0.499821365,
+methaneEngineDh,,,,lifeConv,25,
+methaneEngineDh,,,,effConv,0.938906872,
+methaneEngineDh,2040,,,costOprConv,4.2255,
+methaneEngineDh,2040,,,costExpConv,415.5,
+methaneEngineDh,,,,avaConv,0.954615385,
+methaneEnginePeak,,,,lifeConv,25,
+methaneEnginePeak,,,,effConv,0.475714286,
 methaneEnginePeak,2040,,,costOprConv,2.94,
-chpDigestateDh,2040,,,costOprConv,10,Assumption
-chpDigestateProLow,2040,,,costOprConv,10,Assumption
-chpWoodDh,2040,,,costOprConv,24.88830408,"Assumption, Solid Biomass"
-chpWoodProLow,2040,,,costOprConv,24.88830408,"Assumption, Solid Biomass"
-chpGreenWasteDh,2040,,,costOprConv,9.669549989,"Assumption, NonsolidBiomass"
-chpGreenWasteProLow,2040,,,costOprConv,9.669549989,"Assumption, NonsolidBiomass"
-chpWasteDh,2040,,,costOprConv,10,Assumption
-chpWasteProLow,2040,,,costOprConv,10,Assumption
-chpSyngasDh,2040,,,costOprConv,10,Assumption
-chpSyngasProLow,2040,,,costOprConv,10,Assumption
-oilPlant,2040,,,costOprConv,10,Assumption
-oilPlantDh,2040,,,costOprConv,10,Assumption
-oilPlantProLow,2040,,,costOprConv,10,Assumption
-oilPlantProMed,2040,,,costOprConv,10,Assumption
-nuclearDh,2040,,,costOprConv,10,Assumption
-nuclearProMed,2040,,,costOprConv,10,Assumption
-coalDh,2040,,,costOprConv,10,Assumption
-coalProMed,2040,,,costOprConv,10,Assumption
+methaneEnginePeak,2040,,,costExpConv,221.544,
+methaneEnginePeak,,,,avaConv,0.987153846,
+methaneEngineProLow,,,electricity,ratioConvOutFix,0.499821365,
+methaneEngineProLow,,,,lifeConv,25,
+methaneEngineProLow,,,,effConv,0.938906872,
+methaneEngineProLow,2040,,,costOprConv,4.2255,
+methaneEngineProLow,2040,,,costExpConv,415.5,
+methaneEngineProLow,,,,avaConv,0.954615385,
+methaneEngineProMed,,,electricity,ratioConvOutFix,0.499821365,
+methaneEngineProMed,,,,lifeConv,25,
+methaneEngineProMed,,,,effConv,0.938906872,
+methaneEngineProMed,2040,,,costOprConv,4.2255,
+methaneEngineProMed,2040,,,costExpConv,415.5,
+methaneEngineProMed,,,,avaConv,0.954615385,
+nuclearDh,,,electricity,ratioConvOutFix,0.5,Assumption
+nuclearDh,,,,lifeConv,60,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+nuclearDh,,,,effConv,0.72,2 times the value stated in to account for the 2 outputs https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+nuclearDh,2040,,,costOprConv,103,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+nuclearDh,2040,,,costExpConv,4846,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+nuclearDh,,,,avaConv,0.849,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+nuclearProMed,,,electricity,ratioConvOutFix,0.5,Assumption
+nuclearProMed,,,,lifeConv,60,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+nuclearProMed,,,,effConv,0.72,2 times the value stated in to account for the 2 outputs https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+nuclearProMed,2040,,,costOprConv,103,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+nuclearProMed,2040,,,costExpConv,4846,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+nuclearProMed,,,,avaConv,0.849,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+ocgtGas,,,,lifeConv,25,
+ocgtGas,,,,effConv,0.415,
+ocgtGas,2040,,,costOprConv,15.862,
+ocgtGas,2040,,,costExpConv,177.7698,
+ocgtGas,,,,avaConv,0.971876923,
+ocgtGasChp,,,electricity,ratioConvOutFix,0.49784792,
+ocgtGasChp,,,,lifeConv,25,
+ocgtGasChp,,,,effConv,0.833587896,
+ocgtGasChp,2040,,,costOprConv,7.683,
+ocgtGasChp,2040,,,costExpConv,226.6,
+ocgtGasChp,,,,avaConv,0.929862637,
+ocgtH2,,,,lifeConv,25,
+ocgtH2,,,,effConv,0.415,
+ocgtH2,2040,,,costOprConv,3.1836328,
+ocgtH2,2040,,,costExpConv,204.43527,"EuSysMod  branch ""pathway"" retrofittedCoal"
+ocgtH2,,,,avaConv,0.971876923,
+ocgtH2Chp,,,electricity,ratioConvOutFix,0.49784792,
+ocgtH2Chp,,,,lifeConv,25,
+ocgtH2Chp,,,,effConv,0.833587896,
+ocgtH2Chp,2040,,,costOprConv,7.683,
+ocgtH2Chp,2040,,,costExpConv,260.59,"EuSysMod  branch ""pathway"" retrofittedCoal"
+ocgtH2Chp,,,,avaConv,0.929862637,
+oilPlant,,,,lifeConv,25,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlant,,,,effConv,0.35,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlant,2040,,,costOprConv,2.9568,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlant,2040,,,costExpConv,118.825,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlant,,,,avaConv,0.967923077,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlantDh,,,electricity,ratioConvOutFix,0.5,Assumption
+oilPlantDh,,,,lifeConv,25,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlantDh,,,,effConv,0.6,Assumption
+oilPlantDh,2040,,,costOprConv,2.9568,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlantDh,2040,,,costExpConv,118.825,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlantDh,,,,avaConv,0.967923077,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlantProLow,,,electricity,ratioConvOutFix,0.5,Assumption
+oilPlantProLow,,,,lifeConv,25,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlantProLow,,,,effConv,0.6,Assumption
+oilPlantProLow,2040,,,costOprConv,2.9568,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlantProLow,2040,,,costExpConv,118.825,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlantProLow,,,,avaConv,0.967923077,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlantProMed,,,electricity,ratioConvOutFix,0.5,Assumption
+oilPlantProMed,,,,lifeConv,25,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlantProMed,,,,effConv,0.6,Assumption
+oilPlantProMed,2040,,,costOprConv,2.9568,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlantProMed,2040,,,costExpConv,118.825,"EuSysMod  branch ""pathway"" retrofittedCoal"
+oilPlantProMed,,,,avaConv,0.967923077,"EuSysMod  branch ""pathway"" retrofittedCoal"
+pefc,,,electricity,ratioConvOutFix,0.555555556,
+pefc,,,,lifeConv,10,
+pefc,,,,effConv,0.9,
+pefc,2040,,,costOprConv,23.75,
+pefc,2040,,,costExpConv,475,
+pefc,,,,avaConv,0.997076923,
+sofc,,,electricity,ratioConvOutFix,0.618964004,
+sofc,,,,lifeConv,20,
+sofc,,,,effConv,0.96243769,
+sofc,2040,,,costOprConv,42,
+sofc,2040,,,costExpConv,840,
+sofc,,,,avaConv,1,
+syngasEngineDh,,,electricity,ratioConvOutFix,0.49784792,"same as ""ocgtGasChp"""
+syngasEngineDh,,,,lifeConv,25,"same as ""ocgtGasChp"""
+syngasEngineDh,,,,effConv,0.833587896,"same as ""ocgtGasChp"""
+syngasEngineDh,2040,,,costOprConv,7.683,"same as ""ocgtGasChp"""
+syngasEngineDh,2040,,,costExpConv,226.6,"same as ""ocgtGasChp"""
+syngasEngineDh,,,,avaConv,0.929862637,"same as ""ocgtGasChp"""
+syngasEngineProLow,,,electricity,ratioConvOutFix,0.49784792,"same as ""ocgtGasChp"""
+syngasEngineProLow,,,,lifeConv,25,"same as ""ocgtGasChp"""
+syngasEngineProLow,,,,effConv,0.833587896,"same as ""ocgtGasChp"""
+syngasEngineProLow,2040,,,costOprConv,7.683,"same as ""ocgtGasChp"""
+syngasEngineProLow,2040,,,costExpConv,226.6,"same as ""ocgtGasChp"""
+syngasEngineProLow,,,,avaConv,0.929862637,"same as ""ocgtGasChp"""
+syngasEngineProMed,,,electricity,ratioConvOutFix,0.49784792,"same as ""ocgtGasChp"""
+syngasEngineProMed,,,,lifeConv,25,"same as ""ocgtGasChp"""
+syngasEngineProMed,,,,effConv,0.833587896,"same as ""ocgtGasChp"""
+syngasEngineProMed,2040,,,costOprConv,7.683,"same as ""ocgtGasChp"""
+syngasEngineProMed,2040,,,costExpConv,226.6,"same as ""ocgtGasChp"""
+syngasEngineProMed,,,,avaConv,0.929862637,"same as ""ocgtGasChp"""

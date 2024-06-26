@@ -1,156 +1,141 @@
 technology_3,timestep_2,parameter,value,source
-heatpumpAirProLow,2040,lifeConv,20,"see techData -> processHeatData, assumed same values for gas and h2"
-heatpumpGroundProLow,2040,lifeConv,25,Assumption
-heatpumpGroundProMed,2040,lifeConv,25,Assumption
-eBoilerProMed,2040,lifeConv,25,
-eBoilerProLow,2040,lifeConv,25,
+woodBoilerProMed,2040,lifeConv,17,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProMed,,effConv,0.864,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProMed,,costExpConv,115,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProMed,2040,costOprConv,2.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProMed,,avaConv,0.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProLow,2040,lifeConv,17,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProLow,,effConv,0.864,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProLow,,costExpConv,115,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProLow,2040,costOprConv,2.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProLow,,avaConv,0.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProHigh,2040,lifeConv,17,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProHigh,,effConv,0.864,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProHigh,,costExpConv,115,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProHigh,2040,costOprConv,2.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+woodBoilerProHigh,,avaConv,0.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProMed,2040,lifeConv,15,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProMed,,effConv,1,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProMed,,costExpConv,115,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProMed,2040,costOprConv,2.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProMed,,avaConv,0.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProLow,2040,lifeConv,15,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProLow,,effConv,1,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProLow,,costExpConv,115,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProLow,2040,costOprConv,2.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProLow,,avaConv,0.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProHigh,2040,lifeConv,15,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProHigh,,effConv,1,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProHigh,,costExpConv,115,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProHigh,2040,costOprConv,2.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+wasteBoilerProHigh,,avaConv,0.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
 oilBoilerProMed,2040,lifeConv,25,
-methaneBoilerProMed,2040,lifeConv,25,
-bioBoilerProMed,2040,lifeConv,25,
-oilBoilerProLow,2040,lifeConv,25,
-methaneBoilerProLow,2040,lifeConv,25,
-bioBoilerProLow,2040,lifeConv,25,
-methaneBoilerProHigh,2040,lifeConv,15,
-eBoilerProHigh,2040,lifeConv,12.5,
-oilBoilerProHigh,2040,lifeConv,25,Assumption
-bioBoilerProHigh,2040,lifeConv,15,Assumption
-h2BoilerProLow,2040,lifeConv,25,
-h2BoilerProMed,2040,lifeConv,25,
-h2BoilerProHigh,2040,lifeConv,15,
-digestateBoilerProLow,2040,lifeConv,25,Assumption
-digestateBoilerProMed,2040,lifeConv,25,Assumption
-digestateBoilerProHigh,2040,lifeConv,15,Assumption
-woodBoilerProLow,2040,lifeConv,25,Assumption
-woodBoilerProMed,2040,lifeConv,25,Assumption
-woodBoilerProHigh,2040,lifeConv,15,Assumption
-greenWasteBoilerProLow,2040,lifeConv,25,Assumption
-greenWasteBoilerProMed,2040,lifeConv,25,Assumption
-greenWasteBoilerProHigh,2040,lifeConv,15,Assumption
-wasteBoilerProLow,2040,lifeConv,25,Assumption
-wasteBoilerProMed,2040,lifeConv,25,Assumption
-wasteBoilerProHigh,2040,lifeConv,15,Assumption
-districtHeatPro,2040,lifeConv,25,Assumption
-heatpumpAirProLow,,effConv,2.8,
-heatpumpGroundProLow,,effConv,2.8,Assumption
-heatpumpGroundProMed,,effConv,2.8,Assumption
-eBoilerProMed,,effConv,0.99,
-eBoilerProLow,,effConv,0.99,
 oilBoilerProMed,,effConv,0.954166667,
-methaneBoilerProMed,,effConv,0.930833333,
-bioBoilerProMed,,effConv,0.8925,
-oilBoilerProLow,,effConv,0.964166667,
-methaneBoilerProLow,,effConv,1.026666667,
-bioBoilerProLow,,effConv,1.161896095,
-methaneBoilerProHigh,,effConv,1,
-eBoilerProHigh,,effConv,1,
-oilBoilerProHigh,,effConv,1,Assumption
-bioBoilerProHigh,,effConv,0.954166667,
-h2BoilerProLow,,effConv,1.026666667,
-h2BoilerProMed,,effConv,1.026666667,
-h2BoilerProHigh,,effConv,1,
-digestateBoilerProLow,,effConv,1,Assumption
-digestateBoilerProMed,,effConv,1,Assumption
-digestateBoilerProHigh,,effConv,1,Assumption
-woodBoilerProLow,,effConv,1,Assumption
-woodBoilerProMed,,effConv,1,Assumption
-woodBoilerProHigh,,effConv,1,Assumption
-greenWasteBoilerProLow,,effConv,1,Assumption
-greenWasteBoilerProMed,,effConv,1,Assumption
-greenWasteBoilerProHigh,,effConv,1,Assumption
-wasteBoilerProLow,,effConv,1,Assumption
-wasteBoilerProMed,,effConv,1,Assumption
-wasteBoilerProHigh,,effConv,1,Assumption
-districtHeatPro,,effConv,0.9,
-heatpumpAirProLow,,costExpConv,2044,
-heatpumpGroundProLow,,costExpConv,2000,Assumption
-heatpumpGroundProMed,,costExpConv,2000,Assumption
-eBoilerProMed,,costExpConv,69.3,
-eBoilerProLow,,costExpConv,59.4,
 oilBoilerProMed,,costExpConv,42.816,
-methaneBoilerProMed,,costExpConv,41.85,
-bioBoilerProMed,,costExpConv,498.4,
-oilBoilerProLow,,costExpConv,34.6096,
-methaneBoilerProLow,,costExpConv,41.2,
-bioBoilerProLow,,costExpConv,720.3755788,
-methaneBoilerProHigh,,costExpConv,15,
-eBoilerProHigh,,costExpConv,60,
-oilBoilerProHigh,,costExpConv,42.816,
-bioBoilerProHigh,,costExpConv,50,Assumption
-h2BoilerProLow,,costExpConv,41.2,
-h2BoilerProMed,,costExpConv,51.5,
-h2BoilerProHigh,,costExpConv,15,
-digestateBoilerProLow,,costExpConv,500,Assumption
-digestateBoilerProMed,,costExpConv,500,Assumption
-digestateBoilerProHigh,,costExpConv,500,Assumption
-woodBoilerProLow,,costExpConv,500,Assumption
-woodBoilerProMed,,costExpConv,500,Assumption
-woodBoilerProHigh,,costExpConv,500,Assumption
-greenWasteBoilerProLow,,costExpConv,500,Assumption
-greenWasteBoilerProMed,,costExpConv,500,Assumption
-greenWasteBoilerProHigh,,costExpConv,500,Assumption
-wasteBoilerProLow,,costExpConv,500,Assumption
-wasteBoilerProMed,,costExpConv,500,Assumption
-wasteBoilerProHigh,,costExpConv,500,Assumption
-districtHeatPro,,costExpConv,58.98512637,
-heatpumpAirProLow,2040,costOprConv,2.24,
-heatpumpGroundProLow,2040,costOprConv,2,Assumption
-heatpumpGroundProMed,2040,costOprConv,2,Assumption
-eBoilerProMed,2040,costOprConv,0.9603,
-eBoilerProLow,2040,costOprConv,0.9603,
 oilBoilerProMed,2040,costOprConv,1.536,
-methaneBoilerProMed,2040,costOprConv,1.674,
-bioBoilerProMed,2040,costOprConv,30.972,
-oilBoilerProLow,2040,costOprConv,1.552,
-methaneBoilerProLow,2040,costOprConv,1.854,
-bioBoilerProLow,2040,costOprConv,40.4339841,
-methaneBoilerProHigh,2040,costOprConv,0.172727273,
-eBoilerProHigh,2040,costOprConv,0,
-oilBoilerProHigh,2040,costOprConv,1.536,
-bioBoilerProHigh,2040,costOprConv,40,Assumption
-h2BoilerProLow,2040,costOprConv,1.854,
-h2BoilerProMed,2040,costOprConv,1.854,
-h2BoilerProHigh,2040,costOprConv,0.172727273,
-digestateBoilerProLow,2040,costOprConv,40,Assumption
-digestateBoilerProMed,2040,costOprConv,40,Assumption
-digestateBoilerProHigh,2040,costOprConv,40,Assumption
-woodBoilerProLow,2040,costOprConv,40,Assumption
-woodBoilerProMed,2040,costOprConv,40,Assumption
-woodBoilerProHigh,2040,costOprConv,40,Assumption
-greenWasteBoilerProLow,2040,costOprConv,40,Assumption
-greenWasteBoilerProMed,2040,costOprConv,40,Assumption
-greenWasteBoilerProHigh,2040,costOprConv,40,Assumption
-wasteBoilerProLow,2040,costOprConv,40,Assumption
-wasteBoilerProMed,2040,costOprConv,40,Assumption
-wasteBoilerProHigh,2040,costOprConv,40,Assumption
-districtHeatPro,2040,costOprConv,0.57515625,
-heatpumpAirProLow,,avaConv,0.990384615,
-heatpumpGroundProLow,,avaConv,0.99,Assumption
-heatpumpGroundProMed,,avaConv,0.99,Assumption
-eBoilerProMed,,avaConv,0.986153846,
-eBoilerProLow,,avaConv,0.986153846,
 oilBoilerProMed,,avaConv,0.977461538,
-methaneBoilerProMed,,avaConv,0.982307692,
-bioBoilerProMed,,avaConv,0.912307692,
+oilBoilerProLow,2040,lifeConv,25,
+oilBoilerProLow,,effConv,0.964166667,
+oilBoilerProLow,,costExpConv,34.6096,
+oilBoilerProLow,2040,costOprConv,1.552,
 oilBoilerProLow,,avaConv,0.977461538,
-methaneBoilerProLow,,avaConv,0.982307692,
-bioBoilerProLow,,avaConv,0.912307692,
-methaneBoilerProHigh,,avaConv,0.987884615,
-eBoilerProHigh,,avaConv,1,
-oilBoilerProHigh,,avaConv,0.977461538,
-bioBoilerProHigh,,avaConv,0.92,Assumption
-h2BoilerProLow,,avaConv,0.982307692,
+oilBoilerProHigh,2040,lifeConv,17,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+oilBoilerProHigh,,effConv,0.873,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+oilBoilerProHigh,,costExpConv,54.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+oilBoilerProHigh,2040,costOprConv,1.2,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+oilBoilerProHigh,,avaConv,0.95,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProMed,2040,lifeConv,17,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProMed,,effConv,0.927,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProMed,,costExpConv,58.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProMed,2040,costOprConv,1.2,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProMed,,avaConv,0.95,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProLow,2040,lifeConv,17,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProLow,,effConv,0.927,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProLow,,costExpConv,58.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProLow,2040,costOprConv,1.2,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProLow,,avaConv,0.95,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProHigh,2040,lifeConv,17,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProHigh,,effConv,0.927,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProHigh,,costExpConv,58.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProHigh,2040,costOprConv,1.2,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+methaneBoilerProHigh,,avaConv,0.95,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+heatpumpGroundProMed,2040,lifeConv,30,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+heatpumpGroundProMed,,effConv,3.5,https://web.archive.org/web/20120217184539/http://geoheat.oit.edu/bulletin/bull18-2/art1.pdf
+heatpumpGroundProMed,,costExpConv,1500,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+heatpumpGroundProMed,2040,costOprConv,57,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+heatpumpGroundProMed,,avaConv,0.85,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+heatpumpGroundProLow,2040,lifeConv,30,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+heatpumpGroundProLow,,effConv,3.5,https://web.archive.org/web/20120217184539/http://geoheat.oit.edu/bulletin/bull18-2/art1.pdf
+heatpumpGroundProLow,,costExpConv,1500,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+heatpumpGroundProLow,2040,costOprConv,57,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+heatpumpGroundProLow,,avaConv,0.85,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+heatpumpAirProLow,2040,lifeConv,20,
+heatpumpAirProLow,,effConv,2.8,
+heatpumpAirProLow,,costExpConv,2044,
+heatpumpAirProLow,2040,costOprConv,2.24,
+heatpumpAirProLow,,avaConv,0.990384615,
+h2BoilerProMed,2040,lifeConv,25,
+h2BoilerProMed,,effConv,1.026666667,
+h2BoilerProMed,,costExpConv,51.5,
+h2BoilerProMed,2040,costOprConv,1.854,
 h2BoilerProMed,,avaConv,0.982307692,
+h2BoilerProLow,2040,lifeConv,25,
+h2BoilerProLow,,effConv,1.026666667,
+h2BoilerProLow,,costExpConv,41.2,
+h2BoilerProLow,2040,costOprConv,1.854,
+h2BoilerProLow,,avaConv,0.982307692,
+h2BoilerProHigh,2040,lifeConv,15,
+h2BoilerProHigh,,effConv,1,
+h2BoilerProHigh,,costExpConv,15,
+h2BoilerProHigh,2040,costOprConv,0.172727273,
 h2BoilerProHigh,,avaConv,0.987884615,
-digestateBoilerProLow,,avaConv,0.92,Assumption
-digestateBoilerProMed,,avaConv,0.92,Assumption
-digestateBoilerProHigh,,avaConv,0.92,Assumption
-woodBoilerProLow,,avaConv,0.92,Assumption
-woodBoilerProMed,,avaConv,0.92,Assumption
-woodBoilerProHigh,,avaConv,0.92,Assumption
-greenWasteBoilerProLow,,avaConv,0.92,Assumption
-greenWasteBoilerProMed,,avaConv,0.92,Assumption
-greenWasteBoilerProHigh,,avaConv,0.92,Assumption
-wasteBoilerProLow,,avaConv,0.92,Assumption
-wasteBoilerProMed,,avaConv,0.92,Assumption
-wasteBoilerProHigh,,avaConv,0.92,Assumption
+eBoilerProMed,2040,lifeConv,25,
+eBoilerProMed,,effConv,0.99,
+eBoilerProMed,,costExpConv,69.3,
+eBoilerProMed,2040,costOprConv,0.9603,
+eBoilerProMed,,avaConv,0.986153846,
+eBoilerProLow,2040,lifeConv,25,
+eBoilerProLow,,effConv,0.99,
+eBoilerProLow,,costExpConv,59.4,
+eBoilerProLow,2040,costOprConv,0.9603,
+eBoilerProLow,,avaConv,0.986153846,
+eBoilerProHigh,2040,lifeConv,12.5,
+eBoilerProHigh,,effConv,1,
+eBoilerProHigh,,costExpConv,60,
+eBoilerProHigh,2040,costOprConv,0,
+eBoilerProHigh,,avaConv,1,
+districtHeatPro,2040,lifeConv,25,Assumption
+districtHeatPro,,effConv,0.9,
+districtHeatPro,,costExpConv,58.98512637,
+districtHeatPro,2040,costOprConv,0.57515625,
 districtHeatPro,,avaConv,0.92,Assumption
+digestateBoilerProMed,2040,lifeConv,17,Assumtion same as Wood Boiler
+digestateBoilerProMed,,effConv,0.432,Assumtion half of Wood Boiler
+digestateBoilerProMed,,costExpConv,115,Assumtion same as Wood Boiler
+digestateBoilerProMed,2040,costOprConv,2.3,Assumtion same as Wood Boiler
+digestateBoilerProMed,,avaConv,0.9,Assumtion same as Wood Boiler
+digestateBoilerProLow,2040,lifeConv,25,Assumtion same as Wood Boiler
+digestateBoilerProLow,,effConv,1,Assumtion half of Wood Boiler
+digestateBoilerProLow,,costExpConv,500,Assumtion same as Wood Boiler
+digestateBoilerProLow,2040,costOprConv,40,Assumtion same as Wood Boiler
+digestateBoilerProLow,,avaConv,0.92,Assumtion same as Wood Boiler
+digestateBoilerProHigh,2040,lifeConv,15,Assumtion same as Wood Boiler
+digestateBoilerProHigh,,effConv,1,Assumtion half of Wood Boiler
+digestateBoilerProHigh,,costExpConv,500,Assumtion same as Wood Boiler
+digestateBoilerProHigh,2040,costOprConv,40,Assumtion same as Wood Boiler
+digestateBoilerProHigh,,avaConv,0.92,Assumtion same as Wood Boiler
+bioBoilerProMed,2040,lifeConv,17,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProMed,,effConv,0.927,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProMed,,costExpConv,58.9,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProMed,2040,costOprConv,1.2,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProMed,,avaConv,0.95,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProLow,2040,lifeConv,17,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProLow,,effConv,0.927,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProLow,,costExpConv,58.9,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProLow,2040,costOprConv,1.2,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProLow,,avaConv,0.95,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProHigh,2040,lifeConv,17,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProHigh,,effConv,0.927,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProHigh,,costExpConv,58.9,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProHigh,2040,costOprConv,1.2,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177
+bioBoilerProHigh,,avaConv,0.95,Boiler NG @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html#id177

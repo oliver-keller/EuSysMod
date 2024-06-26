@@ -6,7 +6,6 @@ h2BoilerDh,avaConv,,0.982307692,
 oilBoilerDh,avaConv,,0.977461538,
 digestateBoilerDh,avaConv,,0.883076923,Assumption
 woodBoilerDh,avaConv,,0.931538462,
-greenWasteBoilerDh,avaConv,,0.883076923,
 wasteBoilerDh,avaConv,,0.883076923,Assumption
 heatpumpGroundDh,avaConv,,0.980769231,Assumption
 eBoilerDh,effConv,,0.99,
@@ -15,7 +14,6 @@ h2BoilerDh,effConv,,1.037857143,
 oilBoilerDh,effConv,,0.96,
 digestateBoilerDh,effConv,,1,Assumption
 woodBoilerDh,effConv,,1.14916826,
-greenWasteBoilerDh,effConv,,1.032333884,
 wasteBoilerDh,effConv,,1,Assumption
 heatpumpGroundDh,effConv,,4,Assumption that in all regions and at all times the COP is 4!!!
 heatpumpAirDh,lifeConv,,25,
@@ -25,7 +23,6 @@ h2BoilerDh,lifeConv,,25,
 oilBoilerDh,lifeConv,,25,Assumption
 digestateBoilerDh,lifeConv,,25,Assumption
 woodBoilerDh,lifeConv,,25,
-greenWasteBoilerDh,lifeConv,,25,
 wasteBoilerDh,lifeConv,,25,Assumption
 heatpumpGroundDh,lifeConv,,25,Assumption
 heatpumpAirDh,costExpConv,2040,2949.294329,
@@ -35,7 +32,6 @@ h2BoilerDh,costExpConv,2040,52,
 oilBoilerDh,costExpConv,2040,52,Assumption
 digestateBoilerDh,costExpConv,2040,845.018289,Assumption
 woodBoilerDh,costExpConv,2040,542.4280265,
-greenWasteBoilerDh,costExpConv,2040,845.018289,
 wasteBoilerDh,costExpConv,2040,845.018289,Assumption
 heatpumpGroundDh,costExpConv,2040,2949.294329,Assumption
 heatpumpAirDh,costOprConv,2040,7.75,
@@ -45,6 +41,5 @@ h2BoilerDh,costOprConv,2040,1.872,
 oilBoilerDh,costOprConv,2040,1.872,Assumption
 digestateBoilerDh,costOprConv,2040,48.31322576,Assumption
 woodBoilerDh,costOprConv,2040,42.69152575,
-greenWasteBoilerDh,costOprConv,2040,48.31322576,
 wasteBoilerDh,costOprConv,2040,48.31322576,Assumption
 heatpumpGroundDh,costOprConv,2040,7.75,Assumption

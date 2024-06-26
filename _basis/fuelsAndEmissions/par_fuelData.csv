@@ -7,43 +7,41 @@ h2,69GR,2040,,trdBuyPrc,111.71,
 h2,90UK,2040,,trdBuyPrc,111.71,
 h2,09ES,2040,,trdBuyPrc,76.9,
 h2,56IT,2040,,trdBuyPrc,73.56,
-crudeOil,06ES,2040,,trdBuyPrc,42,Assumption Euro/MWh?
-crudeOil,11ES,2040,,trdBuyPrc,42,Assumption Euro/MWh?
-crudeOil,30NL,2040,,trdBuyPrc,42,Assumption Euro/MWh?
-crudeOil,31DE,2040,,trdBuyPrc,42,Assumption Euro/MWh?
-crudeOil,69GR,2040,,trdBuyPrc,42,Assumption Euro/MWh?
-crudeOil,90UK,2040,,trdBuyPrc,42,Assumption Euro/MWh?
-crudeOil,09ES,2040,,trdBuyPrc,42,Assumption Euro/MWh?
-crudeOil,56IT,2040,,trdBuyPrc,42,Assumption Euro/MWh?
-methane,06ES,2040,,trdBuyPrc,20,Assumption Euro/MWh?
-methane,11ES,2040,,trdBuyPrc,20,Assumption Euro/MWh?
-methane,30NL,2040,,trdBuyPrc,11,Assumption Euro/MWh?
-methane,31DE,2040,,trdBuyPrc,11,Assumption Euro/MWh?
-methane,69GR,2040,,trdBuyPrc,11,Assumption Euro/MWh?
-methane,90UK,2040,,trdBuyPrc,11,Assumption Euro/MWh?
-methane,09ES,2040,,trdBuyPrc,11,Assumption Euro/MWh?
-methane,56IT,2040,,trdBuyPrc,11,Assumption Euro/MWh?
-coal,06ES,2040,,trdBuyPrc,9,Assumption Euro/MWh?
-coal,11ES,2040,,trdBuyPrc,9,Assumption Euro/MWh?
-coal,30NL,2040,,trdBuyPrc,9,Assumption Euro/MWh?
-coal,31DE,2040,,trdBuyPrc,9,Assumption Euro/MWh?
-coal,69GR,2040,,trdBuyPrc,9,Assumption Euro/MWh?
-coal,90UK,2040,,trdBuyPrc,9,Assumption Euro/MWh?
-coal,09ES,2040,,trdBuyPrc,9,Assumption Euro/MWh?
-coal,56IT,2040,,trdBuyPrc,9,Assumption Euro/MWh?
-uranum,06ES,2040,,trdBuyPrc,0.005,Assumption Euro/MWh?
-uranum,11ES,2040,,trdBuyPrc,0.005,Assumption Euro/MWh?
-uranum,30NL,2040,,trdBuyPrc,0.005,Assumption Euro/MWh?
-uranum,31DE,2040,,trdBuyPrc,0.005,Assumption Euro/MWh?
-uranum,69GR,2040,,trdBuyPrc,0.005,Assumption Euro/MWh?
-uranum,90UK,2040,,trdBuyPrc,0.005,Assumption Euro/MWh?
-uranum,09ES,2040,,trdBuyPrc,0.005,Assumption Euro/MWh?
-uranum,56IT,2040,,trdBuyPrc,0.005,Assumption Euro/MWh?
-crudeOil,,,refinery,emissionFac,13.14368023,
-refinedOil,,,,emissionFac,262.8736046,
-methane,,,,emissionFac,201.296363,
-coal,,,,emissionFac,500,Asumption
-syngas,,,,emissionFac,200,Asumption
-rawBiogas,,,,emissionFac,0,Asumption
-uranum,,,,emissionFac,10,Asumption
+crudeOil,06ES,2040,,trdBuyPrc,79.7,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+crudeOil,11ES,2040,,trdBuyPrc,79.7,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+crudeOil,30NL,2040,,trdBuyPrc,79.7,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+crudeOil,31DE,2040,,trdBuyPrc,79.7,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+crudeOil,69GR,2040,,trdBuyPrc,79.7,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+crudeOil,90UK,2040,,trdBuyPrc,79.7,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+crudeOil,09ES,2040,,trdBuyPrc,79.7,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+crudeOil,56IT,2040,,trdBuyPrc,79.7,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+methane,06ES,2040,,trdBuyPrc,44.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+methane,11ES,2040,,trdBuyPrc,44.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+methane,30NL,2040,,trdBuyPrc,44.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+methane,31DE,2040,,trdBuyPrc,44.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+methane,69GR,2040,,trdBuyPrc,44.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+methane,90UK,2040,,trdBuyPrc,44.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+methane,09ES,2040,,trdBuyPrc,44.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+methane,56IT,2040,,trdBuyPrc,44.3,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+coal,06ES,2040,,trdBuyPrc,17.6,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+coal,11ES,2040,,trdBuyPrc,17.6,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+coal,30NL,2040,,trdBuyPrc,17.6,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+coal,31DE,2040,,trdBuyPrc,17.6,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+coal,69GR,2040,,trdBuyPrc,17.6,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+coal,90UK,2040,,trdBuyPrc,17.6,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+coal,09ES,2040,,trdBuyPrc,17.6,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+coal,56IT,2040,,trdBuyPrc,17.6,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+uranum,06ES,2040,,trdBuyPrc,3.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+uranum,11ES,2040,,trdBuyPrc,3.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+uranum,30NL,2040,,trdBuyPrc,3.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+uranum,31DE,2040,,trdBuyPrc,3.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+uranum,69GR,2040,,trdBuyPrc,3.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+uranum,90UK,2040,,trdBuyPrc,3.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+uranum,09ES,2040,,trdBuyPrc,3.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+uranum,56IT,2040,,trdBuyPrc,3.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
+crudeOil,,,,emissionFac,263.42,tCO2/GWh Calculated => in document EmissionFactor
+methane,,,,emissionFac,197.62,tCO2/GWh Calculated => in document EmissionFactor
+coal,,,,emissionFac,411.73,tCO2/GWh Calculated => in document EmissionFactor
+h2,,,,emissionFac,0,tCO2/GWh
+uranum,,,,emissionFac,3.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 ,,,refinery,effConv,0.95,

@@ -1,0 +1,43 @@
+technology_3,carrier_1,carrier_2,parameter,value,source
+alkElectrolysis,h2,,ratioConvOutFix,0.858494208,
+alkElectrolysis,,,avaConv,0.941538462,
+alkElectrolysis,,,costExpConv,350,
+alkElectrolysis,,,costOprConv,7,
+alkElectrolysis,,,effConv,0.842192041,
+alkElectrolysis,,,lifeConv,32.5,
+directAirCapture,electricity,,ratioConvInFix,0.3,Calculated => in document EmissionFactor
+directAirCapture,electricity,,emissionFac,-1200,tCO2/GWh Calculated => in document EmissionFactor
+directAirCapture,,,costVarConv,108.02,Euro/MWh Calculated => in document EmissionFactor
+directAirCapture,,,effConv,0.555555556,
+h2ToCrudeOil,co2,co2Pure,enCont,0,
+h2ToCrudeOil,districtHeat,,ratioConvOutFix,0.192857143,
+h2ToCrudeOil,h2,,ratioConvInFix,0.83965954,
+h2ToCrudeOil,,,avaConv,0.942,
+h2ToCrudeOil,,,costExpConv,725,
+h2ToCrudeOil,,,costOprConv,56.7,
+h2ToCrudeOil,,,effConv,0.9,
+h2ToCrudeOil,,,lifeConv,25,
+pemElectrolysis,h2,,ratioConvOutFix,0.808573647,
+pemElectrolysis,,,avaConv,0.941538462,
+pemElectrolysis,,,costExpConv,525,
+pemElectrolysis,,,costOprConv,21,
+pemElectrolysis,,,effConv,0.85038736,
+pemElectrolysis,,,lifeConv,27.5,
+soElectrolysis,electricity,,ratioConvInFix,0.8095,
+soElectrolysis,,,avaConv,0.97230137,
+soElectrolysis,,,costExpConv,1341.895326,
+soElectrolysis,,,costOprConv,161.0274391,
+soElectrolysis,,,effConv,0.82,
+soElectrolysis,,,lifeConv,20,
+h2ToMethane,co2,co2Pure,enCont,0,
+h2ToMethane,h2,,ratioConvInFix,0.83965954,Assumption Unit CO2?
+h2ToMethane,,,avaConv,1,SABATIER @ EnergyScope Gabriel
+h2ToMethane,,,costExpConv,1500,SABATIER @ EnergyScope Gabriel
+h2ToMethane,,,costOprConv,75,SABATIER @ EnergyScope Gabriel
+h2ToMethane,,,effConv,0.8,Assumption Unit CO2?
+h2ToMethane,,,lifeConv,25,SABATIER @ EnergyScope Gabriel
+co2Disposal,,,costVarConv,0.00000608,"mio Euro/ton, 6.08 Euro/ton, CAPEX = 3.71, OPEX = 2.38, average values of the different option mentioned in https://www.globalccsinstitute.com/archive/hub/publications/119816/costs-co2-storage-post-demonstration-ccs-eu.pdf using chatGPT"
+co2Disposal,,,effConv,1,
+carbonDisposal,,,costVarConv,0,Assumption
+carbonDisposal,,,effConv,1,
+carbonDisposal,coal,,emissionFac,-411.73,tCO2/GWh Calculated => in document EmissionFactor

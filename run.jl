@@ -16,14 +16,14 @@
 
 MODELRUN = 1
 
-using AnyMOD, Gurobi, CSV, Statistics, Dates
+using Gurobi, AnyMOD, CSV, Statistics, Dates
 include("support_functions.jl")
 
 par_df = CSV.read("settings.csv", DataFrame)
 
 if isempty(ARGS)
     id_int = MODELRUN # id of the modelrun
-    t_int = 8 # number of threads
+    t_int = 4 # number of threads
 else
     id_int = parse(Int,ARGS[1]) # id of the modelrun
     t_int = parse(Int,ARGS[2]) # number of threads
