@@ -167,5 +167,5 @@ all,UK,biomass,manure,trdBuyUp,19694.602,Enspresso Aggregated (Diego)
 ,,biomass,wood,trdBuyPrc,32.8,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 ,,biomass,greenWaste,trdBuyPrc,5.8,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 ,,biomass,sludge,trdBuyPrc,5.8,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
-,,biomass,waste,trdBuyPrc,,Collection cost not included because it must be done anyways
+,,biomass,waste,trdBuyPrc,0,Collection cost not included because it must be done anyways
 ,,biomass,manure,trdBuyPrc,5.8,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html

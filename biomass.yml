@@ -290,7 +290,6 @@ vertices:   ###################   Technologies   ###############################
 
   - label: haberBoschH2Ammonia
     name: haberBoschH2AmmoniaDh
-    aggregating: [haberBoschH2AmmoniaProLow]
     type: technology
     color: [0]
     position: [0]
@@ -358,8 +357,6 @@ vertices:   ###################   Technologies   ###############################
 
   - label: pyrolysisCoal
     name: pyrWoodCoalDh
-    aggregating: 
-    - pyrWoodCoalProLow
     type: technology
     color: [0]
     position: [0]

@@ -9,8 +9,8 @@ MIN_BIOMASS_FOR_OIL = 0         # constraint for using certain amount of biomass
 MIN_BIOMASS_FOR_HVC = 0         # constraint for using certain amount of biomass for HVC produiction (TWh/a)
 MIN_BIOMASS_FOR_SYNGAS = 0      # constraint for using certain amount of biomass for syngas produiction (TWh/a)
 CLUSTER_INDEX = 0               # cluster index for the additional constraint (if no constraint parameter is not used) 
-BARRIER_CONV_TOL = 1e-8         # barrier convergence tolerance
-NUMERIC_FOCUS = 2               # numeric focus for the solver
+BARRIER_CONV_TOL = 1e-4         # barrier convergence tolerance
+NUMERIC_FOCUS = 0               # numeric focus for the solver
 
 
 using AnyMOD, Gurobi, CSV, Statistics, Dates
