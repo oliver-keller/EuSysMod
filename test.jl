@@ -4,13 +4,13 @@
 ## Define the input parameter ##
 START_ITERATION = 1               # set iteration boundaries
 END_ITERATION = 1                 # set iteration boundaries
-OBJ_STR_INPUT = "test"                # name of the modelrun
+OBJ_STR_INPUT = "noCC_noEmissionConstraint"                # name of the modelrun
 MIN_BIOMASS_FOR_OIL = 0         # constraint for using certain amount of biomass for oil produiction (TWh/a)
 MIN_BIOMASS_FOR_HVC = 0         # constraint for using certain amount of biomass for HVC produiction (TWh/a)
 MIN_BIOMASS_FOR_SYNGAS = 0      # constraint for using certain amount of biomass for syngas produiction (TWh/a)
 CLUSTER_INDEX = 0               # cluster index for the additional constraint (if no constraint parameter is not used) 
-BARRIER_CONV_TOL = 1e-3         # barrier convergence tolerance
-NUMERIC_FOCUS = 0               # numeric focus for the solver
+BARRIER_CONV_TOL = 1e-8         # barrier convergence tolerance
+NUMERIC_FOCUS = 2               # numeric focus for the solver
 
 
 using AnyMOD, Gurobi, CSV, Statistics, Dates
@@ -23,9 +23,9 @@ OBJ_STR = OBJ_STR_INPUT * "_iteraiton" * string(START_ITERATION) * "-" * string(
 
 # define input and output directories
 inputMod_arr = ["./_basis","./timeSeries/96hours_2008"]
-resultDir_str = "./results/" * OBJ_STR * Dates.format(now(), "_yyyy-mm-dd_HH-MM")
-mkdir(resultDir_str)
-
+# resultDir_str = "./results/" * OBJ_STR * Dates.format(now(), "_yyyy-mm-dd_HH-MM")
+# mkdir(resultDir_str)
+resultDir_str = "./results/"
 
 # read uncertain parameters
 uncertain_parameters = CSV.read("_basis/uncertain_parameters.csv", DataFrame, types=[String, String, String, String, String, Float64, Float64, Float64, Float64, String])
@@ -37,42 +37,13 @@ lhs = CSV.read("lhs.csv", DataFrame, header=false) # uses an already created lhc
 outputsOfInterest = nothing # initialize parameter to store the outputs of interest
 objective = DataFrame(iteration = Int[], objectiveValue = Float64[]) # initialize dataframe to store the objective values of the optimization runs
 
-# set additional constraint for regret calculations -> Set the minimum use of biomass for the following categories (biomass usage in GWh/a)
-# make sure that the file "df_input_with_final_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
-set_constraint = (MIN_BIOMASS_FOR_HVC > 0) || (MIN_BIOMASS_FOR_OIL > 0) || (MIN_BIOMASS_FOR_SYNGAS > 0) # set to true if additional constraints exists
-
-if set_constraint
-    new_constraint = Dict(
-        "bioConversionOil" => MIN_BIOMASS_FOR_OIL*1000,
-        "bioConversionSyngas" => MIN_BIOMASS_FOR_SYNGAS*1000, 
-        "bioConversionBiogas" => 0, 
-        "bioConversionChp" => 0,
-        "bioConversionHvc" => MIN_BIOMASS_FOR_HVC*1000,
-        "bioConversionCoal" => 0,
-        "networkHeat" => 0,
-        "spaceHeat" => 0,
-        "proHeat" => 0
-    )
-
-    for row in eachrow(anyM0.parts.lim.par[:useLow].data)
-        row.val = get(new_constraint, findTechnology(anyM0, row.Te), row.val)
-    end
-
-    #determine if a scenario is already within the respective cluster and should be skipped in the optimization
-    cluster_of_scenarios = CSV.read("df_filtered_with_cluster.csv", DataFrame)[!, "cluster_final"] # make sure that the file "df_filtered_with_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
-end
-
-
 anyM = anyModel(inputMod_arr, resultDir_str, objName = OBJ_STR, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true) 
 
-# modify uncertain parameters
-iteration = 1
-modify_parameters(anyM, uncertain_parameters, lhs, iteration)
 
 # set exchange costs to zero to see if biomass is exchanged between regions
-for rows in eachrow(anyM.parts.cost.par[:costVarExc].data)
-    rows.val = 0
-end
+# for rows in eachrow(anyM.parts.cost.par[:costVarExc].data)
+#     rows.val = 0
+# end
 
 # create optimization model
 createOptModel!(anyM)
@@ -110,15 +81,69 @@ reportResults(:cost,anyM, addObjName = true)
 reportTimeSeries(:electricity,anyM)
 
 
-plotSankeyDiagram(anyM, dropDown = (:timestep,)) # sankey for the whole europe
+plotSankeyDiagram(anyM, dropDown = (:timestep,), minVal = 1.) # sankey for the whole europe
 # plotSankeyDiagram(anyM) # sankey with dropdown for the regions and contires
-plotSankeyDiagram(anyM; ymlFilter = "biomass.yml", dropDown = (:timestep, ), fontSize=16, name="biomass_europe") 
+plotSankeyDiagram(anyM; ymlFilter = "biomass.yml", dropDown = (:timestep, ), fontSize=16, name="biomass_europe", minVal = 1.) 
 # plotSankeyDiagram(anyM; ymlFilter = "biomass.yml", fontSize=20, name="biomass") 
-plotSankeyDiagram(anyM; ymlFilter = "all.yml", dropDown = (:timestep, ), fontSize=16, name="all_europe") 
+plotSankeyDiagram(anyM; ymlFilter = "all.yml", dropDown = (:timestep, ), fontSize=16, name="all_europe", minVal = 1.) 
 # plotSankeyDiagram(anyM; ymlFilter = "all.yml", fontSize=20, name="all") 
 # plotTree(:region, anyM)
 # plotTree(:carrier, anyM)
 # plotTree(:technology, anyM)
 # plotTree(:timestep, anyM)
 # plotNetworkGraph(anyM) # flow diagramm
+
+ 
+
+
+
+
+
+df = reportResults(:summary, model, rtnOpt = (:csvDf,))
+use_variables = filter(row -> row.variable == :use, df)
+
+
+# List of all carriers and technologies
+includeWaste ? carriers = ["wood", "greenWaste", "manure", "sludge", "waste", "digestate"] : carriers = ["wood", "greenWaste", "manure", "sludge", "digestate"]
+technologies = ["pyrolysisOil", "biomassToHvc", "chp", "boilerDh", "boilerSpace", "boilerProLow", "boilerProMed", "boilerProHigh", "biochemicalWoodOil", "liquefaction", "digestion", "gasification", "carbonization", "pyrolysisCoal"]
+
+# Initialize the DataFrame with all zeros
+technology_input = DataFrame([:carrier => carriers; Symbol.(technologies) .=> 0.0])
+
+# Iterate over use_variables and update technology_input
+for row in eachrow(use_variables)
+    for tech in technologies
+        if occursin(tech[2:end], row.technology)
+            # carrier_index = findfirst(==(row.carrier), technology_input.carrier)
+            carrier_index = findfirst(x -> occursin(x[2:end], row.carrier), technology_input.carrier)
+            if !isnothing(carrier_index)
+                technology_input[carrier_index, tech] += row.value
+            end
+        end
+    end
+end
+
+# Save technology_input to CSV
+csv_file = "biomassUsage_iteration_$iteration.csv"
+CSV.write(joinpath(resultDir, csv_file), technology_input)
+
+
+if outputsOfInterest === nothing
+    outputsOfInterest = DataFrame(
+        iteration = [iteration],
+        crudeOil = [sum(technology_input.pyrolysisOil)+sum(technology_input.biochemicalWoodOil)+sum(technology_input.liquefaction)],
+        HVC = [sum(technology_input.biomassToHvc)],
+        CHP = [sum(technology_input.chp)],
+        LTH = [sum(technology_input.boilerProLow)],
+        MTH = [sum(technology_input.boilerProMed)],
+        HTH = [sum(technology_input.boilerProHigh)],
+        DH = [sum(technology_input.boilerDh)],
+        SpaceHeating = [sum(technology_input.boilerSpace)],
+        rawBiogas = [sum(technology_input.digestion)-sum(technology_input[technology_input.carrier .== "digestate", :][1, 2:end])],
+        syngas = [sum(technology_input.gasification)],
+        coal = [sum(technology_input.carbonization)+ sum(technology_input.pyrolysisCoal)]
+    )
+else
+    push!(outputsOfInterest, [iteration, sum(technology_input.pyrolysisOil)+sum(technology_input.biochemicalWoodOil)+sum(technology_input.liquefaction), sum(technology_input.biomassToHvc), sum(technology_input.chp), sum(technology_input.boilerProLow), sum(technology_input.boilerProMed), sum(technology_input.boilerProHigh), sum(technology_input.boilerDh), sum(technology_input.boilerSpace), sum(technology_input.digestion)-sum(technology_input[technology_input.carrier .== "digestate", :][1, 2:end]), sum(technology_input.gasification), sum(technology_input.carbonization)+ sum(technology_input.pyrolysisCoal)])
+end
 

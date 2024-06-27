@@ -160,7 +160,6 @@ proHeat,h2BoilerPro,h2BoilerProMed,,h2,processHeat_medium,,,mature,none,,,,
 proHeat,oilBoilerPro,oilBoilerProHigh,,refinedOil,processHeat_high,,,mature,none,,,,
 proHeat,oilBoilerPro,oilBoilerProLow,,refinedOil,processHeat_low,,,mature,none,,,,
 proHeat,oilBoilerPro,oilBoilerProMed,,refinedOil,processHeat_medium,,,mature,none,,,,
-storage,gasStorage,co2PureStorage,,,,co2Pure,co2Pure,mature,none,,,,2
 storage,gasStorage,methaneStorage,,,,methane,methane,mature,none,,,,2
 storage,gasStorage,h2StorageCavern,,,,h2,h2,mature,none,,,,2
 storage,gasStorage,h2StorageTank,,,,h2,h2,mature,none,,,,2

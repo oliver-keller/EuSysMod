@@ -40,8 +40,8 @@ uranum,90UK,2040,,trdBuyPrc,3.9,https://energyscope.readthedocs.io/en/master/sec
 uranum,09ES,2040,,trdBuyPrc,3.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 uranum,56IT,2040,,trdBuyPrc,3.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 crudeOil,,,,emissionFac,263.42,tCO2/GWh Calculated => in document EmissionFactor
+refinedOil,,,,emissionFac,263.42,tCO2/GWh Calculated => in document EmissionFactor
 methane,,,,emissionFac,197.62,tCO2/GWh Calculated => in document EmissionFactor
 coal,,,,emissionFac,411.73,tCO2/GWh Calculated => in document EmissionFactor
 h2,,,,emissionFac,0,tCO2/GWh
 uranum,,,,emissionFac,3.9,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
-,,,refinery,effConv,0.95,

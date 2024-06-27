@@ -69,13 +69,6 @@ vertices:   ###################   Technologies   ###############################
     color: [0]
     position: [0]
 
-  - label: greenWasteBoiler
-    name: greenWasteBoilerProLow
-    aggregating: [greenWasteBoilerProMed, greenWasteBoilerProHigh]
-    type: technology
-    color: [0]
-    position: [0]
-
   - label: bioBoiler
     name: bioBoilerProLow
     aggregating: [bioBoilerProMed, bioBoilerProHigh]
@@ -161,7 +154,7 @@ vertices:   ###################   Technologies   ###############################
 
   - label: DH boiler
     name: eBoilerDh
-    aggregating: [methaneBoilerDh, h2BoilerDh, oilBoilerDh, digestateBoilerDh, woodBoilerDh, greenWasteBoilerDh, wasteBoilerDh]
+    aggregating: [methaneBoilerDh, h2BoilerDh, oilBoilerDh, digestateBoilerDh, woodBoilerDh, wasteBoilerDh]
     type: technology
     color: [0]
     position: [0]
@@ -199,8 +192,8 @@ vertices:   ###################   Technologies   ###############################
     position: [0]
 
   - label: gasStorage
-    name: co2PureStorage
-    aggregating: [methaneStorage, h2StorageCavern, h2StorageTank, syngasStorage]
+    name: methaneStorage
+    aggregating: [h2StorageCavern, h2StorageTank, syngasStorage]
     type: technology
     color: [0]
     position: [0]
@@ -349,26 +342,30 @@ vertices:   ###################   Technologies   ###############################
   - label: hydrothermalGasification
     name: htgDigestate
     aggregating: 
-    - htgGreenWaste
     - htgSludge
     - htgManure
     type: technology
     color: [0]
     position: [0]
 
-  - label: pyrolysis
+  - label: pyrolysisOil
     name: pyrWood
     aggregating: 
-    - pyrWoodCoalDh
-    - pyrWoodCoalProLow
-    - pyrMethaneH2
     - pyrGreenWaste
     type: technology
     color: [0]
     position: [0]
 
-  - label: biochemicalWoodOil
-    name: biochemicalWoodOil
+  - label: pyrolysisCoal
+    name: pyrWoodCoalDh
+    aggregating: 
+    - pyrWoodCoalProLow
+    type: technology
+    color: [0]
+    position: [0]
+
+  - label: steamMethaneReforming
+    name: steamMethaneReforming
     type: technology
     color: [0]
     position: [0]
@@ -403,8 +400,7 @@ vertices:   ###################   Technologies   ###############################
   - label: syngasUpgrade
     name: waterGasShift
     aggregating: 
-    - Methanation
-    - MethanationWithH2
+    - methanation
     - fischerTropsch
     type: technology
     color: [0]

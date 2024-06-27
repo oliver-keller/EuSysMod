@@ -4,7 +4,7 @@ biogasUpgrade,,,costExpConv,97,"Danish Energy Agency data_sheets_for_renewable_f
 biogasUpgrade,,,costOprConv,21.8,"Danish Energy Agency data_sheets_for_renewable_fuels, sheet  82 Upgrading 6000 Nm3 per h"
 biogasUpgrade,,,effConv,0.92,"99% - 7% for heating: Danish Energy Agency data_sheets_for_renewable_fuels, sheet  82 Upgrading 6000 Nm3 per h"
 biogasUpgrade,,,lifeConv,25,Assumption
-biogasUpgrade,rawBiogas,,emissionFac,181.81,t/GWh => calculation in document EmissionFactor
+biogasUpgrade,rawBiogas,,emissionFac,-181.81,t/GWh => calculation in document EmissionFactor
 biomassToHvc,,,avaConv,1,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 biomassToHvc,,,costExpConv,1743,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 biomassToHvc,,,costOprConv,52,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
@@ -35,7 +35,7 @@ fischerTropsch,,,costExpConv,2500,P2L @ EnergyScope Gabriel
 fischerTropsch,,,costOprConv,125,P2L @ EnergyScope Gabriel
 fischerTropsch,,,effConv,0.5714,P2L @ EnergyScope Gabriel
 fischerTropsch,,,lifeConv,25,P2L @ EnergyScope Gabriel
-fischerTropsch,syngas,,emissionFac,150.52,t/GWh => calculation in document EmissionFactor
+fischerTropsch,syngas,,emissionFac,-150.52,t/GWh => calculation in document EmissionFactor
 gasificationGreenWasteSyngas,,,avaConv,0.86,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 gasificationGreenWasteSyngas,,,costExpConv,2525,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 gasificationGreenWasteSyngas,,,costOprConv,196,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
@@ -51,7 +51,7 @@ htcDigestate,,,costExpConv,1200,EnergyScope Gabriel
 htcDigestate,,,costOprConv,60,EnergyScope Gabriel
 htcDigestate,,,effConv,0.3,EnergyScope Gabriel
 htcDigestate,,,lifeConv,25,EnergyScope Gabriel
-htcDigestate,biomass,digestate,emissionFac,123.52,t/GWh => calculation in document EmissionFactor
+htcDigestate,biomass,digestate,emissionFac,-123.52,t/GWh => calculation in document EmissionFactor
 htgDigestate,,,avaConv,0.86,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 htgDigestate,,,costExpConv,2525,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 htgDigestate,,,costOprConv,196,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
@@ -72,31 +72,31 @@ htlGreenWaste,,,costExpConv,1200,EnergyScope Gabriel
 htlGreenWaste,,,costOprConv,60,EnergyScope Gabriel
 htlGreenWaste,,,effConv,0.6,EnergyScope Gabriel
 htlGreenWaste,,,lifeConv,25,EnergyScope Gabriel
-htlGreenWaste,biomass,greenWaste,emissionFac,158.05,t/GWh => calculation in document EmissionFactor
+htlGreenWaste,biomass,greenWaste,emissionFac,-158.05,t/GWh => calculation in document EmissionFactor
 htlManure,,,avaConv,1,EnergyScope Gabriel
 htlManure,,,costExpConv,1200,EnergyScope Gabriel
 htlManure,,,costOprConv,60,EnergyScope Gabriel
 htlManure,,,effConv,0.6,EnergyScope Gabriel
 htlManure,,,lifeConv,25,EnergyScope Gabriel
-htlManure,biomass,manure,emissionFac,158.05,t/GWh => calculation in document EmissionFactor
+htlManure,biomass,manure,emissionFac,-158.05,t/GWh => calculation in document EmissionFactor
 htlSludge,,,avaConv,1,EnergyScope Gabriel
 htlSludge,,,costExpConv,1200,EnergyScope Gabriel
 htlSludge,,,costOprConv,60,EnergyScope Gabriel
 htlSludge,,,effConv,0.6,EnergyScope Gabriel
 htlSludge,,,lifeConv,25,EnergyScope Gabriel
-htlSludge,biomass,sludge,emissionFac,158.05,t/GWh => calculation in document EmissionFactor
+htlSludge,biomass,sludge,emissionFac,-158.05,t/GWh => calculation in document EmissionFactor
 methanation,,,avaConv,0.86,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 methanation,,,costExpConv,280,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 methanation,,,costOprConv,0.21,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 methanation,,,effConv,0.833,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 methanation,,,lifeConv,30,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
-methanation,syngas,,emissionFac,164.62,t/GWh => calculation in document EmissionFactor
+methanation,syngas,,emissionFac,-164.62,t/GWh => calculation in document EmissionFactor
 pyrGreenWaste,,,avaConv,0.85,Pyrolysis to fuels @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 pyrGreenWaste,,,costExpConv,1365,Pyrolysis to fuels @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 pyrGreenWaste,,,costOprConv,38,Pyrolysis to fuels @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 pyrGreenWaste,,,effConv,0.287,Assumption 1/2 from wood pyrolysis
 pyrGreenWaste,,,lifeConv,25,Pyrolysis to fuels @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
-pyrGreenWaste,biomass,greenWaste,emissionFac,75.6,t/GWh => calculation in document EmissionFactor
+pyrGreenWaste,biomass,greenWaste,emissionFac,-75.6,t/GWh => calculation in document EmissionFactor
 gasReformingMethaneH2,,,avaConv,0.86,NG Reforming @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 gasReformingMethaneH2,,,costExpConv,681,NG Reforming @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 gasReformingMethaneH2,,,costOprConv,64.4,NG Reforming @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
@@ -107,21 +107,21 @@ pyrWood,,,costExpConv,1365,Pyrolysis to fuels @ https://energyscope.readthedocs.
 pyrWood,,,costOprConv,38,Pyrolysis to fuels @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 pyrWood,,,effConv,0.574,Pyrolysis to fuels @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 pyrWood,,,lifeConv,25,Pyrolysis to fuels @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
-pyrWood,biomass,wood,emissionFac,151.2,t/GWh => calculation in document EmissionFactor
+pyrWood,biomass,wood,emissionFac,-151.2,t/GWh => calculation in document EmissionFactor
 pyrWoodCoalDh,,,avaConv,1,EnergyScope Gabriel
 pyrWoodCoalDh,,,costExpConv,1200,EnergyScope Gabriel
 pyrWoodCoalDh,,,costOprConv,60,EnergyScope Gabriel
 pyrWoodCoalDh,,,effConv,0.9,EnergyScope Gabriel
 pyrWoodCoalDh,,,lifeConv,25,EnergyScope Gabriel
 pyrWoodCoalDh,coal,,ratioConvOutFix,0.5555,EnergyScope Gabriel
-pyrWoodCoalDh,biomass,wood,emissionFac,370.56,t/GWh => calculation in document EmissionFactor
+pyrWoodCoalDh,biomass,wood,emissionFac,-370.56,t/GWh => calculation in document EmissionFactor
 pyrWoodCoalProLow,,,avaConv,1,EnergyScope Gabriel
 pyrWoodCoalProLow,,,costExpConv,1200,EnergyScope Gabriel
 pyrWoodCoalProLow,,,costOprConv,60,EnergyScope Gabriel
 pyrWoodCoalProLow,,,effConv,0.9,EnergyScope Gabriel
 pyrWoodCoalProLow,,,lifeConv,25,EnergyScope Gabriel
 pyrWoodCoalProLow,coal,,ratioConvOutFix,0.5555,EnergyScope Gabriel
-pyrWoodCoalProLow,biomass,wood,emissionFac,370.56,t/GWh => calculation in document EmissionFactor
+pyrWoodCoalProLow,biomass,wood,emissionFac,-370.56,t/GWh => calculation in document EmissionFactor
 waterGasShift,,,avaConv,0.95,Assumption
 waterGasShift,,,costExpConv,1921,chapter 10.1 https://www.nrel.gov/docs/fy04osti/35592.pdf
 waterGasShift,,,costOprConv,57.63,3% of investment
