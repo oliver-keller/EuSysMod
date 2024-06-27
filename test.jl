@@ -4,7 +4,7 @@
 ## Define the input parameter ##
 START_ITERATION = 1               # set iteration boundaries
 END_ITERATION = 1                 # set iteration boundaries
-OBJ_STR_INPUT = "noCC_noEmissionConstraint"                # name of the modelrun
+OBJ_STR_INPUT = "test"                # name of the modelrun
 MIN_BIOMASS_FOR_OIL = 0         # constraint for using certain amount of biomass for oil produiction (TWh/a)
 MIN_BIOMASS_FOR_HVC = 0         # constraint for using certain amount of biomass for HVC produiction (TWh/a)
 MIN_BIOMASS_FOR_SYNGAS = 0      # constraint for using certain amount of biomass for syngas produiction (TWh/a)
@@ -76,9 +76,9 @@ total_cost = objective_value(anyM.optModel) # objective value (in mio Euro)
 
 
 reportResults(:summary,anyM, addRep = (:capaConvOut,), addObjName = true)
-reportResults(:exchange,anyM, addObjName = true)
+# reportResults(:exchange,anyM, addObjName = true)
 reportResults(:cost,anyM, addObjName = true)
-reportTimeSeries(:electricity,anyM)
+# reportTimeSeries(:electricity,anyM)
 
 
 plotSankeyDiagram(anyM, dropDown = (:timestep,), minVal = 1.) # sankey for the whole europe
