@@ -115,13 +115,6 @@ pyrWoodCoalDh,,,effConv,0.9,EnergyScope Gabriel
 pyrWoodCoalDh,,,lifeConv,25,EnergyScope Gabriel
 pyrWoodCoalDh,coal,,ratioConvOutFix,0.5555,EnergyScope Gabriel
 pyrWoodCoalDh,biomass,wood,emissionFac,-370.56,t/GWh => calculation in document EmissionFactor
-pyrWoodCoalProLow,,,avaConv,1,EnergyScope Gabriel
-pyrWoodCoalProLow,,,costExpConv,1200,EnergyScope Gabriel
-pyrWoodCoalProLow,,,costOprConv,60,EnergyScope Gabriel
-pyrWoodCoalProLow,,,effConv,0.9,EnergyScope Gabriel
-pyrWoodCoalProLow,,,lifeConv,25,EnergyScope Gabriel
-pyrWoodCoalProLow,coal,,ratioConvOutFix,0.5555,EnergyScope Gabriel
-pyrWoodCoalProLow,biomass,wood,emissionFac,-370.56,t/GWh => calculation in document EmissionFactor
 waterGasShift,,,avaConv,0.95,Assumption
 waterGasShift,,,costExpConv,1921,chapter 10.1 https://www.nrel.gov/docs/fy04osti/35592.pdf
 waterGasShift,,,costOprConv,57.63,3% of investment
