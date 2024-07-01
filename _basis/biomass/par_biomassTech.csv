@@ -97,11 +97,6 @@ pyrGreenWaste,,,costOprConv,38,Pyrolysis to fuels @ https://energyscope.readthed
 pyrGreenWaste,,,effConv,0.287,Assumption 1/2 from wood pyrolysis
 pyrGreenWaste,,,lifeConv,25,Pyrolysis to fuels @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 pyrGreenWaste,biomass,greenWaste,emissionFac,-75.6,t/GWh => calculation in document EmissionFactor
-gasReformingMethaneH2,,,avaConv,0.86,NG Reforming @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
-gasReformingMethaneH2,,,costExpConv,681,NG Reforming @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
-gasReformingMethaneH2,,,costOprConv,64.4,NG Reforming @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
-gasReformingMethaneH2,,,effConv,0.73,NG Reforming @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
-gasReformingMethaneH2,,,lifeConv,25,NG Reforming @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 pyrWood,,,avaConv,0.85,Pyrolysis to fuels @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 pyrWood,,,costExpConv,1365,Pyrolysis to fuels @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 pyrWood,,,costOprConv,38,Pyrolysis to fuels @ https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
