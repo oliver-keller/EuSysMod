@@ -4,12 +4,12 @@
 ## Define the input parameter ##
 START_ITERATION = 1               # set iteration boundaries
 END_ITERATION = 1                 # set iteration boundaries
-OBJ_STR_INPUT = "test"                # name of the modelrun
+OBJ_STR_INPUT = "disposed_inequality"                # name of the modelrun
 MIN_BIOMASS_FOR_OIL = 0         # constraint for using certain amount of biomass for oil produiction (TWh/a)
 MIN_BIOMASS_FOR_HVC = 0         # constraint for using certain amount of biomass for HVC produiction (TWh/a)
 MIN_BIOMASS_FOR_SYNGAS = 0      # constraint for using certain amount of biomass for syngas produiction (TWh/a)
 CLUSTER_INDEX = 0               # cluster index for the additional constraint (if no constraint parameter is not used) 
-BARRIER_CONV_TOL = 1e-4        # barrier convergence tolerance
+BARRIER_CONV_TOL = 1e-3        # barrier convergence tolerance
 NUMERIC_FOCUS = 0               # numeric focus for the solver
 
 
@@ -65,12 +65,12 @@ optimize!(anyM.optModel) # solve the model
 
 
 # update the outputs of interest and the objective value dataframes
-outputsOfInterest = calculateOutputs(anyM, iteration=iteration, outputsOfInterest=outputsOfInterest, includeWaste=false, resultDir = resultDir_str)
-push!(objective, [iteration, objective_value(anyM.optModel)])
+# outputsOfInterest = calculateOutputs(anyM, iteration=iteration, outputsOfInterest=outputsOfInterest, includeWaste=false, resultDir = resultDir_str)
+# push!(objective, [iteration, objective_value(anyM.optModel)])
 
 # Save outputsOfInterest and total_cost as a CSV file
-CSV.write(resultDir_str * "/outputsOfInterest.csv", DataFrame(outputsOfInterest))
-set_constraint ? CSV.write(resultDir_str * "/total_cost_cluster_$CLUSTER_INDEX.csv", DataFrame(objective)) : CSV.write(resultDir_str * "/total_cost.csv", DataFrame(objective))
+# CSV.write(resultDir_str * "/outputsOfInterest.csv", DataFrame(outputsOfInterest))
+# set_constraint ? CSV.write(resultDir_str * "/total_cost_cluster_$CLUSTER_INDEX.csv", DataFrame(objective)) : CSV.write(resultDir_str * "/total_cost.csv", DataFrame(objective))
 
 
 total_cost = objective_value(anyM.optModel) # objective value (in mio Euro)
@@ -86,7 +86,7 @@ plotSankeyDiagram(anyM, dropDown = (:timestep,), minVal = 1.) # sankey for the w
 # plotSankeyDiagram(anyM) # sankey with dropdown for the regions and contires
 plotSankeyDiagram(anyM; ymlFilter = "biomass.yml", dropDown = (:timestep, ), fontSize=16, name="biomass_europe", minVal = 1.) 
 # plotSankeyDiagram(anyM; ymlFilter = "biomass.yml", fontSize=20, name="biomass") 
-plotSankeyDiagram(anyM; ymlFilter = "all.yml", dropDown = (:timestep, ), fontSize=16, name="all_europe", minVal = 1.) 
+plotSankeyDiagram(anyM; ymlFilter = "all.yml", dropDown = (:timestep, ), fontSize=16, name="all_europe", minVal = 1. ) 
 # plotSankeyDiagram(anyM; ymlFilter = "all.yml", fontSize=20, name="all") 
 # plotTree(:region, anyM)
 # plotTree(:carrier, anyM)
@@ -100,51 +100,7 @@ plotSankeyDiagram(anyM; ymlFilter = "all.yml", dropDown = (:timestep, ), fontSiz
 
 
 
-df = reportResults(:summary, model, rtnOpt = (:csvDf,))
-use_variables = filter(row -> row.variable == :use, df)
-
-
-# List of all carriers and technologies
-includeWaste ? carriers = ["wood", "greenWaste", "manure", "sludge", "waste", "digestate"] : carriers = ["wood", "greenWaste", "manure", "sludge", "digestate"]
-technologies = ["pyrolysisOil", "biomassToHvc", "chp", "boilerDh", "boilerSpace", "boilerProLow", "boilerProMed", "boilerProHigh", "biochemicalWoodOil", "liquefaction", "digestion", "gasification", "carbonization", "pyrolysisCoal"]
-
-# Initialize the DataFrame with all zeros
-technology_input = DataFrame([:carrier => carriers; Symbol.(technologies) .=> 0.0])
-
-# Iterate over use_variables and update technology_input
-for row in eachrow(use_variables)
-    for tech in technologies
-        if occursin(tech[2:end], row.technology)
-            # carrier_index = findfirst(==(row.carrier), technology_input.carrier)
-            carrier_index = findfirst(x -> occursin(x[2:end], row.carrier), technology_input.carrier)
-            if !isnothing(carrier_index)
-                technology_input[carrier_index, tech] += row.value
-            end
-        end
-    end
-end
-
-# Save technology_input to CSV
-csv_file = "biomassUsage_iteration_$iteration.csv"
-CSV.write(joinpath(resultDir, csv_file), technology_input)
-
-
-if outputsOfInterest === nothing
-    outputsOfInterest = DataFrame(
-        iteration = [iteration],
-        crudeOil = [sum(technology_input.pyrolysisOil)+sum(technology_input.biochemicalWoodOil)+sum(technology_input.liquefaction)],
-        HVC = [sum(technology_input.biomassToHvc)],
-        CHP = [sum(technology_input.chp)],
-        LTH = [sum(technology_input.boilerProLow)],
-        MTH = [sum(technology_input.boilerProMed)],
-        HTH = [sum(technology_input.boilerProHigh)],
-        DH = [sum(technology_input.boilerDh)],
-        SpaceHeating = [sum(technology_input.boilerSpace)],
-        rawBiogas = [sum(technology_input.digestion)-sum(technology_input[technology_input.carrier .== "digestate", :][1, 2:end])],
-        syngas = [sum(technology_input.gasification)],
-        coal = [sum(technology_input.carbonization)+ sum(technology_input.pyrolysisCoal)]
-    )
-else
-    push!(outputsOfInterest, [iteration, sum(technology_input.pyrolysisOil)+sum(technology_input.biochemicalWoodOil)+sum(technology_input.liquefaction), sum(technology_input.biomassToHvc), sum(technology_input.chp), sum(technology_input.boilerProLow), sum(technology_input.boilerProMed), sum(technology_input.boilerProHigh), sum(technology_input.boilerDh), sum(technology_input.boilerSpace), sum(technology_input.digestion)-sum(technology_input[technology_input.carrier .== "digestate", :][1, 2:end]), sum(technology_input.gasification), sum(technology_input.carbonization)+ sum(technology_input.pyrolysisCoal)])
-end
-
+df = reportResults(:summary, anyM, rtnOpt = (:csvDf,))
+emission_variables = filter(row -> row.variable == :emission, df)
+totEmissions = sum(emission_variables.value)
+println("Total emissions: $totEmissions tCO2/a")

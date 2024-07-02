@@ -65,7 +65,7 @@ wasteBoilerDhCC,,,effConv,,1.01881,CarbonCaptureCalculation
 wasteBoilerDhCC,,,lifeConv,,25,CarbonCaptureCalculation
 wasteBoilerDhCC,,,costExpConv,2040,2198.018289,CarbonCaptureCalculation
 wasteBoilerDhCC,,,costOprConv,2040,87.91322576,CarbonCaptureCalculation
-wasteBoilerDhCC,biomass,waste,emissionFac,,,CarbonCaptureCalculation
+wasteBoilerDhCC,biomass,waste,emissionFac,,-297,CarbonCaptureCalculation
 woodBoilerDh,,,avaConv,,0.931538462,
 woodBoilerDh,,,effConv,,1.14916826,
 woodBoilerDh,,,lifeConv,,25,
