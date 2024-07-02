@@ -46,5 +46,5 @@ carbonDisposal,,,costOprConv,0,Assumption
 carbonDisposal,,,effConv,0.41173,ktCO2/GWh
 carbonDisposal,coal,,emissionFac,0,tCO2/GWh
 refinery,,,effConv,0.95,
-refinery,refinedOil,,emissionFac,13.171,only the loss in the refinery (5%)
+refinery,crudeOil,,emissionFac,13.171,only the loss in the refinery (5%)
 ,,,emissionUp,0,

@@ -230,7 +230,7 @@ bioGasEngineDhCC,,,,effConv,0.909702563,CarbonCaptureCalculation
 bioGasEngineDhCC,2040,,,costOprConv,33.912,CarbonCaptureCalculation
 bioGasEngineDhCC,2040,,,costExpConv,1409.75,CarbonCaptureCalculation
 bioGasEngineDhCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-bioGasEngineDhCC,,,,emissionFac,-225,CarbonCaptureCalculation
+bioGasEngineDhCC,,rawBiogas,,emissionFac,-225,CarbonCaptureCalculation
 bioGasEngineProLowCC,,co2,co2Pure,ratioConvOutFix,0.247333589,CarbonCaptureCalculation
 bioGasEngineProLowCC,,electricity,,ratioConvOutFix,0.483394834,CarbonCaptureCalculation
 bioGasEngineProLowCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -238,7 +238,7 @@ bioGasEngineProLowCC,,,,effConv,0.909702563,CarbonCaptureCalculation
 bioGasEngineProLowCC,2040,,,costOprConv,33.912,CarbonCaptureCalculation
 bioGasEngineProLowCC,2040,,,costExpConv,1409.75,CarbonCaptureCalculation
 bioGasEngineProLowCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-bioGasEngineProLowCC,,,,emissionFac,-225,CarbonCaptureCalculation
+bioGasEngineProLowCC,,rawBiogas,,emissionFac,-225,CarbonCaptureCalculation
 bioGasEngineProMedCC,,co2,co2Pure,ratioConvOutFix,0.247333589,CarbonCaptureCalculation
 bioGasEngineProMedCC,,electricity,,ratioConvOutFix,0.483394834,CarbonCaptureCalculation
 bioGasEngineProMedCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -246,7 +246,7 @@ bioGasEngineProMedCC,,,,effConv,0.909702563,CarbonCaptureCalculation
 bioGasEngineProMedCC,2040,,,costOprConv,33.912,CarbonCaptureCalculation
 bioGasEngineProMedCC,2040,,,costExpConv,1409.75,CarbonCaptureCalculation
 bioGasEngineProMedCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-bioGasEngineProMedCC,,,,emissionFac,-225,CarbonCaptureCalculation
+bioGasEngineProMedCC,,rawBiogas,,emissionFac,-225,CarbonCaptureCalculation
 ccgtGasDhCC,,co2,co2Pure,ratioConvOutFix,0.205558278,CarbonCaptureCalculation
 ccgtGasDhCC,,electricity,,ratioConvOutFix,0.588839941,CarbonCaptureCalculation
 ccgtGasDhCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -254,7 +254,7 @@ ccgtGasDhCC,,,,effConv,0.865243677,CarbonCaptureCalculation
 ccgtGasDhCC,2040,,,costOprConv,37.4244,CarbonCaptureCalculation
 ccgtGasDhCC,2040,,,costExpConv,1396.242,CarbonCaptureCalculation
 ccgtGasDhCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-ccgtGasDhCC,,,,emissionFac,19.762,CarbonCaptureCalculation
+ccgtGasDhCC,,methane,,emissionFac,19.762,CarbonCaptureCalculation
 ccgtGasProMedCC,,co2,co2Pure,ratioConvOutFix,0.205558278,CarbonCaptureCalculation
 ccgtGasProMedCC,,electricity,,ratioConvOutFix,0.588839941,CarbonCaptureCalculation
 ccgtGasProMedCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -262,7 +262,7 @@ ccgtGasProMedCC,,,,effConv,0.865243677,CarbonCaptureCalculation
 ccgtGasProMedCC,2040,,,costOprConv,37.4244,CarbonCaptureCalculation
 ccgtGasProMedCC,2040,,,costExpConv,1396.242,CarbonCaptureCalculation
 ccgtGasProMedCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-ccgtGasProMedCC,,,,emissionFac,19.762,CarbonCaptureCalculation
+ccgtGasProMedCC,,methane,,emissionFac,19.762,CarbonCaptureCalculation
 chpDigestateDhCC,,co2,co2Pure,ratioConvOutFix,1.150895141,CarbonCaptureCalculation
 chpDigestateDhCC,,electricity,,ratioConvOutFix,0.448,CarbonCaptureCalculation
 chpDigestateDhCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -270,7 +270,7 @@ chpDigestateDhCC,,,,effConv,0.3128,CarbonCaptureCalculation
 chpDigestateDhCC,2040,,,costOprConv,195.9,CarbonCaptureCalculation
 chpDigestateDhCC,2040,,,costExpConv,3014,CarbonCaptureCalculation
 chpDigestateDhCC,,,,avaConv,0.85,CarbonCaptureCalculation
-chpDigestateDhCC,,,,emissionFac,-360,CarbonCaptureCalculation
+chpDigestateDhCC,,biomass,digestate,emissionFac,-360,CarbonCaptureCalculation
 chpDigestateProLowCC,,co2,co2Pure,ratioConvOutFix,1.150895141,CarbonCaptureCalculation
 chpDigestateProLowCC,,electricity,,ratioConvOutFix,0.448,CarbonCaptureCalculation
 chpDigestateProLowCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -278,7 +278,7 @@ chpDigestateProLowCC,,,,effConv,0.3128,CarbonCaptureCalculation
 chpDigestateProLowCC,2040,,,costOprConv,195.9,CarbonCaptureCalculation
 chpDigestateProLowCC,2040,,,costExpConv,3014,CarbonCaptureCalculation
 chpDigestateProLowCC,,,,avaConv,0.85,CarbonCaptureCalculation
-chpDigestateProLowCC,,,,emissionFac,-360,CarbonCaptureCalculation
+chpDigestateProLowCC,,biomass,digestate,emissionFac,-360,CarbonCaptureCalculation
 chpGreenWasteDhCC,,co2,co2Pure,ratioConvOutFix,0.574251918,CarbonCaptureCalculation
 chpGreenWasteDhCC,,electricity,,ratioConvOutFix,0.431,CarbonCaptureCalculation
 chpGreenWasteDhCC,,,,lifeConv,15,CarbonCaptureCalculation
@@ -286,7 +286,7 @@ chpGreenWasteDhCC,,,,effConv,0.61123,CarbonCaptureCalculation
 chpGreenWasteDhCC,2040,,,costOprConv,273.8,CarbonCaptureCalculation
 chpGreenWasteDhCC,2040,,,costExpConv,6136,CarbonCaptureCalculation
 chpGreenWasteDhCC,,,,avaConv,0.85,CarbonCaptureCalculation
-chpGreenWasteDhCC,,,,emissionFac,-351,CarbonCaptureCalculation
+chpGreenWasteDhCC,,biomass,greenWaste,emissionFac,-351,CarbonCaptureCalculation
 chpGreenWasteProLowCC,,co2,co2Pure,ratioConvOutFix,0.574251918,CarbonCaptureCalculation
 chpGreenWasteProLowCC,,electricity,,ratioConvOutFix,0.431,CarbonCaptureCalculation
 chpGreenWasteProLowCC,,,,lifeConv,15,CarbonCaptureCalculation
@@ -294,7 +294,7 @@ chpGreenWasteProLowCC,,,,effConv,0.61123,CarbonCaptureCalculation
 chpGreenWasteProLowCC,2040,,,costOprConv,273.8,CarbonCaptureCalculation
 chpGreenWasteProLowCC,2040,,,costExpConv,6136,CarbonCaptureCalculation
 chpGreenWasteProLowCC,,,,avaConv,0.85,CarbonCaptureCalculation
-chpGreenWasteProLowCC,,,,emissionFac,-351,CarbonCaptureCalculation
+chpGreenWasteProLowCC,,biomass,greenWaste,emissionFac,-351,CarbonCaptureCalculation
 chpSyngasDhCC,,co2,co2Pure,ratioConvOutFix,0.274977085,CarbonCaptureCalculation
 chpSyngasDhCC,,electricity,,ratioConvOutFix,0.568,CarbonCaptureCalculation
 chpSyngasDhCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -302,7 +302,7 @@ chpSyngasDhCC,,,,effConv,0.81825,CarbonCaptureCalculation
 chpSyngasDhCC,2040,,,costOprConv,55,CarbonCaptureCalculation
 chpSyngasDhCC,2040,,,costExpConv,1525,CarbonCaptureCalculation
 chpSyngasDhCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-chpSyngasDhCC,,,,emissionFac,-225,CarbonCaptureCalculation
+chpSyngasDhCC,,syngas,,emissionFac,-225,CarbonCaptureCalculation
 chpSyngasProLowCC,,co2,co2Pure,ratioConvOutFix,0.274977085,CarbonCaptureCalculation
 chpSyngasProLowCC,,electricity,,ratioConvOutFix,0.568,CarbonCaptureCalculation
 chpSyngasProLowCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -310,7 +310,7 @@ chpSyngasProLowCC,,,,effConv,0.81825,CarbonCaptureCalculation
 chpSyngasProLowCC,2040,,,costOprConv,55,CarbonCaptureCalculation
 chpSyngasProLowCC,2040,,,costExpConv,1525,CarbonCaptureCalculation
 chpSyngasProLowCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-chpSyngasProLowCC,,,,emissionFac,-225,CarbonCaptureCalculation
+chpSyngasProLowCC,,syngas,,emissionFac,-225,CarbonCaptureCalculation
 chpWasteDhCC,,co2,co2Pure,ratioConvOutFix,0.444072308,CarbonCaptureCalculation
 chpWasteDhCC,,electricity,,ratioConvOutFix,0.308,CarbonCaptureCalculation
 chpWasteDhCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -318,7 +318,7 @@ chpWasteDhCC,,,,effConv,0.66881,CarbonCaptureCalculation
 chpWasteDhCC,2040,,,costOprConv,150.6,CarbonCaptureCalculation
 chpWasteDhCC,2040,,,costExpConv,4281,CarbonCaptureCalculation
 chpWasteDhCC,,,,avaConv,0.85,CarbonCaptureCalculation
-chpWasteDhCC,,,,emissionFac,-297,CarbonCaptureCalculation
+chpWasteDhCC,,biomass,waste,emissionFac,-297,CarbonCaptureCalculation
 chpWasteProLowCC,,co2,co2Pure,ratioConvOutFix,0.444072308,CarbonCaptureCalculation
 chpWasteProLowCC,,electricity,,ratioConvOutFix,0.308,CarbonCaptureCalculation
 chpWasteProLowCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -326,7 +326,7 @@ chpWasteProLowCC,,,,effConv,0.66881,CarbonCaptureCalculation
 chpWasteProLowCC,2040,,,costOprConv,150.6,CarbonCaptureCalculation
 chpWasteProLowCC,2040,,,costExpConv,4281,CarbonCaptureCalculation
 chpWasteProLowCC,,,,avaConv,0.85,CarbonCaptureCalculation
-chpWasteProLowCC,,,,emissionFac,-297,CarbonCaptureCalculation
+chpWasteProLowCC,,biomass,waste,emissionFac,-297,CarbonCaptureCalculation
 chpWoodDhCC,,co2,co2Pure,ratioConvOutFix,0.479357579,CarbonCaptureCalculation
 chpWoodDhCC,,electricity,,ratioConvOutFix,0.254,CarbonCaptureCalculation
 chpWoodDhCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -334,7 +334,7 @@ chpWoodDhCC,,,,effConv,0.73223,CarbonCaptureCalculation
 chpWoodDhCC,2040,,,costOprConv,87.3,CarbonCaptureCalculation
 chpWoodDhCC,2040,,,costExpConv,2680,CarbonCaptureCalculation
 chpWoodDhCC,,,,avaConv,0.85,CarbonCaptureCalculation
-chpWoodDhCC,,,,emissionFac,-351,CarbonCaptureCalculation
+chpWoodDhCC,,biomass,wood,emissionFac,-351,CarbonCaptureCalculation
 chpWoodProLowCC,,co2,co2Pure,ratioConvOutFix,0.479357579,CarbonCaptureCalculation
 chpWoodProLowCC,,electricity,,ratioConvOutFix,0.254,CarbonCaptureCalculation
 chpWoodProLowCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -342,7 +342,7 @@ chpWoodProLowCC,,,,effConv,0.73223,CarbonCaptureCalculation
 chpWoodProLowCC,2040,,,costOprConv,87.3,CarbonCaptureCalculation
 chpWoodProLowCC,2040,,,costExpConv,2680,CarbonCaptureCalculation
 chpWoodProLowCC,,,,avaConv,0.85,CarbonCaptureCalculation
-chpWoodProLowCC,,,,emissionFac,-351,CarbonCaptureCalculation
+chpWoodProLowCC,,biomass,wood,emissionFac,-351,CarbonCaptureCalculation
 coalDhCC,,co2,co2Pure,ratioConvOutFix,0.452191817,CarbonCaptureCalculation
 coalDhCC,,electricity,,ratioConvOutFix,0.5,CarbonCaptureCalculation
 coalDhCC,,,,lifeConv,15,CarbonCaptureCalculation
@@ -350,7 +350,7 @@ coalDhCC,,,,effConv,0.81946861,CarbonCaptureCalculation
 coalDhCC,2040,,,costOprConv,87.4076,CarbonCaptureCalculation
 coalDhCC,2040,,,costExpConv,2188.093,CarbonCaptureCalculation
 coalDhCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-coalDhCC,,,,emissionFac,41.173,CarbonCaptureCalculation
+coalDhCC,,coal,,emissionFac,41.173,CarbonCaptureCalculation
 coalProMedCC,,co2,co2Pure,ratioConvOutFix,0.452191817,CarbonCaptureCalculation
 coalProMedCC,,electricity,,ratioConvOutFix,0.5,CarbonCaptureCalculation
 coalProMedCC,,,,lifeConv,15,CarbonCaptureCalculation
@@ -358,7 +358,7 @@ coalProMedCC,,,,effConv,0.81946861,CarbonCaptureCalculation
 coalProMedCC,2040,,,costOprConv,87.4076,CarbonCaptureCalculation
 coalProMedCC,2040,,,costExpConv,2188.093,CarbonCaptureCalculation
 coalProMedCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-coalProMedCC,,,,emissionFac,41.173,CarbonCaptureCalculation
+coalProMedCC,,coal,,emissionFac,41.173,CarbonCaptureCalculation
 methaneEngineDhCC,,co2,co2Pure,ratioConvOutFix,0.187185212,CarbonCaptureCalculation
 methaneEngineDhCC,,electricity,,ratioConvOutFix,0.499821365,CarbonCaptureCalculation
 methaneEngineDhCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -366,14 +366,14 @@ methaneEngineDhCC,,,,effConv,0.950171212,CarbonCaptureCalculation
 methaneEngineDhCC,2040,,,costOprConv,27.9399,CarbonCaptureCalculation
 methaneEngineDhCC,2040,,,costExpConv,1225.742,CarbonCaptureCalculation
 methaneEngineDhCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-methaneEngineDhCC,,,,emissionFac,19.762,CarbonCaptureCalculation
+methaneEngineDhCC,,methane,,emissionFac,19.762,CarbonCaptureCalculation
 methaneEnginePeakCC,,co2,co2Pure,ratioConvOutFix,0.365227528,CarbonCaptureCalculation
 methaneEnginePeakCC,,,,lifeConv,25,CarbonCaptureCalculation
 methaneEnginePeakCC,,,,effConv,0.486978626,CarbonCaptureCalculation
 methaneEnginePeakCC,2040,,,costOprConv,26.6544,CarbonCaptureCalculation
 methaneEnginePeakCC,2040,,,costExpConv,1031.786,CarbonCaptureCalculation
 methaneEnginePeakCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-methaneEnginePeakCC,,,,emissionFac,19.762,CarbonCaptureCalculation
+methaneEnginePeakCC,,methane,,emissionFac,19.762,CarbonCaptureCalculation
 methaneEngineProLowCC,,co2,co2Pure,ratioConvOutFix,0.187185212,CarbonCaptureCalculation
 methaneEngineProLowCC,,electricity,,ratioConvOutFix,0.499821365,CarbonCaptureCalculation
 methaneEngineProLowCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -381,7 +381,7 @@ methaneEngineProLowCC,,,,effConv,0.950171212,CarbonCaptureCalculation
 methaneEngineProLowCC,2040,,,costOprConv,27.9399,CarbonCaptureCalculation
 methaneEngineProLowCC,2040,,,costExpConv,1225.742,CarbonCaptureCalculation
 methaneEngineProLowCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-methaneEngineProLowCC,,,,emissionFac,19.762,CarbonCaptureCalculation
+methaneEngineProLowCC,,methane,,emissionFac,19.762,CarbonCaptureCalculation
 methaneEngineProMedCC,,co2,co2Pure,ratioConvOutFix,0.187185212,CarbonCaptureCalculation
 methaneEngineProMedCC,,electricity,,ratioConvOutFix,0.499821365,CarbonCaptureCalculation
 methaneEngineProMedCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -389,14 +389,14 @@ methaneEngineProMedCC,,,,effConv,0.950171212,CarbonCaptureCalculation
 methaneEngineProMedCC,2040,,,costOprConv,27.9399,CarbonCaptureCalculation
 methaneEngineProMedCC,2040,,,costExpConv,1225.742,CarbonCaptureCalculation
 methaneEngineProMedCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-methaneEngineProMedCC,,,,emissionFac,19.762,CarbonCaptureCalculation
+methaneEngineProMedCC,,methane,,emissionFac,19.762,CarbonCaptureCalculation
 ocgtGasCC,,co2,co2Pure,ratioConvOutFix,0.417248133,CarbonCaptureCalculation
 ocgtGasCC,,,,lifeConv,25,CarbonCaptureCalculation
 ocgtGasCC,,,,effConv,0.42626434,CarbonCaptureCalculation
 ocgtGasCC,2040,,,costOprConv,39.5764,CarbonCaptureCalculation
 ocgtGasCC,2040,,,costExpConv,988.0118,CarbonCaptureCalculation
 ocgtGasCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-ocgtGasCC,,,,emissionFac,19.762,CarbonCaptureCalculation
+ocgtGasCC,,methane,,emissionFac,19.762,CarbonCaptureCalculation
 ocgtGasChpCC,,co2,co2Pure,ratioConvOutFix,0.210519654,CarbonCaptureCalculation
 ocgtGasChpCC,,electricity,,ratioConvOutFix,0.49784792,CarbonCaptureCalculation
 ocgtGasChpCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -404,14 +404,14 @@ ocgtGasChpCC,,,,effConv,0.844852236,CarbonCaptureCalculation
 ocgtGasChpCC,2040,,,costOprConv,31.3974,CarbonCaptureCalculation
 ocgtGasChpCC,2040,,,costExpConv,1036.842,CarbonCaptureCalculation
 ocgtGasChpCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-ocgtGasChpCC,,,,emissionFac,19.762,CarbonCaptureCalculation
+ocgtGasChpCC,,methane,,emissionFac,19.762,CarbonCaptureCalculation
 oilPlantCC,,co2,co2Pure,ratioConvOutFix,0.649502182,CarbonCaptureCalculation
 oilPlantCC,,,,lifeConv,25,CarbonCaptureCalculation
 oilPlantCC,,,,effConv,0.36501494,CarbonCaptureCalculation
 oilPlantCC,2040,,,costOprConv,34.5672,CarbonCaptureCalculation
 oilPlantCC,2040,,,costExpConv,1198.847,CarbonCaptureCalculation
 oilPlantCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-oilPlantCC,,,,emissionFac,26.342,CarbonCaptureCalculation
+oilPlantCC,,refinedOil,,emissionFac,26.342,CarbonCaptureCalculation
 oilPlantDhCC,,co2,co2Pure,ratioConvOutFix,0.385483319,CarbonCaptureCalculation
 oilPlantDhCC,,electricity,,ratioConvOutFix,0.5,CarbonCaptureCalculation
 oilPlantDhCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -419,7 +419,7 @@ oilPlantDhCC,,,,effConv,0.61501494,CarbonCaptureCalculation
 oilPlantDhCC,2040,,,costOprConv,34.5672,CarbonCaptureCalculation
 oilPlantDhCC,2040,,,costExpConv,1198.847,CarbonCaptureCalculation
 oilPlantDhCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-oilPlantDhCC,,,,emissionFac,26.342,CarbonCaptureCalculation
+oilPlantDhCC,,refinedOil,,emissionFac,26.342,CarbonCaptureCalculation
 oilPlantProLowCC,,co2,co2Pure,ratioConvOutFix,0.385483319,CarbonCaptureCalculation
 oilPlantProLowCC,,electricity,,ratioConvOutFix,0.5,CarbonCaptureCalculation
 oilPlantProLowCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -427,7 +427,7 @@ oilPlantProLowCC,,,,effConv,0.61501494,CarbonCaptureCalculation
 oilPlantProLowCC,2040,,,costOprConv,34.5672,CarbonCaptureCalculation
 oilPlantProLowCC,2040,,,costExpConv,1198.847,CarbonCaptureCalculation
 oilPlantProLowCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-oilPlantProLowCC,,,,emissionFac,26.342,CarbonCaptureCalculation
+oilPlantProLowCC,,refinedOil,,emissionFac,26.342,CarbonCaptureCalculation
 oilPlantProMedCC,,co2,co2Pure,ratioConvOutFix,0.385483319,CarbonCaptureCalculation
 oilPlantProMedCC,,electricity,,ratioConvOutFix,0.5,CarbonCaptureCalculation
 oilPlantProMedCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -435,7 +435,7 @@ oilPlantProMedCC,,,,effConv,0.61501494,CarbonCaptureCalculation
 oilPlantProMedCC,2040,,,costOprConv,34.5672,CarbonCaptureCalculation
 oilPlantProMedCC,2040,,,costExpConv,1198.847,CarbonCaptureCalculation
 oilPlantProMedCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-oilPlantProMedCC,,,,emissionFac,26.342,CarbonCaptureCalculation
+oilPlantProMedCC,,refinedOil,,emissionFac,26.342,CarbonCaptureCalculation
 syngasEngineDhCC,,co2,co2Pure,ratioConvOutFix,0.265380919,CarbonCaptureCalculation
 syngasEngineDhCC,,electricity,,ratioConvOutFix,0.49784792,CarbonCaptureCalculation
 syngasEngineDhCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -443,7 +443,7 @@ syngasEngineDhCC,,,,effConv,0.847837896,CarbonCaptureCalculation
 syngasEngineDhCC,2040,,,costOprConv,37.683,CarbonCaptureCalculation
 syngasEngineDhCC,2040,,,costExpConv,1251.6,CarbonCaptureCalculation
 syngasEngineDhCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-syngasEngineDhCC,,,,emissionFac,-225,CarbonCaptureCalculation
+syngasEngineDhCC,,syngas,,emissionFac,-225,CarbonCaptureCalculation
 syngasEngineProLowCC,,co2,co2Pure,ratioConvOutFix,0.265380919,CarbonCaptureCalculation
 syngasEngineProLowCC,,electricity,,ratioConvOutFix,0.49784792,CarbonCaptureCalculation
 syngasEngineProLowCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -451,7 +451,7 @@ syngasEngineProLowCC,,,,effConv,0.847837896,CarbonCaptureCalculation
 syngasEngineProLowCC,2040,,,costOprConv,37.683,CarbonCaptureCalculation
 syngasEngineProLowCC,2040,,,costExpConv,1251.6,CarbonCaptureCalculation
 syngasEngineProLowCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-syngasEngineProLowCC,,,,emissionFac,-225,CarbonCaptureCalculation
+syngasEngineProLowCC,,syngas,,emissionFac,-225,CarbonCaptureCalculation
 syngasEngineProMedCC,,co2,co2Pure,ratioConvOutFix,0.265380919,CarbonCaptureCalculation
 syngasEngineProMedCC,,electricity,,ratioConvOutFix,0.49784792,CarbonCaptureCalculation
 syngasEngineProMedCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -459,4 +459,4 @@ syngasEngineProMedCC,,,,effConv,0.847837896,CarbonCaptureCalculation
 syngasEngineProMedCC,2040,,,costOprConv,37.683,CarbonCaptureCalculation
 syngasEngineProMedCC,2040,,,costExpConv,1251.6,CarbonCaptureCalculation
 syngasEngineProMedCC,,,,avaConv,0.903846154,CarbonCaptureCalculation
-syngasEngineProMedCC,,,,emissionFac,-225,CarbonCaptureCalculation
+syngasEngineProMedCC,,syngas,,emissionFac,-225,CarbonCaptureCalculation

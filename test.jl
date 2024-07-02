@@ -9,7 +9,7 @@ MIN_BIOMASS_FOR_OIL = 0         # constraint for using certain amount of biomass
 MIN_BIOMASS_FOR_HVC = 0         # constraint for using certain amount of biomass for HVC produiction (TWh/a)
 MIN_BIOMASS_FOR_SYNGAS = 0      # constraint for using certain amount of biomass for syngas produiction (TWh/a)
 CLUSTER_INDEX = 0               # cluster index for the additional constraint (if no constraint parameter is not used) 
-BARRIER_CONV_TOL = 1e-4         # barrier convergence tolerance
+BARRIER_CONV_TOL = 1e-4        # barrier convergence tolerance
 NUMERIC_FOCUS = 0               # numeric focus for the solver
 
 
@@ -23,9 +23,9 @@ OBJ_STR = OBJ_STR_INPUT * "_iteraiton" * string(START_ITERATION) * "-" * string(
 
 # define input and output directories
 inputMod_arr = ["./_basis","./timeSeries/96hours_2008"]
-# resultDir_str = "./results/" * OBJ_STR * Dates.format(now(), "_yyyy-mm-dd_HH-MM")
-# mkdir(resultDir_str)
-resultDir_str = "./results/"
+resultDir_str = "./results/" * OBJ_STR * Dates.format(now(), "_yyyy-mm-dd_HH-MM")
+mkdir(resultDir_str)
+# resultDir_str = "./results/"
 
 # read uncertain parameters
 uncertain_parameters = CSV.read("_basis/uncertain_parameters.csv", DataFrame, types=[String, String, String, String, String, Float64, Float64, Float64, Float64, String])
@@ -56,6 +56,7 @@ set_optimizer_attribute(anyM.optModel, "Crossover", 0);
 set_optimizer_attribute(anyM.optModel, "Threads",t_int);
 set_optimizer_attribute(anyM.optModel, "BarConvTol", BARRIER_CONV_TOL); 
 set_optimizer_attribute(anyM.optModel, "NumericFocus", NUMERIC_FOCUS); 
+set_optimizer_attribute(anyM.optModel, "BarHomogeneous", 1)
 optimize!(anyM.optModel) # solve the model
 
 

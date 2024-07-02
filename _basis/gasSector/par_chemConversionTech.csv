@@ -26,7 +26,7 @@ steamMethaneReformingCC,,,costExpConv,1491.242,CarbonCaptureCalculation
 steamMethaneReformingCC,,,costOprConv,88.1144,CarbonCaptureCalculation
 steamMethaneReformingCC,,,effConv,0.74126434,CarbonCaptureCalculation
 steamMethaneReformingCC,,,lifeConv,0.86,CarbonCaptureCalculation
-steamMethaneReformingCC,,,emissionFac,19.762,CarbonCaptureCalculation
+steamMethaneReformingCC,methane,,emissionFac,19.762,CarbonCaptureCalculation
 steamMethaneReformingCC,co2,co2Pure,ratioConvOutFix,0.239938697,CarbonCaptureCalculation
 oilToHvc,refinedOil,,ratioConvInFix,0.98,
 oilToHvc,,,avaConv,1,

@@ -128,7 +128,7 @@ vertices:   ###################   Technologies   ###############################
   - label: engine
     name: bioGasEngineDh
     type: technology
-    aggregating: [methaneEngineDh, syngasEngineDh, bioGasEngineProLow, methaneEngineProLow, syngasEngineProLow, bioGasEngineProMed, methaneEngineProMed, syngasEngineProMed, dieselEnginePeak, methaneEnginePeak]
+    aggregating: [methaneEngineDh, syngasEngineDh, bioGasEngineProLow, methaneEngineProLow, syngasEngineProLow, bioGasEngineProMed, methaneEngineProMed, syngasEngineProMed, methaneEnginePeak]
     color: [0]
     position: [0]
 
