@@ -29,4 +29,4 @@ coal,,2,1,2,2,eq,
 uranum,,2,1,2,2,eq,
 hvc,,2,1,2,2,eq,highValueChemicals
 ammonia,,2,1,2,2,eq,
-co2,co2Removed,2,1,2,2,eq,
+co2,co2Removed,2,1,2,2,none,
