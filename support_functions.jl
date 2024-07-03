@@ -212,30 +212,6 @@ function scaleBiomassPotential(model::anyModel; factor::Union{Float64, Nothing}=
 end
 
 
-function scaleInvestmentCost(model::anyModel; factor::Union{Float64, Nothing}=nothing, newValue::Union{Float64, Nothing}=nothing, technology::Union{String, Int}="all") ::Nothing
-    """
-    Scale the investment cost of a given technology in the model.
-
-    Parameters:
-    - `model`: The model object.
-    - `factor`: The scaling factor to multiply the investment cost by. Default is `nothing`.
-    - `newValue`: The new value to set the investment cost to. Default is `nothing`.
-    - `technology`: The technology to scale the investment cost for. Default is `"all"`.
-    """ 
-    if typeof(technology) == String # returns the index of the technology if entered as sting
-        if technology == "all"
-            technology = 0
-        else
-            technology = findTechnology(model, technology)
-        end
-    end    
-    for row in eachrow(model.parts.cost.par[:costExpConv].data)
-        if row.Te in [technology; children(model, "technology", technology)]|| technology == 0
-            factor != nothing ? row.val *= factor : row.val = row.val
-            newValue != nothing ? row.val = newValue : row.val = row.val
-        end
-    end
-end
 
 
 
@@ -403,8 +379,36 @@ function modify_parameters(model::anyModel, uncertain_parameters::DataFrame, lhs
             scaleBiomassPotential(model, factor=factor, newValue=newValue, carrier=row[:carrier], region=row[:region])
         elseif row[:parameter] == "capaConvUp"
             scaleRenewablePotential(model, factor=factor, newValue=newValue, technology=row[:technology], region=row[:region])
-        elseif row[:parameter] == "costExpConv"
-            scaleInvestmentCost(model, factor=factor, newValue=newValue, technology=row[:technology])
+        elseif row[:parameter] == "costExpConv" || row[:parameter] == "costOprConv"
+            scaleCost(model, parameter=row[:parameter] , factor=factor, newValue=newValue, technology=row[:technology])
+
+        end
+    end
+end
+
+
+function scaleCost(model::anyModel;  parameter::String ,factor::Union{Float64, Nothing}=nothing, newValue::Union{Float64, Nothing}=nothing, technology::Union{String, Int}="all") ::Nothing
+    """
+    Scale the cost of a given technology in the model.
+
+    Parameters:
+    - `model`: The model object.
+    - `parameter`: The parameter to scale the cost for. Possible values are 'costExpConv' and 'costOprConv'.
+    - `factor`: The scaling factor to multiply the investment cost by. Default is `nothing`.
+    - `newValue`: The new value to set the investment cost to. Default is `nothing`.
+    - `technology`: The technology to scale the investment cost for. Default is `"all"`.
+    """ 
+    if typeof(technology) == String # returns the index of the technology if entered as sting
+        if technology == "all"
+            technology = 0
+        else
+            technology = findTechnology(model, technology)
+        end
+    end    
+    for row in eachrow(model.parts.cost.par[Symbol(parameter)].data)
+        if row.Te in [technology; children(model, "technology", technology)]|| technology == 0
+            factor != nothing ? row.val *= factor : row.val = row.val
+            newValue != nothing ? row.val = newValue : row.val = row.val
         end
     end
 end

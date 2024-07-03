@@ -111,6 +111,11 @@ for iteration in range(START_ITERATION, END_ITERATION)
         set_optimizer_attribute(anyM.optModel, "Threads",t_int);
         set_optimizer_attribute(anyM.optModel, "BarConvTol", BARRIER_CONV_TOL); 
         set_optimizer_attribute(anyM.optModel, "NumericFocus", NUMERIC_FOCUS); 
+        set_optimizer_attribute(anyM.optModel, "BarHomogeneous", 1)
+        set_optimizer_attribute(anyM.optModel, "PreDual", -1)
+        set_optimizer_attribute(anyM.optModel, "Presolve", 2) 
+        set_optimizer_attribute(anyM.optModel, "BarOrder", 0) 
+
         optimize!(anyM.optModel) # solve the model
         
     

@@ -4,16 +4,16 @@
 ## Define the input parameter ##
 START_ITERATION = 1               # set iteration boundaries
 END_ITERATION = 1                 # set iteration boundaries
-OBJ_STR_INPUT = "disposed_inequality"                # name of the modelrun
+OBJ_STR_INPUT = "nominal_case"                # name of the modelrun
 MIN_BIOMASS_FOR_OIL = 0         # constraint for using certain amount of biomass for oil produiction (TWh/a)
 MIN_BIOMASS_FOR_HVC = 0         # constraint for using certain amount of biomass for HVC produiction (TWh/a)
 MIN_BIOMASS_FOR_SYNGAS = 0      # constraint for using certain amount of biomass for syngas produiction (TWh/a)
 CLUSTER_INDEX = 0               # cluster index for the additional constraint (if no constraint parameter is not used) 
-BARRIER_CONV_TOL = 1e-3        # barrier convergence tolerance
+BARRIER_CONV_TOL = 1e-6        # barrier convergence tolerance
 NUMERIC_FOCUS = 0               # numeric focus for the solver
 
 
-using AnyMOD, Gurobi, CSV, Statistics, Dates
+using Gurobi, AnyMOD, CSV, Statistics, Dates
 include("support_functions.jl")
 
 t_int = 8 # number of threads
@@ -23,19 +23,20 @@ OBJ_STR = OBJ_STR_INPUT * "_iteraiton" * string(START_ITERATION) * "-" * string(
 
 # define input and output directories
 inputMod_arr = ["./_basis","./timeSeries/96hours_2008"]
+# inputMod_arr = ["./_basis","./timeSeries/8760hours_2008"]
 resultDir_str = "./results/" * OBJ_STR * Dates.format(now(), "_yyyy-mm-dd_HH-MM")
 mkdir(resultDir_str)
 # resultDir_str = "./results/"
 
 # read uncertain parameters
-uncertain_parameters = CSV.read("_basis/uncertain_parameters.csv", DataFrame, types=[String, String, String, String, String, Float64, Float64, Float64, Float64, String])
+# uncertain_parameters = CSV.read("_basis/uncertain_parameters.csv", DataFrame, types=[String, String, String, String, String, Float64, Float64, Float64, Float64, String])
 
 # lhs = create_lhs(size(uncertain_parameters)[1], 1000, 0) # creates a new Latin Hypercube Sample and saves as csv
-lhs = CSV.read("lhs.csv", DataFrame, header=false) # uses an already created lhc sample
+# lhs = CSV.read("lhs.csv", DataFrame, header=false) # uses an already created lhc sample
 
 
-outputsOfInterest = nothing # initialize parameter to store the outputs of interest
-objective = DataFrame(iteration = Int[], objectiveValue = Float64[]) # initialize dataframe to store the objective values of the optimization runs
+# outputsOfInterest = nothing # initialize parameter to store the outputs of interest
+# objective = DataFrame(iteration = Int[], objectiveValue = Float64[]) # initialize dataframe to store the objective values of the optimization runs
 
 anyM = anyModel(inputMod_arr, resultDir_str, objName = OBJ_STR, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true) 
 
@@ -57,6 +58,10 @@ set_optimizer_attribute(anyM.optModel, "Threads",t_int);
 set_optimizer_attribute(anyM.optModel, "BarConvTol", BARRIER_CONV_TOL); 
 set_optimizer_attribute(anyM.optModel, "NumericFocus", NUMERIC_FOCUS); 
 set_optimizer_attribute(anyM.optModel, "BarHomogeneous", 1)
+set_optimizer_attribute(anyM.optModel, "PreDual", -1) # -1 
+set_optimizer_attribute(anyM.optModel, "Presolve", 2) 
+set_optimizer_attribute(anyM.optModel, "BarOrder", 0) 
+
 optimize!(anyM.optModel) # solve the model
 
 
