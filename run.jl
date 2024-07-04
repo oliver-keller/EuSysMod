@@ -55,7 +55,7 @@ uncertain_parameters = CSV.read("./_basis/uncertain_parameters.csv", DataFrame, 
 lhs = CSV.read("./lhs.csv", DataFrame, header=false) # uses an already created lhc sample
 
 # initialize model (deepcopy of initialized model might lead to a a terminal crash. In this case initialize the model separately for every iteration.)
-anyM0 = anyModel(inputMod_arr, resultDir_str, objName = OBJ_STR, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true)
+# anyM0 = anyModel(inputMod_arr, resultDir_str, objName = OBJ_STR, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true)
 
 outputsOfInterest = nothing # initialize parameter to store the outputs of interest
 objective = DataFrame(iteration = Int[], objectiveValue = Float64[]) # initialize dataframe to store the objective values of the optimization runs
@@ -94,9 +94,11 @@ for iteration in range(START_ITERATION, END_ITERATION)
             continue
         end
 
-        anyM = deepcopy(anyM0) # deepcopy of initialized model might lead to a a terminal crash => initialize the model for every iteration
-        # anyM = anyModel(inputMod_arr, resultDir_str, objName = OBJ_STR, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true) 
+        obj_str_model = string(iteration) * "_" * OBJ_STR
 
+        # anyM = deepcopy(anyM0) # deepcopy of initialized model might lead to a a terminal crash => initialize the model for every iteration
+        anyM = anyModel(inputMod_arr, resultDir_str, objName = obj_str_model, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true) 
+        
         # modify uncertain parameters
         modify_parameters(anyM, uncertain_parameters, lhs, iteration)
 
@@ -128,6 +130,10 @@ for iteration in range(START_ITERATION, END_ITERATION)
         # Save outputsOfInterest and total_cost as a CSV file
         CSV.write(resultDir_str * "/outputsOfInterest.csv", DataFrame(outputsOfInterest))
         set_constraint ? CSV.write(resultDir_str * "/total_cost_cluster_$CLUSTER_INDEX.csv", DataFrame(objective)) : CSV.write(resultDir_str * "/total_cost.csv", DataFrame(objective))
+        
+        reportResults(:summary,anyM, addRep = (:capaConvOut,), addObjName = true)
+        reportResults(:exchange,anyM, addObjName = true)
+        reportResults(:cost,anyM, addObjName = true)
     end
     println("Iteration $iteration took $start_time_iteration seconds")
 end
