@@ -4,7 +4,7 @@
 ## Define the input parameter ##
 START_ITERATION = 1               # set iteration boundaries
 END_ITERATION = 1                 # set iteration boundaries
-OBJ_STR_INPUT = "nominal_case"                # name of the modelrun
+OBJ_STR_INPUT = "test"                # name of the modelrun
 MIN_BIOMASS_FOR_OIL = 0         # constraint for using certain amount of biomass for oil produiction (TWh/a)
 MIN_BIOMASS_FOR_HVC = 0         # constraint for using certain amount of biomass for HVC produiction (TWh/a)
 MIN_BIOMASS_FOR_SYNGAS = 0      # constraint for using certain amount of biomass for syngas produiction (TWh/a)
@@ -23,7 +23,7 @@ OBJ_STR = OBJ_STR_INPUT * "_iteraiton" * string(START_ITERATION) * "-" * string(
 
 # define input and output directories
 inputMod_arr = ["./_basis","./timeSeries/96hours_2008"]
-# inputMod_arr = ["./_basis","./timeSeries/8760hours_2008"]
+# inputMod_arr = ["./_basis","./timeSeries/1752hours_2008"]
 resultDir_str = "./results/" * OBJ_STR * Dates.format(now(), "_yyyy-mm-dd_HH-MM")
 mkdir(resultDir_str)
 # resultDir_str = "./results/"

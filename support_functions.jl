@@ -174,7 +174,7 @@ end
 
 
 
-function scaleBiomassPotential(model::anyModel; factor::Union{Float64, Nothing}=nothing, newValue::Union{Float64, Nothing}=nothing, carrier::Union{String, Int}="all", region::Union{String, Int}="all") ::Nothing 
+function scaleBiomassPotential(model::anyModel; factor::Union{Float64, Nothing}=nothing, newValue::Union{Float64, Int64, Nothing}=nothing, carrier::Union{String, Int}="all", region::Union{String, Int}="all") ::Nothing 
     """
     Scale the biomass potential values in the given model by a factor or sets a new value.
     
@@ -215,7 +215,7 @@ end
 
 
 
-function scaleRenewablePotential(model::anyModel; factor::Union{Float64, Nothing}=nothing, newValue::Union{Float64, Nothing}=nothing, technology::Union{String, Int}="all", region::Union{String, Int}="all") ::Nothing
+function scaleRenewablePotential(model::anyModel; factor::Union{Float64, Nothing}=nothing, newValue::Union{Float64, Int64, Nothing}=nothing, technology::Union{String, Int}="all", region::Union{String, Int}="all") ::Nothing
     """
     Scale the renewable potential values in the given model by a factor or sets a new value.
     
@@ -370,6 +370,8 @@ function modify_parameters(model::anyModel, uncertain_parameters::DataFrame, lhs
     # Arguments
     - `model::anyModel`: The model to modify.
     - `uncertain_parameters::DataFrame`: A table of uncertain parameters.
+    - `lhs::DataFrame`: A Latin Hypercube Sample.
+    - `iteration::Int`: The iteration number.
     """
     for (index, row) in enumerate(eachrow(uncertain_parameters))
         ismissing(row[:minRel]) || ismissing(row[:maxRel]) ? factor = nothing : factor = row[:minRel]  + (row[:maxRel] - row[:minRel]) * lhs[iteration, index] 
@@ -379,24 +381,25 @@ function modify_parameters(model::anyModel, uncertain_parameters::DataFrame, lhs
             scaleBiomassPotential(model, factor=factor, newValue=newValue, carrier=row[:carrier], region=row[:region])
         elseif row[:parameter] == "capaConvUp"
             scaleRenewablePotential(model, factor=factor, newValue=newValue, technology=row[:technology], region=row[:region])
-        elseif row[:parameter] == "costExpConv" || row[:parameter] == "costOprConv"
+        elseif row[:parameter] == "costExpConv" || row[:parameter] == "costOprConv"|| row[:parameter] == "costOprStIn" || row[:parameter] == "costExpStSize"
             scaleCost(model, parameter=row[:parameter] , factor=factor, newValue=newValue, technology=row[:technology])
-
+        elseif row[:parameter] == "trdBuyPrc"
+            scalePrice(model, factor=factor, newValue=newValue, carrier=row[:carrier])
         end
     end
 end
 
 
-function scaleCost(model::anyModel;  parameter::String ,factor::Union{Float64, Nothing}=nothing, newValue::Union{Float64, Nothing}=nothing, technology::Union{String, Int}="all") ::Nothing
+function scaleCost(model::anyModel;  parameter::String ,factor::Union{Float64, Nothing}=nothing, newValue::Union{Float64, Int64, Nothing}=nothing, technology::Union{String, Int}="all") ::Nothing
     """
     Scale the cost of a given technology in the model.
 
     Parameters:
     - `model`: The model object.
-    - `parameter`: The parameter to scale the cost for. Possible values are 'costExpConv' and 'costOprConv'.
-    - `factor`: The scaling factor to multiply the investment cost by. Default is `nothing`.
-    - `newValue`: The new value to set the investment cost to. Default is `nothing`.
-    - `technology`: The technology to scale the investment cost for. Default is `"all"`.
+    - `parameter`: The parameter to scale the cost for. Possible values are 'costExpConv', 'costOprConv', "costOprStIn" and "costExpStSize"
+    - `factor`: The scaling factor to multiply the cost by. Default is `nothing`.
+    - `newValue`: The new value to set the cost to. Default is `nothing`.
+    - `technology`: The technology to scale the cost for. Default is `"all"`.
     """ 
     if typeof(technology) == String # returns the index of the technology if entered as sting
         if technology == "all"
@@ -407,6 +410,32 @@ function scaleCost(model::anyModel;  parameter::String ,factor::Union{Float64, N
     end    
     for row in eachrow(model.parts.cost.par[Symbol(parameter)].data)
         if row.Te in [technology; children(model, "technology", technology)]|| technology == 0
+            factor != nothing ? row.val *= factor : row.val = row.val
+            newValue != nothing ? row.val = newValue : row.val = row.val
+        end
+    end
+end
+
+
+function scalePrice(model::anyModel; factor::Union{Float64, Nothing}=nothing, newValue::Union{Float64, Int64, Nothing}=nothing, carrier::Union{String, Int}="all") ::Nothing
+    """
+    Scale the price of a given carrier in the model.
+
+    Parameters:
+    - `model`: The model object.
+    - `factor`: The scaling factor to multiply the investment price by. Default is `nothing`.
+    - `newValue`: The new value to set the investment price to. Default is `nothing`.
+    - `carrier`: The carrier to scale the investment price for. Default is `"all"`.
+    """ 
+    if typeof(carrier) == String # returns the index of the carrier if entered as sting
+        if carrier == "all"
+            carrier = 0
+        else
+            carrier = findCarrier(model, carrier)
+        end
+    end    
+    for row in eachrow(anyM.parts.bal.par[:trdBuyPrc].data)
+        if row.C in [carrier; children(model, "carrier", carrier)]|| carrier == 0
             factor != nothing ? row.val *= factor : row.val = row.val
             newValue != nothing ? row.val = newValue : row.val = row.val
         end
