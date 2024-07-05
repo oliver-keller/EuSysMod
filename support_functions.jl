@@ -399,7 +399,7 @@ function scaleCost(model::anyModel;  parameter::String ,factor::Union{Float64, N
     - `parameter`: The parameter to scale the cost for. Possible values are 'costExpConv', 'costOprConv', "costOprStIn" and "costExpStSize"
     - `factor`: The scaling factor to multiply the cost by. Default is `nothing`.
     - `newValue`: The new value to set the cost to. Default is `nothing`.
-    - `technology`: The technology to scale the cost for. Default is `"all"`.
+    - `technology`: The technology to scale the investment cost for. Default is `"all"`.
     """ 
     if typeof(technology) == String # returns the index of the technology if entered as sting
         if technology == "all"
@@ -434,7 +434,7 @@ function scalePrice(model::anyModel; factor::Union{Float64, Nothing}=nothing, ne
             carrier = findCarrier(model, carrier)
         end
     end    
-    for row in eachrow(anyM.parts.bal.par[:trdBuyPrc].data)
+    for row in eachrow(model.parts.bal.par[:trdBuyPrc].data)
         if row.C in [carrier; children(model, "carrier", carrier)]|| carrier == 0
             factor != nothing ? row.val *= factor : row.val = row.val
             newValue != nothing ? row.val = newValue : row.val = row.val

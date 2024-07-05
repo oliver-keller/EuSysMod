@@ -112,14 +112,24 @@ for iteration in range(START_ITERATION, END_ITERATION)
         set_optimizer_attribute(anyM.optModel, "Crossover", 0);
         set_optimizer_attribute(anyM.optModel, "Threads",t_int);
         set_optimizer_attribute(anyM.optModel, "BarConvTol", BARRIER_CONV_TOL); 
-        set_optimizer_attribute(anyM.optModel, "NumericFocus", NUMERIC_FOCUS); 
         set_optimizer_attribute(anyM.optModel, "BarHomogeneous", 1)
         set_optimizer_attribute(anyM.optModel, "PreDual", -1)
         set_optimizer_attribute(anyM.optModel, "Presolve", 2) 
         set_optimizer_attribute(anyM.optModel, "BarOrder", 0) 
 
-        optimize!(anyM.optModel) # solve the model
-        
+
+        numFoc_int = NUMERIC_FOCUS
+        while true
+            set_optimizer_attribute(anyM.optModel, "NumericFocus", numFoc_int); 
+            println("[info] NumericFocus: $numFoc_int")
+            optimize!(anyM.optModel) # solve the model
+            println("[info] Termination status: ", termination_status(anyM.optModel))
+            if termination_status(anyM.optModel) == MOI.OPTIMAL || numFoc_int == 3
+                break
+            else
+                numFoc_int = numFoc_int + 1
+            end
+        end
     
         # update the outputs of interest and the objective value dataframes
         global outputsOfInterest
