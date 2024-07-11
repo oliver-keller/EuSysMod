@@ -39,10 +39,12 @@ MIN_BIOMASS_FOR_HVC = par_df[id_int,:MIN_BIOMASS_FOR_HVC]       # constraint for
 MAX_BIOMASS_FOR_HVC = par_df[id_int,:MAX_BIOMASS_FOR_HVC]       # constraint for using certain amount of biomass for HVC produiction (TWh/a)
 CLUSTER_INDEX = par_df[id_int,:CLUSTER_INDEX]                   # cluster index for the additional constraint (if no constraint parameter is not used)
 BARRIER_CONV_TOL = par_df[id_int,:BARRIER_CONV_TOL]             # barrier convergence tolerance
+BIOMASS_ALLOWED = par_df[id_int,:BIOMASS_ALLOWED]               # biomass carrier allowed or disabled
+ALL_BIOMASS_FOR_DH = par_df[id_int,:ALL_BIOMASS_FOR_DH]         # all biomass for district heating technologies
 
 
 # define the name of the modelrun
-OBJ_STR = OBJ_STR_INPUT * "_iteraiton" * string(START_ITERATION) * "-" * string(END_ITERATION) * "_oil" * string(MIN_BIOMASS_FOR_OIL) * "_hvc" * string(MIN_BIOMASS_FOR_HVC) * "_cluster" * string(CLUSTER_INDEX)
+OBJ_STR = OBJ_STR_INPUT * "_iteraiton" * string(START_ITERATION) * "-" * string(END_ITERATION) # * "_oil" * string(MIN_BIOMASS_FOR_OIL) * "_hvc" * string(MIN_BIOMASS_FOR_HVC) * "_cluster" * string(CLUSTER_INDEX)
 
 # define input and output directories
 inputMod_arr = ["./_basis","./timeSeries/96hours_2008"]
@@ -75,6 +77,27 @@ for iteration in range(START_ITERATION, END_ITERATION)
         anyM = anyModel(inputMod_arr, resultDir_str, objName = obj_str_model, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true) 
 
 
+        if !BIOMASS_ALLOWED
+            scaleBiomassPotential(anyM, newValue=0, carrier="all", region="all")
+        end
+
+
+        # use all biomass for district heating technologies (manure and sludge are not used because there is no district heating technology for these carriers)
+        min_biomass_for_dh = 0
+        if ALL_BIOMASS_FOR_DH
+            scaleBiomassPotential(anyM, newValue=0, carrier="sludge", region="all")
+            scaleBiomassPotential(anyM, newValue=0, carrier="manure", region="all")
+
+            for row in eachrow(anyM.parts.lim.par[:trdBuyUp].data)
+                if row.C in ["wood", "greenWaste", "digestate"] 
+                    min_biomass_for_dh += row.val
+                end
+            end
+        end
+
+
+
+
         # set additional constraint for regret calculations -> Set the minimum use of biomass for the following categories (biomass usage in GWh/a)
         # make sure that the file "df_input_with_final_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
         set_constraint = (MIN_BIOMASS_FOR_HVC > 0) || (MIN_BIOMASS_FOR_OIL > 0) || (MAX_BIOMASS_FOR_HVC<9999) || (MAX_BIOMASS_FOR_OIL<9999) # set to true if additional constraints exists
@@ -83,6 +106,7 @@ for iteration in range(START_ITERATION, END_ITERATION)
             new_min_constraint = Dict(
                 "bioConversionOil" => MIN_BIOMASS_FOR_OIL*1000,
                 "bioConversionHvc" => MIN_BIOMASS_FOR_HVC*1000,
+                "boilerNetwork" => min_biomass_for_dh
             )
 
             for row in eachrow(anyM.parts.lim.par[:useLow].data)
