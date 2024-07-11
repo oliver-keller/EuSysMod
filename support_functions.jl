@@ -284,7 +284,8 @@ function calculateOutputs(model::anyModel;  iteration::Int64=1, outputsOfInteres
 
     # List of all carriers and technologies
     includeWaste ? carriers = ["wood", "greenWaste", "manure", "sludge", "waste", "digestate"] : carriers = ["wood", "greenWaste", "manure", "sludge", "digestate"]
-    technologies = ["pyrolysisOil", "biomassToHvc", "chp", "boilerDh", "boilerSpace", "boilerProLow", "boilerProMed", "boilerProHigh", "biochemicalWoodOil", "liquefaction", "digestion", "gasification", "carbonization", "pyrolysisCoal"]
+    technologies = ["pyrolysisOil", "biomassToHvc", "chp", "boilerDh", "boilerSpace", "boilerProLow", "boilerProMed", "boilerProHigh", "liquefaction", "digestion", "gasification", "carbonization", "pyrolysisCoal", "CCC"] # the comparison is made from the second to the last character. The first is omitted due to capitalization missmatch
+    # CCC means Carbon Capture (second, to last char) ans is not an additional technology. This column is created that the fraction of biomass used for BECCS can be quantified
 
     # Initialize the DataFrame with all zeros
     technology_input = DataFrame([:carrier => carriers; Symbol.(technologies) .=> 0.0])
@@ -310,7 +311,7 @@ function calculateOutputs(model::anyModel;  iteration::Int64=1, outputsOfInteres
     if outputsOfInterest === nothing
         outputsOfInterest = DataFrame(
             iteration = [iteration],
-            crudeOil = [sum(technology_input.pyrolysisOil)+sum(technology_input.biochemicalWoodOil)+sum(technology_input.liquefaction)],
+            crudeOil = [sum(technology_input.pyrolysisOil)+sum(technology_input.liquefaction)],
             HVC = [sum(technology_input.biomassToHvc)],
             CHP = [sum(technology_input.chp)],
             LTH = [sum(technology_input.boilerProLow)],
@@ -323,7 +324,7 @@ function calculateOutputs(model::anyModel;  iteration::Int64=1, outputsOfInteres
             coal = [sum(technology_input.carbonization)+ sum(technology_input.pyrolysisCoal)]
         )
     else
-        push!(outputsOfInterest, [iteration, sum(technology_input.pyrolysisOil)+sum(technology_input.biochemicalWoodOil)+sum(technology_input.liquefaction), sum(technology_input.biomassToHvc), sum(technology_input.chp), sum(technology_input.boilerProLow), sum(technology_input.boilerProMed), sum(technology_input.boilerProHigh), sum(technology_input.boilerDh), sum(technology_input.boilerSpace), sum(technology_input.digestion)-sum(technology_input[technology_input.carrier .== "digestate", :][1, 2:end]), sum(technology_input.gasification), sum(technology_input.carbonization)+ sum(technology_input.pyrolysisCoal)])
+        push!(outputsOfInterest, [iteration, sum(technology_input.pyrolysisOil)+sum(technology_input.liquefaction), sum(technology_input.biomassToHvc), sum(technology_input.chp), sum(technology_input.boilerProLow), sum(technology_input.boilerProMed), sum(technology_input.boilerProHigh), sum(technology_input.boilerDh), sum(technology_input.boilerSpace), sum(technology_input.digestion)-sum(technology_input[technology_input.carrier .== "digestate", :][1, 2:end]), sum(technology_input.gasification), sum(technology_input.carbonization)+ sum(technology_input.pyrolysisCoal)])
     end
 
 
