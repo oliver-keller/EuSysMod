@@ -34,14 +34,15 @@ START_ITERATION = par_df[id_int,:START_ITERATION]               # set iteration 
 END_ITERATION = par_df[id_int,:END_ITERATION]                   # set iteration boundaries
 OBJ_STR_INPUT = par_df[id_int,:OBJ_STR]                         # name of the modelrun
 MIN_BIOMASS_FOR_OIL = par_df[id_int,:MIN_BIOMASS_FOR_OIL]       # constraint for using certain amount of biomass for oil produiction (TWh/a)
+MAX_BIOMASS_FOR_OIL = par_df[id_int,:MAX_BIOMASS_FOR_OIL]       # constraint for using certain amount of biomass for oil produiction (TWh/a)
 MIN_BIOMASS_FOR_HVC = par_df[id_int,:MIN_BIOMASS_FOR_HVC]       # constraint for using certain amount of biomass for HVC produiction (TWh/a)
-MIN_BIOMASS_FOR_SYNGAS = par_df[id_int,:MIN_BIOMASS_FOR_SYNGAS] # constraint for using certain amount of biomass for syngas produiction (TWh/a)
+MAX_BIOMASS_FOR_HVC = par_df[id_int,:MAX_BIOMASS_FOR_HVC]       # constraint for using certain amount of biomass for HVC produiction (TWh/a)
 CLUSTER_INDEX = par_df[id_int,:CLUSTER_INDEX]                   # cluster index for the additional constraint (if no constraint parameter is not used)
 BARRIER_CONV_TOL = par_df[id_int,:BARRIER_CONV_TOL]             # barrier convergence tolerance
-NUMERIC_FOCUS = par_df[id_int,:NUMERIC_FOCUS]                   # numeric focus for the solver)
+
 
 # define the name of the modelrun
-OBJ_STR = OBJ_STR_INPUT * "_iteraiton" * string(START_ITERATION) * "-" * string(END_ITERATION) * "_oil" * string(MIN_BIOMASS_FOR_OIL) * "_hvc" * string(MIN_BIOMASS_FOR_HVC) * "_syngas" * string(MIN_BIOMASS_FOR_SYNGAS) * "_cluster" * string(CLUSTER_INDEX)
+OBJ_STR = OBJ_STR_INPUT * "_iteraiton" * string(START_ITERATION) * "-" * string(END_ITERATION) * "_oil" * string(MIN_BIOMASS_FOR_OIL) * "_hvc" * string(MIN_BIOMASS_FOR_HVC) * "_cluster" * string(CLUSTER_INDEX)
 
 # define input and output directories
 inputMod_arr = ["./_basis","./timeSeries/96hours_2008"]
@@ -60,45 +61,53 @@ lhs = CSV.read("./lhs.csv", DataFrame, header=false) # uses an already created l
 outputsOfInterest = nothing # initialize parameter to store the outputs of interest
 objective = DataFrame(iteration = Int[], objectiveValue = Float64[]) # initialize dataframe to store the objective values of the optimization runs
 
-# set additional constraint for regret calculations -> Set the minimum use of biomass for the following categories (biomass usage in GWh/a)
-# make sure that the file "df_input_with_final_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
-set_constraint = (MIN_BIOMASS_FOR_HVC > 0) || (MIN_BIOMASS_FOR_OIL > 0) || (MIN_BIOMASS_FOR_SYNGAS > 0) # set to true if additional constraints exists
-
-if set_constraint
-    new_constraint = Dict(
-        "bioConversionOil" => MIN_BIOMASS_FOR_OIL*1000,
-        "bioConversionSyngas" => MIN_BIOMASS_FOR_SYNGAS*1000, 
-        "bioConversionBiogas" => 0, 
-        "bioConversionChp" => 0,
-        "bioConversionHvc" => MIN_BIOMASS_FOR_HVC*1000,
-        "bioConversionCoal" => 0,
-        "networkHeat" => 0,
-        "spaceHeat" => 0,
-        "proHeat" => 0
-    )
-
-    for row in eachrow(anyM0.parts.lim.par[:useLow].data)
-        row.val = get(new_constraint, findTechnology(anyM0, row.Te), row.val)
-    end
-
-    #determine if a scenario is already within the respective cluster and should be skipped in the optimization
-    cluster_of_scenarios = CSV.read("df_filtered_with_cluster.csv", DataFrame)[!, "cluster_final"] # make sure that the file "df_filtered_with_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
-end
 
 
 for iteration in range(START_ITERATION, END_ITERATION)
     start_time_iteration = @elapsed begin
         println("[info] iteration $iteration/$END_ITERATION")
 
-        if set_constraint && cluster_of_scenarios[iteration] == CLUSTER_INDEX
-            continue
-        end
+      
 
         obj_str_model = string(iteration) * "_" * OBJ_STR
 
         # anyM = deepcopy(anyM0) # deepcopy of initialized model might lead to a a terminal crash => initialize the model for every iteration
         anyM = anyModel(inputMod_arr, resultDir_str, objName = obj_str_model, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true) 
-        
+
+
+        # set additional constraint for regret calculations -> Set the minimum use of biomass for the following categories (biomass usage in GWh/a)
+        # make sure that the file "df_input_with_final_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
+        set_constraint = (MIN_BIOMASS_FOR_HVC > 0) || (MIN_BIOMASS_FOR_OIL > 0) || (MAX_BIOMASS_FOR_HVC<9999) || (MAX_BIOMASS_FOR_OIL<9999) # set to true if additional constraints exists
+
+        if set_constraint
+            new_min_constraint = Dict(
+                "bioConversionOil" => MIN_BIOMASS_FOR_OIL*1000,
+                "bioConversionHvc" => MIN_BIOMASS_FOR_HVC*1000,
+            )
+
+            for row in eachrow(anyM.parts.lim.par[:useLow].data)
+                row.val = get(new_min_constraint, findTechnology(anyM, row.Te), row.val)
+            end
+
+            new_max_constraint = Dict(
+                "bioConversionOil" => MAX_BIOMASS_FOR_OIL*1000,
+                "bioConversionHvc" => MAX_BIOMASS_FOR_HVC*1000,
+            )
+
+            for row in eachrow(anyM.parts.lim.par[:useUp].data)
+                row.val = get(new_max_constraint, findTechnology(anyM, row.Te), row.val)
+            end
+
+            #determine if a scenario is already within the respective cluster and should be skipped in the optimization
+            cluster_of_scenarios = CSV.read("df_filtered_with_cluster.csv", DataFrame)[!, "cluster_final"] # make sure that the file "df_filtered_with_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
+        end
+
+
+        if set_constraint && cluster_of_scenarios[iteration] == CLUSTER_INDEX
+            continue
+        end
+
+
         # modify uncertain parameters
         modify_parameters(anyM, uncertain_parameters, lhs, iteration)
 
@@ -118,7 +127,7 @@ for iteration in range(START_ITERATION, END_ITERATION)
         set_optimizer_attribute(anyM.optModel, "BarOrder", 0) 
 
 
-        numFoc_int = NUMERIC_FOCUS
+        numFoc_int = 0
         while true
             set_optimizer_attribute(anyM.optModel, "NumericFocus", numFoc_int); 
             println("[info] NumericFocus: $numFoc_int")
