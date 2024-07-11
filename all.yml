@@ -500,11 +500,11 @@ vertices:   ###################   Technologies   ###############################
     color: [0.6823529411764706, 0.07058823529411765, 0.22745098039215686]
     position: [0]
 
-#  - label: refined oil
-#    name: refinedOil
-#    type: carrier
-#    color: [0.33725490196078434, 0.3411764705882353, 0.3254901960784314]
-#    position: [0]
+  - label: refined oil
+    name: refinedOil
+    type: carrier
+    color: [0.33725490196078434, 0.3411764705882353, 0.3254901960784314]
+    position: [0]
 
   - label: process heat - low
     name: processHeat_low
@@ -543,7 +543,7 @@ vertices:   ###################   Technologies   ###############################
     color: [0.43529411764705883, 0.7843137254901961, 0.7137254901960784]
     position: [0]
 
-  - label: synthetic oil
+  - label: crudeOil
     name: crudeOil
     type: carrier
     color: [0.33725490196078434, 0.3411764705882353, 0.3254901960784314]
@@ -592,6 +592,7 @@ removeSankey:  ###################   Edges  ####################################
   - biomass: sludge
   - biomass: waste
   - biomass: manure
+  - biomass: digestate
   - final demand: process heat - low
   - final demand: process heat - medium
   - final demand: process heat - high
@@ -600,14 +601,18 @@ removeSankey:  ###################   Edges  ####################################
   - final demand: avaAndNavi
   - exchange losses: electricity
   - exchange losses: H2
-  - exchange losses: refinedOil
+  - exchange losses: refined oil
   - exchange losses: methane
   - exchange losses: ammonia
   - exchange losses: hvc
   - exchange losses: waste
   - co2Pure: co2
-  - crudeOil: refinery
+#  - crudeOil: refinery
   - net import: wood
   - net import: hvc
+  - net import: ammonia
+  - net import: waste
+  - net import: methane
+  - net import: refined oil
 
 

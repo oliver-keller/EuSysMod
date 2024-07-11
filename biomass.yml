@@ -507,12 +507,23 @@ vertices:   ###################   Technologies   ###############################
 #    position: [0]
 
 
-#  - label: process heat
-#    name: processHeat_medium
-#    aggregating: [processHeat_low, processHeat_high]
+#  - label: process heat - low
+#    name: processHeat_low
 #    type: carrier
 #    color: [0.6823529411764706, 0.07058823529411765, 0.22745098039215686]
 #    position: [0]
+
+#  - label: process heat - medium
+#    name: processHeat_medium
+#    type: carrier
+#    color: [0.6823529411764706, 0.07058823529411765, 0.22745098039215686]
+#    position: [0]
+
+  - label: process heat - high
+    name: processHeat_high
+    type: carrier
+    color: [0.6823529411764706, 0.07058823529411765, 0.22745098039215686]
+    position: [0]
 
 #  - label: transport
 #    name: psngRoadPrvt
@@ -527,7 +538,7 @@ vertices:   ###################   Technologies   ###############################
     color: [0.0, 0.0, 0.0]
     position: [0]
 
-  - label: synthetic oil
+  - label: crudeOil
     name: crudeOil
     type: carrier
     color: [0.33725490196078434, 0.3411764705882353, 0.3254901960784314]
@@ -576,6 +587,7 @@ removeSankey:  ###################   Edges  ####################################
   - biomass: sludge
   - biomass: waste
   - biomass: manure
+  - biomass: digestate
   - final demand: process heat - low
   - final demand: process heat - medium
   - final demand: process heat - high
@@ -594,3 +606,6 @@ removeSankey:  ###################   Edges  ####################################
   - net import: wood
   - net import: hvc
   - net import: refined oil
+  - net import: waste
+  - net import: ammonia
+  - net import: methane
