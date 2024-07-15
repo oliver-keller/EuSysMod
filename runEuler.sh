@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --array=1-12
+#SBATCH --array=1-15
 #SBATCH --time=120:00:00
 #SBATCH --job-name=single_%j
 #SBATCH --output=report/single_%j.out

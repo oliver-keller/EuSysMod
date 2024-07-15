@@ -87,30 +87,30 @@ for iteration in range(START_ITERATION, END_ITERATION)
 
 
         # use all biomass for district heating technologies (manure and sludge are not used because there is no district heating technology for these carriers)
-        min_biomass_for_dh = 0
         if ALL_BIOMASS_FOR_DH
             scaleBiomassPotential(anyM, newValue=0, carrier="sludge", region="all")
             scaleBiomassPotential(anyM, newValue=0, carrier="manure", region="all")
+            scaleBiomassPotential(anyM, newValue=0, carrier="digestate", region="all")
+            scaleBiomassPotential(anyM, newValue=0, carrier="greenWaste", region="all")
 
-            for row in eachrow(anyM.parts.lim.par[:trdBuyUp].data)
-                if findCarrier(anyM, row.C) in ["wood", "greenWaste", "digestate"] 
-                    min_biomass_for_dh += row.val
+            wood_potential = sum(anyM.parts.lim.par[:trdBuyUp].data[anyM.parts.lim.par[:trdBuyUp].data.C .== findCarrier(anyM, "wood"), :].val)
+
+            for row in eachrow(anyM.parts.lim.par[:useLow].data)
+                if findTechnology(anyM, row.Te) == "woodBoilerDh"
+                    row.val = wood_potential
                 end
             end
         end
 
 
-
-
         # set additional constraint for regret calculations -> Set the minimum use of biomass for the following categories (biomass usage in GWh/a)
         # make sure that the file "df_input_with_final_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
-        set_constraint = (MIN_BIOMASS_FOR_HVC > 0) || (MIN_BIOMASS_FOR_OIL > 0) || (MAX_BIOMASS_FOR_HVC<9999) || (MAX_BIOMASS_FOR_OIL<9999)  || (min_biomass_for_dh>0) # set to true if additional constraints exists
+        set_constraint = (MIN_BIOMASS_FOR_HVC > 0) || (MIN_BIOMASS_FOR_OIL > 0) || (MAX_BIOMASS_FOR_HVC<9999) || (MAX_BIOMASS_FOR_OIL<9999) # set to true if additional constraints exists
 
         if set_constraint
             new_min_constraint = Dict(
                 "bioConversionOil" => MIN_BIOMASS_FOR_OIL*1000,
-                "bioConversionHvc" => MIN_BIOMASS_FOR_HVC*1000,
-                "networkHeat" => min_biomass_for_dh
+                "bioConversionHvc" => MIN_BIOMASS_FOR_HVC*1000
             )
 
             for row in eachrow(anyM.parts.lim.par[:useLow].data)
@@ -174,9 +174,9 @@ for iteration in range(START_ITERATION, END_ITERATION)
         CSV.write(resultDir_str * "/outputsOfInterest.csv", DataFrame(outputsOfInterest))
         typeof(CLUSTER_INDEX) == Int64 ? CSV.write(resultDir_str * "/total_cost_cluster_$CLUSTER_INDEX.csv", DataFrame(objective)) : CSV.write(resultDir_str * "/total_cost.csv", DataFrame(objective))
         
-        reportResults(:summary,anyM, addRep = (:capaConvOut,), addObjName = true)
-        reportResults(:exchange,anyM, addObjName = true)
-        reportResults(:cost,anyM, addObjName = true)
+        # reportResults(:summary,anyM, addRep = (:capaConvOut,), addObjName = true)
+        # reportResults(:exchange,anyM, addObjName = true)
+        # reportResults(:cost,anyM, addObjName = true)
     end
     println("Iteration $iteration took $start_time_iteration seconds")
 end
