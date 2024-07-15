@@ -14,7 +14,7 @@
 ### The file "outputsOfInterest.csv" is used as input for the decision tree creation with the DECIDE tool written in python (the adapted version can be found under https://github.com/oliver-keller/Decide)
 ### using the output of DECIDE the regret for the different strategies can be calculated
 
-MODELRUN = 1
+MODELRUN = 9
 
 using Gurobi, AnyMOD, CSV, Statistics, Dates
 include("support_functions.jl")
@@ -77,6 +77,10 @@ for iteration in range(START_ITERATION, END_ITERATION)
         anyM = anyModel(inputMod_arr, resultDir_str, objName = obj_str_model, supTsLvl = 2, repTsLvl = 3, shortExp = 5, emissionLoss = false, holdFixed = true) 
 
 
+        # modify uncertain parameters
+        modify_parameters(anyM, uncertain_parameters, lhs, iteration)
+
+
         if !BIOMASS_ALLOWED
             scaleBiomassPotential(anyM, newValue=0, carrier="all", region="all")
         end
@@ -89,7 +93,7 @@ for iteration in range(START_ITERATION, END_ITERATION)
             scaleBiomassPotential(anyM, newValue=0, carrier="manure", region="all")
 
             for row in eachrow(anyM.parts.lim.par[:trdBuyUp].data)
-                if row.C in ["wood", "greenWaste", "digestate"] 
+                if findCarrier(anyM, row.C) in ["wood", "greenWaste", "digestate"] 
                     min_biomass_for_dh += row.val
                 end
             end
@@ -100,13 +104,13 @@ for iteration in range(START_ITERATION, END_ITERATION)
 
         # set additional constraint for regret calculations -> Set the minimum use of biomass for the following categories (biomass usage in GWh/a)
         # make sure that the file "df_input_with_final_cluster.csv" is available in EuSysMod. The file is created by the python script in Decide.
-        set_constraint = (MIN_BIOMASS_FOR_HVC > 0) || (MIN_BIOMASS_FOR_OIL > 0) || (MAX_BIOMASS_FOR_HVC<9999) || (MAX_BIOMASS_FOR_OIL<9999) # set to true if additional constraints exists
+        set_constraint = (MIN_BIOMASS_FOR_HVC > 0) || (MIN_BIOMASS_FOR_OIL > 0) || (MAX_BIOMASS_FOR_HVC<9999) || (MAX_BIOMASS_FOR_OIL<9999)  || (min_biomass_for_dh>0) # set to true if additional constraints exists
 
         if set_constraint
             new_min_constraint = Dict(
                 "bioConversionOil" => MIN_BIOMASS_FOR_OIL*1000,
                 "bioConversionHvc" => MIN_BIOMASS_FOR_HVC*1000,
-                "boilerNetwork" => min_biomass_for_dh
+                "networkHeat" => min_biomass_for_dh
             )
 
             for row in eachrow(anyM.parts.lim.par[:useLow].data)
@@ -130,10 +134,6 @@ for iteration in range(START_ITERATION, END_ITERATION)
         if set_constraint && cluster_of_scenarios[iteration] == CLUSTER_INDEX
             continue
         end
-
-
-        # modify uncertain parameters
-        modify_parameters(anyM, uncertain_parameters, lhs, iteration)
 
         # create optimization model
         createOptModel!(anyM)
@@ -172,7 +172,7 @@ for iteration in range(START_ITERATION, END_ITERATION)
         
         # Save outputsOfInterest and total_cost as a CSV file
         CSV.write(resultDir_str * "/outputsOfInterest.csv", DataFrame(outputsOfInterest))
-        set_constraint ? CSV.write(resultDir_str * "/total_cost_cluster_$CLUSTER_INDEX.csv", DataFrame(objective)) : CSV.write(resultDir_str * "/total_cost.csv", DataFrame(objective))
+        typeof(CLUSTER_INDEX) == Int64 ? CSV.write(resultDir_str * "/total_cost_cluster_$CLUSTER_INDEX.csv", DataFrame(objective)) : CSV.write(resultDir_str * "/total_cost.csv", DataFrame(objective))
         
         reportResults(:summary,anyM, addRep = (:capaConvOut,), addObjName = true)
         reportResults(:exchange,anyM, addObjName = true)
