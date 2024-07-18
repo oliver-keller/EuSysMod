@@ -14,7 +14,7 @@
 ### The file "outputsOfInterest.csv" is used as input for the decision tree creation with the DECIDE tool written in python (the adapted version can be found under https://github.com/oliver-keller/Decide)
 ### using the output of DECIDE the regret for the different strategies can be calculated
 
-MODELRUN = 9
+MODELRUN = 1
 
 using Gurobi, AnyMOD, CSV, Statistics, Dates
 include("support_functions.jl")
@@ -40,7 +40,8 @@ MAX_BIOMASS_FOR_HVC = par_df[id_int,:MAX_BIOMASS_FOR_HVC]       # constraint for
 CLUSTER_INDEX = par_df[id_int,:CLUSTER_INDEX]                   # cluster index for the additional constraint (if no constraint parameter is not used)
 BARRIER_CONV_TOL = par_df[id_int,:BARRIER_CONV_TOL]             # barrier convergence tolerance
 BIOMASS_ALLOWED = par_df[id_int,:BIOMASS_ALLOWED]               # biomass carrier allowed or disabled
-ALL_BIOMASS_FOR_DH = par_df[id_int,:ALL_BIOMASS_FOR_DH]         # all biomass for district heating technologies
+ALL_BIOMASS_FOR_DH = par_df[id_int,:ALL_BIOMASS_FOR_DH]         # all biomass for district heating
+ALL_BIOMASS_FOR_HVC_AND_OIL = par_df[id_int,:ALL_BIOMASS_FOR_HVC_AND_OIL]         # all biomass for hvc and oil
 
 
 # define the name of the modelrun
@@ -87,6 +88,14 @@ for iteration in range(START_ITERATION, END_ITERATION)
 
 
         # use all biomass for district heating technologies (manure and sludge are not used because there is no district heating technology for these carriers)
+        if ALL_BIOMASS_FOR_HVC_AND_OIL
+            for row in eachrow(anyM.parts.lim.par[:useUp].data)
+                if findTechnology(anyM, row.Te) != "bioConversionOil" && findTechnology(anyM, row.Te) != "bioConversionHvc"
+                    row.val = 0
+                end
+            end
+        end
+
         if ALL_BIOMASS_FOR_DH
             scaleBiomassPotential(anyM, newValue=0, carrier="sludge", region="all")
             scaleBiomassPotential(anyM, newValue=0, carrier="manure", region="all")
