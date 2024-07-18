@@ -98,39 +98,39 @@ all,SE,biomass,sludge,trdBuyUp,372.78076,Enspresso Aggregated (Diego)
 all,SI,biomass,sludge,trdBuyUp,13.61122,Enspresso Aggregated (Diego)
 all,SK,biomass,sludge,trdBuyUp,0.27778,Enspresso Aggregated (Diego)
 all,UK,biomass,sludge,trdBuyUp,31.38914,Enspresso Aggregated (Diego)
-all,AL,biomass,waste,trdBuyFix,0,Assumption
-all,AT,biomass,waste,trdBuyFix,1642.632308,Enspresso Aggregated (Diego)
-all,BA,biomass,waste,trdBuyFix,0,Assumption
-all,BE,biomass,waste,trdBuyFix,8105.375954,Enspresso Aggregated (Diego)
-all,BG,biomass,waste,trdBuyFix,728.077769,Enspresso Aggregated (Diego)
-all,CH,biomass,waste,trdBuyFix,20804.09654,EnergyScope
-all,CZ,biomass,waste,trdBuyFix,806.8467325,Enspresso Aggregated (Diego)
-all,DE,biomass,waste,trdBuyFix,21210.61135,Enspresso Aggregated (Diego)
-all,DK,biomass,waste,trdBuyFix,5455.399198,Enspresso Aggregated (Diego)
-all,EE,biomass,waste,trdBuyFix,711.4470804,Enspresso Aggregated (Diego)
-all,ES,biomass,waste,trdBuyFix,6265.475123,Enspresso Aggregated (Diego)
-all,FI,biomass,waste,trdBuyFix,2768.69076,Enspresso Aggregated (Diego)
-all,FR,biomass,waste,trdBuyFix,18386.30264,Enspresso Aggregated (Diego)
-all,GR,biomass,waste,trdBuyFix,648.676856,Enspresso Aggregated (Diego)
-all,HR,biomass,waste,trdBuyFix,17.96347704,Enspresso Aggregated (Diego)
-all,HU,biomass,waste,trdBuyFix,1955.518144,Enspresso Aggregated (Diego)
-all,IE,biomass,waste,trdBuyFix,478.1993811,Enspresso Aggregated (Diego)
-all,IT,biomass,waste,trdBuyFix,7080.189974,Enspresso Aggregated (Diego)
-all,LT,biomass,waste,trdBuyFix,310.0663694,Enspresso Aggregated (Diego)
-all,LU,biomass,waste,trdBuyFix,33.1322095,Enspresso Aggregated (Diego)
-all,LV,biomass,waste,trdBuyFix,173.2761084,Enspresso Aggregated (Diego)
-all,ME,biomass,waste,trdBuyFix,0,Assumption
-all,MK,biomass,waste,trdBuyFix,0,Assumption
-all,NL,biomass,waste,trdBuyFix,10357.75231,Enspresso Aggregated (Diego)
-all,NO,biomass,waste,trdBuyFix,0,Assumption
-all,PL,biomass,waste,trdBuyFix,5649.614641,Enspresso Aggregated (Diego)
-all,PT,biomass,waste,trdBuyFix,2689.692351,Enspresso Aggregated (Diego)
-all,RO,biomass,waste,trdBuyFix,1871.568861,Enspresso Aggregated (Diego)
-all,RS,biomass,waste,trdBuyFix,0,Assumption
-all,SE,biomass,waste,trdBuyFix,6412.762413,Enspresso Aggregated (Diego)
-all,SI,biomass,waste,trdBuyFix,212.1830863,Enspresso Aggregated (Diego)
-all,SK,biomass,waste,trdBuyFix,832.8202736,Enspresso Aggregated (Diego)
-all,UK,biomass,waste,trdBuyFix,4669.895692,Enspresso Aggregated (Diego)
+all,AL,waste,,trdBuyFix,0,Assumption
+all,AT,waste,,trdBuyFix,1642.632308,Enspresso Aggregated (Diego)
+all,BA,waste,,trdBuyFix,0,Assumption
+all,BE,waste,,trdBuyFix,8105.375954,Enspresso Aggregated (Diego)
+all,BG,waste,,trdBuyFix,728.077769,Enspresso Aggregated (Diego)
+all,CH,waste,,trdBuyFix,20804.09654,EnergyScope
+all,CZ,waste,,trdBuyFix,806.8467325,Enspresso Aggregated (Diego)
+all,DE,waste,,trdBuyFix,21210.61135,Enspresso Aggregated (Diego)
+all,DK,waste,,trdBuyFix,5455.399198,Enspresso Aggregated (Diego)
+all,EE,waste,,trdBuyFix,711.4470804,Enspresso Aggregated (Diego)
+all,ES,waste,,trdBuyFix,6265.475123,Enspresso Aggregated (Diego)
+all,FI,waste,,trdBuyFix,2768.69076,Enspresso Aggregated (Diego)
+all,FR,waste,,trdBuyFix,18386.30264,Enspresso Aggregated (Diego)
+all,GR,waste,,trdBuyFix,648.676856,Enspresso Aggregated (Diego)
+all,HR,waste,,trdBuyFix,17.96347704,Enspresso Aggregated (Diego)
+all,HU,waste,,trdBuyFix,1955.518144,Enspresso Aggregated (Diego)
+all,IE,waste,,trdBuyFix,478.1993811,Enspresso Aggregated (Diego)
+all,IT,waste,,trdBuyFix,7080.189974,Enspresso Aggregated (Diego)
+all,LT,waste,,trdBuyFix,310.0663694,Enspresso Aggregated (Diego)
+all,LU,waste,,trdBuyFix,33.1322095,Enspresso Aggregated (Diego)
+all,LV,waste,,trdBuyFix,173.2761084,Enspresso Aggregated (Diego)
+all,ME,waste,,trdBuyFix,0,Assumption
+all,MK,waste,,trdBuyFix,0,Assumption
+all,NL,waste,,trdBuyFix,10357.75231,Enspresso Aggregated (Diego)
+all,NO,waste,,trdBuyFix,0,Assumption
+all,PL,waste,,trdBuyFix,5649.614641,Enspresso Aggregated (Diego)
+all,PT,waste,,trdBuyFix,2689.692351,Enspresso Aggregated (Diego)
+all,RO,waste,,trdBuyFix,1871.568861,Enspresso Aggregated (Diego)
+all,RS,waste,,trdBuyFix,0,Assumption
+all,SE,waste,,trdBuyFix,6412.762413,Enspresso Aggregated (Diego)
+all,SI,waste,,trdBuyFix,212.1830863,Enspresso Aggregated (Diego)
+all,SK,waste,,trdBuyFix,832.8202736,Enspresso Aggregated (Diego)
+all,UK,waste,,trdBuyFix,4669.895692,Enspresso Aggregated (Diego)
 all,AL,biomass,manure,trdBuyUp,0,Assumption
 all,AT,biomass,manure,trdBuyUp,83.334,Enspresso Aggregated (Diego)
 all,BA,biomass,manure,trdBuyUp,0,Assumption
@@ -167,5 +167,5 @@ all,UK,biomass,manure,trdBuyUp,19694.602,Enspresso Aggregated (Diego)
 ,,biomass,wood,trdBuyPrc,32.8,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 ,,biomass,greenWaste,trdBuyPrc,5.8,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
 ,,biomass,sludge,trdBuyPrc,5.8,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html
-,,biomass,waste,trdBuyPrc,0,Collection cost not included because it must be done anyways
+,,waste,,trdBuyPrc,0,Collection cost not included because it must be done anyways
 ,,biomass,manure,trdBuyPrc,5.8,https://energyscope.readthedocs.io/en/master/sections/Input%20Data.html

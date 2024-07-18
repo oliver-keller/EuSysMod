@@ -318,7 +318,7 @@ chpWasteDhCC,,,,effConv,0.66881,CarbonCaptureCalculation
 chpWasteDhCC,2040,,,costOprConv,150.6,CarbonCaptureCalculation
 chpWasteDhCC,2040,,,costExpConv,4281,CarbonCaptureCalculation
 chpWasteDhCC,,,,avaConv,0.85,CarbonCaptureCalculation
-chpWasteDhCC,,biomass,waste,emissionFac,-297,CarbonCaptureCalculation
+chpWasteDhCC,,waste,,emissionFac,-297,CarbonCaptureCalculation
 chpWasteProLowCC,,co2,co2Pure,ratioConvOutFix,0.444072308,CarbonCaptureCalculation
 chpWasteProLowCC,,electricity,,ratioConvOutFix,0.308,CarbonCaptureCalculation
 chpWasteProLowCC,,,,lifeConv,25,CarbonCaptureCalculation
@@ -326,7 +326,7 @@ chpWasteProLowCC,,,,effConv,0.66881,CarbonCaptureCalculation
 chpWasteProLowCC,2040,,,costOprConv,150.6,CarbonCaptureCalculation
 chpWasteProLowCC,2040,,,costExpConv,4281,CarbonCaptureCalculation
 chpWasteProLowCC,,,,avaConv,0.85,CarbonCaptureCalculation
-chpWasteProLowCC,,biomass,waste,emissionFac,-297,CarbonCaptureCalculation
+chpWasteProLowCC,,waste,,emissionFac,-297,CarbonCaptureCalculation
 chpWoodDhCC,,co2,co2Pure,ratioConvOutFix,0.479357579,CarbonCaptureCalculation
 chpWoodDhCC,,electricity,,ratioConvOutFix,0.254,CarbonCaptureCalculation
 chpWoodDhCC,,,,lifeConv,25,CarbonCaptureCalculation

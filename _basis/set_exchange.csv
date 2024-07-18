@@ -3,6 +3,6 @@ powerGrid,hvac,electricity,mature,none,undirected
 powerGrid,hvdc,electricity,mature,none,undirected
 h2Grid,,h2,mature,none,directed
 methaneGrid,,methane,mature,none,directed
-biomassExc,,sludge; greenWaste; wood; waste; manure; digestate,unrestricted,none,undirected
+biomassExc,,sludge; greenWaste; wood; manure; digestate,unrestricted,none,undirected
 liquidExc,,crudeOil; refinedOil; ammonia,unrestricted,none,undirected
-solidExc,,coal; uranum; hvc,unrestricted,none,undirected
+solidExc,,coal; uranum; waste; hvc,unrestricted,none,undirected

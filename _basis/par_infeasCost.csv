@@ -21,7 +21,7 @@ processHeat_high,,costMissCapa,50000
 biomass,sludge,costLss,13000
 biomass,greenWaste,costLss,13000
 biomass,wood,costLss,13000
-biomass,waste,costLss,13000
+waste,,costLss,13000
 biomass,manure,costLss,13000
 biomass,digestate,costLss,13000
 co2,co2Pure,costLss,50000
