@@ -1,0 +1,47 @@
+errStatus,section,location,message
+green,carrier mapping,,carrier 'biomass' inherited resolution from children
+green,carrier mapping,,carrier 'co2' inherited resolution from children
+green,timestep mapping,,superordinate dispatch level provided via options was used
+green,timestep mapping,,time-steps on level 5 set to correspond to 1.0 hours
+green,technology mapping,storage cycling,"storage cycling for technology 'bevFrtRoadHeavy' is equal or more detailed than representative level, storage operates as short-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'bevFrtRoadLight' is equal or more detailed than representative level, storage operates as short-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'bevPsngRoadPrvt' is equal or more detailed than representative level, storage operates as short-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'bevPsngRoadPub' is equal or more detailed than representative level, storage operates as short-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'pumpedStorage' is less detailed than representative level, storage operates as long-term storage"
+yellow,technology mapping,carrier,some carrier of technology 'reservoir'  can be discharged but not charged
+green,technology mapping,storage cycling,"storage cycling for technology 'reservoir' is less detailed than representative level, storage operates as long-term storage"
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'offshore_a' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'offshore_b' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'onshore_a' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'onshore_b' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'onshore_c' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvOpenspace_a' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvOpenspace_b' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvOpenspace_c' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'cspOpenspace_a' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'cspOpenspace_b' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'cspOpenspace_c' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvInd_a' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvInd_b' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvResi_a' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'solarThermalResi_a' was used instead of a carrier based value
+green,technology mapping,storage cycling,"storage cycling for technology 'solarThermalResi_a' is equal or more detailed than representative level, storage operates as short-term storage"
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvResi_b' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'solarThermalResi_b' was used instead of a carrier based value
+green,technology mapping,storage cycling,"storage cycling for technology 'solarThermalResi_b' is equal or more detailed than representative level, storage operates as short-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'pitThermalStorage' is less detailed than representative level, storage operates as long-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'largeWaterTank' is less detailed than representative level, storage operates as long-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'resistiveHeatSpace' is equal or more detailed than representative level, storage operates as short-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'heatpumpAirSpace' is equal or more detailed than representative level, storage operates as short-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'heatpumpGroundSpace' is equal or more detailed than representative level, storage operates as short-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'heatpumpAirProLow' is equal or more detailed than representative level, storage operates as short-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'heatpumpGroundProLow' is equal or more detailed than representative level, storage operates as short-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'eBoilerProLow' is equal or more detailed than representative level, storage operates as short-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'methaneStorage' is less detailed than representative level, storage operates as long-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'h2StorageCavern' is less detailed than representative level, storage operates as long-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'h2StorageTank' is less detailed than representative level, storage operates as long-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'syngasStorage' is less detailed than representative level, storage operates as long-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'lithiumBattery' is equal or more detailed than representative level, storage operates as short-term storage"
+green,technology mapping,storage cycling,"storage cycling for technology 'redoxBattery' is equal or more detailed than representative level, storage operates as short-term storage"
+yellow,limit,emission,"limits were provided for 'none' without specificing the superordinate dispatch timestep, this means the sum over all superordinate timesteps was limited (see https://leonardgoeke.github.io/AnyMOD.jl/stable/parameter_list/#Limits-on-quantities-dispatched)"
+yellow,limit,use,"limits were provided without specificing the superordinate dispatch timestep, this means the sum over all years was limited instead of enforcing the same limit for each year (see https://leonardgoeke.github.io/AnyMOD.jl/stable/parameter_list/#Limits-on-quantities-dispatched)"

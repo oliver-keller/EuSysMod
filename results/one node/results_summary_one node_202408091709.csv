@@ -1,0 +1,1546 @@
+timestep_superordinate_dispatch,region_dispatch,technology,carrier,id,variable,value,objName
+30th < 2040,EU,none,ammonia,none,demand,-138.17676308591996,one node
+30th < 2040,EU,none,avaAndNavi,none,demand,-604.5765440121603,one node
+30th < 2040,EU,none,electricity,none,demand,-2343.253208644515,one node
+30th < 2040,EU,none,hvc,none,demand,-394.2380448990001,one node
+30th < 2040,EU,none,processHeat_high,none,demand,-737.9816825104782,one node
+30th < 2040,EU,none,processHeat_low,none,demand,-544.0885512553738,one node
+30th < 2040,nonEU,none,ammonia,none,demand,-32.538123615479996,one node
+30th < 2040,nonEU,none,avaAndNavi,none,demand,-202.27925789736003,one node
+30th < 2040,nonEU,none,electricity,none,demand,-450.8275901604069,one node
+30th < 2040,nonEU,none,hvc,none,demand,-130.23581231988,one node
+30th < 2040,nonEU,none,processHeat_high,none,demand,-84.38217391345512,one node
+30th < 2040,nonEU,none,processHeat_low,none,demand,-72.66790398695484,one node
+30th < 2040,EU,none,frtRail,none,missCapa,0.0,one node
+30th < 2040,EU,none,frtRoadHeavy,none,missCapa,0.0,one node
+30th < 2040,EU,none,frtRoadLight,none,missCapa,0.0,one node
+30th < 2040,EU,none,processHeat_high,none,missCapa,0.0,one node
+30th < 2040,EU,none,processHeat_low,none,missCapa,0.0,one node
+30th < 2040,EU,none,processHeat_medium,none,missCapa,0.0,one node
+30th < 2040,EU,none,psngRail,none,missCapa,0.0,one node
+30th < 2040,EU,none,psngRoadPrvt,none,missCapa,0.0,one node
+30th < 2040,EU,none,psngRoadPub,none,missCapa,0.0,one node
+30th < 2040,EU,none,spaceHeat,none,missCapa,0.0,one node
+30th < 2040,nonEU,none,frtRail,none,missCapa,0.0,one node
+30th < 2040,nonEU,none,frtRoadHeavy,none,missCapa,0.0,one node
+30th < 2040,nonEU,none,frtRoadLight,none,missCapa,0.0,one node
+30th < 2040,nonEU,none,processHeat_high,none,missCapa,0.0,one node
+30th < 2040,nonEU,none,processHeat_low,none,missCapa,0.0,one node
+30th < 2040,nonEU,none,processHeat_medium,none,missCapa,0.0,one node
+30th < 2040,nonEU,none,psngRail,none,missCapa,0.0,one node
+30th < 2040,nonEU,none,psngRoadPrvt,none,missCapa,0.0,one node
+30th < 2040,nonEU,none,psngRoadPub,none,missCapa,0.0,one node
+30th < 2040,nonEU,none,spaceHeat,none,missCapa,0.0,one node
+30th < 2040,EU,storage < gasStorage < h2StorageCavern,none,1,capaStSize,5.412050371488984e-5,one node
+30th < 2040,nonEU,storage < gasStorage < h2StorageCavern,none,1,capaStSize,5.4031354232061644e-5,one node
+30th < 2040,EU,storage < gasStorage < h2StorageCavern,none,1,expStSize,5.412050371488984e-5,one node
+30th < 2040,nonEU,storage < gasStorage < h2StorageCavern,none,1,expStSize,5.403135423206165e-5,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProLow,none,none,expConv,1.698663705281658e-5,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProLow,none,none,expConv,3.4891201905911256e-5,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProLow,none,1,capaStOut,1.434822518624117e-5,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProLow,none,1,capaStOut,1.5031668629429366e-5,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProLow,none,1,expStOut,1.434822518624117e-5,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProLow,none,1,expStOut,1.5031668629429366e-5,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProLow,none,none,capaConv,1.698663705281658e-5,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProLow,none,none,capaConv,3.4891201905911256e-5,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProLow,none,1,capaStIn,1.434822518624117e-5,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProLow,none,1,capaStIn,1.5031668629429366e-5,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProLow,none,1,expStIn,1.434822518624117e-5,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProLow,none,1,expStIn,1.5031668629429366e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProMed,none,none,expConv,23.33512587112495,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProMed,none,none,expConv,5.191447150870938,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProMed,none,none,capaConv,23.335125871124955,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProMed,none,none,capaConv,5.191447150870938,one node
+30th < 2040,EU < AT < at < 50AT,wind < onshore < onshore_b,none,none,expConv,13.481406100227698,one node
+30th < 2040,EU < BE < be < 28BE,wind < onshore < onshore_b,none,none,expConv,2.768011233418137,one node
+30th < 2040,EU < BG < bg < 66BG,wind < onshore < onshore_b,none,none,expConv,34.759214101722094,one node
+30th < 2040,EU < CZ < cz < 40CZ,wind < onshore < onshore_b,none,none,expConv,19.607606179608595,one node
+30th < 2040,EU < DE < de < 31DE,wind < onshore < onshore_b,none,none,expConv,24.427600234937728,one node
+30th < 2040,EU < DE < de < 32DE,wind < onshore < onshore_b,none,none,expConv,1.8098802071215097e-5,one node
+30th < 2040,EU < DE < de < 35DE,wind < onshore < onshore_b,none,none,expConv,1.0268913289595789e-5,one node
+30th < 2040,EU < DE < de < 37DE,wind < onshore < onshore_b,none,none,expConv,1.0723894971634138e-5,one node
+30th < 2040,EU < EE < ee < 73EE,wind < onshore < onshore_b,none,none,expConv,12.964935632334104,one node
+30th < 2040,EU < ES < es < 01ES,wind < onshore < onshore_b,none,none,expConv,6.168060284220265,one node
+30th < 2040,EU < ES < es < 03ES,wind < onshore < onshore_b,none,none,expConv,40.729160939077246,one node
+30th < 2040,EU < ES < es < 06ES,wind < onshore < onshore_b,none,none,expConv,3.6121139237178648,one node
+30th < 2040,EU < ES < es < 09ES,wind < onshore < onshore_b,none,none,expConv,4.472226081298234,one node
+30th < 2040,EU < ES < es < 10ES,wind < onshore < onshore_b,none,none,expConv,38.63467907263086,one node
+30th < 2040,EU < ES < es < 11ES,wind < onshore < onshore_b,none,none,expConv,28.399889992237448,one node
+30th < 2040,EU < FR < fr < 15FR,wind < onshore < onshore_b,none,none,expConv,12.837576122232573,one node
+30th < 2040,EU < FR < fr < 21FR,wind < onshore < onshore_b,none,none,expConv,1.8361889939045483e-5,one node
+30th < 2040,EU < GR < gr < 69GR,wind < onshore < onshore_b,none,none,expConv,14.16226046708369,one node
+30th < 2040,EU < IE < ie < 96IE,wind < onshore < onshore_b,none,none,expConv,41.246266277629246,one node
+30th < 2040,EU < IT < it_s < 55IT,wind < onshore < onshore_b,none,none,expConv,10.773097283131786,one node
+30th < 2040,EU < LT < lt < 77LT,wind < onshore < onshore_b,none,none,expConv,4.466678235381258,one node
+30th < 2040,EU < LU < lu < 29LU,wind < onshore < onshore_b,none,none,expConv,1.04325646561051e-5,one node
+30th < 2040,EU < LV < lv < 78LV,wind < onshore < onshore_b,none,none,expConv,18.941062326896336,one node
+30th < 2040,EU < NL < nl < 30NL,wind < onshore < onshore_b,none,none,expConv,1.3701117481729494e-5,one node
+30th < 2040,EU < PL < pl < 45PL,wind < onshore < onshore_b,none,none,expConv,7.310765117752643,one node
+30th < 2040,EU < PT < pt < 12PT,wind < onshore < onshore_b,none,none,expConv,11.069135544905883,one node
+30th < 2040,EU < PT < pt < 13PT,wind < onshore < onshore_b,none,none,expConv,27.204066964355043,one node
+30th < 2040,EU < RO < ro < 60RO,wind < onshore < onshore_b,none,none,expConv,11.878088794890827,one node
+30th < 2040,EU < SE < se_2 < 87SE,wind < onshore < onshore_b,none,none,expConv,10.11560984972876,one node
+30th < 2040,EU < SK < sk < 46SK,wind < onshore < onshore_b,none,none,expConv,17.064833391235716,one node
+30th < 2040,nonEU < AL < al < 70AL,wind < onshore < onshore_b,none,none,expConv,6.295831528064357,one node
+30th < 2040,nonEU < CH < ch < 47CH,wind < onshore < onshore_b,none,none,expConv,2.934157493672621,one node
+30th < 2040,nonEU < CH < ch < 48CH,wind < onshore < onshore_b,none,none,expConv,0.29185101480346487,one node
+30th < 2040,nonEU < ME < me < 64ME,wind < onshore < onshore_b,none,none,expConv,4.182616076023083,one node
+30th < 2040,nonEU < MK < mk < 67MK,wind < onshore < onshore_b,none,none,expConv,12.85847959184012,one node
+30th < 2040,nonEU < NO < no_n < 84NO,wind < onshore < onshore_b,none,none,expConv,3.9529213700651384,one node
+30th < 2040,nonEU < NO < no_s < 79NO,wind < onshore < onshore_b,none,none,expConv,3.4257324080665343,one node
+30th < 2040,nonEU < NO < no_s < 80NO,wind < onshore < onshore_b,none,none,expConv,4.798987096765251,one node
+30th < 2040,nonEU < NO < no_s < 81NO,wind < onshore < onshore_b,none,none,expConv,1.2514579336641108e-5,one node
+30th < 2040,nonEU < RS < rs < 65RS,wind < onshore < onshore_b,none,none,expConv,16.140596008800472,one node
+30th < 2040,nonEU < UK < ni < 95UK,wind < onshore < onshore_b,none,none,expConv,1.030749616452322,one node
+30th < 2040,nonEU < UK < uk < 91UK,wind < onshore < onshore_b,none,none,expConv,2.6354148990542874,one node
+30th < 2040,nonEU < UK < uk < 92UK,wind < onshore < onshore_b,none,none,expConv,5.179189387003972e-5,one node
+30th < 2040,EU < AT < at < 50AT,wind < onshore < onshore_b,none,none,capaConv,13.481406100227696,one node
+30th < 2040,EU < BE < be < 28BE,wind < onshore < onshore_b,none,none,capaConv,2.768011233418137,one node
+30th < 2040,EU < BG < bg < 66BG,wind < onshore < onshore_b,none,none,capaConv,34.759214101722094,one node
+30th < 2040,EU < CZ < cz < 40CZ,wind < onshore < onshore_b,none,none,capaConv,19.6076061796086,one node
+30th < 2040,EU < DE < de < 31DE,wind < onshore < onshore_b,none,none,capaConv,24.427600234937728,one node
+30th < 2040,EU < DE < de < 32DE,wind < onshore < onshore_b,none,none,capaConv,1.8098802071215094e-5,one node
+30th < 2040,EU < DE < de < 35DE,wind < onshore < onshore_b,none,none,capaConv,1.0268913289595787e-5,one node
+30th < 2040,EU < DE < de < 37DE,wind < onshore < onshore_b,none,none,capaConv,1.072389497163414e-5,one node
+30th < 2040,EU < EE < ee < 73EE,wind < onshore < onshore_b,none,none,capaConv,12.964935632334104,one node
+30th < 2040,EU < ES < es < 01ES,wind < onshore < onshore_b,none,none,capaConv,6.168060284220265,one node
+30th < 2040,EU < ES < es < 03ES,wind < onshore < onshore_b,none,none,capaConv,40.729160939077246,one node
+30th < 2040,EU < ES < es < 06ES,wind < onshore < onshore_b,none,none,capaConv,3.6121139237178648,one node
+30th < 2040,EU < ES < es < 09ES,wind < onshore < onshore_b,none,none,capaConv,4.472226081298234,one node
+30th < 2040,EU < ES < es < 10ES,wind < onshore < onshore_b,none,none,capaConv,38.63467907263086,one node
+30th < 2040,EU < ES < es < 11ES,wind < onshore < onshore_b,none,none,capaConv,28.399889992237448,one node
+30th < 2040,EU < FR < fr < 15FR,wind < onshore < onshore_b,none,none,capaConv,12.837576122232571,one node
+30th < 2040,EU < FR < fr < 21FR,wind < onshore < onshore_b,none,none,capaConv,1.8361889939045483e-5,one node
+30th < 2040,EU < GR < gr < 69GR,wind < onshore < onshore_b,none,none,capaConv,14.162260467083692,one node
+30th < 2040,EU < IE < ie < 96IE,wind < onshore < onshore_b,none,none,capaConv,41.246266277629246,one node
+30th < 2040,EU < IT < it_s < 55IT,wind < onshore < onshore_b,none,none,capaConv,10.773097283131786,one node
+30th < 2040,EU < LT < lt < 77LT,wind < onshore < onshore_b,none,none,capaConv,4.466678235381258,one node
+30th < 2040,EU < LU < lu < 29LU,wind < onshore < onshore_b,none,none,capaConv,1.04325646561051e-5,one node
+30th < 2040,EU < LV < lv < 78LV,wind < onshore < onshore_b,none,none,capaConv,18.941062326896336,one node
+30th < 2040,EU < NL < nl < 30NL,wind < onshore < onshore_b,none,none,capaConv,1.3701117481729495e-5,one node
+30th < 2040,EU < PL < pl < 45PL,wind < onshore < onshore_b,none,none,capaConv,7.310765117752643,one node
+30th < 2040,EU < PT < pt < 12PT,wind < onshore < onshore_b,none,none,capaConv,11.069135544905883,one node
+30th < 2040,EU < PT < pt < 13PT,wind < onshore < onshore_b,none,none,capaConv,27.204066964355043,one node
+30th < 2040,EU < RO < ro < 60RO,wind < onshore < onshore_b,none,none,capaConv,11.878088794890827,one node
+30th < 2040,EU < SE < se_2 < 87SE,wind < onshore < onshore_b,none,none,capaConv,10.11560984972876,one node
+30th < 2040,EU < SK < sk < 46SK,wind < onshore < onshore_b,none,none,capaConv,17.064833391235716,one node
+30th < 2040,nonEU < AL < al < 70AL,wind < onshore < onshore_b,none,none,capaConv,6.295831528064358,one node
+30th < 2040,nonEU < CH < ch < 47CH,wind < onshore < onshore_b,none,none,capaConv,2.9341574936726214,one node
+30th < 2040,nonEU < CH < ch < 48CH,wind < onshore < onshore_b,none,none,capaConv,0.29185101480346487,one node
+30th < 2040,nonEU < ME < me < 64ME,wind < onshore < onshore_b,none,none,capaConv,4.182616076023083,one node
+30th < 2040,nonEU < MK < mk < 67MK,wind < onshore < onshore_b,none,none,capaConv,12.85847959184012,one node
+30th < 2040,nonEU < NO < no_n < 84NO,wind < onshore < onshore_b,none,none,capaConv,3.9529213700651384,one node
+30th < 2040,nonEU < NO < no_s < 79NO,wind < onshore < onshore_b,none,none,capaConv,3.4257324080665343,one node
+30th < 2040,nonEU < NO < no_s < 80NO,wind < onshore < onshore_b,none,none,capaConv,4.798987096765252,one node
+30th < 2040,nonEU < NO < no_s < 81NO,wind < onshore < onshore_b,none,none,capaConv,1.251457933664111e-5,one node
+30th < 2040,nonEU < RS < rs < 65RS,wind < onshore < onshore_b,none,none,capaConv,16.140596008800472,one node
+30th < 2040,nonEU < UK < ni < 95UK,wind < onshore < onshore_b,none,none,capaConv,1.030749616452322,one node
+30th < 2040,nonEU < UK < uk < 91UK,wind < onshore < onshore_b,none,none,capaConv,2.6354148990542874,one node
+30th < 2040,nonEU < UK < uk < 92UK,wind < onshore < onshore_b,none,none,capaConv,5.179189387003972e-5,one node
+30th < 2040,EU < ES < es < 01ES,solar < rooftopInd_a < pvInd_a,none,none,expConv,2.71199426044801,one node
+30th < 2040,EU < ES < es < 02ES,solar < rooftopInd_a < pvInd_a,none,none,expConv,3.4375830263526708,one node
+30th < 2040,EU < ES < es < 03ES,solar < rooftopInd_a < pvInd_a,none,none,expConv,6.0253106973287025,one node
+30th < 2040,EU < ES < es < 04ES,solar < rooftopInd_a < pvInd_a,none,none,expConv,2.7737965482929715e-5,one node
+30th < 2040,EU < ES < es < 05ES,solar < rooftopInd_a < pvInd_a,none,none,expConv,0.00700000912250748,one node
+30th < 2040,EU < ES < es < 06ES,solar < rooftopInd_a < pvInd_a,none,none,expConv,4.929517838382562,one node
+30th < 2040,EU < ES < es < 07ES,solar < rooftopInd_a < pvInd_a,none,none,expConv,7.570671438986541,one node
+30th < 2040,EU < ES < es < 08ES,solar < rooftopInd_a < pvInd_a,none,none,expConv,5.049317600417087,one node
+30th < 2040,EU < ES < es < 09ES,solar < rooftopInd_a < pvInd_a,none,none,expConv,9.812839293707277,one node
+30th < 2040,EU < ES < es < 10ES,solar < rooftopInd_a < pvInd_a,none,none,expConv,2.9152206593731975,one node
+30th < 2040,EU < ES < es < 11ES,solar < rooftopInd_a < pvInd_a,none,none,expConv,8.858987363611375,one node
+30th < 2040,EU < GR < gr < 68GR,solar < rooftopInd_a < pvInd_a,none,none,expConv,1.1717735841638969e-5,one node
+30th < 2040,EU < GR < gr < 69GR,solar < rooftopInd_a < pvInd_a,none,none,expConv,1.5314997336010875e-5,one node
+30th < 2040,EU < HR < hr < 62HR,solar < rooftopInd_a < pvInd_a,none,none,expConv,1.2800012578917237e-5,one node
+30th < 2040,EU < IT < it_sic < 56IT,solar < rooftopInd_a < pvInd_a,none,none,expConv,1.153170456701624e-5,one node
+30th < 2040,EU < PT < pt < 12PT,solar < rooftopInd_a < pvInd_a,none,none,expConv,5.261241272191355,one node
+30th < 2040,EU < PT < pt < 13PT,solar < rooftopInd_a < pvInd_a,none,none,expConv,3.54775068684729,one node
+30th < 2040,EU < RO < ro < 59RO,solar < rooftopInd_a < pvInd_a,none,none,expConv,2.387145141788902e-5,one node
+30th < 2040,EU < RO < ro < 60RO,solar < rooftopInd_a < pvInd_a,none,none,expConv,2.62650840360888,one node
+30th < 2040,EU < RO < ro < 61RO,solar < rooftopInd_a < pvInd_a,none,none,expConv,4.068173520650563e-5,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < rooftopInd_a < pvInd_a,none,none,expConv,1.240855541844099e-5,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < rooftopInd_a < pvInd_a,none,none,expConv,7.537155334161533e-5,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < rooftopInd_a < pvInd_a,none,none,expConv,2.5731999711842878e-5,one node
+30th < 2040,EU < ES < es < 01ES,solar < rooftopInd_a < pvInd_a,none,none,capaConv,2.71199426044801,one node
+30th < 2040,EU < ES < es < 02ES,solar < rooftopInd_a < pvInd_a,none,none,capaConv,3.437583026352671,one node
+30th < 2040,EU < ES < es < 03ES,solar < rooftopInd_a < pvInd_a,none,none,capaConv,6.0253106973287025,one node
+30th < 2040,EU < ES < es < 04ES,solar < rooftopInd_a < pvInd_a,none,none,capaConv,2.7737965482929718e-5,one node
+30th < 2040,EU < ES < es < 05ES,solar < rooftopInd_a < pvInd_a,none,none,capaConv,0.00700000912250748,one node
+30th < 2040,EU < ES < es < 06ES,solar < rooftopInd_a < pvInd_a,none,none,capaConv,4.929517838382562,one node
+30th < 2040,EU < ES < es < 07ES,solar < rooftopInd_a < pvInd_a,none,none,capaConv,7.570671438986541,one node
+30th < 2040,EU < ES < es < 08ES,solar < rooftopInd_a < pvInd_a,none,none,capaConv,5.049317600417087,one node
+30th < 2040,EU < ES < es < 09ES,solar < rooftopInd_a < pvInd_a,none,none,capaConv,9.81283929370728,one node
+30th < 2040,EU < ES < es < 10ES,solar < rooftopInd_a < pvInd_a,none,none,capaConv,2.915220659373198,one node
+30th < 2040,EU < ES < es < 11ES,solar < rooftopInd_a < pvInd_a,none,none,capaConv,8.858987363611375,one node
+30th < 2040,EU < GR < gr < 68GR,solar < rooftopInd_a < pvInd_a,none,none,capaConv,1.1717735841638969e-5,one node
+30th < 2040,EU < GR < gr < 69GR,solar < rooftopInd_a < pvInd_a,none,none,capaConv,1.5314997336010875e-5,one node
+30th < 2040,EU < HR < hr < 62HR,solar < rooftopInd_a < pvInd_a,none,none,capaConv,1.2800012578917238e-5,one node
+30th < 2040,EU < IT < it_sic < 56IT,solar < rooftopInd_a < pvInd_a,none,none,capaConv,1.153170456701624e-5,one node
+30th < 2040,EU < PT < pt < 12PT,solar < rooftopInd_a < pvInd_a,none,none,capaConv,5.261241272191355,one node
+30th < 2040,EU < PT < pt < 13PT,solar < rooftopInd_a < pvInd_a,none,none,capaConv,3.54775068684729,one node
+30th < 2040,EU < RO < ro < 59RO,solar < rooftopInd_a < pvInd_a,none,none,capaConv,2.387145141788902e-5,one node
+30th < 2040,EU < RO < ro < 60RO,solar < rooftopInd_a < pvInd_a,none,none,capaConv,2.6265084036088795,one node
+30th < 2040,EU < RO < ro < 61RO,solar < rooftopInd_a < pvInd_a,none,none,capaConv,4.068173520650563e-5,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < rooftopInd_a < pvInd_a,none,none,capaConv,1.2408555418440992e-5,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < rooftopInd_a < pvInd_a,none,none,capaConv,7.537155334161533e-5,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < rooftopInd_a < pvInd_a,none,none,capaConv,2.5731999711842878e-5,one node
+30th < 2040,EU,hydro < runOfRiver,none,none,capaConv,44.42,one node
+30th < 2040,nonEU,hydro < runOfRiver,none,none,capaConv,10.37,one node
+30th < 2040,EU,networkHeat < boilerNetwork < eBoilerDh,none,none,expConv,50.32390684555356,one node
+30th < 2040,nonEU,networkHeat < boilerNetwork < eBoilerDh,none,none,expConv,19.86076156473644,one node
+30th < 2040,EU,networkHeat < boilerNetwork < eBoilerDh,none,none,capaConv,50.32390684555356,one node
+30th < 2040,nonEU,networkHeat < boilerNetwork < eBoilerDh,none,none,capaConv,19.86076156473644,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProHigh,none,none,expConv,2.2193000040447277,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProHigh,none,none,expConv,0.06290000779712186,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProHigh,none,none,capaConv,2.2193000040447277,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProHigh,none,none,capaConv,0.06290000779712186,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProHigh,none,none,mustCapaConv,0.5901490924240619,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProHigh,none,none,mustCapaConv,0.002423373230425834,one node
+30th < 2040,EU,proHeat < h2BoilerPro < h2BoilerProHigh,none,none,expConv,82.26679621544456,one node
+30th < 2040,nonEU,proHeat < h2BoilerPro < h2BoilerProHigh,none,none,expConv,7.055996415170728,one node
+30th < 2040,EU,proHeat < h2BoilerPro < h2BoilerProHigh,none,none,capaConv,82.26679621544454,one node
+30th < 2040,nonEU,proHeat < h2BoilerPro < h2BoilerProHigh,none,none,capaConv,7.055996415170728,one node
+30th < 2040,EU,proHeat < h2BoilerPro < h2BoilerProHigh,none,none,mustCapaConv,69.12071517955766,one node
+30th < 2040,nonEU,proHeat < h2BoilerPro < h2BoilerProHigh,none,none,mustCapaConv,6.590631057768036,one node
+30th < 2040,EU,networkHeat < heatStorage < largeWaterTank,none,1,capaStOut,1.1146046001812134e-5,one node
+30th < 2040,nonEU,networkHeat < heatStorage < largeWaterTank,none,1,capaStOut,1.1085127815384332e-5,one node
+30th < 2040,EU,networkHeat < heatStorage < largeWaterTank,none,1,capaStSize,0.000672606224289562,one node
+30th < 2040,nonEU,networkHeat < heatStorage < largeWaterTank,none,1,capaStSize,0.0006689301268324808,one node
+30th < 2040,EU,networkHeat < heatStorage < largeWaterTank,none,1,expStSize,0.0006726062242895621,one node
+30th < 2040,nonEU,networkHeat < heatStorage < largeWaterTank,none,1,expStSize,0.0006689301268324808,one node
+30th < 2040,EU,networkHeat < heatStorage < largeWaterTank,none,1,expStOut,1.1146046001812134e-5,one node
+30th < 2040,nonEU,networkHeat < heatStorage < largeWaterTank,none,1,expStOut,1.108512781538433e-5,one node
+30th < 2040,EU,networkHeat < heatStorage < largeWaterTank,none,1,capaStIn,1.1146046001812134e-5,one node
+30th < 2040,nonEU,networkHeat < heatStorage < largeWaterTank,none,1,capaStIn,1.1085127815384332e-5,one node
+30th < 2040,EU,networkHeat < heatStorage < largeWaterTank,none,1,expStIn,1.1146046001812134e-5,one node
+30th < 2040,nonEU,networkHeat < heatStorage < largeWaterTank,none,1,expStIn,1.108512781538433e-5,one node
+30th < 2040,EU,proHeat < wasteBoilerPro < wasteBoilerProHigh,none,none,expConv,16.900521423438,one node
+30th < 2040,nonEU,proHeat < wasteBoilerPro < wasteBoilerProHigh,none,none,expConv,3.2311014427496114,one node
+30th < 2040,EU,proHeat < wasteBoilerPro < wasteBoilerProHigh,none,none,capaConv,16.900521423438,one node
+30th < 2040,nonEU,proHeat < wasteBoilerPro < wasteBoilerProHigh,none,none,capaConv,3.2311014427496114,one node
+30th < 2040,EU,proHeat < wasteBoilerPro < wasteBoilerProHigh,none,none,mustCapaConv,1.6839554184760903,one node
+30th < 2040,nonEU,proHeat < wasteBoilerPro < wasteBoilerProHigh,none,none,mustCapaConv,2.36823382305746,one node
+30th < 2040,EU,ccs < co2Disposal,none,none,expConv,37.81786653852287,one node
+30th < 2040,nonEU,ccs < co2Disposal,none,none,expConv,0.09144964064006908,one node
+30th < 2040,EU,ccs < co2Disposal,none,none,capaConv,37.81786653852287,one node
+30th < 2040,nonEU,ccs < co2Disposal,none,none,capaConv,0.09144964064006908,one node
+30th < 2040,EU,transport < ePsngRail,none,none,expConv,4.789490611310716,one node
+30th < 2040,nonEU,transport < ePsngRail,none,none,expConv,1.1864408917357587,one node
+30th < 2040,EU,transport < ePsngRail,none,none,capaConv,4.789490611310716,one node
+30th < 2040,nonEU,transport < ePsngRail,none,none,capaConv,1.186440891735759,one node
+30th < 2040,EU,networkHeat < heatStorage < pitThermalStorage,none,1,capaStOut,384.1924606197085,one node
+30th < 2040,nonEU,networkHeat < heatStorage < pitThermalStorage,none,1,capaStOut,40.90221185454034,one node
+30th < 2040,EU,networkHeat < heatStorage < pitThermalStorage,none,1,capaStSize,57628.86909295628,one node
+30th < 2040,nonEU,networkHeat < heatStorage < pitThermalStorage,none,1,capaStSize,6135.331778181051,one node
+30th < 2040,EU,networkHeat < heatStorage < pitThermalStorage,none,1,expStSize,57628.86909295629,one node
+30th < 2040,nonEU,networkHeat < heatStorage < pitThermalStorage,none,1,expStSize,6135.331778181051,one node
+30th < 2040,EU,networkHeat < heatStorage < pitThermalStorage,none,1,expStOut,384.1924606197085,one node
+30th < 2040,nonEU,networkHeat < heatStorage < pitThermalStorage,none,1,expStOut,40.90221185454034,one node
+30th < 2040,EU,networkHeat < heatStorage < pitThermalStorage,none,1,capaStIn,384.1924606197085,one node
+30th < 2040,nonEU,networkHeat < heatStorage < pitThermalStorage,none,1,capaStIn,40.90221185454034,one node
+30th < 2040,EU,networkHeat < heatStorage < pitThermalStorage,none,1,expStIn,384.1924606197085,one node
+30th < 2040,nonEU,networkHeat < heatStorage < pitThermalStorage,none,1,expStIn,40.90221185454034,one node
+30th < 2040,EU < AT < at < 49AT,solar < openspace_b < pvOpenspace_b,none,none,expConv,4.061275540948736e-5,one node
+30th < 2040,EU < AT < at < 51AT,solar < openspace_b < pvOpenspace_b,none,none,expConv,1.1514293213584342e-5,one node
+30th < 2040,EU < BG < bg < 66BG,solar < openspace_b < pvOpenspace_b,none,none,expConv,6.730506676586158,one node
+30th < 2040,EU < ES < es < 01ES,solar < openspace_b < pvOpenspace_b,none,none,expConv,3.6193667920014994,one node
+30th < 2040,EU < ES < es < 02ES,solar < openspace_b < pvOpenspace_b,none,none,expConv,26.826439525433827,one node
+30th < 2040,EU < ES < es < 03ES,solar < openspace_b < pvOpenspace_b,none,none,expConv,31.52797752042258,one node
+30th < 2040,EU < ES < es < 04ES,solar < openspace_b < pvOpenspace_b,none,none,expConv,6.88136067914601,one node
+30th < 2040,EU < ES < es < 05ES,solar < openspace_b < pvOpenspace_b,none,none,expConv,12.460915177405262,one node
+30th < 2040,EU < ES < es < 06ES,solar < openspace_b < pvOpenspace_b,none,none,expConv,2.0097686903599645,one node
+30th < 2040,EU < ES < es < 07ES,solar < openspace_b < pvOpenspace_b,none,none,expConv,3.0323105209625285,one node
+30th < 2040,EU < ES < es < 08ES,solar < openspace_b < pvOpenspace_b,none,none,expConv,4.109361312933871,one node
+30th < 2040,EU < ES < es < 09ES,solar < openspace_b < pvOpenspace_b,none,none,expConv,19.125094571029617,one node
+30th < 2040,EU < ES < es < 10ES,solar < openspace_b < pvOpenspace_b,none,none,expConv,11.306911627247898,one node
+30th < 2040,EU < ES < es < 11ES,solar < openspace_b < pvOpenspace_b,none,none,expConv,6.442505210170559,one node
+30th < 2040,EU < FR < fr < 14FR,solar < openspace_b < pvOpenspace_b,none,none,expConv,2.797699372599406e-5,one node
+30th < 2040,EU < FR < fr < 15FR,solar < openspace_b < pvOpenspace_b,none,none,expConv,13.150301045338608,one node
+30th < 2040,EU < FR < fr < 17FR,solar < openspace_b < pvOpenspace_b,none,none,expConv,1.2565047254167124e-5,one node
+30th < 2040,EU < FR < fr < 18FR,solar < openspace_b < pvOpenspace_b,none,none,expConv,1.425082181463198e-5,one node
+30th < 2040,EU < FR < fr < 19FR,solar < openspace_b < pvOpenspace_b,none,none,expConv,2.435922860467539,one node
+30th < 2040,EU < FR < fr < 20FR,solar < openspace_b < pvOpenspace_b,none,none,expConv,1.0478421672988133e-5,one node
+30th < 2040,EU < FR < fr < 21FR,solar < openspace_b < pvOpenspace_b,none,none,expConv,1.3235010897383232e-5,one node
+30th < 2040,EU < FR < fr_co < 99FR,solar < openspace_b < pvOpenspace_b,none,none,expConv,0.43090635280188166,one node
+30th < 2040,EU < GR < gr < 68GR,solar < openspace_b < pvOpenspace_b,none,none,expConv,47.096239705114414,one node
+30th < 2040,EU < GR < gr < 69GR,solar < openspace_b < pvOpenspace_b,none,none,expConv,12.807377887358724,one node
+30th < 2040,EU < HR < hr < 62HR,solar < openspace_b < pvOpenspace_b,none,none,expConv,2.9754202203497786,one node
+30th < 2040,EU < IT < it_cn < 53IT,solar < openspace_b < pvOpenspace_b,none,none,expConv,8.03043938034509,one node
+30th < 2040,EU < IT < it_cs < 54IT,solar < openspace_b < pvOpenspace_b,none,none,expConv,2.475778899223095,one node
+30th < 2040,EU < IT < it_n < 52IT,solar < openspace_b < pvOpenspace_b,none,none,expConv,1.4883125490397594e-5,one node
+30th < 2040,EU < IT < it_s < 55IT,solar < openspace_b < pvOpenspace_b,none,none,expConv,11.58481309090401,one node
+30th < 2040,EU < IT < it_sar < 98IT,solar < openspace_b < pvOpenspace_b,none,none,expConv,6.7933715963530705,one node
+30th < 2040,EU < IT < it_sic < 56IT,solar < openspace_b < pvOpenspace_b,none,none,expConv,2.1431393358626383,one node
+30th < 2040,EU < PT < pt < 12PT,solar < openspace_b < pvOpenspace_b,none,none,expConv,3.9528273698878484,one node
+30th < 2040,EU < PT < pt < 13PT,solar < openspace_b < pvOpenspace_b,none,none,expConv,5.656364471880318,one node
+30th < 2040,EU < RO < ro < 59RO,solar < openspace_b < pvOpenspace_b,none,none,expConv,43.54257418665281,one node
+30th < 2040,EU < RO < ro < 60RO,solar < openspace_b < pvOpenspace_b,none,none,expConv,10.264095876757613,one node
+30th < 2040,EU < RO < ro < 61RO,solar < openspace_b < pvOpenspace_b,none,none,expConv,42.99410537753871,one node
+30th < 2040,EU < SI < si < 57SI,solar < openspace_b < pvOpenspace_b,none,none,expConv,1.868889626321919e-5,one node
+30th < 2040,nonEU < AL < al < 70AL,solar < openspace_b < pvOpenspace_b,none,none,expConv,3.7929149982119053,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < openspace_b < pvOpenspace_b,none,none,expConv,2.102051380802556,one node
+30th < 2040,nonEU < ME < me < 64ME,solar < openspace_b < pvOpenspace_b,none,none,expConv,2.592003371705501,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < openspace_b < pvOpenspace_b,none,none,expConv,7.873495084488129,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < openspace_b < pvOpenspace_b,none,none,expConv,10.673033751207646,one node
+30th < 2040,nonEU < UK < uk < 90UK,solar < openspace_b < pvOpenspace_b,none,none,expConv,3.9352421079874955,one node
+30th < 2040,nonEU < UK < uk < 91UK,solar < openspace_b < pvOpenspace_b,none,none,expConv,2.589420460874574,one node
+30th < 2040,EU < AT < at < 49AT,solar < openspace_b < pvOpenspace_b,none,none,capaConv,4.061275540948736e-5,one node
+30th < 2040,EU < AT < at < 51AT,solar < openspace_b < pvOpenspace_b,none,none,capaConv,1.151429321358434e-5,one node
+30th < 2040,EU < BG < bg < 66BG,solar < openspace_b < pvOpenspace_b,none,none,capaConv,6.730506676586158,one node
+30th < 2040,EU < ES < es < 01ES,solar < openspace_b < pvOpenspace_b,none,none,capaConv,3.6193667920014994,one node
+30th < 2040,EU < ES < es < 02ES,solar < openspace_b < pvOpenspace_b,none,none,capaConv,26.826439525433827,one node
+30th < 2040,EU < ES < es < 03ES,solar < openspace_b < pvOpenspace_b,none,none,capaConv,31.527977520422585,one node
+30th < 2040,EU < ES < es < 04ES,solar < openspace_b < pvOpenspace_b,none,none,capaConv,6.88136067914601,one node
+30th < 2040,EU < ES < es < 05ES,solar < openspace_b < pvOpenspace_b,none,none,capaConv,12.460915177405262,one node
+30th < 2040,EU < ES < es < 06ES,solar < openspace_b < pvOpenspace_b,none,none,capaConv,2.0097686903599645,one node
+30th < 2040,EU < ES < es < 07ES,solar < openspace_b < pvOpenspace_b,none,none,capaConv,3.0323105209625285,one node
+30th < 2040,EU < ES < es < 08ES,solar < openspace_b < pvOpenspace_b,none,none,capaConv,4.109361312933871,one node
+30th < 2040,EU < ES < es < 09ES,solar < openspace_b < pvOpenspace_b,none,none,capaConv,19.125094571029617,one node
+30th < 2040,EU < ES < es < 10ES,solar < openspace_b < pvOpenspace_b,none,none,capaConv,11.306911627247898,one node
+30th < 2040,EU < ES < es < 11ES,solar < openspace_b < pvOpenspace_b,none,none,capaConv,6.44250521017056,one node
+30th < 2040,EU < FR < fr < 14FR,solar < openspace_b < pvOpenspace_b,none,none,capaConv,2.797699372599406e-5,one node
+30th < 2040,EU < FR < fr < 15FR,solar < openspace_b < pvOpenspace_b,none,none,capaConv,13.150301045338608,one node
+30th < 2040,EU < FR < fr < 17FR,solar < openspace_b < pvOpenspace_b,none,none,capaConv,1.2565047254167124e-5,one node
+30th < 2040,EU < FR < fr < 18FR,solar < openspace_b < pvOpenspace_b,none,none,capaConv,1.425082181463198e-5,one node
+30th < 2040,EU < FR < fr < 19FR,solar < openspace_b < pvOpenspace_b,none,none,capaConv,2.435922860467539,one node
+30th < 2040,EU < FR < fr < 20FR,solar < openspace_b < pvOpenspace_b,none,none,capaConv,1.0478421672988133e-5,one node
+30th < 2040,EU < FR < fr < 21FR,solar < openspace_b < pvOpenspace_b,none,none,capaConv,1.323501089738323e-5,one node
+30th < 2040,EU < FR < fr_co < 99FR,solar < openspace_b < pvOpenspace_b,none,none,capaConv,0.4309063528018816,one node
+30th < 2040,EU < GR < gr < 68GR,solar < openspace_b < pvOpenspace_b,none,none,capaConv,47.09623970511442,one node
+30th < 2040,EU < GR < gr < 69GR,solar < openspace_b < pvOpenspace_b,none,none,capaConv,12.807377887358722,one node
+30th < 2040,EU < HR < hr < 62HR,solar < openspace_b < pvOpenspace_b,none,none,capaConv,2.975420220349779,one node
+30th < 2040,EU < IT < it_cn < 53IT,solar < openspace_b < pvOpenspace_b,none,none,capaConv,8.03043938034509,one node
+30th < 2040,EU < IT < it_cs < 54IT,solar < openspace_b < pvOpenspace_b,none,none,capaConv,2.475778899223095,one node
+30th < 2040,EU < IT < it_n < 52IT,solar < openspace_b < pvOpenspace_b,none,none,capaConv,1.4883125490397594e-5,one node
+30th < 2040,EU < IT < it_s < 55IT,solar < openspace_b < pvOpenspace_b,none,none,capaConv,11.584813090904008,one node
+30th < 2040,EU < IT < it_sar < 98IT,solar < openspace_b < pvOpenspace_b,none,none,capaConv,6.7933715963530705,one node
+30th < 2040,EU < IT < it_sic < 56IT,solar < openspace_b < pvOpenspace_b,none,none,capaConv,2.1431393358626383,one node
+30th < 2040,EU < PT < pt < 12PT,solar < openspace_b < pvOpenspace_b,none,none,capaConv,3.9528273698878484,one node
+30th < 2040,EU < PT < pt < 13PT,solar < openspace_b < pvOpenspace_b,none,none,capaConv,5.656364471880318,one node
+30th < 2040,EU < RO < ro < 59RO,solar < openspace_b < pvOpenspace_b,none,none,capaConv,43.54257418665281,one node
+30th < 2040,EU < RO < ro < 60RO,solar < openspace_b < pvOpenspace_b,none,none,capaConv,10.264095876757613,one node
+30th < 2040,EU < RO < ro < 61RO,solar < openspace_b < pvOpenspace_b,none,none,capaConv,42.99410537753871,one node
+30th < 2040,EU < SI < si < 57SI,solar < openspace_b < pvOpenspace_b,none,none,capaConv,1.868889626321919e-5,one node
+30th < 2040,nonEU < AL < al < 70AL,solar < openspace_b < pvOpenspace_b,none,none,capaConv,3.7929149982119057,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < openspace_b < pvOpenspace_b,none,none,capaConv,2.102051380802556,one node
+30th < 2040,nonEU < ME < me < 64ME,solar < openspace_b < pvOpenspace_b,none,none,capaConv,2.5920033717055015,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < openspace_b < pvOpenspace_b,none,none,capaConv,7.873495084488129,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < openspace_b < pvOpenspace_b,none,none,capaConv,10.673033751207646,one node
+30th < 2040,nonEU < UK < uk < 90UK,solar < openspace_b < pvOpenspace_b,none,none,capaConv,3.935242107987495,one node
+30th < 2040,nonEU < UK < uk < 91UK,solar < openspace_b < pvOpenspace_b,none,none,capaConv,2.589420460874574,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlSludge,none,none,expConv,0.8832514693184705,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlSludge,none,none,expConv,0.19645248139518656,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlSludge,none,none,capaConv,0.8832514693184705,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlSludge,none,none,capaConv,0.19645248139518656,one node
+30th < 2040,EU,transport < eFrtRail,none,none,expConv,3.049713255210082,one node
+30th < 2040,nonEU,transport < eFrtRail,none,none,expConv,0.26563813531428165,one node
+30th < 2040,EU,transport < eFrtRail,none,none,capaConv,3.049713255210082,one node
+30th < 2040,nonEU,transport < eFrtRail,none,none,capaConv,0.2656381353142817,one node
+30th < 2040,EU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,none,none,expConv,23.24849363064818,one node
+30th < 2040,nonEU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,none,none,expConv,5.474598919288987,one node
+30th < 2040,EU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,none,none,capaConv,23.24849363064818,one node
+30th < 2040,nonEU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,none,none,capaConv,5.474598919288987,one node
+30th < 2040,EU,networkHeat < heatpumpNetwork < heatpumpGroundDh,none,none,expConv,97.31240688367208,one node
+30th < 2040,nonEU,networkHeat < heatpumpNetwork < heatpumpGroundDh,none,none,expConv,19.44454868033889,one node
+30th < 2040,EU,networkHeat < heatpumpNetwork < heatpumpGroundDh,none,none,capaConv,97.31240688367208,one node
+30th < 2040,nonEU,networkHeat < heatpumpNetwork < heatpumpGroundDh,none,none,capaConv,19.444548680338887,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlManure,none,none,expConv,17.38904050387263,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlManure,none,none,expConv,3.083632473532293,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlManure,none,none,capaConv,17.38904050387263,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlManure,none,none,capaConv,3.083632473532293,one node
+30th < 2040,EU,transport < bev < bevFrtRoadHeavy,none,none,expConv,195.78895660322866,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadHeavy,none,none,expConv,25.50425060093009,one node
+30th < 2040,EU,transport < bev < bevFrtRoadHeavy,none,1,capaStOut,195.78895660322863,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadHeavy,none,1,capaStOut,25.50425060093009,one node
+30th < 2040,EU,transport < bev < bevFrtRoadHeavy,none,1,capaStSize,978.9447830161432,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadHeavy,none,1,capaStSize,127.52125300465045,one node
+30th < 2040,EU,transport < bev < bevFrtRoadHeavy,none,1,expStSize,978.9447830161432,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadHeavy,none,1,expStSize,127.52125300465045,one node
+30th < 2040,EU,transport < bev < bevFrtRoadHeavy,none,1,expStOut,195.78895660322866,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadHeavy,none,1,expStOut,25.50425060093009,one node
+30th < 2040,EU,transport < bev < bevFrtRoadHeavy,none,none,capaConv,195.78895660322863,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadHeavy,none,none,capaConv,25.50425060093009,one node
+30th < 2040,EU,transport < bev < bevFrtRoadHeavy,none,1,capaStIn,195.78895660322863,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadHeavy,none,1,capaStIn,25.50425060093009,one node
+30th < 2040,EU,transport < bev < bevFrtRoadHeavy,none,1,expStIn,195.78895660322866,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadHeavy,none,1,expStIn,25.50425060093009,one node
+30th < 2040,EU < BG < bg < 66BG,solar < openspace_c < pvOpenspace_c,none,none,expConv,25.292800517324075,one node
+30th < 2040,EU < ES < es < 01ES,solar < openspace_c < pvOpenspace_c,none,none,expConv,6.919557540348221,one node
+30th < 2040,EU < ES < es < 02ES,solar < openspace_c < pvOpenspace_c,none,none,expConv,1.2747030758860298,one node
+30th < 2040,EU < ES < es < 03ES,solar < openspace_c < pvOpenspace_c,none,none,expConv,23.282692428642218,one node
+30th < 2040,EU < ES < es < 04ES,solar < openspace_c < pvOpenspace_c,none,none,expConv,2.55298271743136,one node
+30th < 2040,EU < ES < es < 05ES,solar < openspace_c < pvOpenspace_c,none,none,expConv,1.259615609421475,one node
+30th < 2040,EU < ES < es < 06ES,solar < openspace_c < pvOpenspace_c,none,none,expConv,6.315642005543419,one node
+30th < 2040,EU < ES < es < 07ES,solar < openspace_c < pvOpenspace_c,none,none,expConv,0.7069987275950245,one node
+30th < 2040,EU < ES < es < 08ES,solar < openspace_c < pvOpenspace_c,none,none,expConv,36.70494861106137,one node
+30th < 2040,EU < ES < es < 09ES,solar < openspace_c < pvOpenspace_c,none,none,expConv,2.4417355253186326,one node
+30th < 2040,EU < ES < es < 10ES,solar < openspace_c < pvOpenspace_c,none,none,expConv,20.213828365169377,one node
+30th < 2040,EU < ES < es < 11ES,solar < openspace_c < pvOpenspace_c,none,none,expConv,38.817372810503755,one node
+30th < 2040,EU < FR < fr < 15FR,solar < openspace_c < pvOpenspace_c,none,none,expConv,1.8580197846740566e-5,one node
+30th < 2040,EU < FR < fr < 16FR,solar < openspace_c < pvOpenspace_c,none,none,expConv,2.2290721366086495e-5,one node
+30th < 2040,EU < FR < fr < 17FR,solar < openspace_c < pvOpenspace_c,none,none,expConv,2.0365624753743536e-5,one node
+30th < 2040,EU < FR < fr < 19FR,solar < openspace_c < pvOpenspace_c,none,none,expConv,1.0749555922870175e-5,one node
+30th < 2040,EU < FR < fr < 20FR,solar < openspace_c < pvOpenspace_c,none,none,expConv,6.901917682989412,one node
+30th < 2040,EU < FR < fr_co < 99FR,solar < openspace_c < pvOpenspace_c,none,none,expConv,0.4378855406149082,one node
+30th < 2040,EU < GR < gr < 68GR,solar < openspace_c < pvOpenspace_c,none,none,expConv,6.990821008152043,one node
+30th < 2040,EU < GR < gr < 69GR,solar < openspace_c < pvOpenspace_c,none,none,expConv,32.42090254049997,one node
+30th < 2040,EU < HR < hr < 62HR,solar < openspace_c < pvOpenspace_c,none,none,expConv,1.732414200548862,one node
+30th < 2040,EU < IT < it_cn < 53IT,solar < openspace_c < pvOpenspace_c,none,none,expConv,1.4355297191341329e-5,one node
+30th < 2040,EU < IT < it_cs < 54IT,solar < openspace_c < pvOpenspace_c,none,none,expConv,1.5521441416236096e-5,one node
+30th < 2040,EU < IT < it_s < 55IT,solar < openspace_c < pvOpenspace_c,none,none,expConv,29.16034979860058,one node
+30th < 2040,EU < IT < it_sar < 98IT,solar < openspace_c < pvOpenspace_c,none,none,expConv,0.8480672084701315,one node
+30th < 2040,EU < IT < it_sic < 56IT,solar < openspace_c < pvOpenspace_c,none,none,expConv,9.43009998503775,one node
+30th < 2040,EU < PT < pt < 12PT,solar < openspace_c < pvOpenspace_c,none,none,expConv,3.9280635392321797,one node
+30th < 2040,EU < PT < pt < 13PT,solar < openspace_c < pvOpenspace_c,none,none,expConv,7.210232238029391,one node
+30th < 2040,EU < RO < ro < 59RO,solar < openspace_c < pvOpenspace_c,none,none,expConv,3.1882001900943004,one node
+30th < 2040,EU < RO < ro < 60RO,solar < openspace_c < pvOpenspace_c,none,none,expConv,3.051327469238138,one node
+30th < 2040,EU < RO < ro < 61RO,solar < openspace_c < pvOpenspace_c,none,none,expConv,23.979188846272116,one node
+30th < 2040,EU < SI < si < 57SI,solar < openspace_c < pvOpenspace_c,none,none,expConv,0.7927960355770931,one node
+30th < 2040,nonEU < AL < al < 70AL,solar < openspace_c < pvOpenspace_c,none,none,expConv,5.271255574870095,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < openspace_c < pvOpenspace_c,none,none,expConv,8.122125828394356,one node
+30th < 2040,nonEU < CH < ch < 48CH,solar < openspace_c < pvOpenspace_c,none,none,expConv,2.8296481176969598e-5,one node
+30th < 2040,nonEU < ME < me < 64ME,solar < openspace_c < pvOpenspace_c,none,none,expConv,3.902262885716095,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < openspace_c < pvOpenspace_c,none,none,expConv,1.8317618311008377,one node
+30th < 2040,nonEU < NO < no_s < 79NO,solar < openspace_c < pvOpenspace_c,none,none,expConv,1.0064196873241614e-5,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < openspace_c < pvOpenspace_c,none,none,expConv,11.84109192207045,one node
+30th < 2040,nonEU < UK < uk < 90UK,solar < openspace_c < pvOpenspace_c,none,none,expConv,4.626021851680295e-5,one node
+30th < 2040,nonEU < UK < uk < 91UK,solar < openspace_c < pvOpenspace_c,none,none,expConv,3.2141738046180285e-5,one node
+30th < 2040,nonEU < UK < uk < 92UK,solar < openspace_c < pvOpenspace_c,none,none,expConv,2.205501841844636e-5,one node
+30th < 2040,EU < BG < bg < 66BG,solar < openspace_c < pvOpenspace_c,none,none,capaConv,25.292800517324075,one node
+30th < 2040,EU < ES < es < 01ES,solar < openspace_c < pvOpenspace_c,none,none,capaConv,6.919557540348221,one node
+30th < 2040,EU < ES < es < 02ES,solar < openspace_c < pvOpenspace_c,none,none,capaConv,1.2747030758860298,one node
+30th < 2040,EU < ES < es < 03ES,solar < openspace_c < pvOpenspace_c,none,none,capaConv,23.282692428642218,one node
+30th < 2040,EU < ES < es < 04ES,solar < openspace_c < pvOpenspace_c,none,none,capaConv,2.55298271743136,one node
+30th < 2040,EU < ES < es < 05ES,solar < openspace_c < pvOpenspace_c,none,none,capaConv,1.259615609421475,one node
+30th < 2040,EU < ES < es < 06ES,solar < openspace_c < pvOpenspace_c,none,none,capaConv,6.315642005543418,one node
+30th < 2040,EU < ES < es < 07ES,solar < openspace_c < pvOpenspace_c,none,none,capaConv,0.7069987275950245,one node
+30th < 2040,EU < ES < es < 08ES,solar < openspace_c < pvOpenspace_c,none,none,capaConv,36.70494861106137,one node
+30th < 2040,EU < ES < es < 09ES,solar < openspace_c < pvOpenspace_c,none,none,capaConv,2.4417355253186326,one node
+30th < 2040,EU < ES < es < 10ES,solar < openspace_c < pvOpenspace_c,none,none,capaConv,20.213828365169373,one node
+30th < 2040,EU < ES < es < 11ES,solar < openspace_c < pvOpenspace_c,none,none,capaConv,38.817372810503755,one node
+30th < 2040,EU < FR < fr < 15FR,solar < openspace_c < pvOpenspace_c,none,none,capaConv,1.8580197846740566e-5,one node
+30th < 2040,EU < FR < fr < 16FR,solar < openspace_c < pvOpenspace_c,none,none,capaConv,2.2290721366086495e-5,one node
+30th < 2040,EU < FR < fr < 17FR,solar < openspace_c < pvOpenspace_c,none,none,capaConv,2.0365624753743533e-5,one node
+30th < 2040,EU < FR < fr < 19FR,solar < openspace_c < pvOpenspace_c,none,none,capaConv,1.0749555922870173e-5,one node
+30th < 2040,EU < FR < fr < 20FR,solar < openspace_c < pvOpenspace_c,none,none,capaConv,6.901917682989412,one node
+30th < 2040,EU < FR < fr_co < 99FR,solar < openspace_c < pvOpenspace_c,none,none,capaConv,0.43788554061490825,one node
+30th < 2040,EU < GR < gr < 68GR,solar < openspace_c < pvOpenspace_c,none,none,capaConv,6.990821008152043,one node
+30th < 2040,EU < GR < gr < 69GR,solar < openspace_c < pvOpenspace_c,none,none,capaConv,32.42090254049997,one node
+30th < 2040,EU < HR < hr < 62HR,solar < openspace_c < pvOpenspace_c,none,none,capaConv,1.732414200548862,one node
+30th < 2040,EU < IT < it_cn < 53IT,solar < openspace_c < pvOpenspace_c,none,none,capaConv,1.4355297191341329e-5,one node
+30th < 2040,EU < IT < it_cs < 54IT,solar < openspace_c < pvOpenspace_c,none,none,capaConv,1.5521441416236096e-5,one node
+30th < 2040,EU < IT < it_s < 55IT,solar < openspace_c < pvOpenspace_c,none,none,capaConv,29.16034979860058,one node
+30th < 2040,EU < IT < it_sar < 98IT,solar < openspace_c < pvOpenspace_c,none,none,capaConv,0.8480672084701315,one node
+30th < 2040,EU < IT < it_sic < 56IT,solar < openspace_c < pvOpenspace_c,none,none,capaConv,9.43009998503775,one node
+30th < 2040,EU < PT < pt < 12PT,solar < openspace_c < pvOpenspace_c,none,none,capaConv,3.9280635392321797,one node
+30th < 2040,EU < PT < pt < 13PT,solar < openspace_c < pvOpenspace_c,none,none,capaConv,7.210232238029392,one node
+30th < 2040,EU < RO < ro < 59RO,solar < openspace_c < pvOpenspace_c,none,none,capaConv,3.1882001900943,one node
+30th < 2040,EU < RO < ro < 60RO,solar < openspace_c < pvOpenspace_c,none,none,capaConv,3.051327469238138,one node
+30th < 2040,EU < RO < ro < 61RO,solar < openspace_c < pvOpenspace_c,none,none,capaConv,23.979188846272116,one node
+30th < 2040,EU < SI < si < 57SI,solar < openspace_c < pvOpenspace_c,none,none,capaConv,0.7927960355770931,one node
+30th < 2040,nonEU < AL < al < 70AL,solar < openspace_c < pvOpenspace_c,none,none,capaConv,5.2712555748700956,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < openspace_c < pvOpenspace_c,none,none,capaConv,8.122125828394356,one node
+30th < 2040,nonEU < CH < ch < 48CH,solar < openspace_c < pvOpenspace_c,none,none,capaConv,2.82964811769696e-5,one node
+30th < 2040,nonEU < ME < me < 64ME,solar < openspace_c < pvOpenspace_c,none,none,capaConv,3.902262885716095,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < openspace_c < pvOpenspace_c,none,none,capaConv,1.8317618311008377,one node
+30th < 2040,nonEU < NO < no_s < 79NO,solar < openspace_c < pvOpenspace_c,none,none,capaConv,1.0064196873241612e-5,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < openspace_c < pvOpenspace_c,none,none,capaConv,11.84109192207045,one node
+30th < 2040,nonEU < UK < uk < 90UK,solar < openspace_c < pvOpenspace_c,none,none,capaConv,4.626021851680295e-5,one node
+30th < 2040,nonEU < UK < uk < 91UK,solar < openspace_c < pvOpenspace_c,none,none,capaConv,3.2141738046180285e-5,one node
+30th < 2040,nonEU < UK < uk < 92UK,solar < openspace_c < pvOpenspace_c,none,none,capaConv,2.2055018418446362e-5,one node
+30th < 2040,EU,networkHeat < heatGrid < districtHeatSpace,none,none,expConv,888.1677645436241,one node
+30th < 2040,nonEU,networkHeat < heatGrid < districtHeatSpace,none,none,expConv,174.36851181995263,one node
+30th < 2040,EU,networkHeat < heatGrid < districtHeatSpace,none,none,capaConv,888.1677645436241,one node
+30th < 2040,nonEU,networkHeat < heatGrid < districtHeatSpace,none,none,capaConv,174.36851181995263,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,none,none,expConv,33.961276451346635,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,none,none,expConv,2.7873452691452174,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,none,1,capaStOut,2.4391239564912054e-5,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,none,1,capaStOut,2.4725402030138402e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,none,1,expStOut,2.4391239564912054e-5,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,none,1,expStOut,2.4725402030138406e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,none,none,capaConv,33.961276451346635,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,none,none,capaConv,2.7873452691452174,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,none,1,capaStIn,2.4391239564912054e-5,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,none,1,capaStIn,2.4725402030138402e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,none,1,expStIn,2.4391239564912054e-5,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,none,1,expStIn,2.4725402030138406e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,none,none,mustCapaConv,17.965041893360112,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,none,none,mustCapaConv,2.7569947389843743,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPrvt,none,none,expConv,1037.9179952073755,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPrvt,none,none,expConv,218.0145826482268,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPrvt,none,1,capaStOut,1037.9179952073753,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPrvt,none,1,capaStOut,218.0145826482268,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPrvt,none,1,capaStSize,5189.589976036877,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPrvt,none,1,capaStSize,1090.072913241134,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPrvt,none,1,expStSize,5189.5899760368775,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPrvt,none,1,expStSize,1090.0729132411338,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPrvt,none,1,expStOut,1037.9179952073755,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPrvt,none,1,expStOut,218.0145826482268,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPrvt,none,none,capaConv,1037.9179952073753,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPrvt,none,none,capaConv,218.0145826482268,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPrvt,none,1,capaStIn,1037.9179952073753,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPrvt,none,1,capaStIn,218.0145826482268,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPrvt,none,1,expStIn,1037.9179952073755,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPrvt,none,1,expStIn,218.0145826482268,one node
+30th < 2040,EU,powerToX < refinery,none,none,capaConv,832.5529333300001,one node
+30th < 2040,nonEU,powerToX < refinery,none,none,capaConv,130.459525006,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlGreenWaste,none,none,expConv,15.982521803310297,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlGreenWaste,none,none,expConv,3.031543942360222,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlGreenWaste,none,none,capaConv,15.982521803310295,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlGreenWaste,none,none,capaConv,3.0315439423602224,one node
+30th < 2040,EU,fossil < oil < oilToHvc,none,none,expConv,49.96649027298196,one node
+30th < 2040,nonEU,fossil < oil < oilToHvc,none,none,expConv,18.719516756645735,one node
+30th < 2040,EU,fossil < oil < oilToHvc,none,none,capaConv,49.96649027298196,one node
+30th < 2040,nonEU,fossil < oil < oilToHvc,none,none,capaConv,18.719516756645735,one node
+30th < 2040,EU,storage < battery < lithiumBattery,none,1,capaStOut,2.0720212139360296e-5,one node
+30th < 2040,nonEU,storage < battery < lithiumBattery,none,1,capaStOut,2.042972972772763e-5,one node
+30th < 2040,EU,storage < battery < lithiumBattery,none,1,expStOut,2.0720212139360296e-5,one node
+30th < 2040,nonEU,storage < battery < lithiumBattery,none,1,expStOut,2.042972972772763e-5,one node
+30th < 2040,EU,storage < battery < lithiumBattery,none,1,capaStIn,2.0720212139360296e-5,one node
+30th < 2040,nonEU,storage < battery < lithiumBattery,none,1,capaStIn,2.042972972772763e-5,one node
+30th < 2040,EU,storage < battery < lithiumBattery,none,1,expStIn,2.0720212139360296e-5,one node
+30th < 2040,nonEU,storage < battery < lithiumBattery,none,1,expStIn,2.042972972772763e-5,one node
+30th < 2040,EU,powerToX < electrolysis < alkElectrolysis,none,none,expConv,210.98148432491297,one node
+30th < 2040,nonEU,powerToX < electrolysis < alkElectrolysis,none,none,expConv,18.412258023192543,one node
+30th < 2040,EU,powerToX < electrolysis < alkElectrolysis,none,none,capaConv,210.98148432491297,one node
+30th < 2040,nonEU,powerToX < electrolysis < alkElectrolysis,none,none,capaConv,18.412258023192543,one node
+30th < 2040,EU,storage < gasStorage < h2StorageTank,none,1,capaStSize,1.6877629918418714e-5,one node
+30th < 2040,nonEU,storage < gasStorage < h2StorageTank,none,1,capaStSize,1.677008207629548e-5,one node
+30th < 2040,EU,storage < gasStorage < h2StorageTank,none,1,expStSize,1.6877629918418714e-5,one node
+30th < 2040,nonEU,storage < gasStorage < h2StorageTank,none,1,expStSize,1.677008207629548e-5,one node
+30th < 2040,EU,storage < gasStorage < methaneStorage,none,1,capaStOut,3.804025461920696e-5,one node
+30th < 2040,nonEU,storage < gasStorage < methaneStorage,none,1,capaStOut,3.923417918342047e-5,one node
+30th < 2040,EU,storage < gasStorage < methaneStorage,none,1,capaStSize,1.2476897008040252e6,one node
+30th < 2040,nonEU,storage < gasStorage < methaneStorage,none,1,capaStSize,45582.17792341792,one node
+30th < 2040,EU,storage < gasStorage < methaneStorage,none,1,expStSize,0.003804025461920696,one node
+30th < 2040,nonEU,storage < gasStorage < methaneStorage,none,1,expStSize,0.003923417918342047,one node
+30th < 2040,EU,storage < gasStorage < methaneStorage,none,1,expStOut,3.804025461920696e-5,one node
+30th < 2040,nonEU,storage < gasStorage < methaneStorage,none,1,expStOut,3.9234179183420465e-5,one node
+30th < 2040,EU,storage < gasStorage < methaneStorage,none,1,capaStIn,3.804025461920696e-5,one node
+30th < 2040,nonEU,storage < gasStorage < methaneStorage,none,1,capaStIn,3.923417918342047e-5,one node
+30th < 2040,EU,storage < gasStorage < methaneStorage,none,1,expStIn,3.804025461920696e-5,one node
+30th < 2040,nonEU,storage < gasStorage < methaneStorage,none,1,expStIn,3.9234179183420465e-5,one node
+30th < 2040,EU,hydro < pumpedStorage,none,1,capaStOut,59.09199999999999,one node
+30th < 2040,nonEU,hydro < pumpedStorage,none,1,capaStOut,16.023,one node
+30th < 2040,EU,hydro < pumpedStorage,none,1,capaStSize,6191.832045569,one node
+30th < 2040,nonEU,hydro < pumpedStorage,none,1,capaStSize,1299.6423297830002,one node
+30th < 2040,EU,hydro < pumpedStorage,none,1,capaStIn,59.09199999999999,one node
+30th < 2040,nonEU,hydro < pumpedStorage,none,1,capaStIn,16.023,one node
+30th < 2040,EU,networkHeat < heatGrid < districtHeatPro,none,none,expConv,14.967461184710018,one node
+30th < 2040,nonEU,networkHeat < heatGrid < districtHeatPro,none,none,expConv,0.3099346268053572,one node
+30th < 2040,EU,networkHeat < heatGrid < districtHeatPro,none,none,capaConv,14.967461184710018,one node
+30th < 2040,nonEU,networkHeat < heatGrid < districtHeatPro,none,none,capaConv,0.30993462680535727,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPub,none,none,expConv,82.76703384148306,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPub,none,none,expConv,11.659849896835482,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPub,none,1,capaStOut,82.76703384148306,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPub,none,1,capaStOut,11.659849896835482,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPub,none,1,capaStSize,413.83516920741533,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPub,none,1,capaStSize,58.29924948417741,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPub,none,1,expStSize,413.8351692074153,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPub,none,1,expStSize,58.29924948417741,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPub,none,1,expStOut,82.76703384148306,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPub,none,1,expStOut,11.659849896835482,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPub,none,none,capaConv,82.76703384148306,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPub,none,none,capaConv,11.659849896835482,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPub,none,1,capaStIn,82.76703384148306,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPub,none,1,capaStIn,11.659849896835482,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPub,none,1,expStIn,82.76703384148306,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPub,none,1,expStIn,11.659849896835482,one node
+30th < 2040,EU,powerToX < directAirCapture,none,none,expConv,66.16664098844679,one node
+30th < 2040,nonEU,powerToX < directAirCapture,none,none,expConv,0.17196261642401053,one node
+30th < 2040,EU,powerToX < directAirCapture,none,none,capaConv,66.16664098844679,one node
+30th < 2040,nonEU,powerToX < directAirCapture,none,none,capaConv,0.17196261642401053,one node
+30th < 2040,EU < AT < at < 50AT,wind < onshore < onshore_c,none,none,expConv,6.239923746656515,one node
+30th < 2040,EU < AT < at < 51AT,wind < onshore < onshore_c,none,none,expConv,12.425387875940032,one node
+30th < 2040,EU < DE < de < 31DE,wind < onshore < onshore_c,none,none,expConv,1.741599506156028e-5,one node
+30th < 2040,EU < DK < dk_w < 38DK,wind < onshore < onshore_c,none,none,expConv,5.256895832371253e-5,one node
+30th < 2040,EU < ES < es < 06ES,wind < onshore < onshore_c,none,none,expConv,12.444797686216358,one node
+30th < 2040,EU < ES < es < 07ES,wind < onshore < onshore_c,none,none,expConv,0.00015526017511133413,one node
+30th < 2040,EU < ES < es < 09ES,wind < onshore < onshore_c,none,none,expConv,24.111697355442573,one node
+30th < 2040,EU < ES < es < 10ES,wind < onshore < onshore_c,none,none,expConv,27.140422446416636,one node
+30th < 2040,EU < ES < es < 11ES,wind < onshore < onshore_c,none,none,expConv,53.44507096515159,one node
+30th < 2040,EU < FI < fi < 74FI,wind < onshore < onshore_c,none,none,expConv,29.53355476591009,one node
+30th < 2040,EU < FR < fr < 16FR,wind < onshore < onshore_c,none,none,expConv,9.603887438670494,one node
+30th < 2040,EU < FR < fr < 19FR,wind < onshore < onshore_c,none,none,expConv,8.967775178578725,one node
+30th < 2040,EU < FR < fr < 20FR,wind < onshore < onshore_c,none,none,expConv,11.734932796342079,one node
+30th < 2040,EU < FR < fr < 22FR,wind < onshore < onshore_c,none,none,expConv,1.1179867574753535e-5,one node
+30th < 2040,EU < FR < fr_co < 99FR,wind < onshore < onshore_c,none,none,expConv,0.8481295649869687,one node
+30th < 2040,EU < GR < gr < 68GR,wind < onshore < onshore_c,none,none,expConv,22.96499589074791,one node
+30th < 2040,EU < GR < gr < 69GR,wind < onshore < onshore_c,none,none,expConv,1.8567736151387543e-5,one node
+30th < 2040,EU < HR < hr < 62HR,wind < onshore < onshore_c,none,none,expConv,16.27088747612217,one node
+30th < 2040,EU < HU < hu < 58HU,wind < onshore < onshore_c,none,none,expConv,2.284756320080686e-5,one node
+30th < 2040,EU < IE < ie < 96IE,wind < onshore < onshore_c,none,none,expConv,6.936847087323027,one node
+30th < 2040,EU < IT < it_cn < 53IT,wind < onshore < onshore_c,none,none,expConv,2.6654690323164327e-5,one node
+30th < 2040,EU < IT < it_cs < 54IT,wind < onshore < onshore_c,none,none,expConv,12.2372140484613,one node
+30th < 2040,EU < IT < it_n < 52IT,wind < onshore < onshore_c,none,none,expConv,1.1640983596254165e-5,one node
+30th < 2040,EU < IT < it_sar < 98IT,wind < onshore < onshore_c,none,none,expConv,7.90018654141128e-5,one node
+30th < 2040,EU < IT < it_sic < 56IT,wind < onshore < onshore_c,none,none,expConv,0.00024324589013171568,one node
+30th < 2040,EU < LT < lt < 77LT,wind < onshore < onshore_c,none,none,expConv,1.5711416292492217e-5,one node
+30th < 2040,EU < LV < lv < 78LV,wind < onshore < onshore_c,none,none,expConv,1.2308336079625772e-5,one node
+30th < 2040,EU < NL < nl < 30NL,wind < onshore < onshore_c,none,none,expConv,3.1926477124581973,one node
+30th < 2040,EU < PL < pl < 42PL,wind < onshore < onshore_c,none,none,expConv,20.629397080379782,one node
+30th < 2040,EU < PL < pl < 45PL,wind < onshore < onshore_c,none,none,expConv,1.0439180569065816e-5,one node
+30th < 2040,EU < RO < ro < 59RO,wind < onshore < onshore_c,none,none,expConv,1.4745732311243907e-5,one node
+30th < 2040,EU < RO < ro < 61RO,wind < onshore < onshore_c,none,none,expConv,21.489875960591817,one node
+30th < 2040,EU < SE < se_1 < 86SE,wind < onshore < onshore_c,none,none,expConv,20.2754917935466,one node
+30th < 2040,EU < SE < se_3 < 88SE,wind < onshore < onshore_c,none,none,expConv,20.904691864431825,one node
+30th < 2040,EU < SE < se_4 < 89SE,wind < onshore < onshore_c,none,none,expConv,1.162320506250161,one node
+30th < 2040,EU < SI < si < 57SI,wind < onshore < onshore_c,none,none,expConv,1.636359434266328e-5,one node
+30th < 2040,nonEU < AL < al < 70AL,wind < onshore < onshore_c,none,none,expConv,1.591788475495584,one node
+30th < 2040,nonEU < NO < no_n < 84NO,wind < onshore < onshore_c,none,none,expConv,5.358973170540223,one node
+30th < 2040,nonEU < NO < no_n < 85NO,wind < onshore < onshore_c,none,none,expConv,3.0854390012718684,one node
+30th < 2040,nonEU < NO < no_s < 79NO,wind < onshore < onshore_c,none,none,expConv,2.311167352430723e-5,one node
+30th < 2040,nonEU < UK < ni < 95UK,wind < onshore < onshore_c,none,none,expConv,0.3356302562022734,one node
+30th < 2040,nonEU < UK < uk < 93UK,wind < onshore < onshore_c,none,none,expConv,5.869670604780328,one node
+30th < 2040,EU < AT < at < 50AT,wind < onshore < onshore_c,none,none,capaConv,6.2399237466565145,one node
+30th < 2040,EU < AT < at < 51AT,wind < onshore < onshore_c,none,none,capaConv,12.425387875940032,one node
+30th < 2040,EU < DE < de < 31DE,wind < onshore < onshore_c,none,none,capaConv,1.741599506156028e-5,one node
+30th < 2040,EU < DK < dk_w < 38DK,wind < onshore < onshore_c,none,none,capaConv,5.256895832371253e-5,one node
+30th < 2040,EU < ES < es < 06ES,wind < onshore < onshore_c,none,none,capaConv,12.444797686216358,one node
+30th < 2040,EU < ES < es < 07ES,wind < onshore < onshore_c,none,none,capaConv,0.00015526017511133413,one node
+30th < 2040,EU < ES < es < 09ES,wind < onshore < onshore_c,none,none,capaConv,24.111697355442573,one node
+30th < 2040,EU < ES < es < 10ES,wind < onshore < onshore_c,none,none,capaConv,27.140422446416636,one node
+30th < 2040,EU < ES < es < 11ES,wind < onshore < onshore_c,none,none,capaConv,53.44507096515159,one node
+30th < 2040,EU < FI < fi < 74FI,wind < onshore < onshore_c,none,none,capaConv,29.533554765910093,one node
+30th < 2040,EU < FR < fr < 16FR,wind < onshore < onshore_c,none,none,capaConv,9.603887438670494,one node
+30th < 2040,EU < FR < fr < 19FR,wind < onshore < onshore_c,none,none,capaConv,8.967775178578725,one node
+30th < 2040,EU < FR < fr < 20FR,wind < onshore < onshore_c,none,none,capaConv,11.734932796342079,one node
+30th < 2040,EU < FR < fr < 22FR,wind < onshore < onshore_c,none,none,capaConv,1.1179867574753535e-5,one node
+30th < 2040,EU < FR < fr_co < 99FR,wind < onshore < onshore_c,none,none,capaConv,0.8481295649869688,one node
+30th < 2040,EU < GR < gr < 68GR,wind < onshore < onshore_c,none,none,capaConv,22.96499589074791,one node
+30th < 2040,EU < GR < gr < 69GR,wind < onshore < onshore_c,none,none,capaConv,1.8567736151387546e-5,one node
+30th < 2040,EU < HR < hr < 62HR,wind < onshore < onshore_c,none,none,capaConv,16.27088747612217,one node
+30th < 2040,EU < HU < hu < 58HU,wind < onshore < onshore_c,none,none,capaConv,2.284756320080686e-5,one node
+30th < 2040,EU < IE < ie < 96IE,wind < onshore < onshore_c,none,none,capaConv,6.936847087323026,one node
+30th < 2040,EU < IT < it_cn < 53IT,wind < onshore < onshore_c,none,none,capaConv,2.6654690323164323e-5,one node
+30th < 2040,EU < IT < it_cs < 54IT,wind < onshore < onshore_c,none,none,capaConv,12.237214048461299,one node
+30th < 2040,EU < IT < it_n < 52IT,wind < onshore < onshore_c,none,none,capaConv,1.1640983596254165e-5,one node
+30th < 2040,EU < IT < it_sar < 98IT,wind < onshore < onshore_c,none,none,capaConv,7.90018654141128e-5,one node
+30th < 2040,EU < IT < it_sic < 56IT,wind < onshore < onshore_c,none,none,capaConv,0.00024324589013171568,one node
+30th < 2040,EU < LT < lt < 77LT,wind < onshore < onshore_c,none,none,capaConv,1.5711416292492217e-5,one node
+30th < 2040,EU < LV < lv < 78LV,wind < onshore < onshore_c,none,none,capaConv,1.2308336079625772e-5,one node
+30th < 2040,EU < NL < nl < 30NL,wind < onshore < onshore_c,none,none,capaConv,3.192647712458198,one node
+30th < 2040,EU < PL < pl < 42PL,wind < onshore < onshore_c,none,none,capaConv,20.629397080379782,one node
+30th < 2040,EU < PL < pl < 45PL,wind < onshore < onshore_c,none,none,capaConv,1.0439180569065815e-5,one node
+30th < 2040,EU < RO < ro < 59RO,wind < onshore < onshore_c,none,none,capaConv,1.4745732311243907e-5,one node
+30th < 2040,EU < RO < ro < 61RO,wind < onshore < onshore_c,none,none,capaConv,21.489875960591814,one node
+30th < 2040,EU < SE < se_1 < 86SE,wind < onshore < onshore_c,none,none,capaConv,20.275491793546603,one node
+30th < 2040,EU < SE < se_3 < 88SE,wind < onshore < onshore_c,none,none,capaConv,20.904691864431825,one node
+30th < 2040,EU < SE < se_4 < 89SE,wind < onshore < onshore_c,none,none,capaConv,1.162320506250161,one node
+30th < 2040,EU < SI < si < 57SI,wind < onshore < onshore_c,none,none,capaConv,1.636359434266328e-5,one node
+30th < 2040,nonEU < AL < al < 70AL,wind < onshore < onshore_c,none,none,capaConv,1.591788475495584,one node
+30th < 2040,nonEU < NO < no_n < 84NO,wind < onshore < onshore_c,none,none,capaConv,5.358973170540223,one node
+30th < 2040,nonEU < NO < no_n < 85NO,wind < onshore < onshore_c,none,none,capaConv,3.0854390012718684,one node
+30th < 2040,nonEU < NO < no_s < 79NO,wind < onshore < onshore_c,none,none,capaConv,2.3111673524307225e-5,one node
+30th < 2040,nonEU < UK < ni < 95UK,wind < onshore < onshore_c,none,none,capaConv,0.3356302562022734,one node
+30th < 2040,nonEU < UK < uk < 93UK,wind < onshore < onshore_c,none,none,capaConv,5.869670604780327,one node
+30th < 2040,EU,transport < bev < bevFrtRoadLight,none,none,expConv,156.93942186821647,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadLight,none,none,expConv,22.48949490598193,one node
+30th < 2040,EU,transport < bev < bevFrtRoadLight,none,1,capaStOut,156.93942186821644,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadLight,none,1,capaStOut,22.48949490598193,one node
+30th < 2040,EU,transport < bev < bevFrtRoadLight,none,1,capaStSize,784.6971093410823,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadLight,none,1,capaStSize,112.44747452990964,one node
+30th < 2040,EU,transport < bev < bevFrtRoadLight,none,1,expStSize,784.6971093410823,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadLight,none,1,expStSize,112.44747452990964,one node
+30th < 2040,EU,transport < bev < bevFrtRoadLight,none,1,expStOut,156.93942186821647,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadLight,none,1,expStOut,22.48949490598193,one node
+30th < 2040,EU,transport < bev < bevFrtRoadLight,none,none,capaConv,156.93942186821644,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadLight,none,none,capaConv,22.48949490598193,one node
+30th < 2040,EU,transport < bev < bevFrtRoadLight,none,1,capaStIn,156.93942186821644,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadLight,none,1,capaStIn,22.48949490598193,one node
+30th < 2040,EU,transport < bev < bevFrtRoadLight,none,1,expStIn,156.93942186821647,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadLight,none,1,expStIn,22.48949490598193,one node
+30th < 2040,EU < BE < be < 28BE,wind < onshore < onshore_a,none,none,expConv,18.182144852007735,one node
+30th < 2040,EU < CZ < cz < 39CZ,wind < onshore < onshore_a,none,none,expConv,13.681343817317336,one node
+30th < 2040,EU < CZ < cz < 40CZ,wind < onshore < onshore_a,none,none,expConv,2.6558487103015284e-5,one node
+30th < 2040,EU < DE < de < 34DE,wind < onshore < onshore_a,none,none,expConv,5.294042623092318e-5,one node
+30th < 2040,EU < DK < dk_e < 72DK,wind < onshore < onshore_a,none,none,expConv,3.546520488043646e-5,one node
+30th < 2040,EU < DK < dk_w < 38DK,wind < onshore < onshore_a,none,none,expConv,1.1361082690315795e-5,one node
+30th < 2040,EU < EE < ee < 73EE,wind < onshore < onshore_a,none,none,expConv,6.834039889106171,one node
+30th < 2040,EU < ES < es < 02ES,wind < onshore < onshore_a,none,none,expConv,30.387801660305563,one node
+30th < 2040,EU < ES < es < 04ES,wind < onshore < onshore_a,none,none,expConv,5.074390452017158,one node
+30th < 2040,EU < ES < es < 05ES,wind < onshore < onshore_a,none,none,expConv,8.48609907618068,one node
+30th < 2040,EU < ES < es < 07ES,wind < onshore < onshore_a,none,none,expConv,0.9273718283776634,one node
+30th < 2040,EU < ES < es < 08ES,wind < onshore < onshore_a,none,none,expConv,4.329556399738665e-5,one node
+30th < 2040,EU < FI < fi < 74FI,wind < onshore < onshore_a,none,none,expConv,1.708284041479019e-5,one node
+30th < 2040,EU < FI < fi < 75FI,wind < onshore < onshore_a,none,none,expConv,30.515400880717927,one node
+30th < 2040,EU < FR < fr < 15FR,wind < onshore < onshore_a,none,none,expConv,2.217226647280672e-5,one node
+30th < 2040,EU < FR < fr < 25FR,wind < onshore < onshore_a,none,none,expConv,1.023204822258194e-5,one node
+30th < 2040,EU < HR < hr < 62HR,wind < onshore < onshore_a,none,none,expConv,12.7570009880605,one node
+30th < 2040,EU < IE < ie < 96IE,wind < onshore < onshore_a,none,none,expConv,49.40354605302056,one node
+30th < 2040,EU < IT < it_cn < 53IT,wind < onshore < onshore_a,none,none,expConv,4.150918899325871,one node
+30th < 2040,EU < IT < it_n < 52IT,wind < onshore < onshore_a,none,none,expConv,4.723660566893226,one node
+30th < 2040,EU < LV < lv < 78LV,wind < onshore < onshore_a,none,none,expConv,7.925408916506569,one node
+30th < 2040,EU < NL < nl < 30NL,wind < onshore < onshore_a,none,none,expConv,15.521768817294728,one node
+30th < 2040,EU < PL < pl < 41PL,wind < onshore < onshore_a,none,none,expConv,1.5443241511773028e-5,one node
+30th < 2040,EU < PL < pl < 42PL,wind < onshore < onshore_a,none,none,expConv,1.2963548312720908e-5,one node
+30th < 2040,EU < PL < pl < 44PL,wind < onshore < onshore_a,none,none,expConv,1.3934778229431016e-5,one node
+30th < 2040,EU < PT < pt < 12PT,wind < onshore < onshore_a,none,none,expConv,8.168624265164457,one node
+30th < 2040,EU < PT < pt < 13PT,wind < onshore < onshore_a,none,none,expConv,19.059286435278892,one node
+30th < 2040,EU < RO < ro < 59RO,wind < onshore < onshore_a,none,none,expConv,31.113365322596604,one node
+30th < 2040,EU < SE < se_1 < 86SE,wind < onshore < onshore_a,none,none,expConv,32.15083764201991,one node
+30th < 2040,EU < SE < se_2 < 87SE,wind < onshore < onshore_a,none,none,expConv,6.619715882818634,one node
+30th < 2040,EU < SE < se_3 < 88SE,wind < onshore < onshore_a,none,none,expConv,10.338164508204795,one node
+30th < 2040,EU < SE < se_4 < 89SE,wind < onshore < onshore_a,none,none,expConv,11.241101330159118,one node
+30th < 2040,nonEU < BA < ba < 63BA,wind < onshore < onshore_a,none,none,expConv,11.277107726079256,one node
+30th < 2040,nonEU < NO < no_m < 83NO,wind < onshore < onshore_a,none,none,expConv,1.2994084551748106,one node
+30th < 2040,nonEU < NO < no_n < 85NO,wind < onshore < onshore_a,none,none,expConv,2.846900212765414,one node
+30th < 2040,nonEU < NO < no_s < 80NO,wind < onshore < onshore_a,none,none,expConv,2.241855035655857e-5,one node
+30th < 2040,nonEU < NO < no_s < 81NO,wind < onshore < onshore_a,none,none,expConv,1.2205438694004638,one node
+30th < 2040,nonEU < NO < no_s < 82NO,wind < onshore < onshore_a,none,none,expConv,3.927481617110174,one node
+30th < 2040,nonEU < UK < ni < 95UK,wind < onshore < onshore_a,none,none,expConv,20.8400007943867,one node
+30th < 2040,nonEU < UK < uk < 93UK,wind < onshore < onshore_a,none,none,expConv,71.57990699940848,one node
+30th < 2040,nonEU < UK < uk < 94UK,wind < onshore < onshore_a,none,none,expConv,6.660009729111728,one node
+30th < 2040,EU < BE < be < 28BE,wind < onshore < onshore_a,none,none,capaConv,18.182144852007735,one node
+30th < 2040,EU < CZ < cz < 39CZ,wind < onshore < onshore_a,none,none,capaConv,13.681343817317334,one node
+30th < 2040,EU < CZ < cz < 40CZ,wind < onshore < onshore_a,none,none,capaConv,2.6558487103015284e-5,one node
+30th < 2040,EU < DE < de < 34DE,wind < onshore < onshore_a,none,none,capaConv,5.294042623092318e-5,one node
+30th < 2040,EU < DK < dk_e < 72DK,wind < onshore < onshore_a,none,none,capaConv,3.546520488043646e-5,one node
+30th < 2040,EU < DK < dk_w < 38DK,wind < onshore < onshore_a,none,none,capaConv,1.1361082690315795e-5,one node
+30th < 2040,EU < EE < ee < 73EE,wind < onshore < onshore_a,none,none,capaConv,6.834039889106171,one node
+30th < 2040,EU < ES < es < 02ES,wind < onshore < onshore_a,none,none,capaConv,30.387801660305563,one node
+30th < 2040,EU < ES < es < 04ES,wind < onshore < onshore_a,none,none,capaConv,5.074390452017158,one node
+30th < 2040,EU < ES < es < 05ES,wind < onshore < onshore_a,none,none,capaConv,8.48609907618068,one node
+30th < 2040,EU < ES < es < 07ES,wind < onshore < onshore_a,none,none,capaConv,0.9273718283776634,one node
+30th < 2040,EU < ES < es < 08ES,wind < onshore < onshore_a,none,none,capaConv,4.329556399738665e-5,one node
+30th < 2040,EU < FI < fi < 74FI,wind < onshore < onshore_a,none,none,capaConv,1.708284041479019e-5,one node
+30th < 2040,EU < FI < fi < 75FI,wind < onshore < onshore_a,none,none,capaConv,30.515400880717923,one node
+30th < 2040,EU < FR < fr < 15FR,wind < onshore < onshore_a,none,none,capaConv,2.2172266472806725e-5,one node
+30th < 2040,EU < FR < fr < 25FR,wind < onshore < onshore_a,none,none,capaConv,1.023204822258194e-5,one node
+30th < 2040,EU < HR < hr < 62HR,wind < onshore < onshore_a,none,none,capaConv,12.757000988060502,one node
+30th < 2040,EU < IE < ie < 96IE,wind < onshore < onshore_a,none,none,capaConv,49.40354605302057,one node
+30th < 2040,EU < IT < it_cn < 53IT,wind < onshore < onshore_a,none,none,capaConv,4.150918899325871,one node
+30th < 2040,EU < IT < it_n < 52IT,wind < onshore < onshore_a,none,none,capaConv,4.723660566893226,one node
+30th < 2040,EU < LV < lv < 78LV,wind < onshore < onshore_a,none,none,capaConv,7.925408916506568,one node
+30th < 2040,EU < NL < nl < 30NL,wind < onshore < onshore_a,none,none,capaConv,15.52176881729473,one node
+30th < 2040,EU < PL < pl < 41PL,wind < onshore < onshore_a,none,none,capaConv,1.5443241511773028e-5,one node
+30th < 2040,EU < PL < pl < 42PL,wind < onshore < onshore_a,none,none,capaConv,1.2963548312720908e-5,one node
+30th < 2040,EU < PL < pl < 44PL,wind < onshore < onshore_a,none,none,capaConv,1.3934778229431016e-5,one node
+30th < 2040,EU < PT < pt < 12PT,wind < onshore < onshore_a,none,none,capaConv,8.168624265164457,one node
+30th < 2040,EU < PT < pt < 13PT,wind < onshore < onshore_a,none,none,capaConv,19.059286435278892,one node
+30th < 2040,EU < RO < ro < 59RO,wind < onshore < onshore_a,none,none,capaConv,31.113365322596604,one node
+30th < 2040,EU < SE < se_1 < 86SE,wind < onshore < onshore_a,none,none,capaConv,32.15083764201991,one node
+30th < 2040,EU < SE < se_2 < 87SE,wind < onshore < onshore_a,none,none,capaConv,6.619715882818634,one node
+30th < 2040,EU < SE < se_3 < 88SE,wind < onshore < onshore_a,none,none,capaConv,10.338164508204795,one node
+30th < 2040,EU < SE < se_4 < 89SE,wind < onshore < onshore_a,none,none,capaConv,11.241101330159117,one node
+30th < 2040,nonEU < BA < ba < 63BA,wind < onshore < onshore_a,none,none,capaConv,11.277107726079256,one node
+30th < 2040,nonEU < NO < no_m < 83NO,wind < onshore < onshore_a,none,none,capaConv,1.2994084551748104,one node
+30th < 2040,nonEU < NO < no_n < 85NO,wind < onshore < onshore_a,none,none,capaConv,2.8469002127654144,one node
+30th < 2040,nonEU < NO < no_s < 80NO,wind < onshore < onshore_a,none,none,capaConv,2.241855035655857e-5,one node
+30th < 2040,nonEU < NO < no_s < 81NO,wind < onshore < onshore_a,none,none,capaConv,1.2205438694004638,one node
+30th < 2040,nonEU < NO < no_s < 82NO,wind < onshore < onshore_a,none,none,capaConv,3.9274816171101743,one node
+30th < 2040,nonEU < UK < ni < 95UK,wind < onshore < onshore_a,none,none,capaConv,20.840000794386697,one node
+30th < 2040,nonEU < UK < uk < 93UK,wind < onshore < onshore_a,none,none,capaConv,71.57990699940848,one node
+30th < 2040,nonEU < UK < uk < 94UK,wind < onshore < onshore_a,none,none,capaConv,6.660009729111728,one node
+30th < 2040,EU,hydro < reservoir,none,1,capaStOut,70.58500000000001,one node
+30th < 2040,nonEU,hydro < reservoir,none,1,capaStOut,47.356,one node
+30th < 2040,EU,hydro < reservoir,none,1,capaStSize,74675.4,one node
+30th < 2040,nonEU,hydro < reservoir,none,1,capaStSize,146517.08000000002,one node
+30th < 2040,EU < AT < at < 50AT,solar < openspace_a < pvOpenspace_a,none,none,expConv,1.7535580705845607e-5,one node
+30th < 2040,EU < AT < at < 51AT,solar < openspace_a < pvOpenspace_a,none,none,expConv,2.182823787911547e-5,one node
+30th < 2040,EU < BG < bg < 66BG,solar < openspace_a < pvOpenspace_a,none,none,expConv,3.033957556955647,one node
+30th < 2040,EU < ES < es < 01ES,solar < openspace_a < pvOpenspace_a,none,none,expConv,3.7606732065935846,one node
+30th < 2040,EU < ES < es < 02ES,solar < openspace_a < pvOpenspace_a,none,none,expConv,6.266447325106559,one node
+30th < 2040,EU < ES < es < 03ES,solar < openspace_a < pvOpenspace_a,none,none,expConv,2.28152053510374,one node
+30th < 2040,EU < ES < es < 04ES,solar < openspace_a < pvOpenspace_a,none,none,expConv,3.182827142449111,one node
+30th < 2040,EU < ES < es < 05ES,solar < openspace_a < pvOpenspace_a,none,none,expConv,22.420292913722566,one node
+30th < 2040,EU < ES < es < 06ES,solar < openspace_a < pvOpenspace_a,none,none,expConv,9.264886759012406,one node
+30th < 2040,EU < ES < es < 07ES,solar < openspace_a < pvOpenspace_a,none,none,expConv,0.14286545775617795,one node
+30th < 2040,EU < ES < es < 08ES,solar < openspace_a < pvOpenspace_a,none,none,expConv,36.39391331967439,one node
+30th < 2040,EU < ES < es < 09ES,solar < openspace_a < pvOpenspace_a,none,none,expConv,13.284461236498215,one node
+30th < 2040,EU < ES < es < 10ES,solar < openspace_a < pvOpenspace_a,none,none,expConv,11.980550702678629,one node
+30th < 2040,EU < ES < es < 11ES,solar < openspace_a < pvOpenspace_a,none,none,expConv,10.719462981955882,one node
+30th < 2040,EU < FR < fr < 14FR,solar < openspace_a < pvOpenspace_a,none,none,expConv,1.563946587496749e-5,one node
+30th < 2040,EU < FR < fr < 15FR,solar < openspace_a < pvOpenspace_a,none,none,expConv,1.0608990163377364e-5,one node
+30th < 2040,EU < FR < fr < 16FR,solar < openspace_a < pvOpenspace_a,none,none,expConv,0.00012038500529687009,one node
+30th < 2040,EU < FR < fr < 19FR,solar < openspace_a < pvOpenspace_a,none,none,expConv,2.144208446066409e-5,one node
+30th < 2040,EU < FR < fr_co < 99FR,solar < openspace_a < pvOpenspace_a,none,none,expConv,0.2166085214563388,one node
+30th < 2040,EU < GR < gr < 68GR,solar < openspace_a < pvOpenspace_a,none,none,expConv,14.972000519103258,one node
+30th < 2040,EU < GR < gr < 69GR,solar < openspace_a < pvOpenspace_a,none,none,expConv,16.10265842941214,one node
+30th < 2040,EU < HR < hr < 62HR,solar < openspace_a < pvOpenspace_a,none,none,expConv,13.95012706790675,one node
+30th < 2040,EU < IT < it_cn < 53IT,solar < openspace_a < pvOpenspace_a,none,none,expConv,3.17399309128327e-5,one node
+30th < 2040,EU < IT < it_cs < 54IT,solar < openspace_a < pvOpenspace_a,none,none,expConv,4.4382608356323755e-5,one node
+30th < 2040,EU < IT < it_n < 52IT,solar < openspace_a < pvOpenspace_a,none,none,expConv,20.65841079543901,one node
+30th < 2040,EU < IT < it_s < 55IT,solar < openspace_a < pvOpenspace_a,none,none,expConv,8.383610108609172,one node
+30th < 2040,EU < IT < it_sar < 98IT,solar < openspace_a < pvOpenspace_a,none,none,expConv,8.592624685618922,one node
+30th < 2040,EU < IT < it_sic < 56IT,solar < openspace_a < pvOpenspace_a,none,none,expConv,13.637667736276413,one node
+30th < 2040,EU < PT < pt < 12PT,solar < openspace_a < pvOpenspace_a,none,none,expConv,8.359243011925276,one node
+30th < 2040,EU < PT < pt < 13PT,solar < openspace_a < pvOpenspace_a,none,none,expConv,13.193869482648548,one node
+30th < 2040,EU < RO < ro < 59RO,solar < openspace_a < pvOpenspace_a,none,none,expConv,20.166508488925544,one node
+30th < 2040,EU < RO < ro < 60RO,solar < openspace_a < pvOpenspace_a,none,none,expConv,48.938183461474466,one node
+30th < 2040,EU < RO < ro < 61RO,solar < openspace_a < pvOpenspace_a,none,none,expConv,12.265813443672197,one node
+30th < 2040,nonEU < AL < al < 70AL,solar < openspace_a < pvOpenspace_a,none,none,expConv,1.0422001936751069,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < openspace_a < pvOpenspace_a,none,none,expConv,9.786659133529124,one node
+30th < 2040,nonEU < CH < ch < 47CH,solar < openspace_a < pvOpenspace_a,none,none,expConv,1.4325964197706089e-5,one node
+30th < 2040,nonEU < ME < me < 64ME,solar < openspace_a < pvOpenspace_a,none,none,expConv,2.4183462286497006,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < openspace_a < pvOpenspace_a,none,none,expConv,5.177090998917512,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < openspace_a < pvOpenspace_a,none,none,expConv,58.51369710933561,one node
+30th < 2040,nonEU < UK < ni < 95UK,solar < openspace_a < pvOpenspace_a,none,none,expConv,1.5555358684448827e-5,one node
+30th < 2040,nonEU < UK < uk < 90UK,solar < openspace_a < pvOpenspace_a,none,none,expConv,2.377289266187247e-5,one node
+30th < 2040,nonEU < UK < uk < 91UK,solar < openspace_a < pvOpenspace_a,none,none,expConv,1.9145327324182943e-5,one node
+30th < 2040,nonEU < UK < uk < 92UK,solar < openspace_a < pvOpenspace_a,none,none,expConv,1.2518634164591472e-5,one node
+30th < 2040,nonEU < UK < uk < 93UK,solar < openspace_a < pvOpenspace_a,none,none,expConv,1.1050025519694489e-5,one node
+30th < 2040,EU < AT < at < 50AT,solar < openspace_a < pvOpenspace_a,none,none,capaConv,1.7535580705845607e-5,one node
+30th < 2040,EU < AT < at < 51AT,solar < openspace_a < pvOpenspace_a,none,none,capaConv,2.182823787911547e-5,one node
+30th < 2040,EU < BG < bg < 66BG,solar < openspace_a < pvOpenspace_a,none,none,capaConv,3.0339575569556474,one node
+30th < 2040,EU < ES < es < 01ES,solar < openspace_a < pvOpenspace_a,none,none,capaConv,3.7606732065935846,one node
+30th < 2040,EU < ES < es < 02ES,solar < openspace_a < pvOpenspace_a,none,none,capaConv,6.266447325106558,one node
+30th < 2040,EU < ES < es < 03ES,solar < openspace_a < pvOpenspace_a,none,none,capaConv,2.2815205351037404,one node
+30th < 2040,EU < ES < es < 04ES,solar < openspace_a < pvOpenspace_a,none,none,capaConv,3.182827142449111,one node
+30th < 2040,EU < ES < es < 05ES,solar < openspace_a < pvOpenspace_a,none,none,capaConv,22.420292913722566,one node
+30th < 2040,EU < ES < es < 06ES,solar < openspace_a < pvOpenspace_a,none,none,capaConv,9.264886759012406,one node
+30th < 2040,EU < ES < es < 07ES,solar < openspace_a < pvOpenspace_a,none,none,capaConv,0.14286545775617795,one node
+30th < 2040,EU < ES < es < 08ES,solar < openspace_a < pvOpenspace_a,none,none,capaConv,36.39391331967439,one node
+30th < 2040,EU < ES < es < 09ES,solar < openspace_a < pvOpenspace_a,none,none,capaConv,13.284461236498215,one node
+30th < 2040,EU < ES < es < 10ES,solar < openspace_a < pvOpenspace_a,none,none,capaConv,11.98055070267863,one node
+30th < 2040,EU < ES < es < 11ES,solar < openspace_a < pvOpenspace_a,none,none,capaConv,10.719462981955882,one node
+30th < 2040,EU < FR < fr < 14FR,solar < openspace_a < pvOpenspace_a,none,none,capaConv,1.563946587496749e-5,one node
+30th < 2040,EU < FR < fr < 15FR,solar < openspace_a < pvOpenspace_a,none,none,capaConv,1.0608990163377362e-5,one node
+30th < 2040,EU < FR < fr < 16FR,solar < openspace_a < pvOpenspace_a,none,none,capaConv,0.00012038500529687009,one node
+30th < 2040,EU < FR < fr < 19FR,solar < openspace_a < pvOpenspace_a,none,none,capaConv,2.1442084460664088e-5,one node
+30th < 2040,EU < FR < fr_co < 99FR,solar < openspace_a < pvOpenspace_a,none,none,capaConv,0.21660852145633883,one node
+30th < 2040,EU < GR < gr < 68GR,solar < openspace_a < pvOpenspace_a,none,none,capaConv,14.972000519103258,one node
+30th < 2040,EU < GR < gr < 69GR,solar < openspace_a < pvOpenspace_a,none,none,capaConv,16.102658429412138,one node
+30th < 2040,EU < HR < hr < 62HR,solar < openspace_a < pvOpenspace_a,none,none,capaConv,13.95012706790675,one node
+30th < 2040,EU < IT < it_cn < 53IT,solar < openspace_a < pvOpenspace_a,none,none,capaConv,3.17399309128327e-5,one node
+30th < 2040,EU < IT < it_cs < 54IT,solar < openspace_a < pvOpenspace_a,none,none,capaConv,4.438260835632375e-5,one node
+30th < 2040,EU < IT < it_n < 52IT,solar < openspace_a < pvOpenspace_a,none,none,capaConv,20.658410795439007,one node
+30th < 2040,EU < IT < it_s < 55IT,solar < openspace_a < pvOpenspace_a,none,none,capaConv,8.383610108609172,one node
+30th < 2040,EU < IT < it_sar < 98IT,solar < openspace_a < pvOpenspace_a,none,none,capaConv,8.592624685618922,one node
+30th < 2040,EU < IT < it_sic < 56IT,solar < openspace_a < pvOpenspace_a,none,none,capaConv,13.637667736276413,one node
+30th < 2040,EU < PT < pt < 12PT,solar < openspace_a < pvOpenspace_a,none,none,capaConv,8.359243011925276,one node
+30th < 2040,EU < PT < pt < 13PT,solar < openspace_a < pvOpenspace_a,none,none,capaConv,13.193869482648548,one node
+30th < 2040,EU < RO < ro < 59RO,solar < openspace_a < pvOpenspace_a,none,none,capaConv,20.166508488925544,one node
+30th < 2040,EU < RO < ro < 60RO,solar < openspace_a < pvOpenspace_a,none,none,capaConv,48.93818346147446,one node
+30th < 2040,EU < RO < ro < 61RO,solar < openspace_a < pvOpenspace_a,none,none,capaConv,12.265813443672197,one node
+30th < 2040,nonEU < AL < al < 70AL,solar < openspace_a < pvOpenspace_a,none,none,capaConv,1.0422001936751069,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < openspace_a < pvOpenspace_a,none,none,capaConv,9.786659133529124,one node
+30th < 2040,nonEU < CH < ch < 47CH,solar < openspace_a < pvOpenspace_a,none,none,capaConv,1.4325964197706089e-5,one node
+30th < 2040,nonEU < ME < me < 64ME,solar < openspace_a < pvOpenspace_a,none,none,capaConv,2.4183462286497,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < openspace_a < pvOpenspace_a,none,none,capaConv,5.177090998917512,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < openspace_a < pvOpenspace_a,none,none,capaConv,58.5136971093356,one node
+30th < 2040,nonEU < UK < ni < 95UK,solar < openspace_a < pvOpenspace_a,none,none,capaConv,1.5555358684448827e-5,one node
+30th < 2040,nonEU < UK < uk < 90UK,solar < openspace_a < pvOpenspace_a,none,none,capaConv,2.3772892661872465e-5,one node
+30th < 2040,nonEU < UK < uk < 91UK,solar < openspace_a < pvOpenspace_a,none,none,capaConv,1.9145327324182943e-5,one node
+30th < 2040,nonEU < UK < uk < 92UK,solar < openspace_a < pvOpenspace_a,none,none,capaConv,1.2518634164591474e-5,one node
+30th < 2040,nonEU < UK < uk < 93UK,solar < openspace_a < pvOpenspace_a,none,none,capaConv,1.105002551969449e-5,one node
+30th < 2040,EU,bioConversionHvc < biomassToHvc,none,none,expConv,44.63637636191316,one node
+30th < 2040,nonEU,bioConversionHvc < biomassToHvc,none,none,expConv,11.812807765354332,one node
+30th < 2040,EU,bioConversionHvc < biomassToHvc,none,none,capaConv,44.63637636191316,one node
+30th < 2040,nonEU,bioConversionHvc < biomassToHvc,none,none,capaConv,11.812807765354332,one node
+30th < 2040,EU < ES < es < 02ES,solar < rooftopInd_b < pvInd_b,none,none,expConv,1.1682818380100826e-5,one node
+30th < 2040,EU < ES < es < 03ES,solar < rooftopInd_b < pvInd_b,none,none,expConv,1.0374549313279441e-5,one node
+30th < 2040,EU < ES < es < 04ES,solar < rooftopInd_b < pvInd_b,none,none,expConv,2.6967149145874014,one node
+30th < 2040,EU < ES < es < 05ES,solar < rooftopInd_b < pvInd_b,none,none,expConv,2.8500750050933634,one node
+30th < 2040,EU < ES < es < 06ES,solar < rooftopInd_b < pvInd_b,none,none,expConv,8.430409477827109,one node
+30th < 2040,EU < ES < es < 07ES,solar < rooftopInd_b < pvInd_b,none,none,expConv,1.129106208313619,one node
+30th < 2040,EU < ES < es < 08ES,solar < rooftopInd_b < pvInd_b,none,none,expConv,2.8077655422285863,one node
+30th < 2040,EU < ES < es < 09ES,solar < rooftopInd_b < pvInd_b,none,none,expConv,1.2875263633909322,one node
+30th < 2040,EU < ES < es < 10ES,solar < rooftopInd_b < pvInd_b,none,none,expConv,3.2483762397456606,one node
+30th < 2040,EU < ES < es < 11ES,solar < rooftopInd_b < pvInd_b,none,none,expConv,10.056478608081862,one node
+30th < 2040,EU < GR < gr < 68GR,solar < rooftopInd_b < pvInd_b,none,none,expConv,2.831125558377262e-5,one node
+30th < 2040,EU < GR < gr < 69GR,solar < rooftopInd_b < pvInd_b,none,none,expConv,5.488269068825358,one node
+30th < 2040,EU < PT < pt < 12PT,solar < rooftopInd_b < pvInd_b,none,none,expConv,2.675393350416903,one node
+30th < 2040,EU < PT < pt < 13PT,solar < rooftopInd_b < pvInd_b,none,none,expConv,3.428562775626318,one node
+30th < 2040,EU < RO < ro < 59RO,solar < rooftopInd_b < pvInd_b,none,none,expConv,1.2139518254443517e-5,one node
+30th < 2040,EU < RO < ro < 60RO,solar < rooftopInd_b < pvInd_b,none,none,expConv,2.7826218108108344e-5,one node
+30th < 2040,EU < RO < ro < 61RO,solar < rooftopInd_b < pvInd_b,none,none,expConv,8.558825555810168,one node
+30th < 2040,nonEU < AL < al < 70AL,solar < rooftopInd_b < pvInd_b,none,none,expConv,1.638229945287363e-5,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < rooftopInd_b < pvInd_b,none,none,expConv,0.6971263503542833,one node
+30th < 2040,nonEU < ME < me < 64ME,solar < rooftopInd_b < pvInd_b,none,none,expConv,2.2684631847320736e-5,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < rooftopInd_b < pvInd_b,none,none,expConv,1.6247386562479636e-5,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < rooftopInd_b < pvInd_b,none,none,expConv,1.062318028479224e-5,one node
+30th < 2040,EU < ES < es < 02ES,solar < rooftopInd_b < pvInd_b,none,none,capaConv,1.1682818380100826e-5,one node
+30th < 2040,EU < ES < es < 03ES,solar < rooftopInd_b < pvInd_b,none,none,capaConv,1.0374549313279441e-5,one node
+30th < 2040,EU < ES < es < 04ES,solar < rooftopInd_b < pvInd_b,none,none,capaConv,2.6967149145874014,one node
+30th < 2040,EU < ES < es < 05ES,solar < rooftopInd_b < pvInd_b,none,none,capaConv,2.850075005093363,one node
+30th < 2040,EU < ES < es < 06ES,solar < rooftopInd_b < pvInd_b,none,none,capaConv,8.430409477827109,one node
+30th < 2040,EU < ES < es < 07ES,solar < rooftopInd_b < pvInd_b,none,none,capaConv,1.1291062083136187,one node
+30th < 2040,EU < ES < es < 08ES,solar < rooftopInd_b < pvInd_b,none,none,capaConv,2.8077655422285868,one node
+30th < 2040,EU < ES < es < 09ES,solar < rooftopInd_b < pvInd_b,none,none,capaConv,1.2875263633909322,one node
+30th < 2040,EU < ES < es < 10ES,solar < rooftopInd_b < pvInd_b,none,none,capaConv,3.248376239745661,one node
+30th < 2040,EU < ES < es < 11ES,solar < rooftopInd_b < pvInd_b,none,none,capaConv,10.056478608081862,one node
+30th < 2040,EU < GR < gr < 68GR,solar < rooftopInd_b < pvInd_b,none,none,capaConv,2.831125558377262e-5,one node
+30th < 2040,EU < GR < gr < 69GR,solar < rooftopInd_b < pvInd_b,none,none,capaConv,5.488269068825358,one node
+30th < 2040,EU < PT < pt < 12PT,solar < rooftopInd_b < pvInd_b,none,none,capaConv,2.675393350416903,one node
+30th < 2040,EU < PT < pt < 13PT,solar < rooftopInd_b < pvInd_b,none,none,capaConv,3.428562775626318,one node
+30th < 2040,EU < RO < ro < 59RO,solar < rooftopInd_b < pvInd_b,none,none,capaConv,1.2139518254443517e-5,one node
+30th < 2040,EU < RO < ro < 60RO,solar < rooftopInd_b < pvInd_b,none,none,capaConv,2.7826218108108347e-5,one node
+30th < 2040,EU < RO < ro < 61RO,solar < rooftopInd_b < pvInd_b,none,none,capaConv,8.55882555581017,one node
+30th < 2040,nonEU < AL < al < 70AL,solar < rooftopInd_b < pvInd_b,none,none,capaConv,1.638229945287363e-5,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < rooftopInd_b < pvInd_b,none,none,capaConv,0.6971263503542832,one node
+30th < 2040,nonEU < ME < me < 64ME,solar < rooftopInd_b < pvInd_b,none,none,capaConv,2.2684631847320733e-5,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < rooftopInd_b < pvInd_b,none,none,capaConv,1.6247386562479636e-5,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < rooftopInd_b < pvInd_b,none,none,capaConv,1.0623180284792242e-5,one node
+30th < 2040,EU < ES < es < 02ES,solar < rooftopResi_b < pvResi_b,none,none,expConv,1.9840416334557344e-5,one node
+30th < 2040,EU < ES < es < 10ES,solar < rooftopResi_b < pvResi_b,none,none,expConv,1.031855835624432e-5,one node
+30th < 2040,EU < ES < es < 02ES,solar < rooftopResi_b < pvResi_b,none,none,capaConv,1.9840416334557344e-5,one node
+30th < 2040,EU < ES < es < 10ES,solar < rooftopResi_b < pvResi_b,none,none,capaConv,1.031855835624432e-5,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProLow,electricity,none,use,-2.2247444563008956e-5,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProLow,electricity,none,use,-3.6697484932780324e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProMed,electricity,none,use,-168.296110542005,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProMed,electricity,none,use,-37.37999408691666,one node
+30th < 2040,EU,networkHeat < boilerNetwork < eBoilerDh,electricity,none,use,-56.985687344457645,one node
+30th < 2040,nonEU,networkHeat < boilerNetwork < eBoilerDh,electricity,none,use,-18.85158630645232,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProHigh,electricity,none,use,-19.441063414128823,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProHigh,electricity,none,use,-0.5510012953836552,one node
+30th < 2040,EU,proHeat < h2BoilerPro < h2BoilerProHigh,h2,none,use,-621.9476544745564,one node
+30th < 2040,nonEU,proHeat < h2BoilerPro < h2BoilerProHigh,h2,none,use,-60.530265987271584,one node
+30th < 2040,EU,proHeat < wasteBoilerPro < wasteBoilerProHigh,waste,none,use,-104.80426863602774,one node
+30th < 2040,nonEU,proHeat < wasteBoilerPro < wasteBoilerProHigh,waste,none,use,-25.47398673207034,one node
+30th < 2040,EU,ccs < co2Disposal,co2 < co2Pure,none,use,-331.2845108774604,one node
+30th < 2040,nonEU,ccs < co2Disposal,co2 < co2Pure,none,use,-0.8010988520070051,one node
+30th < 2040,EU,transport < ePsngRail,electricity,none,use,-22.569041210869162,one node
+30th < 2040,nonEU,transport < ePsngRail,electricity,none,use,-5.590747649992118,one node
+30th < 2040,EU,powerToX < avaAndNaviTech,refinedOil,none,use,-604.57654401216,one node
+30th < 2040,nonEU,powerToX < avaAndNaviTech,refinedOil,none,use,-202.27925789736,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpAirProLow,electricity,none,use,-1.776659729455831e-5,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpAirProLow,electricity,none,use,-1.693243274633331e-5,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlSludge,biomass < sludge,none,use,-7.737283035657816,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlSludge,biomass < sludge,none,use,-1.720923896405693,one node
+30th < 2040,EU,transport < eFrtRail,electricity,none,use,-14.370861063100437,one node
+30th < 2040,nonEU,transport < eFrtRail,electricity,none,use,-1.2517402182454198,one node
+30th < 2040,EU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,h2,none,use,-173.10828373483236,one node
+30th < 2040,nonEU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,h2,none,use,-40.76386366516839,one node
+30th < 2040,EU,networkHeat < heatpumpNetwork < heatpumpGroundDh,electricity,none,use,-434.79024593178957,one node
+30th < 2040,nonEU,networkHeat < heatpumpNetwork < heatpumpGroundDh,electricity,none,use,-81.92086852522014,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlManure,biomass < manure,none,use,-152.32799499641226,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlManure,biomass < manure,none,use,-27.01262058328864,one node
+30th < 2040,EU,networkHeat < heatGrid < districtHeatSpace,districtHeat,none,use,-1817.0218654111275,one node
+30th < 2040,nonEU,networkHeat < heatGrid < districtHeatSpace,districtHeat,none,use,-361.1350082681106,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,electricity,none,use,-251.4128297189624,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,electricity,none,use,-20.515105133119523,one node
+30th < 2040,EU,powerToX < refinery,crudeOil,none,use,-1087.9251264138968,one node
+30th < 2040,nonEU,powerToX < refinery,crudeOil,none,use,-382.08690887248935,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlGreenWaste,biomass < greenWaste,none,use,-140.0068912068692,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlGreenWaste,biomass < greenWaste,none,use,-26.55632509703292,one node
+30th < 2040,EU,fossil < oil < oilToHvc,refinedOil,none,use,-428.9523288054277,one node
+30th < 2040,EU,fossil < oil < oilToHvc,electricity,none,use,-8.754129209143787,one node
+30th < 2040,nonEU,fossil < oil < oilToHvc,refinedOil,none,use,-160.70330611145144,one node
+30th < 2040,nonEU,fossil < oil < oilToHvc,electricity,none,use,-3.279659471202338,one node
+30th < 2040,EU,powerToX < electrolysis < alkElectrolysis,electricity,none,use,-1099.636586084667,one node
+30th < 2040,nonEU,powerToX < electrolysis < alkElectrolysis,electricity,none,use,-140.09922779841392,one node
+30th < 2040,EU,networkHeat < heatGrid < districtHeatPro,districtHeat,none,use,-100.08977027490135,one node
+30th < 2040,nonEU,networkHeat < heatGrid < districtHeatPro,districtHeat,none,use,-2.1054730925554095,one node
+30th < 2040,EU,powerToX < directAirCapture,electricity,none,use,-67.04567397017263,one node
+30th < 2040,EU,powerToX < directAirCapture,processHeat_low,none,use,-425.937222869332,one node
+30th < 2040,nonEU,powerToX < directAirCapture,electricity,none,use,-0.16212630730903874,one node
+30th < 2040,nonEU,powerToX < directAirCapture,processHeat_low,none,use,-1.0299788934927179,one node
+30th < 2040,EU,transport < oberFrtRoadHeavy,electricity,none,use,-2.1355534518661146e-5,one node
+30th < 2040,EU,chemConversion < gasToHvc,methane,none,use,-7.111361879357619e-5,one node
+30th < 2040,EU,chemConversion < gasToHvc,electricity,none,use,-1.2168249694010552e-5,one node
+30th < 2040,nonEU,chemConversion < gasToHvc,methane,none,use,-5.1033460225348e-5,one node
+30th < 2040,EU,powerToX < electrolysis < pemElectrolysis,electricity,none,use,-2.1662686678928675e-5,one node
+30th < 2040,nonEU,powerToX < electrolysis < pemElectrolysis,electricity,none,use,-2.156455559085718e-5,one node
+30th < 2040,EU,bioConversionHvc < biomassToHvc,biomass < wood,none,use,-378.1111724380273,one node
+30th < 2040,EU,bioConversionHvc < biomassToHvc,processHeat_high,none,use,-8.21130794819494,one node
+30th < 2040,EU,bioConversionHvc < biomassToHvc,electricity,none,use,-4.6921759594446035,one node
+30th < 2040,nonEU,bioConversionHvc < biomassToHvc,biomass < wood,none,use,-100.06534931716824,one node
+30th < 2040,nonEU,bioConversionHvc < biomassToHvc,processHeat_high,none,use,-2.17308427503333,one node
+30th < 2040,nonEU,bioConversionHvc < biomassToHvc,electricity,none,use,-1.2417624311024824,one node
+30th < 2040,EU < NL < nl < 30NL,wind < offshore < offshore_b,electricity,none,gen,1.097983873878338e-5,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProLow,processHeat_low,none,gen,1.0550144083377308e-5,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProLow,processHeat_low,none,gen,2.6059486237589352e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProMed,processHeat_medium,none,gen,589.0363868302732,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProMed,processHeat_medium,none,gen,130.82997921202727,one node
+30th < 2040,EU < AT < at < 50AT,wind < onshore < onshore_b,electricity,none,gen,46.89157306274508,one node
+30th < 2040,EU < AT < at < 51AT,wind < onshore < onshore_b,electricity,none,gen,1.4800432779421767e-5,one node
+30th < 2040,EU < BE < be < 28BE,wind < onshore < onshore_b,electricity,none,gen,7.671024577073895,one node
+30th < 2040,EU < BG < bg < 66BG,wind < onshore < onshore_b,electricity,none,gen,84.68308129721949,one node
+30th < 2040,EU < CZ < cz < 39CZ,wind < onshore < onshore_b,electricity,none,gen,1.3490920989404816e-5,one node
+30th < 2040,EU < CZ < cz < 40CZ,wind < onshore < onshore_b,electricity,none,gen,52.57865715759098,one node
+30th < 2040,EU < DE < de < 31DE,wind < onshore < onshore_b,electricity,none,gen,67.5791522217695,one node
+30th < 2040,EU < DE < de < 32DE,wind < onshore < onshore_b,electricity,none,gen,4.106338178454681e-5,one node
+30th < 2040,EU < DE < de < 33DE,wind < onshore < onshore_b,electricity,none,gen,1.693885567024502e-5,one node
+30th < 2040,EU < DE < de < 34DE,wind < onshore < onshore_b,electricity,none,gen,1.1835502888983515e-5,one node
+30th < 2040,EU < DE < de < 35DE,wind < onshore < onshore_b,electricity,none,gen,2.222449328817142e-5,one node
+30th < 2040,EU < DE < de < 36DE,wind < onshore < onshore_b,electricity,none,gen,1.8842474175046575e-5,one node
+30th < 2040,EU < DE < de < 37DE,wind < onshore < onshore_b,electricity,none,gen,2.2619259285181597e-5,one node
+30th < 2040,EU < DK < dk_w < 38DK,wind < onshore < onshore_b,electricity,none,gen,1.292140335989075e-5,one node
+30th < 2040,EU < EE < ee < 73EE,wind < onshore < onshore_b,electricity,none,gen,36.7410206429702,one node
+30th < 2040,EU < ES < es < 01ES,wind < onshore < onshore_b,electricity,none,gen,14.982137198201551,one node
+30th < 2040,EU < ES < es < 03ES,wind < onshore < onshore_b,electricity,none,gen,98.51605171601264,one node
+30th < 2040,EU < ES < es < 06ES,wind < onshore < onshore_b,electricity,none,gen,15.804526148683054,one node
+30th < 2040,EU < ES < es < 09ES,wind < onshore < onshore_b,electricity,none,gen,11.206024071332118,one node
+30th < 2040,EU < ES < es < 10ES,wind < onshore < onshore_b,electricity,none,gen,102.90768553883375,one node
+30th < 2040,EU < ES < es < 11ES,wind < onshore < onshore_b,electricity,none,gen,67.91216767965572,one node
+30th < 2040,EU < FI < fi < 75FI,wind < onshore < onshore_b,electricity,none,gen,1.6110447492596513e-5,one node
+30th < 2040,EU < FR < fr < 15FR,wind < onshore < onshore_b,electricity,none,gen,39.280782049708414,one node
+30th < 2040,EU < FR < fr < 19FR,wind < onshore < onshore_b,electricity,none,gen,1.8051748398075473e-5,one node
+30th < 2040,EU < FR < fr < 21FR,wind < onshore < onshore_b,electricity,none,gen,4.060265212673273e-5,one node
+30th < 2040,EU < FR < fr < 26FR,wind < onshore < onshore_b,electricity,none,gen,2.059896143037141e-5,one node
+30th < 2040,EU < GR < gr < 69GR,wind < onshore < onshore_b,electricity,none,gen,53.256835379643796,one node
+30th < 2040,EU < IE < ie < 96IE,wind < onshore < onshore_b,electricity,none,gen,126.02230599744105,one node
+30th < 2040,EU < IT < it_s < 55IT,wind < onshore < onshore_b,electricity,none,gen,25.864505408188872,one node
+30th < 2040,EU < LT < lt < 77LT,wind < onshore < onshore_b,electricity,none,gen,11.197564098717903,one node
+30th < 2040,EU < LU < lu < 29LU,wind < onshore < onshore_b,electricity,none,gen,2.3379707046709017e-5,one node
+30th < 2040,EU < LV < lv < 78LV,wind < onshore < onshore_b,electricity,none,gen,47.16722927839339,one node
+30th < 2040,EU < NL < nl < 30NL,wind < onshore < onshore_b,electricity,none,gen,3.156502768257182e-5,one node
+30th < 2040,EU < PL < pl < 45PL,wind < onshore < onshore_b,electricity,none,gen,17.90601466616662,one node
+30th < 2040,EU < PT < pt < 12PT,wind < onshore < onshore_b,electricity,none,gen,37.19031627273091,one node
+30th < 2040,EU < PT < pt < 13PT,wind < onshore < onshore_b,electricity,none,gen,72.37377016020126,one node
+30th < 2040,EU < RO < ro < 60RO,wind < onshore < onshore_b,electricity,none,gen,33.20850825727982,one node
+30th < 2040,EU < SE < se_2 < 87SE,wind < onshore < onshore_b,electricity,none,gen,31.526106826424815,one node
+30th < 2040,EU < SE < se_4 < 89SE,wind < onshore < onshore_b,electricity,none,gen,1.6685266574065218e-5,one node
+30th < 2040,EU < SK < sk < 46SK,wind < onshore < onshore_b,electricity,none,gen,40.53395948329038,one node
+30th < 2040,nonEU < AL < al < 70AL,wind < onshore < onshore_b,electricity,none,gen,24.081291073258264,one node
+30th < 2040,nonEU < CH < ch < 47CH,wind < onshore < onshore_b,electricity,none,gen,8.099937286764002,one node
+30th < 2040,nonEU < CH < ch < 48CH,wind < onshore < onshore_b,electricity,none,gen,0.8737956871516728,one node
+30th < 2040,nonEU < ME < me < 64ME,wind < onshore < onshore_b,electricity,none,gen,12.354111955642244,one node
+30th < 2040,nonEU < MK < mk < 67MK,wind < onshore < onshore_b,electricity,none,gen,37.72276720402506,one node
+30th < 2040,nonEU < NO < no_m < 83NO,wind < onshore < onshore_b,electricity,none,gen,1.1333051840476701e-5,one node
+30th < 2040,nonEU < NO < no_n < 84NO,wind < onshore < onshore_b,electricity,none,gen,13.018506947827618,one node
+30th < 2040,nonEU < NO < no_s < 79NO,wind < onshore < onshore_b,electricity,none,gen,10.643154953206892,one node
+30th < 2040,nonEU < NO < no_s < 80NO,wind < onshore < onshore_b,electricity,none,gen,15.776611829532328,one node
+30th < 2040,nonEU < NO < no_s < 81NO,wind < onshore < onshore_b,electricity,none,gen,2.8280448214354944e-5,one node
+30th < 2040,nonEU < NO < no_s < 82NO,wind < onshore < onshore_b,electricity,none,gen,1.5090254608746432e-5,one node
+30th < 2040,nonEU < RS < rs < 65RS,wind < onshore < onshore_b,electricity,none,gen,44.28397914467284,one node
+30th < 2040,nonEU < UK < ni < 95UK,wind < onshore < onshore_b,electricity,none,gen,3.1254916362872276,one node
+30th < 2040,nonEU < UK < uk < 90UK,wind < onshore < onshore_b,electricity,none,gen,1.2388034324291936e-5,one node
+30th < 2040,nonEU < UK < uk < 91UK,wind < onshore < onshore_b,electricity,none,gen,6.399376057068738,one node
+30th < 2040,nonEU < UK < uk < 92UK,wind < onshore < onshore_b,electricity,none,gen,0.00012240150896355694,one node
+30th < 2040,nonEU < UK < uk < 93UK,wind < onshore < onshore_b,electricity,none,gen,1.5507427811911113e-5,one node
+30th < 2040,nonEU < UK < uk < 94UK,wind < onshore < onshore_b,electricity,none,gen,1.1326184717643392e-5,one node
+30th < 2040,EU < ES < es < 01ES,solar < rooftopInd_a < pvInd_a,electricity,none,gen,4.645288884260993,one node
+30th < 2040,EU < ES < es < 02ES,solar < rooftopInd_a < pvInd_a,electricity,none,gen,7.093181708289265,one node
+30th < 2040,EU < ES < es < 03ES,solar < rooftopInd_a < pvInd_a,electricity,none,gen,11.188894085974974,one node
+30th < 2040,EU < ES < es < 04ES,solar < rooftopInd_a < pvInd_a,electricity,none,gen,4.4204815660412685e-5,one node
+30th < 2040,EU < ES < es < 05ES,solar < rooftopInd_a < pvInd_a,electricity,none,gen,0.01285207907129541,one node
+30th < 2040,EU < ES < es < 06ES,solar < rooftopInd_a < pvInd_a,electricity,none,gen,8.875729158845049,one node
+30th < 2040,EU < ES < es < 07ES,solar < rooftopInd_a < pvInd_a,electricity,none,gen,13.862643451805537,one node
+30th < 2040,EU < ES < es < 08ES,solar < rooftopInd_a < pvInd_a,electricity,none,gen,9.67613255615325,one node
+30th < 2040,EU < ES < es < 09ES,solar < rooftopInd_a < pvInd_a,electricity,none,gen,18.391131578831928,one node
+30th < 2040,EU < ES < es < 10ES,solar < rooftopInd_a < pvInd_a,electricity,none,gen,5.774094226025778,one node
+30th < 2040,EU < ES < es < 11ES,solar < rooftopInd_a < pvInd_a,electricity,none,gen,17.116957329066448,one node
+30th < 2040,EU < GR < gr < 68GR,solar < rooftopInd_a < pvInd_a,electricity,none,gen,1.757619842145545e-5,one node
+30th < 2040,EU < GR < gr < 69GR,solar < rooftopInd_a < pvInd_a,electricity,none,gen,2.3246311047832928e-5,one node
+30th < 2040,EU < HR < hr < 62HR,solar < rooftopInd_a < pvInd_a,electricity,none,gen,1.949272882505178e-5,one node
+30th < 2040,EU < IT < it_sic < 56IT,solar < rooftopInd_a < pvInd_a,electricity,none,gen,1.690655263380964e-5,one node
+30th < 2040,EU < PT < pt < 12PT,solar < rooftopInd_a < pvInd_a,electricity,none,gen,9.402969766666207,one node
+30th < 2040,EU < PT < pt < 13PT,solar < rooftopInd_a < pvInd_a,electricity,none,gen,6.943358626767384,one node
+30th < 2040,EU < RO < ro < 59RO,solar < rooftopInd_a < pvInd_a,electricity,none,gen,3.907756973088368e-5,one node
+30th < 2040,EU < RO < ro < 60RO,solar < rooftopInd_a < pvInd_a,electricity,none,gen,4.629686435993091,one node
+30th < 2040,EU < RO < ro < 61RO,solar < rooftopInd_a < pvInd_a,electricity,none,gen,6.713541607998838e-5,one node
+30th < 2040,nonEU < AL < al < 70AL,solar < rooftopInd_a < pvInd_a,electricity,none,gen,1.1295381186327164e-5,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < rooftopInd_a < pvInd_a,electricity,none,gen,1.626840721042968e-5,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < rooftopInd_a < pvInd_a,electricity,none,gen,0.00010654929142114314,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < rooftopInd_a < pvInd_a,electricity,none,gen,3.5257143065610084e-5,one node
+30th < 2040,EU,hydro < runOfRiver,electricity,none,gen,144.72197321092574,one node
+30th < 2040,nonEU,hydro < runOfRiver,electricity,none,gen,27.88259551133556,one node
+30th < 2040,EU,networkHeat < boilerNetwork < eBoilerDh,districtHeat,none,gen,56.41583047101306,one node
+30th < 2040,nonEU,networkHeat < boilerNetwork < eBoilerDh,districtHeat,none,gen,18.663070443387795,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProHigh,processHeat_high,none,gen,19.441063414128827,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProHigh,processHeat_high,none,gen,0.5510012953836554,one node
+30th < 2040,EU,proHeat < h2BoilerPro < h2BoilerProHigh,processHeat_high,none,gen,621.9476544745565,one node
+30th < 2040,nonEU,proHeat < h2BoilerPro < h2BoilerProHigh,processHeat_high,none,gen,60.5302659872716,one node
+30th < 2040,EU,proHeat < wasteBoilerPro < wasteBoilerProHigh,processHeat_high,none,gen,104.80426863602774,one node
+30th < 2040,nonEU,proHeat < wasteBoilerPro < wasteBoilerProHigh,processHeat_high,none,gen,25.473986732070347,one node
+30th < 2040,EU,ccs < co2Disposal,co2 < co2Removed,none,gen,331.2845108774604,one node
+30th < 2040,nonEU,ccs < co2Disposal,co2 < co2Removed,none,gen,0.8010988520070051,one node
+30th < 2040,EU,transport < ePsngRail,psngRail,none,gen,417.79809089561013,one node
+30th < 2040,nonEU,transport < ePsngRail,psngRail,none,gen,103.4959204966541,one node
+30th < 2040,EU,powerToX < avaAndNaviTech,avaAndNavi,none,gen,604.57654401216,one node
+30th < 2040,nonEU,powerToX < avaAndNaviTech,avaAndNavi,none,gen,202.27925789736,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpAirProLow,processHeat_low,none,gen,3.539475983469592e-5,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpAirProLow,processHeat_low,none,gen,3.422222257811836e-5,one node
+30th < 2040,EU < AT < at < 49AT,solar < openspace_b < pvOpenspace_b,electricity,none,gen,4.94010859923059e-5,one node
+30th < 2040,EU < AT < at < 51AT,solar < openspace_b < pvOpenspace_b,electricity,none,gen,1.265405206709859e-5,one node
+30th < 2040,EU < BG < bg < 66BG,solar < openspace_b < pvOpenspace_b,electricity,none,gen,9.079270317509787,one node
+30th < 2040,EU < ES < es < 01ES,solar < openspace_b < pvOpenspace_b,electricity,none,gen,5.833976080596349,one node
+30th < 2040,EU < ES < es < 02ES,solar < openspace_b < pvOpenspace_b,electricity,none,gen,38.79662709843634,one node
+30th < 2040,EU < ES < es < 03ES,solar < openspace_b < pvOpenspace_b,electricity,none,gen,59.41108168659913,one node
+30th < 2040,EU < ES < es < 04ES,solar < openspace_b < pvOpenspace_b,electricity,none,gen,10.127630113768443,one node
+30th < 2040,EU < ES < es < 05ES,solar < openspace_b < pvOpenspace_b,electricity,none,gen,22.85633893143292,one node
+30th < 2040,EU < ES < es < 06ES,solar < openspace_b < pvOpenspace_b,electricity,none,gen,3.3825337787383547,one node
+30th < 2040,EU < ES < es < 07ES,solar < openspace_b < pvOpenspace_b,electricity,none,gen,5.647868950315842,one node
+30th < 2040,EU < ES < es < 08ES,solar < openspace_b < pvOpenspace_b,electricity,none,gen,7.897842251139044,one node
+30th < 2040,EU < ES < es < 09ES,solar < openspace_b < pvOpenspace_b,electricity,none,gen,35.81958117506689,one node
+30th < 2040,EU < ES < es < 10ES,solar < openspace_b < pvOpenspace_b,electricity,none,gen,22.673186463153687,one node
+30th < 2040,EU < ES < es < 11ES,solar < openspace_b < pvOpenspace_b,electricity,none,gen,11.917044408990739,one node
+30th < 2040,EU < FR < fr < 14FR,solar < openspace_b < pvOpenspace_b,electricity,none,gen,3.3831037191816957e-5,one node
+30th < 2040,EU < FR < fr < 15FR,solar < openspace_b < pvOpenspace_b,electricity,none,gen,17.477393936179343,one node
+30th < 2040,EU < FR < fr < 17FR,solar < openspace_b < pvOpenspace_b,electricity,none,gen,1.392181406854577e-5,one node
+30th < 2040,EU < FR < fr < 18FR,solar < openspace_b < pvOpenspace_b,electricity,none,gen,1.641900793124545e-5,one node
+30th < 2040,EU < FR < fr < 19FR,solar < openspace_b < pvOpenspace_b,electricity,none,gen,3.2239735562457144,one node
+30th < 2040,EU < FR < fr < 20FR,solar < openspace_b < pvOpenspace_b,electricity,none,gen,1.1916843438811134e-5,one node
+30th < 2040,EU < FR < fr < 21FR,solar < openspace_b < pvOpenspace_b,electricity,none,gen,1.4829013638008425e-5,one node
+30th < 2040,EU < FR < fr_co < 99FR,solar < openspace_b < pvOpenspace_b,electricity,none,gen,0.5888560631653172,one node
+30th < 2040,EU < GR < gr < 68GR,solar < openspace_b < pvOpenspace_b,electricity,none,gen,71.89708136580651,one node
+30th < 2040,EU < GR < gr < 69GR,solar < openspace_b < pvOpenspace_b,electricity,none,gen,19.813207941145556,one node
+30th < 2040,EU < HR < hr < 62HR,solar < openspace_b < pvOpenspace_b,electricity,none,gen,4.7902139813888285,one node
+30th < 2040,EU < IT < it_cn < 53IT,solar < openspace_b < pvOpenspace_b,electricity,none,gen,10.761279054167137,one node
+30th < 2040,EU < IT < it_cs < 54IT,solar < openspace_b < pvOpenspace_b,electricity,none,gen,3.4050225166940766,one node
+30th < 2040,EU < IT < it_n < 52IT,solar < openspace_b < pvOpenspace_b,electricity,none,gen,1.7896881441044993e-5,one node
+30th < 2040,EU < IT < it_s < 55IT,solar < openspace_b < pvOpenspace_b,electricity,none,gen,16.271117978815173,one node
+30th < 2040,EU < IT < it_sar < 98IT,solar < openspace_b < pvOpenspace_b,electricity,none,gen,9.327062613232473,one node
+30th < 2040,EU < IT < it_sic < 56IT,solar < openspace_b < pvOpenspace_b,electricity,none,gen,3.131120967457332,one node
+30th < 2040,EU < PT < pt < 12PT,solar < openspace_b < pvOpenspace_b,electricity,none,gen,6.8355005130969735,one node
+30th < 2040,EU < PT < pt < 13PT,solar < openspace_b < pvOpenspace_b,electricity,none,gen,10.89688881555678,one node
+30th < 2040,EU < RO < ro < 59RO,solar < openspace_b < pvOpenspace_b,electricity,none,gen,72.51850707037642,one node
+30th < 2040,EU < RO < ro < 60RO,solar < openspace_b < pvOpenspace_b,electricity,none,gen,16.978675311847194,one node
+30th < 2040,EU < RO < ro < 61RO,solar < openspace_b < pvOpenspace_b,electricity,none,gen,69.319018773603,one node
+30th < 2040,EU < SI < si < 57SI,solar < openspace_b < pvOpenspace_b,electricity,none,gen,2.393957289067523e-5,one node
+30th < 2040,nonEU < AL < al < 70AL,solar < openspace_b < pvOpenspace_b,electricity,none,gen,5.18427665985556,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < openspace_b < pvOpenspace_b,electricity,none,gen,3.2567655590644087,one node
+30th < 2040,nonEU < ME < me < 64ME,solar < openspace_b < pvOpenspace_b,electricity,none,gen,3.7861488875939067,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < openspace_b < pvOpenspace_b,electricity,none,gen,11.092780511121932,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < openspace_b < pvOpenspace_b,electricity,none,gen,13.899667598833837,one node
+30th < 2040,nonEU < UK < uk < 90UK,solar < openspace_b < pvOpenspace_b,electricity,none,gen,4.442588287387221,one node
+30th < 2040,nonEU < UK < uk < 91UK,solar < openspace_b < pvOpenspace_b,electricity,none,gen,2.8342600271416787,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlSludge,crudeOil,none,gen,4.642369821394689,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlSludge,crudeOil,none,gen,1.0325543378434157,one node
+30th < 2040,EU,transport < eFrtRail,frtRail,none,gen,605.386893144169,one node
+30th < 2040,nonEU,transport < eFrtRail,frtRail,none,gen,52.730808433806544,one node
+30th < 2040,EU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,ammonia,none,gen,138.17676313777233,one node
+30th < 2040,EU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,districtHeat,none,gen,18.48623374572126,one node
+30th < 2040,nonEU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,ammonia,none,gen,32.53812362650968,one node
+30th < 2040,nonEU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,districtHeat,none,gen,4.353173129080243,one node
+30th < 2040,EU,networkHeat < heatpumpNetwork < heatpumpGroundDh,districtHeat,none,gen,1739.160983727159,one node
+30th < 2040,nonEU,networkHeat < heatpumpNetwork < heatpumpGroundDh,districtHeat,none,gen,327.6834741008805,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlManure,crudeOil,none,gen,91.39679699784733,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlManure,crudeOil,none,gen,16.207572349973184,one node
+30th < 2040,EU,transport < bev < bevFrtRoadHeavy,frtRoadHeavy,none,gen,1707.9067985729712,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadHeavy,frtRoadHeavy,none,gen,222.47875339624235,one node
+30th < 2040,EU < BG < bg < 66BG,solar < openspace_c < pvOpenspace_c,electricity,none,gen,35.43662023615292,one node
+30th < 2040,EU < ES < es < 01ES,solar < openspace_c < pvOpenspace_c,electricity,none,gen,10.111692340584545,one node
+30th < 2040,EU < ES < es < 02ES,solar < openspace_c < pvOpenspace_c,electricity,none,gen,2.221551518734866,one node
+30th < 2040,EU < ES < es < 03ES,solar < openspace_c < pvOpenspace_c,electricity,none,gen,42.215967839230565,one node
+30th < 2040,EU < ES < es < 04ES,solar < openspace_c < pvOpenspace_c,electricity,none,gen,4.340388218208828,one node
+30th < 2040,EU < ES < es < 05ES,solar < openspace_c < pvOpenspace_c,electricity,none,gen,2.145395070421053,one node
+30th < 2040,EU < ES < es < 06ES,solar < openspace_c < pvOpenspace_c,electricity,none,gen,11.092135918039906,one node
+30th < 2040,EU < ES < es < 07ES,solar < openspace_c < pvOpenspace_c,electricity,none,gen,1.2595041810468635,one node
+30th < 2040,EU < ES < es < 08ES,solar < openspace_c < pvOpenspace_c,electricity,none,gen,67.73642116735653,one node
+30th < 2040,EU < ES < es < 09ES,solar < openspace_c < pvOpenspace_c,electricity,none,gen,4.684744594517873,one node
+30th < 2040,EU < ES < es < 10ES,solar < openspace_c < pvOpenspace_c,electricity,none,gen,39.1946083476035,one node
+30th < 2040,EU < ES < es < 11ES,solar < openspace_c < pvOpenspace_c,electricity,none,gen,68.70317882709674,one node
+30th < 2040,EU < FR < fr < 14FR,solar < openspace_c < pvOpenspace_c,electricity,none,gen,1.0343938655150283e-5,one node
+30th < 2040,EU < FR < fr < 15FR,solar < openspace_c < pvOpenspace_c,electricity,none,gen,2.193410250102372e-5,one node
+30th < 2040,EU < FR < fr < 16FR,solar < openspace_c < pvOpenspace_c,electricity,none,gen,2.6899279838456967e-5,one node
+30th < 2040,EU < FR < fr < 17FR,solar < openspace_c < pvOpenspace_c,electricity,none,gen,2.3922942045199944e-5,one node
+30th < 2040,EU < FR < fr < 18FR,solar < openspace_c < pvOpenspace_c,electricity,none,gen,1.054053689904246e-5,one node
+30th < 2040,EU < FR < fr < 19FR,solar < openspace_c < pvOpenspace_c,electricity,none,gen,1.1837916534530783e-5,one node
+30th < 2040,EU < FR < fr < 20FR,solar < openspace_c < pvOpenspace_c,electricity,none,gen,9.517008473231373,one node
+30th < 2040,EU < FR < fr_co < 99FR,solar < openspace_c < pvOpenspace_c,electricity,none,gen,0.6210413108795567,one node
+30th < 2040,EU < GR < gr < 68GR,solar < openspace_c < pvOpenspace_c,electricity,none,gen,11.135986904866405,one node
+30th < 2040,EU < GR < gr < 69GR,solar < openspace_c < pvOpenspace_c,electricity,none,gen,56.27018275937466,one node
+30th < 2040,EU < HR < hr < 62HR,solar < openspace_c < pvOpenspace_c,electricity,none,gen,2.6132748530010534,one node
+30th < 2040,EU < IT < it_cn < 53IT,solar < openspace_c < pvOpenspace_c,electricity,none,gen,1.7102170643933533e-5,one node
+30th < 2040,EU < IT < it_cs < 54IT,solar < openspace_c < pvOpenspace_c,electricity,none,gen,1.8865609296570666e-5,one node
+30th < 2040,EU < IT < it_s < 55IT,solar < openspace_c < pvOpenspace_c,electricity,none,gen,42.064558994352154,one node
+30th < 2040,EU < IT < it_sar < 98IT,solar < openspace_c < pvOpenspace_c,electricity,none,gen,1.2057824588758388,one node
+30th < 2040,EU < IT < it_sic < 56IT,solar < openspace_c < pvOpenspace_c,electricity,none,gen,13.06945060360806,one node
+30th < 2040,EU < PT < pt < 12PT,solar < openspace_c < pvOpenspace_c,electricity,none,gen,7.1516455182475225,one node
+30th < 2040,EU < PT < pt < 13PT,solar < openspace_c < pvOpenspace_c,electricity,none,gen,12.841498954673082,one node
+30th < 2040,EU < RO < ro < 59RO,solar < openspace_c < pvOpenspace_c,electricity,none,gen,4.951712880153149,one node
+30th < 2040,EU < RO < ro < 60RO,solar < openspace_c < pvOpenspace_c,electricity,none,gen,5.396920503737697,one node
+30th < 2040,EU < RO < ro < 61RO,solar < openspace_c < pvOpenspace_c,electricity,none,gen,40.455197994642205,one node
+30th < 2040,EU < SI < si < 57SI,solar < openspace_c < pvOpenspace_c,electricity,none,gen,1.1068419416405921,one node
+30th < 2040,EU < SK < sk < 46SK,solar < openspace_c < pvOpenspace_c,electricity,none,gen,1.0149359752003244e-5,one node
+30th < 2040,nonEU < AL < al < 70AL,solar < openspace_c < pvOpenspace_c,electricity,none,gen,6.439343875128965,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < openspace_c < pvOpenspace_c,electricity,none,gen,10.759731142256715,one node
+30th < 2040,nonEU < CH < ch < 48CH,solar < openspace_c < pvOpenspace_c,electricity,none,gen,2.9653511777314983e-5,one node
+30th < 2040,nonEU < ME < me < 64ME,solar < openspace_c < pvOpenspace_c,electricity,none,gen,5.334073425045882,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < openspace_c < pvOpenspace_c,electricity,none,gen,2.5017636666170953,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < openspace_c < pvOpenspace_c,electricity,none,gen,16.488548626381856,one node
+30th < 2040,nonEU < UK < uk < 90UK,solar < openspace_c < pvOpenspace_c,electricity,none,gen,4.928290618538811e-5,one node
+30th < 2040,nonEU < UK < uk < 91UK,solar < openspace_c < pvOpenspace_c,electricity,none,gen,3.317669343660152e-5,one node
+30th < 2040,nonEU < UK < uk < 92UK,solar < openspace_c < pvOpenspace_c,electricity,none,gen,2.226889886562704e-5,one node
+30th < 2040,EU,networkHeat < heatGrid < districtHeatSpace,spaceHeat,none,gen,1635.319678870013,one node
+30th < 2040,nonEU,networkHeat < heatGrid < districtHeatSpace,spaceHeat,none,gen,325.02150744129955,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,processHeat_low,none,gen,879.9447808068575,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,processHeat_low,none,gen,71.80274554235886,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPrvt,psngRoadPrvt,none,gen,4335.392199596569,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPrvt,psngRoadPrvt,none,gen,910.6487462167737,one node
+30th < 2040,EU,powerToX < refinery,refinedOil,none,gen,1033.5288700932022,one node
+30th < 2040,nonEU,powerToX < refinery,refinedOil,none,gen,362.98256342886486,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlGreenWaste,crudeOil,none,gen,84.00413472412151,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlGreenWaste,crudeOil,none,gen,15.933795058219753,one node
+30th < 2040,EU,fossil < oil < oilToHvc,hvc,none,gen,235.48607324408417,one node
+30th < 2040,nonEU,fossil < oil < oilToHvc,hvc,none,gen,88.22283565983,one node
+30th < 2040,EU,powerToX < electrolysis < alkElectrolysis,h2,none,gen,795.0559337053043,one node
+30th < 2040,EU,powerToX < electrolysis < alkElectrolysis,districtHeat,none,gen,131.0492470827114,one node
+30th < 2040,nonEU,powerToX < electrolysis < alkElectrolysis,h2,none,gen,101.29412185478814,one node
+30th < 2040,nonEU,powerToX < electrolysis < alkElectrolysis,districtHeat,none,gen,16.696332723547403,one node
+30th < 2040,EU,networkHeat < heatGrid < districtHeatPro,processHeat_low,none,gen,90.08079324741121,one node
+30th < 2040,nonEU,networkHeat < heatGrid < districtHeatPro,processHeat_low,none,gen,1.8949257832998687,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPub,psngRoadPub,none,gen,456.3174075573777,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPub,psngRoadPub,none,gen,64.28395739808947,one node
+30th < 2040,EU,powerToX < directAirCapture,co2 < co2Pure,none,gen,331.28450595498725,one node
+30th < 2040,nonEU,powerToX < directAirCapture,co2 < co2Pure,none,gen,0.801094205299451,one node
+30th < 2040,EU,transport < oberFrtRoadHeavy,frtRoadHeavy,none,gen,0.00015153887294441952,one node
+30th < 2040,EU < AT < at < 50AT,wind < onshore < onshore_c,electricity,none,gen,15.371308266459357,one node
+30th < 2040,EU < AT < at < 51AT,wind < onshore < onshore_c,electricity,none,gen,31.15056534420565,one node
+30th < 2040,EU < BE < be < 28BE,wind < onshore < onshore_c,electricity,none,gen,1.1396194515673365e-5,one node
+30th < 2040,EU < DE < de < 31DE,wind < onshore < onshore_c,electricity,none,gen,4.035298954906864e-5,one node
+30th < 2040,EU < DK < dk_e < 72DK,wind < onshore < onshore_c,electricity,none,gen,1.659263075496796e-5,one node
+30th < 2040,EU < DK < dk_w < 38DK,wind < onshore < onshore_c,electricity,none,gen,0.00013158776217302544,one node
+30th < 2040,EU < EE < ee < 73EE,wind < onshore < onshore_c,electricity,none,gen,2.0785605493599302e-5,one node
+30th < 2040,EU < ES < es < 02ES,wind < onshore < onshore_c,electricity,none,gen,1.0770199745145376e-5,one node
+30th < 2040,EU < ES < es < 05ES,wind < onshore < onshore_c,electricity,none,gen,1.536361774611086e-5,one node
+30th < 2040,EU < ES < es < 06ES,wind < onshore < onshore_c,electricity,none,gen,35.70958765087194,one node
+30th < 2040,EU < ES < es < 07ES,wind < onshore < onshore_c,electricity,none,gen,0.0003577884219312773,one node
+30th < 2040,EU < ES < es < 09ES,wind < onshore < onshore_c,electricity,none,gen,86.25381804779704,one node
+30th < 2040,EU < ES < es < 10ES,wind < onshore < onshore_c,electricity,none,gen,99.87423903780629,one node
+30th < 2040,EU < ES < es < 11ES,wind < onshore < onshore_c,electricity,none,gen,164.6467067745337,one node
+30th < 2040,EU < FI < fi < 74FI,wind < onshore < onshore_c,electricity,none,gen,86.6151430031596,one node
+30th < 2040,EU < FR < fr < 16FR,wind < onshore < onshore_c,electricity,none,gen,24.328355441199296,one node
+30th < 2040,EU < FR < fr < 19FR,wind < onshore < onshore_c,electricity,none,gen,25.29825990950224,one node
+30th < 2040,EU < FR < fr < 20FR,wind < onshore < onshore_c,electricity,none,gen,33.26646244695229,one node
+30th < 2040,EU < FR < fr < 22FR,wind < onshore < onshore_c,electricity,none,gen,2.417777420606636e-5,one node
+30th < 2040,EU < FR < fr_co < 99FR,wind < onshore < onshore_c,electricity,none,gen,2.511029648756803,one node
+30th < 2040,EU < GR < gr < 68GR,wind < onshore < onshore_c,electricity,none,gen,68.33455698511705,one node
+30th < 2040,EU < GR < gr < 69GR,wind < onshore < onshore_c,electricity,none,gen,4.531766286272895e-5,one node
+30th < 2040,EU < HR < hr < 62HR,wind < onshore < onshore_c,electricity,none,gen,40.114917232628144,one node
+30th < 2040,EU < HU < hu < 58HU,wind < onshore < onshore_c,electricity,none,gen,4.912417355823302e-5,one node
+30th < 2040,EU < IE < ie < 96IE,wind < onshore < onshore_c,electricity,none,gen,17.495407961603807,one node
+30th < 2040,EU < IT < it_cn < 53IT,wind < onshore < onshore_c,electricity,none,gen,5.798174606898385e-5,one node
+30th < 2040,EU < IT < it_cs < 54IT,wind < onshore < onshore_c,electricity,none,gen,32.401551915509394,one node
+30th < 2040,EU < IT < it_n < 52IT,wind < onshore < onshore_c,electricity,none,gen,2.2807248460261832e-5,one node
+30th < 2040,EU < IT < it_sar < 98IT,wind < onshore < onshore_c,electricity,none,gen,0.00017942783002592618,one node
+30th < 2040,EU < IT < it_sic < 56IT,wind < onshore < onshore_c,electricity,none,gen,0.0005479198724463684,one node
+30th < 2040,EU < LT < lt < 77LT,wind < onshore < onshore_c,electricity,none,gen,3.443767438085234e-5,one node
+30th < 2040,EU < LV < lv < 78LV,wind < onshore < onshore_c,electricity,none,gen,2.585214294229509e-5,one node
+30th < 2040,EU < NL < nl < 30NL,wind < onshore < onshore_c,electricity,none,gen,8.515725404774507,one node
+30th < 2040,EU < PL < pl < 41PL,wind < onshore < onshore_c,electricity,none,gen,1.3532966281886521e-5,one node
+30th < 2040,EU < PL < pl < 42PL,wind < onshore < onshore_c,electricity,none,gen,50.58580609250855,one node
+30th < 2040,EU < PL < pl < 45PL,wind < onshore < onshore_c,electricity,none,gen,2.2131864145985568e-5,one node
+30th < 2040,EU < PT < pt < 13PT,wind < onshore < onshore_c,electricity,none,gen,1.3460204355046021e-5,one node
+30th < 2040,EU < RO < ro < 59RO,wind < onshore < onshore_c,electricity,none,gen,3.102804182253494e-5,one node
+30th < 2040,EU < RO < ro < 61RO,wind < onshore < onshore_c,electricity,none,gen,50.6895956073088,one node
+30th < 2040,EU < SE < se_1 < 86SE,wind < onshore < onshore_c,electricity,none,gen,51.413666623166094,one node
+30th < 2040,EU < SE < se_3 < 88SE,wind < onshore < onshore_c,electricity,none,gen,54.67334562285173,one node
+30th < 2040,EU < SE < se_4 < 89SE,wind < onshore < onshore_c,electricity,none,gen,2.9043163967505583,one node
+30th < 2040,EU < SI < si < 57SI,wind < onshore < onshore_c,electricity,none,gen,3.498220290874012e-5,one node
+30th < 2040,nonEU < AL < al < 70AL,wind < onshore < onshore_c,electricity,none,gen,4.021768556061715,one node
+30th < 2040,nonEU < BA < ba < 63BA,wind < onshore < onshore_c,electricity,none,gen,1.9980022329679367e-5,one node
+30th < 2040,nonEU < NO < no_n < 84NO,wind < onshore < onshore_c,electricity,none,gen,13.436916117197034,one node
+30th < 2040,nonEU < NO < no_n < 85NO,wind < onshore < onshore_c,electricity,none,gen,7.843433774283491,one node
+30th < 2040,nonEU < NO < no_s < 79NO,wind < onshore < onshore_c,electricity,none,gen,5.410984538672945e-5,one node
+30th < 2040,nonEU < UK < ni < 95UK,wind < onshore < onshore_c,electricity,none,gen,0.8675601726917086,one node
+30th < 2040,nonEU < UK < uk < 91UK,wind < onshore < onshore_c,electricity,none,gen,1.7654753444213687e-5,one node
+30th < 2040,nonEU < UK < uk < 93UK,wind < onshore < onshore_c,electricity,none,gen,16.370694537098952,one node
+30th < 2040,EU < ES < es < 04ES,solar < rooftopResi_a < pvResi_a,electricity,none,gen,1.4195832896489085e-5,one node
+30th < 2040,EU < ES < es < 07ES,solar < rooftopResi_a < pvResi_a,electricity,none,gen,1.2882082126914196e-5,one node
+30th < 2040,EU < ES < es < 08ES,solar < rooftopResi_a < pvResi_a,electricity,none,gen,1.206528151098087e-5,one node
+30th < 2040,EU < ES < es < 09ES,solar < rooftopResi_a < pvResi_a,electricity,none,gen,1.554913120453207e-5,one node
+30th < 2040,EU < ES < es < 10ES,solar < rooftopResi_a < pvResi_a,electricity,none,gen,1.2341007228612504e-5,one node
+30th < 2040,EU < ES < es < 11ES,solar < rooftopResi_a < pvResi_a,electricity,none,gen,1.612431323300279e-5,one node
+30th < 2040,EU < PT < pt < 13PT,solar < rooftopResi_a < pvResi_a,electricity,none,gen,1.7148496170839328e-5,one node
+30th < 2040,EU,transport < bev < bevFrtRoadLight,frtRoadLight,none,gen,60.807416215324,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadLight,frtRoadLight,none,gen,8.713732094468767,one node
+30th < 2040,EU,chemConversion < gasToHvc,hvc,none,gen,2.5567533549070154e-5,one node
+30th < 2040,nonEU,chemConversion < gasToHvc,hvc,none,gen,1.8375420381341878e-5,one node
+30th < 2040,EU,powerToX < electrolysis < pemElectrolysis,h2,none,gen,1.4924260418985026e-5,one node
+30th < 2040,nonEU,powerToX < electrolysis < pemElectrolysis,h2,none,gen,1.4835435345833269e-5,one node
+30th < 2040,EU < BE < be < 28BE,wind < onshore < onshore_a,electricity,none,gen,45.94427332285288,one node
+30th < 2040,EU < CZ < cz < 39CZ,wind < onshore < onshore_a,electricity,none,gen,37.39221919435327,one node
+30th < 2040,EU < CZ < cz < 40CZ,wind < onshore < onshore_a,electricity,none,gen,5.711424998091702e-5,one node
+30th < 2040,EU < DE < de < 32DE,wind < onshore < onshore_a,electricity,none,gen,1.195657862675303e-5,one node
+30th < 2040,EU < DE < de < 34DE,wind < onshore < onshore_a,electricity,none,gen,0.00012613267520116033,one node
+30th < 2040,EU < DK < dk_e < 72DK,wind < onshore < onshore_a,electricity,none,gen,8.579134763585237e-5,one node
+30th < 2040,EU < DK < dk_w < 38DK,wind < onshore < onshore_a,electricity,none,gen,2.550296093335206e-5,one node
+30th < 2040,EU < EE < ee < 73EE,wind < onshore < onshore_a,electricity,none,gen,17.161016834946608,one node
+30th < 2040,EU < ES < es < 02ES,wind < onshore < onshore_a,electricity,none,gen,78.1266394325766,one node
+30th < 2040,EU < ES < es < 04ES,wind < onshore < onshore_a,electricity,none,gen,13.727765081788721,one node
+30th < 2040,EU < ES < es < 05ES,wind < onshore < onshore_a,electricity,none,gen,24.98036605208184,one node
+30th < 2040,EU < ES < es < 07ES,wind < onshore < onshore_a,electricity,none,gen,2.789271367000552,one node
+30th < 2040,EU < ES < es < 08ES,wind < onshore < onshore_a,electricity,none,gen,9.739749380747357e-5,one node
+30th < 2040,EU < FI < fi < 74FI,wind < onshore < onshore_a,electricity,none,gen,3.746317661036579e-5,one node
+30th < 2040,EU < FI < fi < 75FI,wind < onshore < onshore_a,electricity,none,gen,76.62763195072758,one node
+30th < 2040,EU < FR < fr < 14FR,wind < onshore < onshore_a,electricity,none,gen,1.4680044389633454e-5,one node
+30th < 2040,EU < FR < fr < 15FR,wind < onshore < onshore_a,electricity,none,gen,4.873720994323483e-5,one node
+30th < 2040,EU < FR < fr < 20FR,wind < onshore < onshore_a,electricity,none,gen,1.3038518087873754e-5,one node
+30th < 2040,EU < FR < fr < 21FR,wind < onshore < onshore_a,electricity,none,gen,1.485811392402663e-5,one node
+30th < 2040,EU < FR < fr < 24FR,wind < onshore < onshore_a,electricity,none,gen,1.113924229002252e-5,one node
+30th < 2040,EU < FR < fr < 25FR,wind < onshore < onshore_a,electricity,none,gen,2.1508753220345807e-5,one node
+30th < 2040,EU < FR < fr < 27FR,wind < onshore < onshore_a,electricity,none,gen,1.1379635249574246e-5,one node
+30th < 2040,EU < FR < fr_co < 99FR,wind < onshore < onshore_a,electricity,none,gen,1.6674318325942198e-5,one node
+30th < 2040,EU < HR < hr < 62HR,wind < onshore < onshore_a,electricity,none,gen,44.4100707337823,one node
+30th < 2040,EU < IE < ie < 96IE,wind < onshore < onshore_a,electricity,none,gen,138.3810253549154,one node
+30th < 2040,EU < IT < it_cn < 53IT,wind < onshore < onshore_a,electricity,none,gen,12.90800560801326,one node
+30th < 2040,EU < IT < it_n < 52IT,wind < onshore < onshore_a,electricity,none,gen,14.982433384298986,one node
+30th < 2040,EU < LV < lv < 78LV,wind < onshore < onshore_a,electricity,none,gen,21.9121071514645,one node
+30th < 2040,EU < NL < nl < 30NL,wind < onshore < onshore_a,electricity,none,gen,45.81764632245938,one node
+30th < 2040,EU < PL < pl < 41PL,wind < onshore < onshore_a,electricity,none,gen,3.388324748894121e-5,one node
+30th < 2040,EU < PL < pl < 42PL,wind < onshore < onshore_a,electricity,none,gen,2.6768330227428493e-5,one node
+30th < 2040,EU < PL < pl < 44PL,wind < onshore < onshore_a,electricity,none,gen,3.000484496332961e-5,one node
+30th < 2040,EU < PT < pt < 12PT,wind < onshore < onshore_a,electricity,none,gen,20.69682718999423,one node
+30th < 2040,EU < PT < pt < 13PT,wind < onshore < onshore_a,electricity,none,gen,66.62390024117735,one node
+30th < 2040,EU < RO < ro < 59RO,wind < onshore < onshore_a,electricity,none,gen,93.52191250255996,one node
+30th < 2040,EU < SE < se_1 < 86SE,wind < onshore < onshore_a,electricity,none,gen,107.06461668168315,one node
+30th < 2040,EU < SE < se_2 < 87SE,wind < onshore < onshore_a,electricity,none,gen,15.948964119963724,one node
+30th < 2040,EU < SE < se_3 < 88SE,wind < onshore < onshore_a,electricity,none,gen,33.195341456429006,one node
+30th < 2040,EU < SE < se_4 < 89SE,wind < onshore < onshore_a,electricity,none,gen,33.32549668218302,one node
+30th < 2040,nonEU < BA < ba < 63BA,wind < onshore < onshore_a,electricity,none,gen,38.50515986989925,one node
+30th < 2040,nonEU < ME < me < 64ME,wind < onshore < onshore_a,electricity,none,gen,1.046099118940196e-5,one node
+30th < 2040,nonEU < NO < no_m < 83NO,wind < onshore < onshore_a,electricity,none,gen,3.381297673626037,one node
+30th < 2040,nonEU < NO < no_n < 85NO,wind < onshore < onshore_a,electricity,none,gen,9.344324674217825,one node
+30th < 2040,nonEU < NO < no_s < 80NO,wind < onshore < onshore_a,electricity,none,gen,5.1424976922312984e-5,one node
+30th < 2040,nonEU < NO < no_s < 81NO,wind < onshore < onshore_a,electricity,none,gen,3.9949843439329262,one node
+30th < 2040,nonEU < NO < no_s < 82NO,wind < onshore < onshore_a,electricity,none,gen,11.63950052093106,one node
+30th < 2040,nonEU < UK < ni < 95UK,wind < onshore < onshore_a,electricity,none,gen,58.45226846691114,one node
+30th < 2040,nonEU < UK < uk < 92UK,wind < onshore < onshore_a,electricity,none,gen,1.2629240726812587e-5,one node
+30th < 2040,nonEU < UK < uk < 93UK,wind < onshore < onshore_a,electricity,none,gen,176.35027931165217,one node
+30th < 2040,nonEU < UK < uk < 94UK,wind < onshore < onshore_a,electricity,none,gen,16.168480775595288,one node
+30th < 2040,EU < AT < at < 50AT,solar < openspace_a < pvOpenspace_a,electricity,none,gen,2.0785417226761856e-5,one node
+30th < 2040,EU < AT < at < 51AT,solar < openspace_a < pvOpenspace_a,electricity,none,gen,2.5635529085781295e-5,one node
+30th < 2040,EU < BG < bg < 66BG,solar < openspace_a < pvOpenspace_a,electricity,none,gen,3.941394137083395,one node
+30th < 2040,EU < ES < es < 01ES,solar < openspace_a < pvOpenspace_a,electricity,none,gen,6.5888128315116585,one node
+30th < 2040,EU < ES < es < 02ES,solar < openspace_a < pvOpenspace_a,electricity,none,gen,12.132877225747142,one node
+30th < 2040,EU < ES < es < 03ES,solar < openspace_a < pvOpenspace_a,electricity,none,gen,3.6387829543923207,one node
+30th < 2040,EU < ES < es < 04ES,solar < openspace_a < pvOpenspace_a,electricity,none,gen,5.9204586017958984,one node
+30th < 2040,EU < ES < es < 05ES,solar < openspace_a < pvOpenspace_a,electricity,none,gen,40.02610279858659,one node
+30th < 2040,EU < ES < es < 06ES,solar < openspace_a < pvOpenspace_a,electricity,none,gen,16.744235059783964,one node
+30th < 2040,EU < ES < es < 07ES,solar < openspace_a < pvOpenspace_a,electricity,none,gen,0.2710516535812735,one node
+30th < 2040,EU < ES < es < 08ES,solar < openspace_a < pvOpenspace_a,electricity,none,gen,68.6633232198004,one node
+30th < 2040,EU < ES < es < 09ES,solar < openspace_a < pvOpenspace_a,electricity,none,gen,25.9213982011983,one node
+30th < 2040,EU < ES < es < 10ES,solar < openspace_a < pvOpenspace_a,electricity,none,gen,22.547653153052725,one node
+30th < 2040,EU < ES < es < 11ES,solar < openspace_a < pvOpenspace_a,electricity,none,gen,20.552025207507878,one node
+30th < 2040,EU < FR < fr < 14FR,solar < openspace_a < pvOpenspace_a,electricity,none,gen,1.7998268272530065e-5,one node
+30th < 2040,EU < FR < fr < 15FR,solar < openspace_a < pvOpenspace_a,electricity,none,gen,1.1635246313388803e-5,one node
+30th < 2040,EU < FR < fr < 16FR,solar < openspace_a < pvOpenspace_a,electricity,none,gen,0.0001552800497154844,one node
+30th < 2040,EU < FR < fr < 19FR,solar < openspace_a < pvOpenspace_a,electricity,none,gen,2.5767613519573855e-5,one node
+30th < 2040,EU < FR < fr_co < 99FR,solar < openspace_a < pvOpenspace_a,electricity,none,gen,0.31751180994741834,one node
+30th < 2040,EU < GR < gr < 68GR,solar < openspace_a < pvOpenspace_a,electricity,none,gen,25.024214195324898,one node
+30th < 2040,EU < GR < gr < 69GR,solar < openspace_a < pvOpenspace_a,electricity,none,gen,26.43721674012749,one node
+30th < 2040,EU < HR < hr < 62HR,solar < openspace_a < pvOpenspace_a,electricity,none,gen,19.257990890553266,one node
+30th < 2040,EU < IT < it_cn < 53IT,solar < openspace_a < pvOpenspace_a,electricity,none,gen,4.016879862369166e-5,one node
+30th < 2040,EU < IT < it_cs < 54IT,solar < openspace_a < pvOpenspace_a,electricity,none,gen,5.802207045702627e-5,one node
+30th < 2040,EU < IT < it_n < 52IT,solar < openspace_a < pvOpenspace_a,electricity,none,gen,27.41061519857935,one node
+30th < 2040,EU < IT < it_s < 55IT,solar < openspace_a < pvOpenspace_a,electricity,none,gen,11.37304678789395,one node
+30th < 2040,EU < IT < it_sar < 98IT,solar < openspace_a < pvOpenspace_a,electricity,none,gen,12.488482465260534,one node
+30th < 2040,EU < IT < it_sic < 56IT,solar < openspace_a < pvOpenspace_a,electricity,none,gen,20.61392894544312,one node
+30th < 2040,EU < PT < pt < 12PT,solar < openspace_a < pvOpenspace_a,electricity,none,gen,16.006999402595742,one node
+30th < 2040,EU < PT < pt < 13PT,solar < openspace_a < pvOpenspace_a,electricity,none,gen,24.53347305010886,one node
+30th < 2040,EU < RO < ro < 59RO,solar < openspace_a < pvOpenspace_a,electricity,none,gen,32.66564079326062,one node
+30th < 2040,EU < RO < ro < 60RO,solar < openspace_a < pvOpenspace_a,electricity,none,gen,84.3362321606846,one node
+30th < 2040,EU < RO < ro < 61RO,solar < openspace_a < pvOpenspace_a,electricity,none,gen,21.525286765658297,one node
+30th < 2040,EU < SI < si < 57SI,solar < openspace_a < pvOpenspace_a,electricity,none,gen,1.0645586811157494e-5,one node
+30th < 2040,nonEU < AL < al < 70AL,solar < openspace_a < pvOpenspace_a,electricity,none,gen,1.363318511123908,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < openspace_a < pvOpenspace_a,electricity,none,gen,13.46699089715129,one node
+30th < 2040,nonEU < CH < ch < 47CH,solar < openspace_a < pvOpenspace_a,electricity,none,gen,1.4120864091993877e-5,one node
+30th < 2040,nonEU < ME < me < 64ME,solar < openspace_a < pvOpenspace_a,electricity,none,gen,3.1148022889317235,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < openspace_a < pvOpenspace_a,electricity,none,gen,6.806281299528162,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < openspace_a < pvOpenspace_a,electricity,none,gen,79.3884485731311,one node
+30th < 2040,nonEU < UK < ni < 95UK,solar < openspace_a < pvOpenspace_a,electricity,none,gen,1.5373774931287298e-5,one node
+30th < 2040,nonEU < UK < uk < 90UK,solar < openspace_a < pvOpenspace_a,electricity,none,gen,2.42443481761651e-5,one node
+30th < 2040,nonEU < UK < uk < 91UK,solar < openspace_a < pvOpenspace_a,electricity,none,gen,1.902399064268813e-5,one node
+30th < 2040,nonEU < UK < uk < 92UK,solar < openspace_a < pvOpenspace_a,electricity,none,gen,1.2005098236976799e-5,one node
+30th < 2040,nonEU < UK < uk < 93UK,solar < openspace_a < pvOpenspace_a,electricity,none,gen,1.0101437367510287e-5,one node
+30th < 2040,EU,bioConversionHvc < biomassToHvc,hvc,none,gen,158.75194604941163,one node
+30th < 2040,nonEU,bioConversionHvc < biomassToHvc,hvc,none,gen,42.01295832247672,one node
+30th < 2040,EU < ES < es < 01ES,solar < rooftopInd_b < pvInd_b,electricity,none,gen,1.3906464269617222e-5,one node
+30th < 2040,EU < ES < es < 02ES,solar < rooftopInd_b < pvInd_b,electricity,none,gen,1.759234065905468e-5,one node
+30th < 2040,EU < ES < es < 03ES,solar < rooftopInd_b < pvInd_b,electricity,none,gen,1.5604002979542013e-5,one node
+30th < 2040,EU < ES < es < 04ES,solar < rooftopInd_b < pvInd_b,electricity,none,gen,5.222934618422749,one node
+30th < 2040,EU < ES < es < 05ES,solar < rooftopInd_b < pvInd_b,electricity,none,gen,5.054556912328846,one node
+30th < 2040,EU < ES < es < 06ES,solar < rooftopInd_b < pvInd_b,electricity,none,gen,14.590908823057527,one node
+30th < 2040,EU < ES < es < 07ES,solar < rooftopInd_b < pvInd_b,electricity,none,gen,2.141259784590838,one node
+30th < 2040,EU < ES < es < 08ES,solar < rooftopInd_b < pvInd_b,electricity,none,gen,5.261994515559385,one node
+30th < 2040,EU < ES < es < 09ES,solar < rooftopInd_b < pvInd_b,electricity,none,gen,2.500007103647751,one node
+30th < 2040,EU < ES < es < 10ES,solar < rooftopInd_b < pvInd_b,electricity,none,gen,6.200036528299212,one node
+30th < 2040,EU < ES < es < 11ES,solar < rooftopInd_b < pvInd_b,electricity,none,gen,18.469152610516783,one node
+30th < 2040,EU < GR < gr < 68GR,solar < rooftopInd_b < pvInd_b,electricity,none,gen,4.518674040715001e-5,one node
+30th < 2040,EU < GR < gr < 69GR,solar < rooftopInd_b < pvInd_b,electricity,none,gen,9.223690062097264,one node
+30th < 2040,EU < PT < pt < 12PT,solar < rooftopInd_b < pvInd_b,electricity,none,gen,5.0512557022375315,one node
+30th < 2040,EU < PT < pt < 13PT,solar < rooftopInd_b < pvInd_b,electricity,none,gen,6.282077618148767,one node
+30th < 2040,EU < RO < ro < 59RO,solar < rooftopInd_b < pvInd_b,electricity,none,gen,1.888983170035528e-5,one node
+30th < 2040,EU < RO < ro < 60RO,solar < rooftopInd_b < pvInd_b,electricity,none,gen,4.569332286633254e-5,one node
+30th < 2040,EU < RO < ro < 61RO,solar < rooftopInd_b < pvInd_b,electricity,none,gen,15.047590740949586,one node
+30th < 2040,nonEU < AL < al < 70AL,solar < rooftopInd_b < pvInd_b,electricity,none,gen,2.190447717798233e-5,one node
+30th < 2040,nonEU < BA < ba < 63BA,solar < rooftopInd_b < pvInd_b,electricity,none,gen,1.0751750307526862,one node
+30th < 2040,nonEU < ME < me < 64ME,solar < rooftopInd_b < pvInd_b,electricity,none,gen,3.117620951140572e-5,one node
+30th < 2040,nonEU < MK < mk < 67MK,solar < rooftopInd_b < pvInd_b,electricity,none,gen,2.1561609667181877e-5,one node
+30th < 2040,nonEU < RS < rs < 65RS,solar < rooftopInd_b < pvInd_b,electricity,none,gen,1.3594210528607116e-5,one node
+30th < 2040,EU < BE < be < 28BE,wind < offshore < offshore_a,electricity,none,gen,2.1236729076662918e-5,one node
+30th < 2040,EU < DE < de < 32DE,wind < offshore < offshore_a,electricity,none,gen,1.3205401024931946e-5,one node
+30th < 2040,EU < FR < fr < 26FR,wind < offshore < offshore_a,electricity,none,gen,1.043137319358912e-5,one node
+30th < 2040,EU < IE < ie < 96IE,wind < offshore < offshore_a,electricity,none,gen,1.121628751088463e-5,one node
+30th < 2040,EU < NL < nl < 30NL,wind < offshore < offshore_a,electricity,none,gen,2.0452493033505193e-5,one node
+30th < 2040,nonEU < NO < no_n < 84NO,wind < offshore < offshore_a,electricity,none,gen,1.9215489044267818e-5,one node
+30th < 2040,nonEU < NO < no_n < 85NO,wind < offshore < offshore_a,electricity,none,gen,1.9215489044267818e-5,one node
+30th < 2040,nonEU < UK < ni < 95UK,wind < offshore < offshore_a,electricity,none,gen,1.1828157445526849e-5,one node
+30th < 2040,nonEU < UK < uk < 91UK,wind < offshore < offshore_a,electricity,none,gen,1.2462334606394608e-5,one node
+30th < 2040,nonEU < UK < uk < 92UK,wind < offshore < offshore_a,electricity,none,gen,1.1140916625531825e-5,one node
+30th < 2040,EU < ES < es < 02ES,solar < rooftopResi_b < pvResi_b,electricity,none,gen,4.013386386531049e-5,one node
+30th < 2040,EU < ES < es < 09ES,solar < rooftopResi_b < pvResi_b,electricity,none,gen,1.0590092438800823e-5,one node
+30th < 2040,EU < ES < es < 10ES,solar < rooftopResi_b < pvResi_b,electricity,none,gen,1.972429670160796e-5,one node
+30th < 2040,EU,networkHeat < heatStorage < largeWaterTank,districtHeat,none,stIn,-4.143698855963631e-5,one node
+30th < 2040,nonEU,networkHeat < heatStorage < largeWaterTank,districtHeat,none,stIn,-4.11762043204833e-5,one node
+30th < 2040,EU,networkHeat < heatStorage < pitThermalStorage,districtHeat,none,stIn,-101.05486592965222,one node
+30th < 2040,nonEU,networkHeat < heatStorage < pitThermalStorage,districtHeat,none,stIn,-15.97263840470056,one node
+30th < 2040,EU,transport < bev < bevFrtRoadHeavy,electricity,none,stIn,-133.63150800728198,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadHeavy,electricity,none,stIn,-17.407366166074677,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPrvt,electricity,none,stIn,-490.91326320489765,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPrvt,electricity,none,stIn,-103.11644392796019,one node
+30th < 2040,EU,storage < battery < lithiumBattery,electricity,none,stIn,-2.9710174503860748e-5,one node
+30th < 2040,nonEU,storage < battery < lithiumBattery,electricity,none,stIn,-2.7483623899374483e-5,one node
+30th < 2040,nonEU,storage < gasStorage < methaneStorage,methane,none,stIn,-1.2802849210902679e-5,one node
+30th < 2040,EU,hydro < pumpedStorage,electricity,none,stIn,-18.015205713295106,one node
+30th < 2040,nonEU,hydro < pumpedStorage,electricity,none,stIn,-4.426534089028092,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPub,electricity,none,stIn,-51.37770847161399,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPub,electricity,none,stIn,-7.237875177213563,one node
+30th < 2040,EU,transport < bev < bevFrtRoadLight,electricity,none,stIn,-83.24796587764317,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadLight,electricity,none,stIn,-11.929888770459126,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProLow,processHeat_low,none,stIn,-1.1517882139839498e-5,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProLow,processHeat_low,none,stIn,-1.0314079951701289e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpAirProLow,processHeat_low,none,stIn,-1.4095031959110464e-5,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpAirProLow,processHeat_low,none,stIn,-1.2931908480658037e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,processHeat_low,none,stIn,-0.0001231266461386859,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,processHeat_low,none,stIn,-0.00012234064912381823,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProLow,processHeat_low,none,stOut,1.1226668096474462e-5,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProLow,processHeat_low,none,stOut,1.00209290401695e-5,one node
+30th < 2040,EU,networkHeat < heatStorage < largeWaterTank,districtHeat,none,stOut,4.0375530942026515e-5,one node
+30th < 2040,nonEU,networkHeat < heatStorage < largeWaterTank,districtHeat,none,stOut,4.012307191540875e-5,one node
+30th < 2040,EU,networkHeat < heatStorage < pitThermalStorage,districtHeat,none,stOut,73.05419910424558,one node
+30th < 2040,nonEU,networkHeat < heatStorage < pitThermalStorage,districtHeat,none,stOut,11.817061834220329,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpAirProLow,processHeat_low,none,stOut,1.3925683830631257e-5,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpAirProLow,processHeat_low,none,stOut,1.2767151524973094e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,processHeat_low,none,stOut,0.00012270624510001693,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,processHeat_low,none,stOut,0.00012192868381218894,one node
+30th < 2040,EU,storage < battery < lithiumBattery,electricity,none,stOut,2.6436596592415486e-5,one node
+30th < 2040,nonEU,storage < battery < lithiumBattery,electricity,none,stOut,2.4456729455501046e-5,one node
+30th < 2040,EU,storage < gasStorage < methaneStorage,methane,none,stOut,2.520357087438797e-5,one node
+30th < 2040,nonEU,storage < gasStorage < methaneStorage,methane,none,stOut,1.3244723944275504e-5,one node
+30th < 2040,EU,hydro < pumpedStorage,electricity,none,stOut,14.592316621916563,one node
+30th < 2040,nonEU,hydro < pumpedStorage,electricity,none,stOut,3.585492610471194,one node
+30th < 2040,EU,hydro < reservoir,electricity,none,stOut,181.40810889929102,one node
+30th < 2040,nonEU,hydro < reservoir,electricity,none,stOut,175.86886840537346,one node
+30th < 2040,EU,transport < bev < bevFrtRoadHeavy,electricity,none,stOut,123.08351099545773,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadHeavy,electricity,none,stOut,16.03334919258016,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPrvt,electricity,none,stOut,452.16856483068113,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPrvt,electricity,none,stOut,94.97796685615083,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPub,electricity,none,stOut,47.321104174777325,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPub,electricity,none,stOut,6.666385709643207,one node
+30th < 2040,EU,transport < bev < bevFrtRoadLight,electricity,none,stOut,76.68022221352332,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadLight,electricity,none,stOut,10.988312855572222,one node
+30th < 2040,EU,networkHeat < heatStorage < largeWaterTank,districtHeat,none,stExtIn,-4.143698855963631e-5,one node
+30th < 2040,nonEU,networkHeat < heatStorage < largeWaterTank,districtHeat,none,stExtIn,-4.11762043204833e-5,one node
+30th < 2040,EU,networkHeat < heatStorage < pitThermalStorage,districtHeat,none,stExtIn,-101.05486592965222,one node
+30th < 2040,nonEU,networkHeat < heatStorage < pitThermalStorage,districtHeat,none,stExtIn,-15.97263840470056,one node
+30th < 2040,EU,transport < bev < bevFrtRoadHeavy,electricity,none,stExtIn,-133.63150800728198,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadHeavy,electricity,none,stExtIn,-17.407366166074677,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPrvt,electricity,none,stExtIn,-490.91326320489765,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPrvt,electricity,none,stExtIn,-103.11644392796019,one node
+30th < 2040,EU,storage < battery < lithiumBattery,electricity,none,stExtIn,-2.9710174503860748e-5,one node
+30th < 2040,nonEU,storage < battery < lithiumBattery,electricity,none,stExtIn,-2.7483623899374483e-5,one node
+30th < 2040,nonEU,storage < gasStorage < methaneStorage,methane,none,stExtIn,-1.2802849210902679e-5,one node
+30th < 2040,EU,hydro < pumpedStorage,electricity,none,stExtIn,-18.015205713295106,one node
+30th < 2040,nonEU,hydro < pumpedStorage,electricity,none,stExtIn,-4.426534089028092,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPub,electricity,none,stExtIn,-51.37770847161399,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPub,electricity,none,stExtIn,-7.237875177213563,one node
+30th < 2040,EU,transport < bev < bevFrtRoadLight,electricity,none,stExtIn,-83.24796587764317,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadLight,electricity,none,stExtIn,-11.929888770459126,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProLow,processHeat_low,none,stExtOut,1.1226668096474462e-5,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProLow,processHeat_low,none,stExtOut,1.00209290401695e-5,one node
+30th < 2040,EU,networkHeat < heatStorage < largeWaterTank,districtHeat,none,stExtOut,4.0375530942026515e-5,one node
+30th < 2040,nonEU,networkHeat < heatStorage < largeWaterTank,districtHeat,none,stExtOut,4.012307191540875e-5,one node
+30th < 2040,EU,networkHeat < heatStorage < pitThermalStorage,districtHeat,none,stExtOut,73.05419910424558,one node
+30th < 2040,nonEU,networkHeat < heatStorage < pitThermalStorage,districtHeat,none,stExtOut,11.817061834220329,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpAirProLow,processHeat_low,none,stExtOut,1.3925683830631257e-5,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpAirProLow,processHeat_low,none,stExtOut,1.2767151524973094e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,processHeat_low,none,stExtOut,0.00012270624510001693,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,processHeat_low,none,stExtOut,0.00012192868381218894,one node
+30th < 2040,EU,storage < battery < lithiumBattery,electricity,none,stExtOut,2.6436596592415486e-5,one node
+30th < 2040,nonEU,storage < battery < lithiumBattery,electricity,none,stExtOut,2.4456729455501046e-5,one node
+30th < 2040,EU,storage < gasStorage < methaneStorage,methane,none,stExtOut,2.520357087438797e-5,one node
+30th < 2040,nonEU,storage < gasStorage < methaneStorage,methane,none,stExtOut,1.3244723944275504e-5,one node
+30th < 2040,EU,hydro < pumpedStorage,electricity,none,stExtOut,14.592316621916563,one node
+30th < 2040,nonEU,hydro < pumpedStorage,electricity,none,stExtOut,3.585492610471194,one node
+30th < 2040,EU,hydro < reservoir,electricity,none,stExtOut,181.40810889929102,one node
+30th < 2040,nonEU,hydro < reservoir,electricity,none,stExtOut,175.86886840537346,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProLow,processHeat_low,none,stIntIn,-1.1517882139839498e-5,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProLow,processHeat_low,none,stIntIn,-1.0314079951701289e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpAirProLow,processHeat_low,none,stIntIn,-1.4095031959110464e-5,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpAirProLow,processHeat_low,none,stIntIn,-1.2931908480658037e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,processHeat_low,none,stIntIn,-0.0001231266461386859,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,processHeat_low,none,stIntIn,-0.00012234064912381823,one node
+30th < 2040,EU,transport < bev < bevFrtRoadHeavy,electricity,none,stIntOut,123.08351099545773,one node
+30th < 2040,EU,transport < bev < bevFrtRoadLight,electricity,none,stIntOut,76.68022221352332,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPrvt,electricity,none,stIntOut,452.16856483068113,one node
+30th < 2040,EU,transport < bev < bevPsngRoadPub,electricity,none,stIntOut,47.321104174777325,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadHeavy,electricity,none,stIntOut,16.03334919258016,one node
+30th < 2040,nonEU,transport < bev < bevFrtRoadLight,electricity,none,stIntOut,10.988312855572222,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPrvt,electricity,none,stIntOut,94.97796685615083,one node
+30th < 2040,nonEU,transport < bev < bevPsngRoadPub,electricity,none,stIntOut,6.666385709643207,one node
+30th < 2040,EU,powerToX < avaAndNaviTech,refinedOil,none,emission,159.25755322368317,one node
+30th < 2040,nonEU,powerToX < avaAndNaviTech,refinedOil,none,emission,53.28440211532258,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlSludge,biomass < sludge,none,emission,-1.2228775837857182,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlSludge,biomass < sludge,none,emission,-0.27199202182691984,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlManure,biomass < manure,none,emission,-24.075439609182958,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlManure,biomass < manure,none,emission,-4.26934468318877,one node
+30th < 2040,EU,powerToX < refinery,crudeOil,none,emission,14.329061839997438,one node
+30th < 2040,nonEU,powerToX < refinery,crudeOil,none,emission,5.032466676759557,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlGreenWaste,biomass < greenWaste,none,emission,-22.12808915524568,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlGreenWaste,biomass < greenWaste,none,emission,-4.197227181586054,one node
+30th < 2040,EU,fossil < oil < oilToHvc,refinedOil,none,emission,112.99462245392577,one node
+30th < 2040,nonEU,fossil < oil < oilToHvc,refinedOil,none,emission,42.332464895878545,one node
+30th < 2040,EU,powerToX < directAirCapture,electricity,none,emission,-330.26698997707035,one node
+30th < 2040,nonEU,powerToX < directAirCapture,electricity,none,emission,-0.7986341898043255,one node
+30th < 2040,EU,chemConversion < gasToHvc,methane,none,emission,1.4053473345986528e-5,one node
+30th < 2040,nonEU,chemConversion < gasToHvc,methane,none,emission,1.0085232409733271e-5,one node
+30th < 2040,EU,none,crudeOil,none,trdBuy,907.8818169221072,one node
+30th < 2040,EU,none,methane,none,trdBuy,5.9746087789397286e-5,one node
+30th < 2040,EU,none,waste,none,trdBuy,104.80427540416605,one node
+30th < 2040,EU,none,biomass < greenWaste,none,trdBuy,140.0068954650852,one node
+30th < 2040,EU,none,biomass < manure,none,trdBuy,152.32799812544496,one node
+30th < 2040,EU,none,biomass < sludge,none,trdBuy,7.737284207143071,one node
+30th < 2040,EU,none,biomass < wood,none,trdBuy,378.1111789750973,one node
+30th < 2040,nonEU,none,crudeOil,none,trdBuy,348.91298735644256,one node
+30th < 2040,nonEU,none,methane,none,trdBuy,6.26160665870623e-5,one node
+30th < 2040,nonEU,none,waste,none,trdBuy,25.47399225802922,one node
+30th < 2040,nonEU,none,biomass < greenWaste,none,trdBuy,26.55632814206202,one node
+30th < 2040,nonEU,none,biomass < manure,none,trdBuy,27.012622492161498,one node
+30th < 2040,nonEU,none,biomass < sludge,none,trdBuy,1.7209255505209997,one node
+30th < 2040,nonEU,none,biomass < wood,none,trdBuy,100.06535586725687,one node
+30th < 2040,EU,none,electricity,none,export,-54.2215451559135,one node
+30th < 2040,nonEU,none,electricity,none,export,-82.87001508150855,one node
+30th < 2040,EU,none,electricity,none,import,81.41538696164538,one node
+30th < 2040,nonEU,none,electricity,none,import,53.33063417709052,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProLow,processHeat_low,none,capaConvOut,5.307559141257538e-6,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProLow,processHeat_low,none,capaConvOut,1.9340917455402246e-5,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProMed,processHeat_medium,none,capaConvOut,81.67294053968288,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProMed,processHeat_medium,none,capaConvOut,18.1700650152459,one node
+30th < 2040,EU,networkHeat < boilerNetwork < eBoilerDh,districtHeat,none,capaConvOut,49.820667777098016,one node
+30th < 2040,nonEU,networkHeat < boilerNetwork < eBoilerDh,districtHeat,none,capaConvOut,19.662153949089074,one node
+30th < 2040,EU,proHeat < electricHeatPro < eBoilerProHigh,processHeat_high,none,capaConvOut,2.219300004044728,one node
+30th < 2040,nonEU,proHeat < electricHeatPro < eBoilerProHigh,processHeat_high,none,capaConvOut,0.06290000779712189,one node
+30th < 2040,EU,proHeat < h2BoilerPro < h2BoilerProHigh,processHeat_high,none,capaConvOut,82.26679621544456,one node
+30th < 2040,nonEU,proHeat < h2BoilerPro < h2BoilerProHigh,processHeat_high,none,capaConvOut,7.05599641517073,one node
+30th < 2040,EU,proHeat < wasteBoilerPro < wasteBoilerProHigh,processHeat_high,none,capaConvOut,16.900521423438,one node
+30th < 2040,nonEU,proHeat < wasteBoilerPro < wasteBoilerProHigh,processHeat_high,none,capaConvOut,3.2311014427496123,one node
+30th < 2040,EU,ccs < co2Disposal,co2 < co2Removed,none,capaConvOut,37.81786653852287,one node
+30th < 2040,nonEU,ccs < co2Disposal,co2 < co2Removed,none,capaConvOut,0.09144964064006908,one node
+30th < 2040,EU,transport < ePsngRail,psngRail,none,capaConvOut,88.66305019658401,one node
+30th < 2040,nonEU,transport < ePsngRail,psngRail,none,capaConvOut,21.96339378781237,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlSludge,crudeOil,none,capaConvOut,0.5299508815910822,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlSludge,crudeOil,none,capaConvOut,0.11787148883711193,one node
+30th < 2040,EU,transport < eFrtRail,frtRail,none,capaConvOut,128.47222058897992,one node
+30th < 2040,nonEU,transport < eFrtRail,frtRail,none,capaConvOut,11.19027208824943,one node
+30th < 2040,EU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,ammonia,none,capaConvOut,111.34308058762268,one node
+30th < 2040,EU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,districtHeat,none,capaConvOut,14.896239910173483,one node
+30th < 2040,nonEU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,ammonia,none,capaConvOut,26.219277628522434,one node
+30th < 2040,nonEU,chemConversion < haberBosch < haberBoschH2AmmoniaDh,districtHeat,none,capaConvOut,3.5077946149109875,one node
+30th < 2040,EU,networkHeat < heatpumpNetwork < heatpumpGroundDh,districtHeat,none,capaConvOut,389.2496275346885,one node
+30th < 2040,nonEU,networkHeat < heatpumpNetwork < heatpumpGroundDh,districtHeat,none,capaConvOut,77.77819472135553,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlManure,crudeOil,none,capaConvOut,10.433424302323575,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlManure,crudeOil,none,capaConvOut,1.8501794841193757,one node
+30th < 2040,EU,networkHeat < heatGrid < districtHeatSpace,spaceHeat,none,capaConvOut,799.3509880892608,one node
+30th < 2040,nonEU,networkHeat < heatGrid < districtHeatSpace,spaceHeat,none,capaConvOut,156.93166063795738,one node
+30th < 2040,EU,proHeat < heatpumpPro < heatpumpGroundProLow,processHeat_low,none,capaConvOut,118.86439272384247,one node
+30th < 2040,nonEU,proHeat < heatpumpPro < heatpumpGroundProLow,processHeat_low,none,capaConvOut,9.75563363141039,one node
+30th < 2040,EU,powerToX < refinery,refinedOil,none,capaConvOut,790.9252866635003,one node
+30th < 2040,nonEU,powerToX < refinery,refinedOil,none,capaConvOut,123.9365487557,one node
+30th < 2040,EU,bioConversionOil < hydrothermalLiquefaction < htlGreenWaste,crudeOil,none,capaConvOut,9.589513081986176,one node
+30th < 2040,nonEU,bioConversionOil < hydrothermalLiquefaction < htlGreenWaste,crudeOil,none,capaConvOut,1.8189263654161334,one node
+30th < 2040,EU,fossil < oil < oilToHvc,hvc,none,capaConvOut,26.881971633558894,one node
+30th < 2040,nonEU,fossil < oil < oilToHvc,hvc,none,capaConvOut,10.071100035208085,one node
+30th < 2040,EU,powerToX < electrolysis < alkElectrolysis,h2,none,capaConvOut,915.2591854645292,one node
+30th < 2040,EU,powerToX < electrolysis < alkElectrolysis,districtHeat,none,capaConvOut,150.86237591067496,one node
+30th < 2040,nonEU,powerToX < electrolysis < alkElectrolysis,h2,none,capaConvOut,79.87425214819838,one node
+30th < 2040,nonEU,powerToX < electrolysis < alkElectrolysis,districtHeat,none,capaConvOut,13.165690816912905,one node
+30th < 2040,EU,networkHeat < heatGrid < districtHeatPro,processHeat_low,none,capaConvOut,13.470715066239014,one node
+30th < 2040,nonEU,networkHeat < heatGrid < districtHeatPro,processHeat_low,none,capaConvOut,0.27894116412482156,one node
+30th < 2040,EU,powerToX < directAirCapture,co2 < co2Pure,none,capaConvOut,44.46398264744439,one node
+30th < 2040,nonEU,powerToX < directAirCapture,co2 < co2Pure,none,capaConvOut,0.11555880760586984,one node
+30th < 2040,EU,bioConversionHvc < biomassToHvc,hvc,none,capaConvOut,18.122368297579534,one node
+30th < 2040,nonEU,bioConversionHvc < biomassToHvc,hvc,none,capaConvOut,4.79599980855752,one node

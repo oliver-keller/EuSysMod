@@ -1,0 +1,6 @@
+carrier,pyrolysisOil,biomassToHvc,chp,boilerDh,boilerSpace,boilerProLow,boilerProMed,boilerProHigh,liquefaction,digestion,gasification,carbonization,pyrolysisCoal,CCC
+wood,0.0,-450.8426746013462,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+greenWaste,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-146.3060600130421,-0.00029797155292601304,0.0,0.0,0.0,0.0
+manure,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-199.56775758296368,0.0,0.0,0.0,0.0,0.0
+sludge,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-11.52858382711402,0.0,0.0,0.0,0.0,0.0
+digestate,0.0,0.0,0.0,0.0,0.0,-1.4243010404310621e-5,0.0,-1.2125237856215328e-5,0.0,0.0,0.0,0.0,0.0,0.0

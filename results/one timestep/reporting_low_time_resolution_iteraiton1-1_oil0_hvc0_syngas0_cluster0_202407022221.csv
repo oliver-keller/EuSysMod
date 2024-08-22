@@ -1,0 +1,67 @@
+errStatus,section,location,message
+green,carrier mapping,,carrier 'biomass' inherited resolution from children
+green,carrier mapping,,carrier 'co2' inherited resolution from children
+green,timestep mapping,,superordinate dispatch level provided via options was used
+green,timestep mapping,,time-steps on level 5 set to correspond to 1.0 hours
+yellow,technology mapping,storage cycling,"storage cycling level for technology 'bevFrtRoadHeavy' is equal or more detailed than representative level, storage operates as short-term storage"
+yellow,technology mapping,storage cycling,"storage cycling level for technology 'bevFrtRoadLight' is equal or more detailed than representative level, storage operates as short-term storage"
+yellow,technology mapping,storage cycling,"storage cycling level for technology 'bevPsngRoadPrvt' is equal or more detailed than representative level, storage operates as short-term storage"
+yellow,technology mapping,storage cycling,"storage cycling level for technology 'bevPsngRoadPub' is equal or more detailed than representative level, storage operates as short-term storage"
+yellow,technology mapping,carrier,"carrier 'electricity' of technology 'pumpedStorage' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,technology 'pumpedStorage' has no output
+yellow,technology mapping,carrier,for technology 'pumpedStorage' no carriers were provided
+yellow,technology mapping,carrier,"carrier 'electricity' of technology 'reservoir' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,technology 'reservoir' has no output
+yellow,technology mapping,carrier,for technology 'reservoir' no carriers were provided
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'offshore_a' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'offshore_b' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'onshore_a' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'onshore_b' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'onshore_c' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvOpenspace_a' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvOpenspace_b' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvOpenspace_c' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'cspOpenspace_a' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'cspOpenspace_b' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'cspOpenspace_c' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvInd_a' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvInd_b' was used instead of a carrier based value
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvResi_a' was used instead of a carrier based value
+yellow,technology mapping,carrier,"carrier 'spaceHeat' of technology 'solarThermalResi_a' cannot be stored, because carrier is balanced on superordinate dispatch level"
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'solarThermalResi_a' is equal to default value obtained from carriers
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'pvResi_b' was used instead of a carrier based value
+yellow,technology mapping,carrier,"carrier 'spaceHeat' of technology 'solarThermalResi_b' cannot be stored, because carrier is balanced on superordinate dispatch level"
+green,technology mapping,expansion level,specific spatial expansion level provided for technology 'solarThermalResi_b' is equal to default value obtained from carriers
+yellow,technology mapping,carrier,"carrier 'districtHeat' of technology 'pitThermalStorage' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,technology 'pitThermalStorage' has no output
+yellow,technology mapping,carrier,for technology 'pitThermalStorage' no carriers were provided
+yellow,technology mapping,carrier,"carrier 'districtHeat' of technology 'largeWaterTank' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,technology 'largeWaterTank' has no output
+yellow,technology mapping,carrier,for technology 'largeWaterTank' no carriers were provided
+yellow,technology mapping,carrier,"carrier 'spaceHeat' of technology 'resistiveHeatSpace' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,"carrier 'spaceHeat' of technology 'heatpumpAirSpace' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,"carrier 'spaceHeat' of technology 'heatpumpGroundSpace' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,"carrier 'processHeat_low' of technology 'heatpumpAirProLow' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,"carrier 'processHeat_low' of technology 'heatpumpGroundProLow' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,"carrier 'processHeat_low' of technology 'eBoilerProLow' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,"carrier 'methane' of technology 'methaneStorage' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,technology 'methaneStorage' has no output
+yellow,technology mapping,carrier,for technology 'methaneStorage' no carriers were provided
+yellow,technology mapping,carrier,"carrier 'h2' of technology 'h2StorageCavern' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,technology 'h2StorageCavern' has no output
+yellow,technology mapping,carrier,for technology 'h2StorageCavern' no carriers were provided
+yellow,technology mapping,carrier,"carrier 'h2' of technology 'h2StorageTank' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,technology 'h2StorageTank' has no output
+yellow,technology mapping,carrier,for technology 'h2StorageTank' no carriers were provided
+yellow,technology mapping,carrier,"carrier 'syngas' of technology 'syngasStorage' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,technology 'syngasStorage' has no output
+yellow,technology mapping,carrier,for technology 'syngasStorage' no carriers were provided
+yellow,technology mapping,carrier,"carrier 'electricity' of technology 'lithiumBattery' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,technology 'lithiumBattery' has no output
+yellow,technology mapping,carrier,for technology 'lithiumBattery' no carriers were provided
+yellow,technology mapping,carrier,"carrier 'electricity' of technology 'redoxBattery' cannot be stored, because carrier is balanced on superordinate dispatch level"
+yellow,technology mapping,carrier,technology 'redoxBattery' has no output
+yellow,technology mapping,carrier,for technology 'redoxBattery' no carriers were provided
+yellow,limit,expExc,"limits were provided without specificing the superordinate dispatch timestep, this means the sum over all years was limited instead of enforcing the same limit for each year (see https://leonardgoeke.github.io/AnyMOD.jl/stable/parameter_list/#Limits-on-quantities-dispatched)"
+yellow,limit,emission,"limits were provided without specificing the superordinate dispatch timestep, this means the sum over all years was limited instead of enforcing the same limit for each year (see https://leonardgoeke.github.io/AnyMOD.jl/stable/parameter_list/#Limits-on-quantities-dispatched)"
+yellow,limit,use,"limits were provided without specificing the superordinate dispatch timestep, this means the sum over all years was limited instead of enforcing the same limit for each year (see https://leonardgoeke.github.io/AnyMOD.jl/stable/parameter_list/#Limits-on-quantities-dispatched)"
