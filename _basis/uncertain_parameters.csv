@@ -424,7 +424,7 @@ all,all,manure,,trdBuyUp,0.7,1.3,,,
 ,all,,carbonDisposal,costOprConv,0.7,1.5,,,
 ,all,h2,,trdBuyPrc,,,100,200,
 ,all,crudeOil,,trdBuyPrc,,,18,180,5 - 50 USD/GJ = 180 Euro/MWh
-,all,methane,,trdBuyPrc,,,14,180,
+,all,methane,,trdBuyPrc,,,14,180,https://sweet-cross.ch/data/import-prices-cross/2022-09-30/
 ,all,coal,,trdBuyPrc,,,10,50,
 ,all,uranum,,trdBuyPrc,0.7,1.5,,,
 ,all,biomass,,trdBuyPrc,0.7,1.5,,,
